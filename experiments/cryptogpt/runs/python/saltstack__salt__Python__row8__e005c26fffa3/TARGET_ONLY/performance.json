@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"PYTHON",
+  "input":"experiments/cryptogpt/runs/_inputs/python/saltstack__salt__Python__row8__e005c26fffa3/TARGET_ONLY",
+  "source":{"files":1,"lines":182,"bytes":5518},
+  "graph":{"standardNodes":1053,"standardEdges":7671,"cryptoAwareNodes":1055,"cryptoAwareEdges":7673,"addedNodes":2,"addedEdges":2,"serializedBytes":161296},
+  "memory":{"peakHeapBytes":60360344},
+  "findings":{"core":2,"extended":0,"byRule":{"C5":2}},
+  "operations":{"HASH_FUNCTION":2},
+  "selectionOperations":{"HASH_FUNCTION":2},
+  "selectionOperationResolutions":{"COMPLETE":2},
+  "timingsMillis":{"adapterConfigLoad":62.455,"cpgFrontend":254.243,"overlays":68.555,"dataflow":62.958,"enrichmentWall":71.751,"coreRules":14.425,"extendedRules":0.000,"totalWall":1036.174},
+  "enrichment":{"callsScanned":219,"callsMatched":1,"localOperationsMatched":0,"operationGroups":2,"sensitiveBindings":0,"resolvedSourceNodes":0,"adapterMillis":29.464,"provenanceMillis":0.615,"provenanceFlowQueries":0,"provenanceMultiSinkQueries":0,"lifecycleMillis":1.483,"contextAnalysisMillis":20.460,"materializationMillis":4.638,"runMillis":71.742},
+  "enrichmentOverheadPercent":18.600
+}

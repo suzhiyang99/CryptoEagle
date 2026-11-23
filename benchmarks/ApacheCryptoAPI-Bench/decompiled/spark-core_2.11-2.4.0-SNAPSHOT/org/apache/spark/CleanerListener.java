@@ -1,0 +1,18 @@
+package org.apache.spark;
+
+import scala.reflect.ScalaSignature;
+
+@ScalaSignature(
+   bytes = "\u0006\u0001E2\u0001\"\u0001\u0002\u0011\u0002G\u0005!\u0001\u0003\u0002\u0010\u00072,\u0017M\\3s\u0019&\u001cH/\u001a8fe*\u00111\u0001B\u0001\u0006gB\f'o\u001b\u0006\u0003\u000b\u0019\ta!\u00199bG\",'\"A\u0004\u0002\u0007=\u0014xm\u0005\u0002\u0001\u0013A\u0011!\"D\u0007\u0002\u0017)\tA\"A\u0003tG\u0006d\u0017-\u0003\u0002\u000f\u0017\t1\u0011I\\=SK\u001aDQ\u0001\u0005\u0001\u0007\u0002I\t!B\u001d3e\u00072,\u0017M\\3e\u0007\u0001!\"a\u0005\f\u0011\u0005)!\u0012BA\u000b\f\u0005\u0011)f.\u001b;\t\u000b]y\u0001\u0019\u0001\r\u0002\u000bI$G-\u00133\u0011\u0005)I\u0012B\u0001\u000e\f\u0005\rIe\u000e\u001e\u0005\u00069\u00011\t!H\u0001\u000fg\",hM\u001a7f\u00072,\u0017M\\3e)\t\u0019b\u0004C\u0003 7\u0001\u0007\u0001$A\u0005tQV4g\r\\3JI\")\u0011\u0005\u0001D\u0001E\u0005\u0001\"M]8bI\u000e\f7\u000f^\"mK\u0006tW\r\u001a\u000b\u0003'\rBQ\u0001\n\u0011A\u0002\u0015\n1B\u0019:pC\u0012\u001c\u0017m\u001d;JIB\u0011!BJ\u0005\u0003O-\u0011A\u0001T8oO\")\u0011\u0006\u0001D\u0001U\u0005a\u0011mY2v[\u000ecW-\u00198fIR\u00111c\u000b\u0005\u0006Y!\u0002\r!J\u0001\u0006C\u000e\u001c\u0017\n\u001a\u0005\u0006]\u00011\taL\u0001\u0012G\",7m\u001b9pS:$8\t\\3b]\u0016$GCA\n1\u0011\u00159R\u00061\u0001&\u0001"
+)
+public interface CleanerListener {
+   void rddCleaned(int var1);
+
+   void shuffleCleaned(int var1);
+
+   void broadcastCleaned(long var1);
+
+   void accumCleaned(long var1);
+
+   void checkpointCleaned(long var1);
+}

@@ -1,0 +1,9 @@
+package org.apache.spark.api.java.function;
+
+import scala.reflect.ScalaSignature;
+
+@ScalaSignature(
+   bytes = "\u0006\u0001u9Q!\u0001\u0002\t\u0002=\tq\u0001]1dW\u0006<WM\u0003\u0002\u0004\t\u0005Aa-\u001e8di&|gN\u0003\u0002\u0006\r\u0005!!.\u0019<b\u0015\t9\u0001\"A\u0002ba&T!!\u0003\u0006\u0002\u000bM\u0004\u0018M]6\u000b\u0005-a\u0011AB1qC\u000eDWMC\u0001\u000e\u0003\ry'oZ\u0002\u0001!\t\u0001\u0012#D\u0001\u0003\r\u0015\u0011\"\u0001#\u0001\u0014\u0005\u001d\u0001\u0018mY6bO\u0016\u001c\"!\u0005\u000b\u0011\u0005UAR\"\u0001\f\u000b\u0003]\tQa]2bY\u0006L!!\u0007\f\u0003\r\u0005s\u0017PU3g\u0011\u0015Y\u0012\u0003\"\u0001\u001d\u0003\u0019a\u0014N\\5u}Q\tq\u0002"
+)
+public final class package {
+}

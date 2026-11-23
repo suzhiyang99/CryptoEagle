@@ -1,0 +1,4052 @@
+[
+  {
+    "language": "java",
+    "snapshot": "justauth__JustAuth/2021-08-25_23b7bcf43d6f",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "src/main/java/me/zhyd/oauth/utils/GlobalAuthUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/justauth__JustAuth/2021-08-25_23b7bcf43d6f/src/main/java/me/zhyd/oauth/utils/GlobalAuthUtils.java",
+    "finding": {
+      "lineNo": 203,
+      "ruleId": "C9",
+      "operationType": "RANDOMNESS",
+      "operation": "GENERATE",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "Random.nextInt → 字符表索引 → StringBuilder.append → 返回 nonce；不是凭同文件出现 Random 判定。"
+  },
+  {
+    "language": "java",
+    "snapshot": "justauth__JustAuth/2021-08-25_23b7bcf43d6f",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "src/main/java/me/zhyd/oauth/utils/GlobalAuthUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/justauth__JustAuth/2021-08-25_23b7bcf43d6f/src/main/java/me/zhyd/oauth/utils/GlobalAuthUtils.java",
+    "finding": {
+      "lineNo": 305,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "generateElemeSignature 拼接请求参数和应用 secret 后调用 md5，用普通 MD5 作请求认证摘要，确为安全用途的弱摘要构造。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 128,
+      "ruleId": "C11",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "RSA",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "Cipher.getInstance(\"RSA\") resolves to RSA/ECB/PKCS1Padding in the JDK providers. keyFactory.getAlgorithm() is \"RSA\"; rsaEncrypt() encrypts the data with the public key: RSA PKCS#1 v1.5 encryption of DataX job secrets."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 158,
+      "ruleId": "C11",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "RSA",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "Cipher.getInstance(\"RSA\") resolves to RSA/ECB/PKCS1Padding in the JDK providers. rsaDecrypt() decrypts with the private key: the PKCS#1 v1.5 decryption side."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 175,
+      "ruleId": "C13",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "KEY_GENERATION",
+      "algorithm": "RSA",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "RSA 密钥生成器明确 initialize(1024)，随后 generateKeyPair；密钥长度不足。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 206,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "3DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "SecretKeySpec 的 DESede 密钥实际进入对应 3DES 加解密；确有弱/退役算法路径，解密条目标注为读取用途。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 209,
+      "ruleId": "C1",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "3DES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "常量 DESede/ECB/PKCS5Padding 被实际用于 encrypt3DES/decrypt3DES 的 init、doFinal；ECB 不是仅未使用的算法字符串。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 209,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "3DES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "同一 3DES 操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 211,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "3DES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "encrypt3DES执行doFinal后仅Base64编码返回，不附认证；从工厂209行移动到消费211行，是同一加密实例。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 230,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "3DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "SecretKeySpec 的 DESede 密钥实际进入对应 3DES 加解密；确有弱/退役算法路径，解密条目标注为读取用途。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 233,
+      "ruleId": "C1",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "3DES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "常量 DESede/ECB/PKCS5Padding 被实际用于 encrypt3DES/decrypt3DES 的 init、doFinal；ECB 不是仅未使用的算法字符串。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 233,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "3DES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "同一 3DES 操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 75,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DESKeySpec 经工厂转换后确实用于 DES Cipher；加密和解密分别保留用途，不宣称两次 API 使用是两个已利用漏洞。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 75,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "无 key 参数的重载明确将源码固定 KEY 传入 encrypt/decrypt，最终进入 DESKeySpec；可覆盖的另一个重载不消除默认固定密钥路径。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 87,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "同一 DES 操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 97,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "DES encrypt实际返回裸密文，重载方法把固定默认KEY传入，返回链没有MAC/tag；该C4与已有弱DES、固定密钥是不同误用属性。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 129,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DESKeySpec 经工厂转换后确实用于 DES Cipher；加密和解密分别保留用途，不宣称两次 API 使用是两个已利用漏洞。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 129,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "无 key 参数的重载明确将源码固定 KEY 传入 encrypt/decrypt，最终进入 DESKeySpec；可覆盖的另一个重载不消除默认固定密钥路径。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 141,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "同一 DES 操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 75,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DESKeySpec 经工厂转换后确实用于 DES Cipher；加密和解密分别保留用途，不宣称两次 API 使用是两个已利用漏洞。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 75,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "无 key 参数的重载明确将源码固定 KEY 传入 encrypt/decrypt，最终进入 DESKeySpec；可覆盖的另一个重载不消除默认固定密钥路径。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 87,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "同一 DES 操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 97,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "DES encrypt实际返回裸密文，重载方法把固定默认KEY传入，返回链没有MAC/tag；该C4与已有弱DES、固定密钥是不同误用属性。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 129,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DESKeySpec 经工厂转换后确实用于 DES Cipher；加密和解密分别保留用途，不宣称两次 API 使用是两个已利用漏洞。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 129,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "无 key 参数的重载明确将源码固定 KEY 传入 encrypt/decrypt，最终进入 DESKeySpec；可覆盖的另一个重载不消除默认固定密钥路径。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 141,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "同一 DES 操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 128,
+      "ruleId": "C11",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "RSA",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "Cipher.getInstance(\"RSA\") resolves to RSA/ECB/PKCS1Padding in the JDK providers. keyFactory.getAlgorithm() is \"RSA\"; rsaEncrypt() encrypts the data with the public key: RSA PKCS#1 v1.5 encryption of DataX job secrets."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 158,
+      "ruleId": "C11",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "RSA",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "Cipher.getInstance(\"RSA\") resolves to RSA/ECB/PKCS1Padding in the JDK providers. rsaDecrypt() decrypts with the private key: the PKCS#1 v1.5 decryption side."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 175,
+      "ruleId": "C13",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "KEY_GENERATION",
+      "algorithm": "RSA",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "RSA 密钥生成器明确 initialize(1024)，随后 generateKeyPair；密钥长度不足。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 206,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "3DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "SecretKeySpec 的 DESede 密钥实际进入对应 3DES 加解密；确有弱/退役算法路径，解密条目标注为读取用途。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 209,
+      "ruleId": "C1",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "3DES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "常量 DESede/ECB/PKCS5Padding 被实际用于 encrypt3DES/decrypt3DES 的 init、doFinal；ECB 不是仅未使用的算法字符串。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 209,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "3DES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "同一 3DES 操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 211,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "3DES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "encrypt3DES执行doFinal后仅Base64编码返回，不附认证；从工厂209行移动到消费211行，是同一加密实例。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 230,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "3DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "SecretKeySpec 的 DESede 密钥实际进入对应 3DES 加解密；确有弱/退役算法路径，解密条目标注为读取用途。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 233,
+      "ruleId": "C1",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "3DES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "常量 DESede/ECB/PKCS5Padding 被实际用于 encrypt3DES/decrypt3DES 的 init、doFinal；ECB 不是仅未使用的算法字符串。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "finding": {
+      "lineNo": 233,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "3DES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "同一 3DES 操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 75,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DESKeySpec 经工厂转换后确实用于 DES Cipher；加密和解密分别保留用途，不宣称两次 API 使用是两个已利用漏洞。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 75,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "下载快照 odpsreader 的默认KEY为DESDES，已有C2@75、129；原报告呈现为空字符串。固定密钥类别可见告警，具体值/版本差异尚未解释，不宣称逐字匹配报告实例。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 87,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "同一 DES 操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 97,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "DES encrypt实际返回裸密文，重载方法把固定默认KEY传入，返回链没有MAC/tag；该C4与已有弱DES、固定密钥是不同误用属性。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 129,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DESKeySpec 经工厂转换后确实用于 DES Cipher；加密和解密分别保留用途，不宣称两次 API 使用是两个已利用漏洞。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 129,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "下载快照 odpsreader 的默认KEY为DESDES，已有C2@75、129；原报告呈现为空字符串。固定密钥类别可见告警，具体值/版本差异尚未解释，不宣称逐字匹配报告实例。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpsreader/src/main/java/com/alibaba/datax/plugin/reader/odpsreader/util/DESCipher.java",
+    "finding": {
+      "lineNo": 141,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "同一 DES 操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 75,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DESKeySpec 经工厂转换后确实用于 DES Cipher；加密和解密分别保留用途，不宣称两次 API 使用是两个已利用漏洞。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 75,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "下载快照 odpsreader 的默认KEY为DESDES，已有C2@75、129；原报告呈现为空字符串。固定密钥类别可见告警，具体值/版本差异尚未解释，不宣称逐字匹配报告实例。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 87,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "同一 DES 操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 97,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "DES encrypt实际返回裸密文，重载方法把固定默认KEY传入，返回链没有MAC/tag；该C4与已有弱DES、固定密钥是不同误用属性。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 129,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DESKeySpec 经工厂转换后确实用于 DES Cipher；加密和解密分别保留用途，不宣称两次 API 使用是两个已利用漏洞。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 129,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "下载快照 odpsreader 的默认KEY为DESDES，已有C2@75、129；原报告呈现为空字符串。固定密钥类别可见告警，具体值/版本差异尚未解释，不宣称逐字匹配报告实例。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "finding": {
+      "lineNo": 141,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "同一 DES 操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+    "finding": {
+      "lineNo": 68,
+      "ruleId": "C14",
+      "operationType": "KEY_DERIVATION",
+      "operation": "CONFIGURE",
+      "algorithm": "PBEWITHMD5ANDDES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "PBEWithMD5AndDES 确实用于 encrypt 的 Cipher 和口令派生，不是仅出现算法名。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+    "finding": {
+      "lineNo": 97,
+      "ruleId": "C7",
+      "operationType": "KEY_DERIVATION",
+      "operation": "KDF_PARAMETERS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "对应 encrypt/decrypt 的 PBEParameterSpec 使用 ITERATIONCOUNT=1000；低迭代的配置成立，读取条目明确为解密用途。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+    "finding": {
+      "lineNo": 99,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "PBEWITHMD5ANDDES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "同一加解密算法。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+    "finding": {
+      "lineNo": 126,
+      "ruleId": "C7",
+      "operationType": "KEY_DERIVATION",
+      "operation": "KDF_PARAMETERS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "对应 encrypt/decrypt 的 PBEParameterSpec 使用 ITERATIONCOUNT=1000；低迭代的配置成立，读取条目明确为解密用途。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+    "finding": {
+      "lineNo": 128,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "PBEWITHMD5ANDDES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "同一加解密算法。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "finding": {
+      "lineNo": 34,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "EncryptedString.key 字面量 → AesEncryptUtil.KEY → encrypt 的 SecretKeySpec/cipher.init。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "finding": {
+      "lineNo": 34,
+      "ruleId": "C3",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "EncryptedString.iv 字面量 → AesEncryptUtil.IV → encrypt 的 IvParameterSpec/cipher.init。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "finding": {
+      "lineNo": 46,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "AES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "EncryptedString.key 字面量 → AesEncryptUtil.KEY → encrypt 的 SecretKeySpec/cipher.init。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "finding": {
+      "lineNo": 50,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "AES-CBC encrypt只返回Base64密文，无MAC/tag；从工厂34行移动到doFinal的50行。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "finding": {
+      "lineNo": 72,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "默认 desEncrypt 重载把 EncryptedString.key 传入，生成 SecretKeySpec 后用于解密。Cipher 与 SecretKeySpec 两个位置描述同一密钥实例，合并为一组。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "finding": {
+      "lineNo": 73,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "AES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "默认 desEncrypt 重载把 EncryptedString.key 传入，生成 SecretKeySpec 后用于解密。Cipher 与 SecretKeySpec 两个位置描述同一密钥实例，合并为一组。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+    "finding": {
+      "lineNo": 30,
+      "ruleId": "C16",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "SIGNATURE",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "类型明确的 Hutool Sign 构造参数 SHA1withRSA。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+    "finding": {
+      "lineNo": 36,
+      "ruleId": "C1",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "AES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "按实际依赖 Hutool 5.3.8 的 SecureUtil.aes 默认 ECB 建模；实际包装调用已对应。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+    "finding": {
+      "lineNo": 53,
+      "ruleId": "C1",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "按实际依赖 Hutool 5.3.8 的 SecureUtil.aes 默认 ECB 建模；实际包装调用已对应。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+    "finding": {
+      "lineNo": 60,
+      "ruleId": "C16",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "SIGNATURE",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "类型明确的 Hutool Sign 构造参数 SHA1withRSA。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "jeecg-module-system/jeecg-system-biz/src/main/java/org/jeecg/modules/cas/util/CasServiceUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-module-system/jeecg-system-biz/src/main/java/org/jeecg/modules/cas/util/CasServiceUtil.java",
+    "finding": {
+      "lineNo": 92,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "createHttpClientWithNoSsl() installs an X509TrustManager whose checkServerTrusted is empty, so the CAS ticket-validation HTTPS client accepts any server certificate."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "driver/src/main/java/com/alibaba/otter/canal/parse/driver/mysql/utils/MySQLPasswordEncrypter.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/driver/src/main/java/com/alibaba/otter/canal/parse/driver/mysql/utils/MySQLPasswordEncrypter.java",
+    "finding": {
+      "lineNo": 46,
+      "ruleId": "C6",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "scramble411 明确先 SHA1(pass)，随后二次 SHA1 与 seed 混合，真实口令认证路径使用快速口令散列。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "instance/manager/src/main/java/com/alibaba/otter/canal/instance/manager/plain/HttpHelper.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/instance/manager/src/main/java/com/alibaba/otter/canal/instance/manager/plain/HttpHelper.java",
+    "finding": {
+      "lineNo": 57,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "loadTrustMaterial(null, (x509Certificates, s) -> true): the config-manager HTTPS client trusts any certificate."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "instance/manager/src/main/java/com/alibaba/otter/canal/instance/manager/plain/HttpHelper.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/instance/manager/src/main/java/com/alibaba/otter/canal/instance/manager/plain/HttpHelper.java",
+    "finding": {
+      "lineNo": 63,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "new SSLConnectionSocketFactory(sslContext, NoopHostnameVerifier.INSTANCE): hostname verification is disabled."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/BinlogDownloadQueue.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/BinlogDownloadQueue.java",
+    "finding": {
+      "lineNo": 180,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "The binlog download client trusts any certificate (loadTrustMaterial with a lambda that returns true)."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/BinlogDownloadQueue.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/BinlogDownloadQueue.java",
+    "finding": {
+      "lineNo": 188,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "The binlog download client uses NoopHostnameVerifier.INSTANCE: hostname verification is disabled."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/HttpHelper.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/HttpHelper.java",
+    "finding": {
+      "lineNo": 138,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "The RDS HTTPS helper trusts any certificate (loadTrustMaterial with a lambda that returns true)."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/HttpHelper.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/HttpHelper.java",
+    "finding": {
+      "lineNo": 146,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "The RDS HTTPS helper uses NoopHostnameVerifier.INSTANCE: hostname verification is disabled."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/HttpHelper.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/HttpHelper.java",
+    "finding": {
+      "lineNo": 199,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "Second RDS HTTPS helper method: loadTrustMaterial with a lambda that returns true."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/HttpHelper.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/HttpHelper.java",
+    "finding": {
+      "lineNo": 207,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "Second RDS HTTPS helper method: NoopHostnameVerifier.INSTANCE."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/request/AbstractRequest.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/request/AbstractRequest.java",
+    "finding": {
+      "lineNo": 196,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "loadTrustMaterial(null, (TrustStrategy) (arg0, arg1) -> true) trusts every certificate chain for the RDS API client."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/request/AbstractRequest.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/request/AbstractRequest.java",
+    "finding": {
+      "lineNo": 197,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "The SSLConnectionSocketFactory is built with ALLOW_ALL_HOSTNAME_VERIFIER: no hostname check."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/request/AbstractRequest.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/request/AbstractRequest.java",
+    "finding": {
+      "lineNo": 197,
+      "ruleId": "C18",
+      "operationType": "TRANSPORT",
+      "operation": "CONFIGURE_TLS",
+      "algorithm": "TLSV1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "The same SSLConnectionSocketFactory enables only {\"TLSv1\"}, a deprecated protocol version."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "protocol/src/main/java/com/alibaba/otter/canal/protocol/SecurityUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/protocol/src/main/java/com/alibaba/otter/canal/protocol/SecurityUtil.java",
+    "finding": {
+      "lineNo": 44,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "scrambleGenPass 将口令做两次 SHA1 后存为用户口令凭据，缺少慢速口令 KDF；这是实际安全用途。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "protocol/src/main/java/com/alibaba/otter/canal/protocol/SecurityUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/protocol/src/main/java/com/alibaba/otter/canal/protocol/SecurityUtil.java",
+    "finding": {
+      "lineNo": 69,
+      "ruleId": "C6",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "scramble411 对明文口令进行快速 SHA1、再哈希并混合挑战，密码变换没有慢速 KDF；是协议中真实存在的弱口令变换路径。"
+  },
+  {
+    "language": "java",
+    "snapshot": "baomidou__mybatis-plus/2023-08-06_0f2300c85713",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "mybatis-plus-core/src/main/java/com/baomidou/mybatisplus/core/toolkit/AES.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/baomidou__mybatis-plus/2023-08-06_0f2300c85713/mybatis-plus-core/src/main/java/com/baomidou/mybatisplus/core/toolkit/AES.java",
+    "finding": {
+      "lineNo": 49,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "AES-CBC加密只返回cipher.doFinal(data)，没有认证；从工厂47行移动到消费49行。"
+  },
+  {
+    "language": "java",
+    "snapshot": "baomidou__mybatis-plus/2023-08-06_0f2300c85713",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "mybatis-plus-core/src/main/java/com/baomidou/mybatisplus/core/toolkit/AES.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/baomidou__mybatis-plus/2023-08-06_0f2300c85713/mybatis-plus-core/src/main/java/com/baomidou/mybatisplus/core/toolkit/AES.java",
+    "finding": {
+      "lineNo": 107,
+      "ruleId": "C9",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_GENERATION",
+      "algorithm": "UNKNOWN",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "ThreadLocalRandom.nextLong → UUID 构造 → toString/replace → get32UUID → substring。显式 generateRandomKey API 位于实际使用 JCE KeySpec/Cipher 的加密工具类，来源有完整证据。主源码范围不包含 AESTest 调用者，按密钥生成 API 判定；不声称所有运行时 AES 调用均使用该密钥。"
+  },
+  {
+    "language": "java",
+    "snapshot": "baomidou__mybatis-plus/2023-08-06_0f2300c85713",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "mybatis-plus-core/src/main/java/com/baomidou/mybatisplus/core/toolkit/IdWorker.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/baomidou__mybatis-plus/2023-08-06_0f2300c85713/mybatis-plus-core/src/main/java/com/baomidou/mybatisplus/core/toolkit/IdWorker.java",
+    "finding": {
+      "lineNo": 122,
+      "ruleId": "C9",
+      "operationType": "RANDOMNESS",
+      "operation": "GENERATE",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "ThreadLocalRandom 的两个 nextLong 组成 UUID；AES.generateRandomKey 明确截取其前 16 个字符作为密钥。普通 ID 用途不抵消这条密钥消费者。原告警不区分同一行两个调用，保存二者候选而不任意选一个。"
+  },
+  {
+    "language": "java",
+    "snapshot": "halo-dev__halo/2024-01-15_3de60dd93879",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "application/src/main/java/run/halo/app/security/authentication/login/impl/RsaKeyService.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/halo-dev__halo/2024-01-15_3de60dd93879/application/src/main/java/run/halo/app/security/authentication/login/impl/RsaKeyService.java",
+    "finding": {
+      "lineNo": 90,
+      "ruleId": "C11",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "RSA",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "Cipher.getInstance(\"RSA\") resolves to RSA/ECB/PKCS1Padding in the JDK providers. ALGORITHM = \"RSA\"; decrypt() decrypts the browser-encrypted login password with the private key using PKCS#1 v1.5."
+  },
+  {
+    "language": "java",
+    "snapshot": "halo-dev__halo/2024-01-15_3de60dd93879",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "application/src/main/java/run/halo/app/security/authentication/twofactor/totp/DefaultTotpAuthService.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/halo-dev__halo/2024-01-15_3de60dd93879/application/src/main/java/run/halo/app/security/authentication/twofactor/totp/DefaultTotpAuthService.java",
+    "finding": {
+      "lineNo": 52,
+      "ruleId": "C2",
+      "operationType": "KEY_STORAGE",
+      "operation": "ACCESS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "KeyStore 使用固定口令 changeit；前一轮整仓扫描已检出。"
+  },
+  {
+    "language": "java",
+    "snapshot": "halo-dev__halo/2024-01-15_3de60dd93879",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "application/src/main/java/run/halo/app/security/authentication/twofactor/totp/DefaultTotpAuthService.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/halo-dev__halo/2024-01-15_3de60dd93879/application/src/main/java/run/halo/app/security/authentication/twofactor/totp/DefaultTotpAuthService.java",
+    "finding": {
+      "lineNo": 71,
+      "ruleId": "C2",
+      "operationType": "KEY_STORAGE",
+      "operation": "ACCESS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "KeyStore 使用固定口令 changeit；前一轮整仓扫描已检出。"
+  },
+  {
+    "language": "java",
+    "snapshot": "signalapp__Signal-Android/2020-12-06_2dcc7d284f84",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "app/src/main/java/org/thoughtcrime/securesms/crypto/MasterSecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2020-12-06_2dcc7d284f84/app/src/main/java/org/thoughtcrime/securesms/crypto/MasterSecretUtil.java",
+    "finding": {
+      "lineNo": 307,
+      "ruleId": "C7",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "自适应迭代生成具有 100 的明确最小值和异常回退，再被实际口令派生消费；低迭代分支存在。不能断言正常测时结果必定小于 10000。2023 版相关行整体下移 2 行。"
+  },
+  {
+    "language": "java",
+    "snapshot": "signalapp__Signal-Android/2023-03-04_c30e3664b8d5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "app/src/main/java/org/thoughtcrime/securesms/crypto/ModernDecryptingPartInputStream.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2023-03-04_c30e3664b8d5/app/src/main/java/org/thoughtcrime/securesms/crypto/ModernDecryptingPartInputStream.java",
+    "finding": {
+      "lineNo": 63,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "AES",
+      "mode": "CTR"
+    },
+    "verdict": "TP",
+    "reason": "The FileStorage reader loads the inline header and returns an AES/CTR CipherInputStream without verifying ciphertext integrity. This is the read endpoint of the C4 finding at ModernEncryptingPartOutputStream.java:52."
+  },
+  {
+    "language": "java",
+    "snapshot": "signalapp__Signal-Android/2020-12-06_2dcc7d284f84",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "app/src/main/java/org/thoughtcrime/securesms/crypto/MasterSecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2020-12-06_2dcc7d284f84/app/src/main/java/org/thoughtcrime/securesms/crypto/MasterSecretUtil.java",
+    "finding": {
+      "lineNo": 317,
+      "ruleId": "C7",
+      "operationType": "KEY_DERIVATION",
+      "operation": "KDF_PARAMETERS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "自适应迭代生成具有 100 的明确最小值和异常回退，再被实际口令派生消费；低迭代分支存在。不能断言正常测时结果必定小于 10000。2023 版相关行整体下移 2 行。"
+  },
+  {
+    "language": "java",
+    "snapshot": "signalapp__Signal-Android/2020-12-06_2dcc7d284f84",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "app/src/main/java/org/thoughtcrime/securesms/crypto/ModernEncryptingPartOutputStream.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2020-12-06_2dcc7d284f84/app/src/main/java/org/thoughtcrime/securesms/crypto/ModernEncryptingPartOutputStream.java",
+    "finding": {
+      "lineNo": 45,
+      "ruleId": "C3",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CTR"
+    },
+    "verdict": "FP",
+    "reason": "每个文件先生成32字节密码学随机值，再以HMAC派生新AES密钥；全零CTR初值未与同一密钥重复使用。工具只看固定IV、未联查每文件新密钥，因此误报C3；独立的C4流式加密问题仍存在。"
+  },
+  {
+    "language": "java",
+    "snapshot": "signalapp__Signal-Android/2020-12-06_2dcc7d284f84",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "app/src/main/java/org/thoughtcrime/securesms/crypto/ModernEncryptingPartOutputStream.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2020-12-06_2dcc7d284f84/app/src/main/java/org/thoughtcrime/securesms/crypto/ModernEncryptingPartOutputStream.java",
+    "finding": {
+      "lineNo": 52,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CTR"
+    },
+    "verdict": "TP",
+    "reason": "createFor() initializes AES/CTR in ENCRYPT_MODE and returns it wrapped in a CipherOutputStream; the class comment states the on-disk format intentionally no longer includes authentication, and the HMAC here only derives the key from random bytes."
+  },
+  {
+    "language": "java",
+    "snapshot": "signalapp__Signal-Android/2020-12-06_2dcc7d284f84",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "app/src/main/java/org/thoughtcrime/securesms/crypto/PublicKey.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2020-12-06_2dcc7d284f84/app/src/main/java/org/thoughtcrime/securesms/crypto/PublicKey.java",
+    "finding": {
+      "lineNo": 88,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "摘要构造的是 EC 公钥 fingerprint，属于安全身份指纹 API，依赖碰撞抗性；不是文件缓存键。没有找到仓库内实际消费者，所以只能证明这个公共 API 的条件性误用，不能宣称现行安全号码 UI 正在调用它。"
+  },
+  {
+    "language": "java",
+    "snapshot": "Grasscutters__Grasscutter/2023-09-17_047feaf4aae5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "src/main/java/emu/grasscutter/utils/Crypto.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/utils/Crypto.java",
+    "finding": {
+      "lineNo": 22,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "TRANSFORM",
+      "algorithm": "XOR",
+      "mode": "REPEATING_KEY"
+    },
+    "verdict": "TP",
+    "reason": "The fixed ENCRYPT_SEED reaches the XOR key argument in the compatibility branch through the session field default, its getter, and long-to-byte conversion. This is the seed at the location named by report row 19."
+  },
+  {
+    "language": "java",
+    "snapshot": "Grasscutters__Grasscutter/2023-09-17_047feaf4aae5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "src/main/java/emu/grasscutter/utils/Crypto.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/utils/Crypto.java",
+    "finding": {
+      "lineNo": 85,
+      "ruleId": "C9",
+      "operationType": "RANDOMNESS",
+      "operation": "GENERATE",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "MersenneTwister64.nextLong 的输出填满 encryptKey 并用于会话 XOR 加密；SecureRandom 初始种子不使 MT 成为密码学随机生成器。同位置 C9/C9 合并。"
+  },
+  {
+    "language": "java",
+    "snapshot": "Grasscutters__Grasscutter/2023-09-17_047feaf4aae5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "src/main/java/emu/grasscutter/utils/Crypto.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/utils/Crypto.java",
+    "finding": {
+      "lineNo": 104,
+      "ruleId": "C11",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "RSA",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "RSA/ECB/PKCS1Padding encrypts the region data with the client's public key (EncryptionKeys). The game client protocol fixes this padding, but it is still PKCS#1 v1.5 encryption."
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__druid/2023-11-07_0a9425de5806",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__druid/2023-11-07_0a9425de5806/core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+    "finding": {
+      "lineNo": 115,
+      "ruleId": "C13",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "RSA",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "从默认 Base64 编码的 X.509/PKCS#8 RSA 密钥解析 modulus，实际为 512 位；不是根据编码长度估计。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__druid/2023-11-07_0a9425de5806",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__druid/2023-11-07_0a9425de5806/core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+    "finding": {
+      "lineNo": 115,
+      "ruleId": "C2",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "RSA",
+      "mode": "ECB"
+    },
+    "verdict": "FP",
+    "reason": "此处使用DEFAULT_PUBLIC_KEY_STRING生成公钥并解密；公钥允许公开，不能当作硬编码秘密。另一个固定私钥和512位RSA告警分别保留。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__druid/2023-11-07_0a9425de5806",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__druid/2023-11-07_0a9425de5806/core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+    "finding": {
+      "lineNo": 156,
+      "ruleId": "C13",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "RSA",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "从默认 Base64 编码的 X.509/PKCS#8 RSA 密钥解析 modulus，实际为 512 位；不是根据编码长度估计。"
+  },
+  {
+    "language": "java",
+    "snapshot": "alibaba__druid/2023-11-07_0a9425de5806",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__druid/2023-11-07_0a9425de5806/core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+    "finding": {
+      "lineNo": 156,
+      "ruleId": "C2",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "RSA",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "告警证据包含固定默认密钥文字。"
+  },
+  {
+    "language": "java",
+    "snapshot": "signalapp__Signal-Android/2023-03-04_c30e3664b8d5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "app/src/main/java/org/thoughtcrime/securesms/crypto/MasterSecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2023-03-04_c30e3664b8d5/app/src/main/java/org/thoughtcrime/securesms/crypto/MasterSecretUtil.java",
+    "finding": {
+      "lineNo": 309,
+      "ruleId": "C7",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "自适应迭代生成具有 100 的明确最小值和异常回退，再被实际口令派生消费；低迭代分支存在。不能断言正常测时结果必定小于 10000。2023 版相关行整体下移 2 行。"
+  },
+  {
+    "language": "java",
+    "snapshot": "signalapp__Signal-Android/2023-03-04_c30e3664b8d5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "app/src/main/java/org/thoughtcrime/securesms/crypto/MasterSecretUtil.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2023-03-04_c30e3664b8d5/app/src/main/java/org/thoughtcrime/securesms/crypto/MasterSecretUtil.java",
+    "finding": {
+      "lineNo": 319,
+      "ruleId": "C7",
+      "operationType": "KEY_DERIVATION",
+      "operation": "KDF_PARAMETERS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "自适应迭代生成具有 100 的明确最小值和异常回退，再被实际口令派生消费；低迭代分支存在。不能断言正常测时结果必定小于 10000。2023 版相关行整体下移 2 行。"
+  },
+  {
+    "language": "java",
+    "snapshot": "signalapp__Signal-Android/2023-03-04_c30e3664b8d5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "app/src/main/java/org/thoughtcrime/securesms/crypto/ModernEncryptingPartOutputStream.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2023-03-04_c30e3664b8d5/app/src/main/java/org/thoughtcrime/securesms/crypto/ModernEncryptingPartOutputStream.java",
+    "finding": {
+      "lineNo": 45,
+      "ruleId": "C3",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CTR"
+    },
+    "verdict": "FP",
+    "reason": "每个文件先生成32字节密码学随机值，再以HMAC派生新AES密钥；全零CTR初值未与同一密钥重复使用。工具只看固定IV、未联查每文件新密钥，因此误报C3；独立的C4流式加密问题仍存在。"
+  },
+  {
+    "language": "java",
+    "snapshot": "signalapp__Signal-Android/2023-03-04_c30e3664b8d5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "app/src/main/java/org/thoughtcrime/securesms/crypto/ModernEncryptingPartOutputStream.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2023-03-04_c30e3664b8d5/app/src/main/java/org/thoughtcrime/securesms/crypto/ModernEncryptingPartOutputStream.java",
+    "finding": {
+      "lineNo": 52,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CTR"
+    },
+    "verdict": "TP",
+    "reason": "createFor() initializes AES/CTR in ENCRYPT_MODE and returns it wrapped in a CipherOutputStream; the class comment states the on-disk format intentionally no longer includes authentication, and the HMAC here only derives the key from random bytes."
+  },
+  {
+    "language": "java",
+    "snapshot": "signalapp__Signal-Android/2023-03-04_c30e3664b8d5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "app/src/main/java/org/thoughtcrime/securesms/crypto/PublicKey.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2023-03-04_c30e3664b8d5/app/src/main/java/org/thoughtcrime/securesms/crypto/PublicKey.java",
+    "finding": {
+      "lineNo": 88,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "摘要构造的是 EC 公钥 fingerprint，属于安全身份指纹 API，依赖碰撞抗性；不是文件缓存键。没有找到仓库内实际消费者，所以只能证明这个公共 API 的条件性误用，不能宣称现行安全号码 UI 正在调用它。"
+  },
+  {
+    "language": "java",
+    "snapshot": "dbeaver__dbeaver/2024-01-10_d33308b4f164",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "finding": {
+      "lineNo": 58,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "3DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DES 或 DESede 分支构造的密钥实际用于 encrypt 和 decrypt；默认构造器选择 DES。"
+  },
+  {
+    "language": "java",
+    "snapshot": "dbeaver__dbeaver/2024-01-10_d33308b4f164",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "finding": {
+      "lineNo": 58,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "3DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "默认字面量 → getBytes(Charset.defaultCharset()) → DESedeKeySpec/DESKeySpec；编码配置不是密钥来源。"
+  },
+  {
+    "language": "java",
+    "snapshot": "dbeaver__dbeaver/2024-01-10_d33308b4f164",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "finding": {
+      "lineNo": 60,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DES 或 DESede 分支构造的密钥实际用于 encrypt 和 decrypt；默认构造器选择 DES。"
+  },
+  {
+    "language": "java",
+    "snapshot": "dbeaver__dbeaver/2024-01-10_d33308b4f164",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "finding": {
+      "lineNo": 60,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "默认字面量 → getBytes(Charset.defaultCharset()) → DESedeKeySpec/DESKeySpec；编码配置不是密钥来源。"
+  },
+  {
+    "language": "java",
+    "snapshot": "dbeaver__dbeaver/2024-01-10_d33308b4f164",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "finding": {
+      "lineNo": 66,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "CONFIGURE",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "同一 DES 密钥工厂配置。"
+  },
+  {
+    "language": "java",
+    "snapshot": "dbeaver__dbeaver/2024-01-10_d33308b4f164",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "finding": {
+      "lineNo": 89,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "DES",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "构造器建立的DES Cipher在encrypt中实际使用，只返回Base64密文，无配套认证；新版连接了构造器字段与doFinal。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2024-01-10_321f26c01f5e",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 158,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "encryptV3Format() encrypts the license key with an AES cipher from getEncryptionCipher -> getCipher(Cipher.ENCRYPT_MODE, ...) and returns the bare doFinal output; CryptUtils applies no MAC."
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2024-01-10_321f26c01f5e",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 179,
+      "ruleId": "C2",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "getV3Key() builds the PBEKeySpec password as Base64(SHA-512(\"elasticsearch-license\")): a fixed value computed from a string constant, i.e. a hard-coded license-encryption passphrase (same secret as report row 11)."
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2024-01-10_321f26c01f5e",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 179,
+      "ruleId": "C7",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "同一 `PBEKeySpec(...,1024,...)`。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2024-01-10_321f26c01f5e",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 179,
+      "ruleId": "C8",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "盐的字节在源码中固定：V3 的本地数组和 deriveSecretKey 的 SALT；工厂不是缺盐，但其关联派生确实使用固定盐。工厂与同一 PBEKeySpec 的两条告警合并。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2024-01-10_321f26c01f5e",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 191,
+      "ruleId": "C8",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "盐的字节在源码中固定：V3 的本地数组和 deriveSecretKey 的 SALT；工厂不是缺盐，但其关联派生确实使用固定盐。工厂与同一 PBEKeySpec 的两条告警合并。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2024-01-10_321f26c01f5e",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 194,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "AES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "KEY / KEY_DEFAULT 明确为 \"elasticsearch-license\"；KEY_PATH 记录默认调用参数、PBEKeySpec、generateSecret、getEncoded、SecretKeySpec，并继续传到 cipher.init。派生算法不抹除固定口令来源。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2024-01-10_321f26c01f5e",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 210,
+      "ruleId": "C1",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "CONFIGURE",
+      "algorithm": "AES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "CIPHER_ALGORITHM=\"AES\" 的默认变换用于实际多字节密钥文件加解密；SunJCE 默认是 ECB/PKCS5Padding，随机源参数不为 ECB 添加随机 IV。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2024-01-10_321f26c01f5e",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 210,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "CONFIGURE",
+      "algorithm": "AES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "KEY / KEY_DEFAULT 明确为 \"elasticsearch-license\"；KEY_PATH 记录默认调用参数、PBEKeySpec、generateSecret、getEncoded、SecretKeySpec，并继续传到 cipher.init。派生算法不抹除固定口令来源。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-10-07_7fdff6d45614",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/watcher/crypto/CryptoService.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-10-07_7fdff6d45614/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/watcher/crypto/CryptoService.java",
+    "finding": {
+      "lineNo": 168,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CTR"
+    },
+    "verdict": "TP",
+    "reason": "encryptInternal() gets an AES/CTR cipher from the helper cipher(Cipher.ENCRYPT_MODE, ...) and returns iv + doFinal(bytes); no MAC is computed anywhere in CryptoService, so the stored watcher secrets are unauthenticated (CryptoGPT report row 26)."
+  },
+  {
+    "language": "java",
+    "snapshot": "apache__incubator-seata/2024-01-30_ee6f660d89f7",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "common/src/main/java/org/apache/seata/common/util/ConfigTools.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/apache__incubator-seata/2024-01-30_ee6f660d89f7/common/src/main/java/org/apache/seata/common/util/ConfigTools.java",
+    "finding": {
+      "lineNo": 76,
+      "ruleId": "C11",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "RSA",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "Cipher.getInstance(\"RSA\") resolves to RSA/ECB/PKCS1Padding in the JDK providers. publicEncrypt() encrypts configuration values with the public key."
+  },
+  {
+    "language": "java",
+    "snapshot": "apache__incubator-seata/2024-01-30_ee6f660d89f7",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "common/src/main/java/org/apache/seata/common/util/ConfigTools.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/apache__incubator-seata/2024-01-30_ee6f660d89f7/common/src/main/java/org/apache/seata/common/util/ConfigTools.java",
+    "finding": {
+      "lineNo": 103,
+      "ruleId": "C11",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "RSA",
+      "mode": "UNKNOWN"
+    },
+    "verdict": "TP",
+    "reason": "Cipher.getInstance(\"RSA\") resolves to RSA/ECB/PKCS1Padding in the JDK providers. privateDecrypt() decrypts them with the private key. privateEncrypt/publicDecrypt (signature direction) are not reported."
+  },
+  {
+    "language": "java",
+    "snapshot": "dbeaver__dbeaver/2024-01-10_d33308b4f164",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/model/impl/app/CertificateGenHelper.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/model/impl/app/CertificateGenHelper.java",
+    "finding": {
+      "lineNo": 57,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "NON_VALIDATING_TRUST_MANAGERS is a public X509TrustManager with empty check methods (marked FIXME 'Not secure at all') offered for connections to untrusted servers."
+  },
+  {
+    "language": "java",
+    "snapshot": "dbeaver__dbeaver/2024-01-10_d33308b4f164",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/model/impl/app/DefaultValueEncryptor.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/model/impl/app/DefaultValueEncryptor.java",
+    "finding": {
+      "lineNo": 70,
+      "ruleId": "C12",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "AES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "同一 `SecretKeySpec`，未经过 KDF。"
+  },
+  {
+    "language": "java",
+    "snapshot": "dbeaver__dbeaver/2024-01-10_d33308b4f164",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/model/impl/app/DefaultValueEncryptor.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/model/impl/app/DefaultValueEncryptor.java",
+    "finding": {
+      "lineNo": 90,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "encryptValue() initializes the AES/CBC field cipher in ENCRYPT_MODE and writes the value through a CipherOutputStream; the result is iv + ciphertext with no MAC."
+  },
+  {
+    "language": "java",
+    "snapshot": "keycloak__keycloak/2023-12-19_751cadc514ee",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "saml-core/src/main/java/org/keycloak/saml/BaseSAML2BindingBuilder.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/keycloak__keycloak/2023-12-19_751cadc514ee/saml-core/src/main/java/org/keycloak/saml/BaseSAML2BindingBuilder.java",
+    "finding": {
+      "lineNo": 69,
+      "ruleId": "C16",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "SIGNATURE",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "RSA_SHA1 字段默认值 → 同一 owner/字段的 createSignature 实际调用。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2022-03-22_06118bd6daa3",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2022-03-22_06118bd6daa3/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "finding": {
+      "lineNo": 518,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "同一 DES 密钥操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2022-03-22_06118bd6daa3",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2022-03-22_06118bd6daa3/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "finding": {
+      "lineNo": 521,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "3DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "同一 3DES 密钥操作。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2022-03-22_06118bd6daa3",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/TrustEverythingConfig.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2022-03-22_06118bd6daa3/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/TrustEverythingConfig.java",
+    "finding": {
+      "lineNo": 41,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "TRUST_MANAGER is an X509ExtendedTrustManager whose six check methods are all empty; it is reported once. Elasticsearch uses it when an administrator sets ssl.verification_mode: none, so the bypass is configuration-gated."
+  },
+  {
+    "language": "java",
+    "snapshot": "jenkinsci__jenkins/2022-01-04_7e8b5b37f76f",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/jenkins/slaves/EncryptedSlaveAgentJnlpFile.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/jenkins/slaves/EncryptedSlaveAgentJnlpFile.java",
+    "finding": {
+      "lineNo": 102,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CFB8"
+    },
+    "verdict": "TP",
+    "reason": "encrypt=true分支把JNLP响应通过AES-CFB8加密，仅发送IV与密文；jnlpMac用于构造密钥，不认证本条响应。100行工厂重新定位至102行消费。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jenkinsci__jenkins/2022-01-04_7e8b5b37f76f",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/jenkins/slaves/JnlpSlaveAgentProtocol4.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/jenkins/slaves/JnlpSlaveAgentProtocol4.java",
+    "finding": {
+      "lineNo": 123,
+      "ruleId": "C2",
+      "operationType": "KEY_STORAGE",
+      "operation": "ACCESS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "FP",
+    "reason": "固定口令只保护内存KeyStore的条目，随后用于KeyManagerFactory；该容器未序列化或写出。工具未区分内存容器与持久化密钥库，因此误报C2。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jenkinsci__jenkins/2022-01-04_7e8b5b37f76f",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/jenkins/slaves/JnlpSlaveAgentProtocol4.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/jenkins/slaves/JnlpSlaveAgentProtocol4.java",
+    "finding": {
+      "lineNo": 191,
+      "ruleId": "C2",
+      "operationType": "KEY_STORAGE",
+      "operation": "ACCESS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "FP",
+    "reason": "固定口令只保护内存KeyStore的条目，随后用于KeyManagerFactory；该容器未序列化或写出。工具未区分内存容器与持久化密钥库，因此误报C2。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jenkinsci__jenkins/2022-01-04_7e8b5b37f76f",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/hudson/Util.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/hudson/Util.java",
+    "finding": {
+      "lineNo": 653,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "getMd5 虽声明仅供非安全用途，仓库实际 ApiTokenProperty/ApiTokenStore 用 getDigestOf 形成旧 API token；调用者证明存在安全分支。普通文件指纹用途不重复计漏洞。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jenkinsci__jenkins/2022-01-04_7e8b5b37f76f",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/hudson/cli/Connection.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/hudson/cli/Connection.java",
+    "finding": {
+      "lineNo": 166,
+      "ruleId": "C13",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "KEY_GENERATION",
+      "algorithm": "DH",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DH 参数工厂的同一 receiver；默认 keySize=512 → paramGen.init(keySize)。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jenkinsci__jenkins/2022-01-04_7e8b5b37f76f",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/hudson/cli/Connection.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/hudson/cli/Connection.java",
+    "finding": {
+      "lineNo": 248,
+      "ruleId": "C16",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "SIGNATURE",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "JCA Signature.getInstance 的 SHA1with 前缀；后半算法来自运行时仍不改变摘要。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jenkinsci__jenkins/2022-01-04_7e8b5b37f76f",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/hudson/cli/Connection.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/hudson/cli/Connection.java",
+    "finding": {
+      "lineNo": 264,
+      "ruleId": "C16",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "SIGNATURE",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "JCA Signature.getInstance 的 SHA1with 前缀；后半算法来自运行时仍不改变摘要。"
+  },
+  {
+    "language": "java",
+    "snapshot": "jenkinsci__jenkins/2022-01-04_7e8b5b37f76f",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/hudson/util/Protector.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/hudson/util/Protector.java",
+    "finding": {
+      "lineNo": 64,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "AES-CBC输出IV＋密文；MAGIC固定后缀不是认证标签。62行工厂重新定位至64行消费。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/CommandLineHttpClient.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/CommandLineHttpClient.java",
+    "finding": {
+      "lineNo": 162,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "httpsConn.setHostnameVerifier((hostname, session) -> true) disables hostname verification for the CLI HTTP client when the configured verification mode skips hostnames (configuration-gated)."
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authc/support/Hasher.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authc/support/Hasher.java",
+    "finding": {
+      "lineNo": 603,
+      "ruleId": "C7",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "cost 是参数，但实际 PBKDF2_1000/PBKDF2_STRETCH_1000 调用路径明确传入 1000；只针对该低成本配置分支计真命中，不断言所有 PBKDF2 配置弱。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/watcher/crypto/CryptoService.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/watcher/crypto/CryptoService.java",
+    "finding": {
+      "lineNo": 168,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CTR"
+    },
+    "verdict": "TP",
+    "reason": "encryptInternal() gets an AES/CTR cipher from the helper cipher(Cipher.ENCRYPT_MODE, ...) and returns iv + doFinal(bytes); no MAC is computed anywhere in CryptoService, so the stored watcher secrets are unauthenticated (CryptoGPT report row 26)."
+  },
+  {
+    "language": "java",
+    "snapshot": "yuliskov__SmartTube/2026-09-28_969ad621e275",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "exoplayer-amzn-2.10.6/library/core/src/main/java/com/google/android/exoplayer2/upstream/cache/CachedContentIndex.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/yuliskov__SmartTube/2026-09-28_969ad621e275/exoplayer-amzn-2.10.6/library/core/src/main/java/com/google/android/exoplayer2/upstream/cache/CachedContentIndex.java",
+    "finding": {
+      "lineNo": 635,
+      "ruleId": "C9",
+      "operationType": "RANDOMNESS",
+      "operation": "GENERATE",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "encrypt=true 时使用 java.util.Random 生成 CBC IV，实际初始化加密 Cipher。审核的是下载的 2026 替代版本，不可回填为原报告 2022 年真值命中。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "finding": {
+      "lineNo": 518,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DES-CBC/DES-EDE3-CBC 分支产生的密钥进入相同算法 CBC Cipher 解密；保留为弱算法兼容读取用途，而非新建加密。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "finding": {
+      "lineNo": 521,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "3DES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DES-CBC/DES-EDE3-CBC 分支产生的密钥进入相同算法 CBC Cipher 解密；保留为弱算法兼容读取用途，而非新建加密。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "finding": {
+      "lineNo": 554,
+      "ruleId": "C6",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "传统 OpenSSL PEM 读取分支确实使用少轮 salted MD5 形成解密密钥，属于慢速口令派生规则下的弱派生；明确为兼容读取，不宣传为新文件加密路径。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/TrustEverythingConfig.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/TrustEverythingConfig.java",
+    "finding": {
+      "lineNo": 41,
+      "ruleId": "C17",
+      "operationType": "VERIFICATION",
+      "operation": "BYPASS",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "TRUST_MANAGER is an X509ExtendedTrustManager whose six check methods are all empty; it is reported once. Elasticsearch uses it when an administrator sets ssl.verification_mode: none, so the bypass is configuration-gated."
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 158,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "encryptV3Format() encrypts the license key with an AES cipher from getEncryptionCipher -> getCipher(Cipher.ENCRYPT_MODE, ...) and returns the bare doFinal output; CryptUtils applies no MAC."
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 179,
+      "ruleId": "C2",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "getV3Key() builds the PBEKeySpec password as Base64(SHA-512(\"elasticsearch-license\")): a fixed value computed from a string constant, i.e. a hard-coded license-encryption passphrase (same secret as report row 11)."
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 179,
+      "ruleId": "C7",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "V3 的 PBEKeySpec 明确迭代 1024，低于现有 C7 的 10000 下限；不把另一分支恰好 10000 误算为低迭代。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 179,
+      "ruleId": "C8",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "盐的字节在源码中固定：V3 的本地数组和 deriveSecretKey 的 SALT；工厂不是缺盐，但其关联派生确实使用固定盐。工厂与同一 PBEKeySpec 的两条告警合并。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 191,
+      "ruleId": "C8",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "盐的字节在源码中固定：V3 的本地数组和 deriveSecretKey 的 SALT；工厂不是缺盐，但其关联派生确实使用固定盐。工厂与同一 PBEKeySpec 的两条告警合并。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 194,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_SPEC",
+      "algorithm": "AES",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DEFAULT_PASS_PHRASE 字面量通过无口令参数的重载流入 deriveSecretKey，最终到 AES 加密；虽有可传入自定义口令的重载，默认固定口令路径仍成立。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 210,
+      "ruleId": "C1",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "CONFIGURE",
+      "algorithm": "AES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "CIPHER_ALGORITHM=\"AES\" 的默认变换用于实际多字节密钥文件加解密；SunJCE 默认是 ECB/PKCS5Padding，随机源参数不为 ECB 添加随机 IV。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "finding": {
+      "lineNo": 210,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "CONFIGURE",
+      "algorithm": "AES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "DEFAULT_PASS_PHRASE 字面量通过无口令参数的重载流入 deriveSecretKey，最终到 AES 加密；虽有可传入自定义口令的重载，默认固定口令路径仍成立。"
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ssl/SSLService.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ssl/SSLService.java",
+    "finding": {
+      "lineNo": 339,
+      "ruleId": "C18",
+      "operationType": "TRANSPORT",
+      "operation": "CONFIGURE_TLS",
+      "algorithm": "TLSV1.1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "new SSLParameters(ciphers, supportedProtocols): when no protocols are configured, supportedProtocols comes from SslConfigurationLoader.DEFAULT_PROTOCOLS = [TLSv1.3,] TLSv1.2, TLSv1.1, so TLSv1.1 is enabled by default."
+  },
+  {
+    "language": "java",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ssl/SSLService.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ssl/SSLService.java",
+    "finding": {
+      "lineNo": 787,
+      "ruleId": "C18",
+      "operationType": "TRANSPORT",
+      "operation": "CONFIGURE_TLS",
+      "algorithm": "TLSV1.1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "SecuritySSLSocketFactory.configureSSLSocket applies the same default protocol list, which includes TLSv1.1."
+  },
+  {
+    "language": "java",
+    "snapshot": "jenkinsci__jenkins/2022-01-04_7e8b5b37f76f",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "core/src/main/java/hudson/util/Secret.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/hudson/util/Secret.java",
+    "finding": {
+      "lineNo": 136,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "KEY.encrypt(iv)调用CryptoConfidentialKey.encrypt，随后Secret.getEncryptedValue的136行执行doFinal，输出版本、长度、IV和密文，无认证标签。原CryptoConfidentialKey.java:76的告警移至真实消费者；目标模块单独扫描不报，扩展依赖范围仍命中。"
+  },
+  {
+    "language": "java",
+    "snapshot": "Grasscutters__Grasscutter/2023-09-17_047feaf4aae5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "src/main/java/emu/grasscutter/auth/DefaultAuthenticators.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/auth/DefaultAuthenticators.java",
+    "finding": {
+      "lineNo": 106,
+      "ruleId": "C11",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "RSA",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "RSA/ECB/PKCS1Padding decrypts the client-encrypted login password with the server's RSAPrivateKey."
+  },
+  {
+    "language": "java",
+    "snapshot": "Grasscutters__Grasscutter/2023-09-17_047feaf4aae5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "src/main/java/emu/grasscutter/server/game/GameSession.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/server/game/GameSession.java",
+    "finding": {
+      "lineNo": 147,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "TRANSFORM",
+      "algorithm": "XOR",
+      "mode": "REPEATING_KEY"
+    },
+    "verdict": "TP",
+    "reason": "typed readResource → 实际资源字节/哈希 → Crypto.ENCRYPT_KEY → GameSession.encryptKey → XOR。C2 自动证明可选配置分支使用随项目分发的固定密钥；实际运行是否关闭 useUniquePacketKey 未作断言。源码第22行种子与这份资源的关系仍由独立 Java MT 重建审核确认，未伪称检测器自动完成种子等价证明。"
+  },
+  {
+    "language": "java",
+    "snapshot": "Grasscutters__Grasscutter/2023-09-17_047feaf4aae5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "src/main/java/emu/grasscutter/server/game/GameSession.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/server/game/GameSession.java",
+    "finding": {
+      "lineNo": 147,
+      "ruleId": "C9",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "TRANSFORM",
+      "algorithm": "XOR",
+      "mode": "REPEATING_KEY"
+    },
+    "verdict": "TP",
+    "reason": "XOR 消费的会话 encryptKey 由 Crypto.generateEncryptKeyAndSeed 的 MT 输出生成；成立条件是 GAME_INFO.useUniquePacketKey 配置且使用会话密钥，不把静态 dispatchKey 分支称作随机数误用。"
+  },
+  {
+    "language": "java",
+    "snapshot": "Grasscutters__Grasscutter/2023-09-17_047feaf4aae5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "src/main/java/emu/grasscutter/server/game/GameSession.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/server/game/GameSession.java",
+    "finding": {
+      "lineNo": 165,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "TRANSFORM",
+      "algorithm": "XOR",
+      "mode": "REPEATING_KEY"
+    },
+    "verdict": "TP",
+    "reason": "typed readResource → 实际资源字节/哈希 → Crypto.ENCRYPT_KEY → GameSession.encryptKey → XOR。C2 自动证明可选配置分支使用随项目分发的固定密钥；实际运行是否关闭 useUniquePacketKey 未作断言。源码第22行种子与这份资源的关系仍由独立 Java MT 重建审核确认，未伪称检测器自动完成种子等价证明。"
+  },
+  {
+    "language": "java",
+    "snapshot": "Grasscutters__Grasscutter/2023-09-17_047feaf4aae5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "src/main/java/emu/grasscutter/server/game/GameSession.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/server/game/GameSession.java",
+    "finding": {
+      "lineNo": 165,
+      "ruleId": "C9",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "TRANSFORM",
+      "algorithm": "XOR",
+      "mode": "REPEATING_KEY"
+    },
+    "verdict": "TP",
+    "reason": "XOR 消费的会话 encryptKey 由 Crypto.generateEncryptKeyAndSeed 的 MT 输出生成；成立条件是 GAME_INFO.useUniquePacketKey 配置且使用会话密钥，不把静态 dispatchKey 分支称作随机数误用。"
+  },
+  {
+    "language": "java",
+    "snapshot": "Grasscutters__Grasscutter/2023-09-17_047feaf4aae5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "src/main/java/emu/grasscutter/server/http/dispatch/RegionHandler.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/server/http/dispatch/RegionHandler.java",
+    "finding": {
+      "lineNo": 124,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "TRANSFORM",
+      "algorithm": "XOR",
+      "mode": "REPEATING_KEY"
+    },
+    "verdict": "TP",
+    "reason": "DISPATCH_KEY 来自随代码发布的 keys/dispatchKey.bin，随后 XOR 配置；这是固定资源密钥，不是资源文件路径自身被当密钥。"
+  },
+  {
+    "language": "java",
+    "snapshot": "Grasscutters__Grasscutter/2023-09-17_047feaf4aae5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "src/main/java/emu/grasscutter/server/http/dispatch/RegionHandler.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/server/http/dispatch/RegionHandler.java",
+    "finding": {
+      "lineNo": 143,
+      "ruleId": "C2",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "TRANSFORM",
+      "algorithm": "XOR",
+      "mode": "REPEATING_KEY"
+    },
+    "verdict": "TP",
+    "reason": "DISPATCH_KEY 来自随代码发布的 keys/dispatchKey.bin，随后 XOR 配置；这是固定资源密钥，不是资源文件路径自身被当密钥。"
+  },
+  {
+    "language": "java",
+    "snapshot": "Grasscutters__Grasscutter/2023-09-17_047feaf4aae5",
+    "repository": null,
+    "commit": null,
+    "canonical_source": "src/main/java/emu/grasscutter/server/packet/recv/HandlerGetPlayerTokenReq.java",
+    "source": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/server/packet/recv/HandlerGetPlayerTokenReq.java",
+    "finding": {
+      "lineNo": 116,
+      "ruleId": "C11",
+      "operationType": "ASYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "RSA",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "RSA/ECB/PKCS1Padding decrypts the client's random seed with the server's private key (Crypto.CUR_SIGNING_KEY); the decrypted value seeds the session key exchange."
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "Tautulli/Tautulli",
+    "commit": "d0c1e467bd42bf3c38733b3bf324a7e6e81bcc39",
+    "canonical_source": "plexpy/notifiers.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/Tautulli__Tautulli/2023-11-20_d0c1e467bd42/plexpy/notifiers.py",
+    "finding": {
+      "lineNo": 3830,
+      "ruleId": "C7",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "PBKDF2 的 count=iterations，前文 iterations=1000；用于远程通知消息的加密密钥，低于本工具10000次策略。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "crossbario/autobahn-python",
+    "commit": "f77396401d52a5284c3506171cf45eb64505804f",
+    "canonical_source": "autobahn/wamp/auth.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/crossbario__autobahn-python/2023-01-05_f77396401d52/autobahn/wamp/auth.py",
+    "finding": {
+      "lineNo": 533,
+      "ruleId": "C7",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "pbkdf2 helper 的默认 iterations=1000，直接传入 PBKDF2HMAC。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "crossbario/autobahn-python",
+    "commit": "f77396401d52a5284c3506171cf45eb64505804f",
+    "canonical_source": "autobahn/wamp/auth.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/crossbario__autobahn-python/2023-01-05_f77396401d52/autobahn/wamp/auth.py",
+    "finding": {
+      "lineNo": 602,
+      "ruleId": "C9",
+      "operationType": "RANDOMNESS",
+      "operation": "GENERATE",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "generate_wcs 的 random.choice(WCS_SECRET_CHARSET) 生成 WAMP-CRA 认证秘密；普通 PRNG 不适合此安全用途。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "twisted/twisted",
+    "commit": "e673cb57698db0ff127975414e9312e4763b382c",
+    "canonical_source": "src/twisted/conch/scripts/ckeygen.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/twisted__twisted/2023-09-13_e673cb57698d/src/twisted/conch/scripts/ckeygen.py",
+    "finding": {
+      "lineNo": 158,
+      "ruleId": "C13",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "KEY_GENERATION",
+      "algorithm": "DSA",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "generateDSAkey 在 bits 未提供时设1024，并传入 dsa.generate_private_key。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "saltstack/salt",
+    "commit": "d3788da12085c4f6b7daa5f10f9e7e8ab11348e0",
+    "canonical_source": "salt/runners/digicertapi.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/saltstack__salt/2021-03-01_d3788da12085/salt/runners/digicertapi.py",
+    "finding": {
+      "lineNo": 538,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_EXPORT",
+      "algorithm": "3DES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "gen.as_pem(cipher=\"des_ede3_cbc\", callback=...) 用3DES加密导出的RSA私钥；不是用3DES生成RSA。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "saltstack/salt",
+    "commit": "e005c26fffa3eddd43d9bb7771362e07458cc99e",
+    "canonical_source": "salt/utils/pycrypto.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/saltstack__salt/2024-02-29_e005c26fffa3/salt/utils/pycrypto.py",
+    "finding": {
+      "lineNo": 130,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "DES_CRYPT",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "ctx.hash 的 scheme 可选择 des_crypt；这是传统DES口令哈希方案。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "saltstack/salt",
+    "commit": "e005c26fffa3eddd43d9bb7771362e07458cc99e",
+    "canonical_source": "salt/utils/pycrypto.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/saltstack__salt/2024-02-29_e005c26fffa3/salt/utils/pycrypto.py",
+    "finding": {
+      "lineNo": 130,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5_CRYPT",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "ctx.hash 的 scheme 可选择 md5_crypt；这是弱口令哈希方案。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "twisted/twisted",
+    "commit": "e673cb57698db0ff127975414e9312e4763b382c",
+    "canonical_source": "src/twisted/conch/ssh/transport.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/twisted__twisted/2023-09-13_e673cb57698d/src/twisted/conch/ssh/transport.py",
+    "finding": {
+      "lineNo": 258,
+      "ruleId": "C15",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "MAC",
+      "algorithm": "MD5/SHA1/SHA256/SHA384/SHA512",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "C15：默认协商列表包含HMAC-MD5/SHA1，具体选择经ffs进入outMAC，再由sendPacket调用生成MAC；弱分支可达，SHA2分支不记误用。按当前弃用MAC规则计TP，不声称已证明HMAC伪造。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "twisted/twisted",
+    "commit": "e673cb57698db0ff127975414e9312e4763b382c",
+    "canonical_source": "src/twisted/conch/ssh/transport.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/twisted__twisted/2023-09-13_e673cb57698d/src/twisted/conch/ssh/transport.py",
+    "finding": {
+      "lineNo": 279,
+      "ruleId": "C15",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "MAC",
+      "algorithm": "MD5/SHA1/SHA256/SHA384/SHA512",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "C15：默认协商列表包含HMAC-MD5/SHA1，具体选择经ffs进入inMAC，再由getPacket调用验证当前报文；弱分支可达。按当前弃用MAC规则计TP，和生成属于同一算法配置。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_pycryptodome.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+    "finding": {
+      "lineNo": 44,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "RC4",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "C14：PdfWriter默认RC4新文件对象加密可达，pycryptodome后端调用真实encrypt消费者，符合弃用对称算法使用规则。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_pycryptodome.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+    "finding": {
+      "lineNo": 44,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "RC4",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "实际用于PdfWriter新写入的字符串/流对象加密，RC4结果不包含MAC/tag，对应读取路径也没有认证标签验证；可生成未签名加密文档。满足现有C14。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_pycryptodome.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+    "finding": {
+      "lineNo": 47,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "RC4",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "C14：从已有PDF过滤器选择RC4，再执行对象解密；当前X7不排除解密或兼容读取，因此该弃用算法使用实例计TP。兼容用途不等于新写入漏洞。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_pycryptodome.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+    "finding": {
+      "lineNo": 57,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "实际用于PdfWriter新写入的字符串/流对象加密，CBC结果不包含MAC/tag，对应读取路径也没有认证标签验证；可生成未签名加密文档。满足现有C14/C4。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_pycryptodome.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+    "finding": {
+      "lineNo": 77,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "RC4",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "C14：V<=4的新O/U口令条目生成使用rc4_encrypt；已有文件口令验证也会复用。RC4_40/RC4_128/AES_128旧安全处理器分支均保留条件，不能说AES正文使用RC4。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_pycryptodome.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+    "finding": {
+      "lineNo": 77,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "RC4",
+      "mode": ""
+    },
+    "verdict": "FP",
+    "reason": "此helper的5处内部直接调用均属于O/U口令验证条目和密钥算法计算，没有文档对象明文消费者。C14把协议内部计算误当成需独立消息MAC的加密，角色归因错误；RC4本身的X7仍为TP。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_pycryptodome.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+    "finding": {
+      "lineNo": 81,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "RC4",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "C14：AlgV4.verify_owner_password调用RC4还原已有O条目，符合当前规则的弃用算法使用；兼容验证是用途说明，不是规则豁免。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_pycryptodome.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+    "finding": {
+      "lineNo": 93,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "FP",
+    "reason": "全部3处内部直接消费者为R6派生算法AES轮和UE/OE文件密钥封装，均非文档消息加密。现有协议原语识别已明确区分这两类结构；将helper统一报C4/C14是消费者角色识别不足。R5弱口令派生另由C6判定。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_encryption.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_encryption.py",
+    "finding": {
+      "lineNo": 193,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "MD5直接输入填充口令并参与文件密钥计算，真实安全用途，符合C5。旧格式读取/标准规定属于用途说明，不是现有C5/C6的通用豁免。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_encryption.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_encryption.py",
+    "finding": {
+      "lineNo": 193,
+      "ruleId": "C6",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "原始口令的填充值进入MD5，后续最多50轮快速MD5不构成现代口令KDF；符合C6。不能描述为所有分支只哈希一次。旧格式读取/标准规定属于用途说明，不是现有C5/C6的通用豁免。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_encryption.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_encryption.py",
+    "finding": {
+      "lineNo": 203,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "对文件密钥派生摘要再次调用MD5，仍为安全用途的弱摘要C5；C6已在前轮修复消失，不能混淆两条规则。旧格式读取/标准规定属于用途说明，不是现有C5/C6的通用豁免。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_encryption.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_encryption.py",
+    "finding": {
+      "lineNo": 248,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "MD5处理owner_password的填充值，结果作为RC4口令条目密钥，符合C5。旧格式读取/标准规定属于用途说明，不是现有C5/C6的通用豁免。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_encryption.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_encryption.py",
+    "finding": {
+      "lineNo": 248,
+      "ruleId": "C6",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "owner_password直接进入快速MD5派生，50轮摘要重复不构成现代口令KDF，符合C6。旧格式读取/标准规定属于用途说明，不是现有C5/C6的通用豁免。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_encryption.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_encryption.py",
+    "finding": {
+      "lineNo": 252,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "已有口令条目派生摘要再用MD5，C5真实；不另算一个独立口令派生漏洞。旧格式读取/标准规定属于用途说明，不是现有C5/C6的通用豁免。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_encryption.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_encryption.py",
+    "finding": {
+      "lineNo": 330,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "MD5输入虽不是口令，而是PDF padding及文件ID，但输出经RC4生成U认证条目用于口令验证；是实际安全用途，符合C5，不计C6。旧格式读取/标准规定属于用途说明，不是现有C5/C6的通用豁免。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_encryption.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_encryption.py",
+    "finding": {
+      "lineNo": 570,
+      "ruleId": "C6",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "SHA256",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "精确SHA256 API在R=5分支直接返回摘要，作为口令验证值及UE/OE封装密钥，确有C6误用。R>=6分支继续执行至少64轮AES/SHA2，是另一完整派生过程；不能仅因初始化SHA256就算C6。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_encryption.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_encryption.py",
+    "finding": {
+      "lineNo": 912,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "文件密钥与对象编号进入MD5，输出派生RC4/AES-128对象子密钥；是实际密钥计算而非普通文件校验，符合C5。AES-256输出使用原key，MD5分支不泛化为其子密钥漏洞。旧格式读取/标准规定属于用途说明，不是现有C5/C6的通用豁免。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_cryptography.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_cryptography.py",
+    "finding": {
+      "lineNo": 43,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "CONFIGURE",
+      "algorithm": "RC4",
+      "mode": "NONE"
+    },
+    "verdict": "TP",
+    "reason": "C14：共享ARC4构造器已追到PdfWriter新写入的encrypt消费者，也用于旧文档decrypt；真实RC4安全用途成立，不靠构造器名称单独定性。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_cryptography.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_cryptography.py",
+    "finding": {
+      "lineNo": 63,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "实际用于PdfWriter新写入的字符串/流对象加密，CBC结果不包含MAC/tag，对应读取路径也没有认证标签验证；可生成未签名加密文档。满足现有C14/C4。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_cryptography.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_cryptography.py",
+    "finding": {
+      "lineNo": 86,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "RC4",
+      "mode": "NONE"
+    },
+    "verdict": "TP",
+    "reason": "C14：V<=4的新O/U条目生成和旧口令验证使用rc4_encrypt；cryptography后端可达。两个后端实现同一用途，不重复计独立漏洞。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_cryptography.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_cryptography.py",
+    "finding": {
+      "lineNo": 86,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "RC4",
+      "mode": "NONE"
+    },
+    "verdict": "FP",
+    "reason": "此helper的5处内部直接调用均属于O/U口令验证条目和密钥算法计算，没有文档对象明文消费者。C14把协议内部计算误当成需独立消息MAC的加密，角色归因错误；RC4本身的X7仍为TP。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_cryptography.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_cryptography.py",
+    "finding": {
+      "lineNo": 91,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "DECRYPT",
+      "algorithm": "RC4",
+      "mode": "NONE"
+    },
+    "verdict": "TP",
+    "reason": "C14：AlgV4.verify_owner_password通过rc4_decrypt还原已有O条目，符合现有弃用算法使用规则；记录兼容读取用途。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "canonical_source": "pypdf/_crypt_providers/_cryptography.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_cryptography.py",
+    "finding": {
+      "lineNo": 106,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "FP",
+    "reason": "全部3处内部直接消费者为R6派生算法AES轮和UE/OE文件密钥封装，均非文档消息加密。现有协议原语识别已明确区分这两类结构；将helper统一报C4/C14是消费者角色识别不足。R5弱口令派生另由C6判定。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "cowrie/cowrie",
+    "commit": "bf55a591bfada6ce2ca43391c784a5e9c2b98ee3",
+    "canonical_source": "src/cowrie/ssh/keys.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/cowrie__cowrie/2023-01-30_bf55a591bfad/src/cowrie/ssh/keys.py",
+    "finding": {
+      "lineNo": 53,
+      "ruleId": "C13",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "KEY_GENERATION",
+      "algorithm": "DSA",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "getDSAKeys@53 明确生成DSA1024；getRSAKeys是RSA2048。原表RSA1024标签有误，按原问题#2145更正为DSA。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "jrnl-org/jrnl",
+    "commit": "9547411390b36a7f2b66bef2acf6e5b8faf3742f",
+    "canonical_source": "jrnl/encryption/Jrnlv1Encryption.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/jrnl-org__jrnl/2023-01-08_9547411390b3/jrnl/encryption/Jrnlv1Encryption.py",
+    "finding": {
+      "lineNo": 28,
+      "ruleId": "C6",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "SHA256",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "C6：SHA256的直接输入是用户口令，结果作为AES解密密钥；不是摘要重哈希，也不是非安全校验。旧格式仍使用这种弱口令派生，读取/迁移不改变其C6事实，因此计TP；不说v2新写入仍使用它。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "jrnl-org/jrnl",
+    "commit": "9547411390b36a7f2b66bef2acf6e5b8faf3742f",
+    "canonical_source": "jrnl/encryption/Jrnlv2Encryption.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/jrnl-org__jrnl/2023-01-08_9547411390b3/jrnl/encryption/Jrnlv2Encryption.py",
+    "finding": {
+      "lineNo": 40,
+      "ruleId": "C8",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "Jrnlv2Encryption._make_key@40 的PBKDF2盐来自19行硬编码字节，每个用户/日记相同。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "XX-net/XX-Net",
+    "commit": "2e06365748b1a693eb55beba178f146628f58363",
+    "canonical_source": "code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2023-11-18_2e06365748b1/code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+    "finding": {
+      "lineNo": 51,
+      "ruleId": "C3",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CFB"
+    },
+    "verdict": "TP",
+    "reason": "SSLConnection.__init__ 49行iv=b\"\\x00\"*16，51行用于AES CFB provider。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "XX-net/XX-Net",
+    "commit": "2e06365748b1a693eb55beba178f146628f58363",
+    "canonical_source": "code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2023-11-18_2e06365748b1/code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+    "finding": {
+      "lineNo": 51,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CFB"
+    },
+    "verdict": "TP",
+    "reason": "connect_creator创建普通socket/socksocket并交给此AES-CFB封装，非TLS实现；do_handshake把SE长度与JSON时间戳加密后发送，接收时仅比对magic和解析JSON；send/recv亦无MAC/tag。固定magic不是认证，C14成立。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "XX-net/XX-Net",
+    "commit": "2e06365748b1a693eb55beba178f146628f58363",
+    "canonical_source": "code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2023-11-18_2e06365748b1/code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+    "finding": {
+      "lineNo": 55,
+      "ruleId": "C3",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CFB"
+    },
+    "verdict": "TP",
+    "reason": "备用cryptography Cipher@55 使用同一全零IV。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "XX-net/XX-Net",
+    "commit": "2e06365748b1a693eb55beba178f146628f58363",
+    "canonical_source": "code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2023-11-18_2e06365748b1/code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+    "finding": {
+      "lineNo": 55,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CFB"
+    },
+    "verdict": "TP",
+    "reason": "connect_creator创建普通socket/socksocket并交给此AES-CFB封装，非TLS实现；do_handshake把SE长度与JSON时间戳加密后发送，接收时仅比对magic和解析JSON；send/recv亦无MAC/tag。固定magic不是认证，C14成立。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "XX-net/XX-Net",
+    "commit": "ca9026bfce5dea8ef1d00a9637b4473de5d69f85",
+    "canonical_source": "code/default/lib/noarch/tlslite/utils/cryptomath.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2022-10-24_ca9026bfce5d/code/default/lib/noarch/tlslite/utils/cryptomath.py",
+    "finding": {
+      "lineNo": 116,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "C5：MD5 helper已追到旧RSA ServerKeyExchange签名/验证输入，TLS1.0/1.1在默认允许列表中；存在可达的安全用途，按当前弱摘要规则计TP。SSLv2无调用和默认禁用SSLv3分支不充当活动路径证据；不泛化为TLS1.2/1.3漏洞。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "XX-net/XX-Net",
+    "commit": "ca9026bfce5dea8ef1d00a9637b4473de5d69f85",
+    "canonical_source": "code/default/lib/noarch/tlslite/utils/cryptomath.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2022-10-24_ca9026bfce5d/code/default/lib/noarch/tlslite/utils/cryptomath.py",
+    "finding": {
+      "lineNo": 120,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "SHA1 helper有明确ServerKeyExchange签名输入消费者：TLS<=1.1的DSA/ECDSA用SHA1，RSA用MD5+SHA1。默认允许TLS1.0/1.1，签名验证链可达，因此本组符合C5；不是凭HMAC/PRF中出现SHA1定性。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "XX-net/XX-Net",
+    "commit": "ca9026bfce5dea8ef1d00a9637b4473de5d69f85",
+    "canonical_source": "code/default/lib/noarch/tlslite/utils/openssl_rsakey.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2022-10-24_ca9026bfce5d/code/default/lib/noarch/tlslite/utils/openssl_rsakey.py",
+    "finding": {
+      "lineNo": 102,
+      "ruleId": "C14",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "KEY_EXPORT",
+      "algorithm": "3DES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "write@102 的 m2.rsa_write_key 选择 des_ede_cbc 加密私钥PEM，确为3DES私钥导出。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "wechatpy/wechatpy",
+    "commit": "5f693a7e90156786c2540ad3c941d12cdf6d88ef",
+    "canonical_source": "wechatpy/crypto/base.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/wechatpy__wechatpy/2022-01-06_5f693a7e9015/wechatpy/crypto/base.py",
+    "finding": {
+      "lineNo": 29,
+      "ruleId": "C3",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "CONFIGURE",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "BasePrpCrypto.__init__未传IV；WeChatCipher用key[:16]作为默认CBC IV，基类实际执行encryptor().update(plaintext)。相同密钥下IV固定，违反现有C3。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "wechatpy/wechatpy",
+    "commit": "5f693a7e90156786c2540ad3c941d12cdf6d88ef",
+    "canonical_source": "wechatpy/crypto/base.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/wechatpy__wechatpy/2022-01-06_5f693a7e9015/wechatpy/crypto/base.py",
+    "finding": {
+      "lineNo": 34,
+      "ruleId": "C1",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "CONFIGURE",
+      "algorithm": "AES",
+      "mode": "ECB"
+    },
+    "verdict": "TP",
+    "reason": "AesEcbCipher.__init__@34 创建AES ECB；BaseRefundCrypto._encrypt@81处理任意长度文本，公开RefundCrypto.encrypt可调用。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "wechatpy/wechatpy",
+    "commit": "5f693a7e90156786c2540ad3c941d12cdf6d88ef",
+    "canonical_source": "wechatpy/utils.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/wechatpy__wechatpy/2022-01-06_5f693a7e9015/wechatpy/utils.py",
+    "finding": {
+      "lineNo": 46,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "WeChatSigner.signature的SHA1输出实际用于含secret token的回调/消息签名比较，属于C5定义的安全相关摘要；不是普通校验或TOTP/HMAC-SHA1。既有规则没有对这个具体secret+字段的SHA1构造作明确结构豁免。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "wechatpy/wechatpy",
+    "commit": "5f693a7e90156786c2540ad3c941d12cdf6d88ef",
+    "canonical_source": "wechatpy/utils.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/wechatpy__wechatpy/2022-01-06_5f693a7e9015/wechatpy/utils.py",
+    "finding": {
+      "lineNo": 137,
+      "ruleId": "C9",
+      "operationType": "RANDOMNESS",
+      "operation": "GENERATE",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "普通 random.sample 的返回值经跨文件 helper、编码、列表首项 append/join 和 PKCS7 填充，进入使用密钥派生默认 IV 的 AES CBC 明文前缀；属于现有 C9 的安全随机用途。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "lbryio/lbry-sdk",
+    "commit": "eb5da9511e162ef1080cb34af2ee087383cfa94a",
+    "canonical_source": "lbry/crypto/crypt.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/lbryio__lbry-sdk/2023-05-06_eb5da9511e16/lbry/crypto/crypt.py",
+    "finding": {
+      "lineNo": 19,
+      "ruleId": "C6",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "SHA256",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "aes_encrypt@19 直接double_sha256(secret.encode())作AES key；钱包调用者传入用户口令，无盐无慢KDF。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "lbryio/lbry-sdk",
+    "commit": "eb5da9511e162ef1080cb34af2ee087383cfa94a",
+    "canonical_source": "lbry/crypto/crypt.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/lbryio__lbry-sdk/2023-05-06_eb5da9511e16/lbry/crypto/crypt.py",
+    "finding": {
+      "lineNo": 20,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "aes_encrypt@20 CBC输出IV+密文，decrypt没有标签验证；钱包私钥/seed调用确有安全用途。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "lbryio/lbry-sdk",
+    "commit": "eb5da9511e162ef1080cb34af2ee087383cfa94a",
+    "canonical_source": "lbry/crypto/crypt.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/lbryio__lbry-sdk/2023-05-06_eb5da9511e16/lbry/crypto/crypt.py",
+    "finding": {
+      "lineNo": 30,
+      "ruleId": "C6",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "SHA256",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "aes_decrypt@30 直接double_sha256(secret.encode())还原旧钱包key；与加密19行同一派生设计。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "lbryio/lbry-sdk",
+    "commit": "eb5da9511e162ef1080cb34af2ee087383cfa94a",
+    "canonical_source": "lbry/crypto/crypt.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/lbryio__lbry-sdk/2023-05-06_eb5da9511e16/lbry/crypto/crypt.py",
+    "finding": {
+      "lineNo": 47,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "better_aes_encrypt@47 用scrypt但返回前缀+IV+CBC密文，无MAC/tag；wallet.pack实际打包钱包。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "lbryio/lbry-sdk",
+    "commit": "eb5da9511e162ef1080cb34af2ee087383cfa94a",
+    "canonical_source": "lbry/crypto/hash.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/lbryio__lbry-sdk/2023-05-06_eb5da9511e16/lbry/crypto/hash.py",
+    "finding": {
+      "lineNo": 8,
+      "ruleId": "C6",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "SHA256",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "钱包用户口令经crypt.aes_encrypt/aes_decrypt→double_sha256→sha256(x)，原始口令实际进入此hashlib.sha256 API；存在明确C6消费者。通用helper也处理非口令，不取消这个已证实路径；与crypt.py19/30同一根因，不新增独立漏洞。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "lbryio/lbry-sdk",
+    "commit": "eb5da9511e162ef1080cb34af2ee087383cfa94a",
+    "canonical_source": "lbry/crypto/hash.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/lbryio__lbry-sdk/2023-05-06_eb5da9511e16/lbry/crypto/hash.py",
+    "finding": {
+      "lineNo": 25,
+      "ruleId": "C6",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "SHA256",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "本轮读取同源码CPG的realizing call，当前C6对应第25行第19列内层sha256(x)，输入为钱包原始口令；外层第12列sha256(sha256(x))的hashInputAlreadyTransformed=true且不再报C6。因此此保留告警为TP，不是外层摘要重哈希误报。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "tgalal/yowsup",
+    "commit": "a240637e0f0d3a96fbf57e7a453c0ea4715e16bc",
+    "canonical_source": "yowsup/layers/protocol_media/mediacipher.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/tgalal__yowsup/2019-05-04_a240637e0f0d/yowsup/layers/protocol_media/mediacipher.py",
+    "finding": {
+      "lineNo": 62,
+      "ruleId": "C15",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "TRUNCATED_MAC",
+      "algorithm": "TAG_80_BITS",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "encrypt() appends mac.digest()[:10], an HMAC-SHA256 tag truncated to 80 bits (the WhatsApp media format; CryptoGPT report row Python 27)."
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "tgalal/yowsup",
+    "commit": "a240637e0f0d3a96fbf57e7a453c0ea4715e16bc",
+    "canonical_source": "yowsup/layers/protocol_media/mediacipher.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/tgalal__yowsup/2019-05-04_a240637e0f0d/yowsup/layers/protocol_media/mediacipher.py",
+    "finding": {
+      "lineNo": 77,
+      "ruleId": "C15",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "TRUNCATED_MAC",
+      "algorithm": "TAG_80_BITS",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "decrypt() checks the same 80-bit truncated tag (and compares it with !=, not in constant time)."
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "paramiko/paramiko",
+    "commit": "e22c5ea330814801d8487dc3da347f987bafe5ec",
+    "canonical_source": "paramiko/dsskey.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/paramiko__paramiko/2023-05-06_e22c5ea33081/paramiko/dsskey.py",
+    "finding": {
+      "lineNo": 121,
+      "ruleId": "C16",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "SIGN",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "sign_ssh_data@121 实际key.sign(data, hashes.SHA1())生成新的DSA-SHA1签名。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "paramiko/paramiko",
+    "commit": "e22c5ea330814801d8487dc3da347f987bafe5ec",
+    "canonical_source": "paramiko/dsskey.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/paramiko__paramiko/2023-05-06_e22c5ea33081/paramiko/dsskey.py",
+    "finding": {
+      "lineNo": 159,
+      "ruleId": "C16",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "VERIFY",
+      "algorithm": "SHA1",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "此处确实为verify而非sign，但transport默认hostkey列表包含ssh-dss，并经_key_info选DSSKey；_verify_key在当前握手上验证self.H，进入SHA1验证API。是当前会话接受弱签名算法的具体路径，可按现有X11判TP。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "paramiko/paramiko",
+    "commit": "e22c5ea330814801d8487dc3da347f987bafe5ec",
+    "canonical_source": "paramiko/dsskey.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/paramiko__paramiko/2023-05-06_e22c5ea33081/paramiko/dsskey.py",
+    "finding": {
+      "lineNo": 211,
+      "ruleId": "C13",
+      "operationType": "MAC_SIGNATURE",
+      "operation": "KEY_GENERATION",
+      "algorithm": "DSA",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "DSSKey.generate(bits=1024)@211 将默认1024传给DSA生成API。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "paramiko/paramiko",
+    "commit": "e22c5ea330814801d8487dc3da347f987bafe5ec",
+    "canonical_source": "paramiko/util.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/paramiko__paramiko/2023-05-06_e22c5ea33081/paramiko/util.py",
+    "finding": {
+      "lineNo": 164,
+      "ruleId": "C5",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "真实MD5 callback被绑定，处理用户password并派生实际私钥解密key，符合C5。旧PEM读取不属于现有规则的通用豁免，C5/C6是同一派生链的不同违规，不是两个独立漏洞。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "paramiko/paramiko",
+    "commit": "e22c5ea330814801d8487dc3da347f987bafe5ec",
+    "canonical_source": "paramiko/util.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/paramiko__paramiko/2023-05-06_e22c5ea33081/paramiko/util.py",
+    "finding": {
+      "lineNo": 164,
+      "ruleId": "C6",
+      "operationType": "HASH_FUNCTION",
+      "operation": "HASH",
+      "algorithm": "MD5",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "原始password经编码进入hash_obj.update，简单EVP式摘要拼接派生没有现代口令KDF成本，符合C6。旧PEM读取不属于现有规则的通用豁免，C5/C6是同一派生链的不同违规，不是两个独立漏洞。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "pritunl/pritunl",
+    "commit": "43cc7ff79038ab5fd0443f175d9531d8cae47c85",
+    "canonical_source": "tools/builder.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/pritunl__pritunl/2023-01-16_43cc7ff79038/tools/builder.py",
+    "finding": {
+      "lineNo": 187,
+      "ruleId": "C7",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "builder.aes_encrypt@187 PBKDF2 iterations=1000，用口令保护BUILD_KEYS_PATH中的构建凭据。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "pritunl/pritunl",
+    "commit": "43cc7ff79038ab5fd0443f175d9531d8cae47c85",
+    "canonical_source": "tools/builder.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/pritunl__pritunl/2023-01-16_43cc7ff79038/tools/builder.py",
+    "finding": {
+      "lineNo": 198,
+      "ruleId": "C4",
+      "operationType": "SYMMETRIC_ENCRYPTION",
+      "operation": "ENCRYPT",
+      "algorithm": "AES",
+      "mode": "CBC"
+    },
+    "verdict": "TP",
+    "reason": "builder.aes_encrypt@198 返回salt+IV+CBC密文，无认证；代码247/250和268/274显示保护构建token等凭据。"
+  },
+  {
+    "language": "python",
+    "snapshot": null,
+    "repository": "pritunl/pritunl",
+    "commit": "43cc7ff79038ab5fd0443f175d9531d8cae47c85",
+    "canonical_source": "tools/builder.py",
+    "source": "benchmarks/cryptogpt-realworld-python-full/pritunl__pritunl/2023-01-16_43cc7ff79038/tools/builder.py",
+    "finding": {
+      "lineNo": 220,
+      "ruleId": "C7",
+      "operationType": "KEY_DERIVATION",
+      "operation": "PBKDF2",
+      "algorithm": "",
+      "mode": ""
+    },
+    "verdict": "TP",
+    "reason": "builder.aes_decrypt@220 iterations=1000还原上述构建凭据；与187行相同文件格式的KDF配置。"
+  }
+]

@@ -1,0 +1,174 @@
+﻿case_id,file,ground_truth,rule,CryptoEagle (this work),CryptoGuard,CogniCrypt,SpotBugs+FindSecBugs
+xlsx-row-2,PredictableCryptographicKeyBBCase1.java,Static/Contant Key: misuse,C2,TP,TP,TP,FN
+xlsx-row-5,PredictablePBEPasswordBBCase1.java,Static/Contant password: misuse,C2,TP,FN,TP,TP
+xlsx-row-6,PredictablePBEPasswordBBCase2.java,Static/Constant Password: misuse,C2,TP,TP,TP,TP
+xlsx-row-7,PredictableKeyStorePasswordBBCase1.java,Static/Constant Password: misuse,C2,TP,TP,TP,TP
+xlsx-row-8,DummyHostNameVerifierCase1.java,Dummy Verifier: misuse,C17,TP,FN,FN,TP
+xlsx-row-9,DummyCertValidationCase1.java,Dummy Certificate: misuse,C17,TP,FN,FN,TP
+xlsx-row-10,DummyCertValidationCase2.java,Dummy Certificate: misuse,C17,TP,FN,FN,TP
+xlsx-row-11,DummyCertValidationCase3.java,Dummy Certificate: misuse,C17,TP,FN,FN,TP
+xlsx-row-12,ImproperSocketManualHostBBCase1.java,Socket Hostname w/o verification: misuse,C17,TP,TP,FN,FN
+xlsx-row-13,HttpProtocolBBCase1.java,HTTP: misuse,C18,TP,TP,FN,FN
+xlsx-row-14,PredictableSeedsBBCase1.java,Constant Seed: misuse,C9,TP,TP,TP,TP
+xlsx-row-15,PredictableSeedsBBCase2.java,Constant Seed: misuse,C9,TP,TP,TP,TP
+xlsx-row-16,UntrustedPRNGCase1.java,Usage of Random Method from Library: misuse,C9,TP,TP,FN,TP
+xlsx-row-17,StaticSaltsBBCase1.java,Static/Constant Salt: misuse,C8,TP,TP,TP,FN
+xlsx-row-18,EcbInSymmCryptoBBCase1.java,Usage of ECB: misuse,C1,TP,TP,TP,TP
+xlsx-row-19,StaticInitializationVectorBBCase1.java,Static/Constant IV: misuse,C3,TP,TP,TP,TP
+xlsx-row-20,LessThan1000IterationPBEBBCase1.java,PBE iteration < 1000: misuse,C7,TP,TP,TP,FN
+xlsx-row-21,BrokenCryptoBBCase1.java,DES used: misuse,C14,TP,TP,TP,TP
+xlsx-row-22,BrokenCryptoBBCase2.java,Blowfish used: misuse,C14,TP,TP,TP,FN
+xlsx-row-23,BrokenCryptoBBCase3.java,RC4 used: misuse,C14,TP,TP,TP,FN
+xlsx-row-24,BrokenCryptoBBCase4.java,RC2 used: misuse,C14,TP,TP,TP,FN
+xlsx-row-25,BrokenCryptoBBCase5.java,IDEA used: misuse,C14,TP,TP,TP,FN
+xlsx-row-26,InsecureAsymmetricCipherBBCase1.java,RSA keysize 1024 bits: misuse,C13,TP,TP,TP,FN
+xlsx-row-27,BrokenHashBBCase1.java,SHA1 used: misuse,C5,TP,TP,TP,TP
+xlsx-row-28,BrokenHashBBCase2.java,MD5 used: misuse,C5,TP,TP,TP,TP
+xlsx-row-29,BrokenHashBBCase3.java,MD4 used: misuse,C5,TP,TP,TP,TP
+xlsx-row-30,BrokenHashBBCase4.java,MD2 used: misuse,C5,TP,TP,TP,TP
+xlsx-row-31,BrokenMacBBCase1.java,HmacMD5: misuse,C15,TP,FN,TP,FN
+xlsx-row-32,BrokenMacBBCase2.java,HmacSHA1: misuse,C15,TP,FN,TP,FN
+xlsx-row-33,BrokenCryptoCorrected.java,---: no misuse,C14,TN,TN,TN,TN
+xlsx-row-34,BrokenHashCorrected.java,---: no misuse,C5,TN,TN,TN,TN
+xlsx-row-35,EcbInSymmCryptoCorrected.java,---: no misuse,C1,TN,TN,FP,TN
+xlsx-row-36,DummyHostNameVerifierCorrected.java,---: no misuse,C17,TN,TN,TN,TN
+xlsx-row-37,HttpProtocolCase1Corrected.java,---: no misuse,C18,TN,TN,TN,TN
+xlsx-row-38,LessThan1000IterationPBECorrected.java,---: no misuse,C7,FP,TN,FP,TN
+xlsx-row-39,PredictableCryptographicKeyCorrected.java,---: no misuse,C2,TN,TN,FP,TN
+xlsx-row-40,PredictableKeyStorePasswordCorrected.java,---: no misuse,C2,TN,TN,TN,TN
+xlsx-row-41,PredictablePBEPasswordCorrected.java,---: no misuse,C2,TN,TN,TN,TN
+xlsx-row-42,PredictableSeedsCorrected.java,---: no misuse,C9,TN,TN,FP,FP
+xlsx-row-43,StaticInitializationVectorCorrected.java,---: no misuse,C3,TN,TN,TN,TN
+xlsx-row-44,StaticSaltsCorrected.java,---: no misuse,C8,TN,TN,TN,TN
+xlsx-row-45,UntrustedPRNGCorrected.java,---: no misuse,C9,TN,TN,TN,FP
+xlsx-row-47,BrokenMacCorrected.java,HmacSHA256: no misuse,C15,TN,TN,TN,TN
+xlsx-row-49,PredictableCryptographicKeyABICase1.java,Static/Contant Key: misuse,C2,TP,TP,TP,FN
+xlsx-row-51,PredictablePBEPasswordABICase1.java,Static/Contant password: misuse,C2,TP,TP,TP,FN
+xlsx-row-52,PredictableKeyStorePasswordABICase1.java,Static/Constant Password: misuse,C2,TP,TP,TP,FN
+xlsx-row-53,HttpProtocolABICase1.java,HTTP: misuse,C18,TP,TP,FN,FN
+xlsx-row-54,PredictableSeedsABICase1.java,Constant Seed: misuse,C9,TP,TP,TP,TP
+xlsx-row-55,PredictableSeedsABICase2.java,Constant Seed: misuse,C9,TP,TP,TP,TP
+xlsx-row-56,StaticSaltsABICase1.java,Static/Constant Salt: misuse,C8,TP,TP,TP,FN
+xlsx-row-57,EcbInSymmCryptoABICase1.java,Usage of ECB: misuse,C1,TP,TP,TP,FN
+xlsx-row-58,StaticInitializationVectorABICase1.java,Static/Constant IV: misuse,C3,TP,TP,TP,TP
+xlsx-row-59,LessThan1000IterationPBEABICase1.java,PBE iteration < 1000: misuse,C7,TP,TP,TP,FN
+xlsx-row-60,BrokenCryptoABICase1.java,DES used: misuse,C14,TP,TP,TP,FN
+xlsx-row-61,BrokenCryptoABICase2.java,Blowfish used: misuse,C14,TP,TP,TP,FN
+xlsx-row-62,BrokenCryptoABICase3.java,RC4 used: misuse,C14,TP,TP,TP,FN
+xlsx-row-63,BrokenCryptoABICase4.java,RC2 used: misuse,C14,TP,TP,TP,FN
+xlsx-row-64,BrokenCryptoABICase9.java,IDEA used: misuse,C14,TP,TP,TP,FN
+xlsx-row-65,InsecureAsymmetricCipherABICase1.java,RSA keysize 1024 bits: misuse,C13,TP,TP,TP,FN
+xlsx-row-66,BrokenHashABICase1.java,SHA1 used: misuse,C5,TP,TP,TP,FN
+xlsx-row-67,BrokenHashABICase2.java,MD5 used: misuse,C5,TP,TP,TP,FN
+xlsx-row-68,BrokenHashABICase3.java,MD4 used: misuse,C5,TP,TP,TP,FN
+xlsx-row-69,BrokenHashABICase4.java,MD2 used: misuse,C5,TP,TP,TP,FN
+xlsx-row-71,PredictableCryptographicKeyABICase3.java,Static/Contant Key: misuse,C2,TP,TP,TP,FN
+xlsx-row-73,PredictablePBEPasswordABICase3.java,Static/Contant password: misuse,C2,TP,TP,TP,FN
+xlsx-row-74,PredictableKeyStorePasswordABICase3.java,Static/Constant Password: misuse,C2,TP,TP,TP,FN
+xlsx-row-75,HttpProtocolABICase3.java,HTTP: misuse,C18,TP,TP,FN,FN
+xlsx-row-76,PredictableSeedsABICase5.java,Constant Seed: misuse,C9,TP,TP,TP,TP
+xlsx-row-77,PredictableSeedsABICase6.java,Constant Seed: misuse,C9,TP,TP,TP,TP
+xlsx-row-78,StaticSaltsABICase3.java,Static/Constant Salt: misuse,C8,TP,TP,TP,FN
+xlsx-row-79,EcbInSymmCryptoABICase3.java,Usage of ECB: misuse,C1,TP,TP,TP,FN
+xlsx-row-80,StaticInitializationVectorABICase3.java,Static/Constant IV: misuse,C3,TP,TP,TP,TP
+xlsx-row-81,LessThan1000IterationPBEABICase3.java,PBE iteration < 1000: misuse,C7,TP,TP,TP,FN
+xlsx-row-82,BrokenCryptoABICase11.java,DES used: misuse,C14,TP,TP,TP,FN
+xlsx-row-83,BrokenCryptoABICase12.java,Blowfish used: misuse,C14,TP,TP,TP,FN
+xlsx-row-84,BrokenCryptoABICase13.java,RC4 used: misuse,C14,TP,TP,TP,FN
+xlsx-row-85,BrokenCryptoABICase14.java,RC2 used: misuse,C14,TP,TP,TP,FN
+xlsx-row-86,BrokenCryptoABICase15.java,IDEA used: misuse,C14,TP,TP,TP,FN
+xlsx-row-87,InsecureAsymmetricCipherABICase3.java,RSA keysize 1024 bits: misuse,C13,TP,TP,TP,FN
+xlsx-row-88,BrokenHashABICase9.java,SHA1 used: misuse,C5,TP,TP,TP,FN
+xlsx-row-89,BrokenHashABICase10.java,MD5 used: misuse,C5,TP,TP,TP,FN
+xlsx-row-90,BrokenHashABICase11.java,MD4 used: misuse,C5,TP,TP,TP,FN
+xlsx-row-91,BrokenHashABICase12.java,MD2 used: misuse,C5,TP,TP,TP,FN
+xlsx-row-93,PredictableCryptographicKeyABSCase1.java,Static/Contant Key: misuse,C2,FN,TP,FN,FN
+xlsx-row-95,PredictablePBEPasswordABSCase1.java,Static/Contant password: misuse,C2,TP,TP,FN,FN
+xlsx-row-96,PredictableKeyStorePasswordABSCase1.java,Static/Constant Password: misuse,C2,TP,TP,FN,FN
+xlsx-row-97,HttpProtocolABSCase1.java,HTTP: misuse,C18,TP,TP,FN,FN
+xlsx-row-98,PredictableSeedsABSCase1.java,Constant Seed: misuse,C9,TP,TP,FN,TP
+xlsx-row-99,PredictableSeedsABSCase2.java,Constant Seed: misuse,C9,TP,TP,FN,TP
+xlsx-row-100,StaticSaltsABSCase1.java,Static/Constant Salt: misuse,C8,TP,TP,FN,FN
+xlsx-row-101,EcbInSymmCryptoABSCase1.java,Usage of ECB: misuse,C1,TP,TP,FN,FN
+xlsx-row-102,StaticInitializationVectorABSCase1.java,Static/Constant IV: misuse,C3,TP,TP,FN,TP
+xlsx-row-103,LessThan1000IterationPBEABSCase1.java,PBE iteration < 1000: misuse,C7,TP,TP,FN,FN
+xlsx-row-104,BrokenCryptoABSCase1.java,DES used: misuse,C14,TP,TP,FN,FN
+xlsx-row-105,BrokenCryptoABSCase2.java,Blowfish used: misuse,C14,TP,TP,FN,FN
+xlsx-row-106,BrokenCryptoABSCase3.java,RC4 used: misuse,C14,TP,TP,FN,FN
+xlsx-row-107,BrokenCryptoABSCase4.java,RC2 used: misuse,C14,TP,TP,FN,FN
+xlsx-row-108,BrokenCryptoABSCase5.java,IDEA used: misuse,C14,TP,TP,FN,FN
+xlsx-row-109,BrokenHashABSCase1.java,SHA1 used: misuse,C5,TP,TP,FN,FN
+xlsx-row-110,BrokenHashABSCase2.java,MD5 used: misuse,C5,TP,TP,FN,FN
+xlsx-row-111,BrokenHashABSCase3.java,MD4 used: misuse,C5,TP,TP,FN,FN
+xlsx-row-112,BrokenHashABSCase4.java,MD2 used: misuse,C5,TP,TP,FN,FN
+xlsx-row-115,PredictableCryptographicKeyABHCase2.java,Static/Contant Key: misuse,C2,TP,TP,TP,FN
+xlsx-row-116,PredictablePBEPasswordABHCase1.java,---: no misuse,C2,TN,TN,TN,TN
+xlsx-row-117,PredictablePBEPasswordABHCase2.java,Static/Contant password: misuse,C2,TP,TP,TP,FN
+xlsx-row-118,PredictableKeyStorePasswordABHCase1.java,---: no misuse,C2,TN,TN,TN,TN
+xlsx-row-119,PredictableKeyStorePasswordABHCase2.java,Static/Constant Password: misuse,C2,TP,TP,TP,FN
+xlsx-row-120,PredictableSeedsABHCase2.java,Constant Seed: misuse,C9,TP,TP,TP,TP
+xlsx-row-121,PredictableSeedsABHCase4.java,Constant Seed: misuse,C9,TP,TP,TP,TP
+xlsx-row-122,StaticSaltsABHCase1.java,Static/Constant Salt: misuse,C8,TP,TP,TP,FN
+xlsx-row-123,StaticInitializationVectorABHCase1.java,Static/Constant IV: misuse,C3,TP,TP,TP,TP
+xlsx-row-124,StaticInitializationVectorABHCase2.java,Static/Constant IV: misuse,C3,TP,TP,TP,TP
+xlsx-row-125,LessThan1000IterationPBEABHCase1.java,PBE iteration < 1000: misuse,C7,TP,FN,FN,FN
+xlsx-row-127,PredictableCryptographicKeyABICase2.java,Static/Contant Key: misuse,C2,TP,FN,TP,TP
+xlsx-row-129,PredictablePBEPasswordABICase2.java,Static/Contant password: misuse,C2,TP,FN,TP,FN
+xlsx-row-130,PredictableKeyStorePasswordABICase2.java,Static/Constant Password: misuse,C2,TP,TP,TP,TP
+xlsx-row-131,HttpProtocolABICase2.java,HTTP: misuse,C18,FN,TP,FN,FN
+xlsx-row-132,PredictableSeedsABICase3.java,Constant Seed: misuse,C9,TP,FN,TP,TP
+xlsx-row-133,PredictableSeedsABICase4.java,Constant Seed: misuse,C9,FN,FN,TP,TP
+xlsx-row-134,StaticSaltsABICase2.java,Static/Constant Salt: misuse,C8,FN,FN,TP,FN
+xlsx-row-135,EcbInSymmCryptoABICase2.java,Usage of ECB: misuse,C1,TP,TP,TP,FN
+xlsx-row-136,StaticInitializationVectorABICase2.java,Static/Constant IV: misuse,C3,FN,FN,TP,TP
+xlsx-row-137,LessThan1000IterationPBEABICase2.java,PBE iteration < 1000: misuse,C7,TP,FN,FN,FN
+xlsx-row-138,BrokenCryptoABICase5.java,DES used: misuse,C14,TP,TP,TP,TP
+xlsx-row-139,BrokenCryptoABICase6.java,Blowfish used: misuse,C14,TP,TP,TP,FN
+xlsx-row-140,BrokenCryptoABICase7.java,RC4 used: misuse,C14,TP,TP,TP,FN
+xlsx-row-141,BrokenCryptoABICase8.java,RC2 used: misuse,C14,TP,TP,TP,FN
+xlsx-row-142,BrokenCryptoABICase10.java,IDEA used: misuse,C14,TP,TP,TP,FN
+xlsx-row-143,InsecureAsymmetricCipherABICase2.java,RSA keysize 1024 bits: misuse,C13,TP,FN,TP,FN
+xlsx-row-144,BrokenHashABICase5.java,SHA1 used: misuse,C5,TP,TP,FN,FN
+xlsx-row-145,BrokenHashABICase6.java,MD5 used: misuse,C5,TP,TP,FN,FN
+xlsx-row-146,BrokenHashABICase7.java,MD4 used: misuse,C5,TP,TP,FN,FN
+xlsx-row-147,BrokenHashABICase8.java,MD2 used: misuse,C5,TP,TP,FN,FN
+xlsx-row-149,PredictableCryptographicKeyABPSCase1.java,---: no misuse,C2,TN,TN,FP,FP
+xlsx-row-150,PredictablePBEPasswordABPSCase1.java,---: no misuse,C2,TN,FP,FP,TN
+xlsx-row-151,PredictableKeyStorePasswordABPSCase1.java,---: no misuse,C2,TN,FP,FP,TN
+xlsx-row-152,HttpProtocolABPSCase1.java,---: no misuse,C18,TN,FP,TN,TN
+xlsx-row-153,PredictableSeedsABPSCase1.java,---: no misuse,C9,TN,FP,FP,FP
+xlsx-row-154,PredictableSeedsABPSCase2.java,---: no misuse,C9,TN,FP,TN,FP
+xlsx-row-155,StaticSaltsABPSCase1.java,---: no misuse,C8,TN,FP,TN,TN
+xlsx-row-156,EcbInSymmCryptoABPSCase1.java,---: no misuse,C1,TN,FP,FP,FP
+xlsx-row-157,StaticInitializationVectorABPSCase1.java,---: no misuse,C3,TN,FP,TN,FP
+xlsx-row-158,LessThan1000IterationPBEABPSCase1.java,---: no misuse,C7,FP,FP,FP,TN
+xlsx-row-159,BrokenCryptoABPSCase1.java,---: no misuse,C14,TN,FP,FP,FP
+xlsx-row-160,BrokenCryptoABPSCase2.java,---: no misuse,C14,TN,FP,FP,TN
+xlsx-row-161,BrokenCryptoABPSCase3.java,---: no misuse,C14,TN,FP,FP,TN
+xlsx-row-162,BrokenCryptoABPSCase4.java,---: no misuse,C14,TN,FP,FP,TN
+xlsx-row-163,BrokenCryptoABPSCase5.java,---: no misuse,C14,TN,FP,FP,TN
+xlsx-row-164,InsecureAsymmetricCipherABPSCase1.java,---: no misuse,C13,TN,FP,FP,TN
+xlsx-row-165,BrokenHashABPSCase1.java,---: no misuse,C5,TN,FP,FP,FP
+xlsx-row-166,BrokenHashABPSCase2.java,---: no misuse,C5,TN,FP,FP,FP
+xlsx-row-167,BrokenHashABPSCase3.java,---: no misuse,C5,TN,FP,FP,FP
+xlsx-row-168,BrokenHashABPSCase4.java,---: no misuse,C5,TN,FP,FP,FP
+xlsx-row-170,PredictableCryptographicKeyABMC1.java PredictableCryptographicKeyABMCCase1.java,Static/Contant Key: misuse,C2,TP,TP,TP,FN
+xlsx-row-172,PredictablePBEPasswordABMC1.java PredictablePBEPasswordABMCCase1.java,Static/Contant password: misuse,C2,TP,TP,TP,FN
+xlsx-row-173,PredictableKeyStorePasswordABMC1.java PredictableKeyStorePasswordABMCCase1.java,Static/Constant Password: misuse,C2,TP,TP,TP,FN
+xlsx-row-174,HttpProtocolABMC1.java HttpProtocolABMCCase1.java,HTTP: misuse,C18,TP,TP,FN,FN
+xlsx-row-175,PredictableSeedsABMC1.java PredictableSeedsABMCCase1.java,Constant Seed: misuse,C9,TP,TP,TP,TP
+xlsx-row-176,PredictableSeedsABMC2.java PredictableSeedsABMCCase2.java,Constant Seed: misuse,C9,TP,TP,TP,TP
+xlsx-row-177,StaticSaltsABMC1.java StaticSaltsABMCCase1.java,Static/Constant Salt: misuse,C8,TP,TP,TP,FN
+xlsx-row-178,EcbInSymmCryptoABMC1.java EcbInSymmCryptoABMCCase1.java,Usage of ECB: misuse,C1,TP,TP,TP,FN
+xlsx-row-179,StaticInitializationVectorABMC1.java StaticInitializationVectorABMCCase1.java,Static/Constant IV: misuse,C3,TP,TP,TP,TP
+xlsx-row-180,LessThan1000IterationPBEABMC1.java LessThan1000IterationPBEABMCCase1.java,PBE iteration < 1000: misuse,C7,TP,TP,TP,FN
+xlsx-row-181,BrokenCryptoABMC1.java BrokenCryptoABMCCase1.java,DES used: misuse,C14,TP,TP,TP,FN
+xlsx-row-182,BrokenCryptoABMC2.java BrokenCryptoABMCCase2.java,Blowfish used: misuse,C14,TP,TP,TP,FN
+xlsx-row-183,BrokenCryptoABMC3.java BrokenCryptoABMCCase3.java,RC4 used: misuse,C14,TP,TP,TP,FN
+xlsx-row-184,BrokenCryptoABMC4.java BrokenCryptoABMCCase4.java,RC2 used: misuse,C14,TP,TP,TP,FN
+xlsx-row-185,BrokenCryptoABMC5.java BrokenCryptoABMCCase5.java,IDEA used: misuse,C14,TP,TP,TP,FN
+xlsx-row-186,InsecureAsymmetricCipherABMC1.java InsecureAsymmetricCipherABMCCase1.java,RSA keysize 1024 bits: misuse,C13,TP,TP,TP,FN
+xlsx-row-187,BrokenHashABMC1.java BrokenHashABMCCase1.java,SHA1 used: misuse,C5,TP,TP,TP,FN
+xlsx-row-188,BrokenHashABMC2.java BrokenHashABMCCase2.java,MD5 used: misuse,C5,TP,TP,TP,FN
+xlsx-row-189,BrokenHashABMC3.java BrokenHashABMCCase3.java,MD4 used: misuse,C5,TP,TP,TP,FN
+xlsx-row-190,BrokenHashABMC4.java BrokenHashABMCCase4.java,MD2 used: misuse,C5,TP,TP,TP,FN

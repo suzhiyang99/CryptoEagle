@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"PYTHON",
+  "input":"experiments/cryptogpt/runs/_inputs/python/crossbario__autobahn-python__Python__row4__f77396401d52/TARGET_ONLY",
+  "source":{"files":1,"lines":692,"bytes":22832},
+  "graph":{"standardNodes":4587,"standardEdges":32249,"cryptoAwareNodes":4610,"cryptoAwareEdges":32297,"addedNodes":23,"addedEdges":48,"serializedBytes":291198},
+  "memory":{"peakHeapBytes":81116888},
+  "findings":{"core":2,"extended":0,"byRule":{"C7":1,"C9":1}},
+  "operations":{"HASH_FUNCTION":3,"KEY_DERIVATION":1,"MAC_SIGNATURE":15,"RANDOMNESS":4},
+  "selectionOperations":{"HASH_FUNCTION":3,"KEY_DERIVATION":1,"MAC_SIGNATURE":15,"RANDOMNESS":1},
+  "selectionOperationResolutions":{"COMPLETE":20},
+  "timingsMillis":{"adapterConfigLoad":63.706,"cpgFrontend":302.989,"overlays":112.468,"dataflow":118.125,"enrichmentWall":215.591,"coreRules":23.058,"extendedRules":0.000,"totalWall":1353.890},
+  "enrichment":{"callsScanned":1006,"callsMatched":15,"localOperationsMatched":0,"operationGroups":23,"sensitiveBindings":11,"resolvedSourceNodes":17,"adapterMillis":88.953,"provenanceMillis":43.973,"provenanceFlowQueries":0,"provenanceMultiSinkQueries":0,"lifecycleMillis":4.804,"contextAnalysisMillis":48.214,"materializationMillis":11.730,"runMillis":215.579},
+  "enrichmentOverheadPercent":40.404
+}

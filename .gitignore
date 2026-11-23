@@ -1,0 +1,20 @@
+# Build outputs and local environments (rebuilt by sbt, run.sh and the install scripts)
+target/
+.bsp/
+experiments/*/build/
+experiments/**/logs/
+experiments/**/run.log
+experiments/**/scan.log
+experiments/*/run-progress.log
+experiments/*/runs/_inputs/
+experiments/cryptollm-*/out/*/cwd/
+experiments/cryptollm-*/out/*/work/
+# Local build outputs for bundled benchmarks
+benchmarks/**/build/
+benchmarks/**/.gradle/
+benchmarks/**/.idea/
+# Local installations of third-party analysis tools
+/external-tools/
+.DS_Store
+__pycache__/
+*.py[cod]

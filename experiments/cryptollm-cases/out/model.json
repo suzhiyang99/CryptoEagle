@@ -1,0 +1,7 @@
+{
+  "model": "tools/cryptollm/CryptoLLM_codet5.bin",
+  "sha256": "1cb8923e908c5cf4d9632138caee367dfbc6a782d005cb7b9e06771925b9553b",
+  "retrained": false,
+  "aggregation": "any",
+  "prediction_unit": "ground-truth case"
+}

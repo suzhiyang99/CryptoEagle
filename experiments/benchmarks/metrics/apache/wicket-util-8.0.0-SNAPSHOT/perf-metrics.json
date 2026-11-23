@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"JAVA",
+  "input":"benchmarks/ApacheCryptoAPI-Bench/decompiled/wicket-util-8.0.0-SNAPSHOT",
+  "source":{"files":204,"lines":14782,"bytes":436817},
+  "graph":{"standardNodes":70043,"standardEdges":445564,"cryptoAwareNodes":70058,"cryptoAwareEdges":445595,"addedNodes":15,"addedEdges":31,"serializedBytes":2330394},
+  "memory":{"peakHeapBytes":524575040},
+  "findings":{"core":4,"extended":0,"byRule":{"C14":2,"C7":1,"C8":1}},
+  "operations":{"KEY_DERIVATION":4,"RANDOMNESS":7,"SYMMETRIC_ENCRYPTION":4},
+  "selectionOperations":{"KEY_DERIVATION":4,"SYMMETRIC_ENCRYPTION":4},
+  "selectionOperationResolutions":{"COMPLETE":5,"PARTIAL":3},
+  "timingsMillis":{"adapterConfigLoad":83.024,"cpgFrontend":2579.288,"overlays":378.936,"dataflow":487.783,"enrichmentWall":467.241,"coreRules":37.318,"extendedRules":0.000,"totalWall":4490.983},
+  "enrichment":{"callsScanned":13452,"callsMatched":13,"localOperationsMatched":0,"operationGroups":15,"sensitiveBindings":5,"resolvedSourceNodes":11,"adapterMillis":97.356,"provenanceMillis":240.829,"provenanceFlowQueries":3,"provenanceMultiSinkQueries":2,"lifecycleMillis":5.534,"contextAnalysisMillis":96.005,"materializationMillis":5.821,"runMillis":467.231},
+  "enrichmentOverheadPercent":13.559
+}

@@ -1,0 +1,19 @@
+﻿ID,Rule,Java,Python
+C1,ECB mode,✓,✓
+C2,Hardcoded key,✓,✓
+C3,Static IV,✓,✓
+C4,No authentication,✓,✓
+C5,Weak hash,✓,✓
+C6,No KDF for password,✓,✓
+C7,Low PBKDF2 iters,✓,✓
+C8,Missing salt,✓,✓
+C9,Non-CSPRNG,✓,✓
+C10,Hardcoded HMAC key,✓,✓
+C11,RSA w/o secure padding,✓,partial
+C12,Raw password as key,✓,✓
+C13,Short RSA key,✓,✓
+C14,Weak cipher,✓,✓
+C15,Weak MAC,✓,✓
+C16,Weak sig. digest,✓,✓
+C17,Verif. disabled,✓,✓
+C18,Insecure transport,✓,✓

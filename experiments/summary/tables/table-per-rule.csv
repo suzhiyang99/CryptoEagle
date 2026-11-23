@@ -1,0 +1,14 @@
+﻿ID,Rule,TP,FP,FN,F1
+C1,ECB mode,6,0,0,1.000
+C2,Hardcoded key,21,0,1,0.977
+C3,Static IV,7,0,1,0.933
+C5,Weak hash,24,0,0,1.000
+C7,Low PBKDF2,7,2,0,0.875
+C8,Missing salt,6,0,1,0.923
+C9,Non-CSPRNG,14,0,1,0.966
+C13,Short RSA key,5,0,0,1.000
+C14,Weak cipher,30,0,0,1.000
+C15,Weak MAC,2,0,0,1.000
+C17,Verif. disabled,5,0,0,1.000
+C18,Insecure transport,5,0,1,0.909
+Total,,132,2,5,0.974

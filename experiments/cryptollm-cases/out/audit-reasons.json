@@ -1,0 +1,9 @@
+{
+  "xlsx-row-34": "The effective digest is SHA-256. The normalized positive slice contains no weak digest; the frozen classifier nevertheless predicts misuse. FP against the published safe label; the internal model cause is unconfirmed.",
+  "xlsx-row-165": "The effective digest is SHA-256. The normalized positive slice contains no weak digest; the frozen classifier nevertheless predicts misuse. FP against the published safe label; the internal model cause is unconfirmed.",
+  "xlsx-row-166": "The effective digest is SHA-256. The normalized positive slice contains no weak digest; the frozen classifier nevertheless predicts misuse. FP against the published safe label; the internal model cause is unconfirmed.",
+  "xlsx-row-167": "The effective digest is SHA-256. The normalized positive slice contains no weak digest; the frozen classifier nevertheless predicts misuse. FP against the published safe label; the internal model cause is unconfirmed.",
+  "xlsx-row-168": "The effective digest is SHA-256. The normalized positive slice contains no weak digest; the frozen classifier nevertheless predicts misuse. FP against the published safe label; the internal model cause is unconfirmed.",
+  "xlsx-row-149": "Previously a producer slice triggered an FP despite a full SecureRandom.nextBytes overwrite. The exporter now proves the same buffer version reaches its SecretKeySpec consumer through the fill and adds that consumer to the producer input. Identical complete inputs are deduplicated; the case is now TN under the unchanged any-slice policy. The original initializer is retained and no prediction suppression is applied.",
+  "xlsx-row-158": "The effective PBE iteration count is 1050, above the benchmark threshold of 1000. The model classifies the slice as misuse. FP against the benchmark label, not a CryptoEagle rule-engine decision."
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"JAVA",
+  "input":"benchmarks/ApacheCryptoAPI-Bench/decompiled/tika-core-1.17-SNAPSHOT",
+  "source":{"files":239,"lines":18522,"bytes":629895},
+  "graph":{"standardNodes":87255,"standardEdges":599492,"cryptoAwareNodes":87265,"cryptoAwareEdges":599514,"addedNodes":10,"addedEdges":22,"serializedBytes":3001421},
+  "memory":{"peakHeapBytes":491083192},
+  "findings":{"core":0,"extended":0,"byRule":{}},
+  "operations":{"HASH_FUNCTION":4,"SYMMETRIC_ENCRYPTION":6},
+  "selectionOperations":{"HASH_FUNCTION":4,"SYMMETRIC_ENCRYPTION":6},
+  "selectionOperationResolutions":{"COMPLETE":3,"PARTIAL":7},
+  "timingsMillis":{"adapterConfigLoad":62.159,"cpgFrontend":2826.046,"overlays":537.935,"dataflow":640.633,"enrichmentWall":969.007,"coreRules":52.657,"extendedRules":0.000,"totalWall":5535.682},
+  "enrichment":{"callsScanned":18675,"callsMatched":10,"localOperationsMatched":0,"operationGroups":10,"sensitiveBindings":7,"resolvedSourceNodes":7,"adapterMillis":405.869,"provenanceMillis":394.165,"provenanceFlowQueries":3,"provenanceMultiSinkQueries":3,"lifecycleMillis":12.971,"contextAnalysisMillis":127.533,"materializationMillis":5.576,"runMillis":968.986},
+  "enrichmentOverheadPercent":24.197
+}

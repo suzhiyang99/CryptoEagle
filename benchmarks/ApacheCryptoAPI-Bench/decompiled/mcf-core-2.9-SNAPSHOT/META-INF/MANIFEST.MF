@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: fahad
+Build-Jdk: 1.8.0_151
+Implementation-Title: ManifoldCF - Framework - Core
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 2.9-SNAPSHOT
+Specification-Title: ManifoldCF - Framework - Core
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.9-SNAPSHOT
+url: http://www.apache.org/mcf-parent/mcf-framework/mcf-core/
+

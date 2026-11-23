@@ -1,0 +1,41 @@
+package org.apache.taverna.ui.perspectives.myexperiment;
+
+import javax.swing.JComponent;
+import org.apache.taverna.ui.perspectives.myexperiment.model.Resource;
+
+public class ResourcePreviewContent {
+   private Resource resource;
+   private JComponent jcContent;
+
+   public ResourcePreviewContent() {
+   }
+
+   public ResourcePreviewContent(Resource resource, JComponent content) {
+      this.resource = resource;
+      this.jcContent = content;
+   }
+
+   public Resource getResource() {
+      return this.resource;
+   }
+
+   public int getResourceType() {
+      return this.resource.getItemType();
+   }
+
+   public String getResourceTitle() {
+      return this.resource.getTitle();
+   }
+
+   public String getResourceURL() {
+      return this.resource.getResource();
+   }
+
+   public String getResourceURI() {
+      return this.resource.getURI();
+   }
+
+   public JComponent getContent() {
+      return this.jcContent;
+   }
+}

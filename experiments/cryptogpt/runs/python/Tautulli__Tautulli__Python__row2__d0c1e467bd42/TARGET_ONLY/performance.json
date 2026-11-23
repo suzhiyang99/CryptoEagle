@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"PYTHON",
+  "input":"experiments/cryptogpt/runs/_inputs/python/Tautulli__Tautulli__Python__row2__d0c1e467bd42/TARGET_ONLY",
+  "source":{"files":1,"lines":4503,"bytes":200388},
+  "graph":{"standardNodes":33407,"standardEdges":283722,"cryptoAwareNodes":33416,"cryptoAwareEdges":283752,"addedNodes":9,"addedEdges":30,"serializedBytes":1382587},
+  "memory":{"peakHeapBytes":278936824},
+  "findings":{"core":1,"extended":0,"byRule":{"C7":1}},
+  "operations":{"KEY_DERIVATION":1,"SYMMETRIC_ENCRYPTION":2,"TRANSPORT":6},
+  "selectionOperations":{"KEY_DERIVATION":1,"SYMMETRIC_ENCRYPTION":2,"TRANSPORT":6},
+  "selectionOperationResolutions":{"COMPLETE":9},
+  "timingsMillis":{"adapterConfigLoad":62.693,"cpgFrontend":433.970,"overlays":312.722,"dataflow":535.765,"enrichmentWall":672.582,"coreRules":17.527,"extendedRules":0.000,"totalWall":2595.779},
+  "enrichment":{"callsScanned":10025,"callsMatched":9,"localOperationsMatched":0,"operationGroups":9,"sensitiveBindings":5,"resolvedSourceNodes":8,"adapterMillis":375.419,"provenanceMillis":65.286,"provenanceFlowQueries":0,"provenanceMultiSinkQueries":0,"lifecycleMillis":7.953,"contextAnalysisMillis":194.420,"materializationMillis":6.327,"runMillis":672.572},
+  "enrichmentOverheadPercent":52.445
+}

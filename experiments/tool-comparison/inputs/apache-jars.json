@@ -1,0 +1,38 @@
+{
+  "apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT": {
+    "jar": "benchmarks/ApacheCryptoAPI-Bench/jars/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT.jar",
+    "sha256": "caff3969eadc6f3a3c12fec33c9aa7ab8536531c175a33b7ceab9d3ffc77f823"
+  },
+  "artemis-commons-2.5.0-SNAPSHOT": {
+    "jar": "benchmarks/ApacheCryptoAPI-Bench/jars/artemis-commons-2.5.0-SNAPSHOT.jar",
+    "sha256": "0158717cb3b40c5b313b7dfe349a2402f80ebf54845ca182ac8877564d844fed"
+  },
+  "deltaspike-core-impl-1.8.1-SNAPSHOT": {
+    "jar": "benchmarks/ApacheCryptoAPI-Bench/jars/deltaspike-core-impl-1.8.1-SNAPSHOT.jar",
+    "sha256": "0a0ee788809fda20c1bb1f26ad11b60a548f48c0ea17585544e96797d8e538be"
+  },
+  "mcf-core-2.9-SNAPSHOT": {
+    "jar": "benchmarks/ApacheCryptoAPI-Bench/jars/mcf-core-2.9-SNAPSHOT.jar",
+    "sha256": "15cefc12a012e35199b1af81450eb8e257f36a5cb76ed6f97aa75525f66dfba7"
+  },
+  "meecrowave-core-1.2.0-SNAPSHOT": {
+    "jar": "benchmarks/ApacheCryptoAPI-Bench/jars/meecrowave-core-1.2.0-SNAPSHOT.jar",
+    "sha256": "b8ce87258fdce67ec26de6de119987a52cbe736ad522afdef66b377b691885d9"
+  },
+  "openejb-core-7.0.5-SNAPSHOT": {
+    "jar": "benchmarks/ApacheCryptoAPI-Bench/jars/openejb-core-7.0.5-SNAPSHOT.jar",
+    "sha256": "3db821eab57cdd05de151451d08cefa11405ce7619a00474347dec84604feec7"
+  },
+  "taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT": {
+    "jar": "benchmarks/ApacheCryptoAPI-Bench/jars/taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar",
+    "sha256": "17465e4cc006795abb21eea749d2fcec06ed68f4c31e489ba4e4fe2dadeaf42f"
+  },
+  "tika-core-1.17-SNAPSHOT": {
+    "jar": "benchmarks/ApacheCryptoAPI-Bench/jars/tika-core-1.17-SNAPSHOT.jar",
+    "sha256": "df845e1ad4c78b7c24606074c065213b27a3da450b9ac48654849e3b50c90c6f"
+  },
+  "wicket-util-8.0.0-SNAPSHOT": {
+    "jar": "benchmarks/ApacheCryptoAPI-Bench/jars/wicket-util-8.0.0-SNAPSHOT.jar",
+    "sha256": "5d26da02f44d888d5f4ab85d31bae07412d85f1b1ae82ae18d4506a2dff6f7b3"
+  }
+}

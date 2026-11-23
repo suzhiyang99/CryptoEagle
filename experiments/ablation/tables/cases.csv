@@ -1,0 +1,174 @@
+﻿case_id,rule,files,case_type,string-match,no-provenance,full
+xlsx-row-2,C2,predictablecryptographickeybbcase1,"BB: basic, one method",FN,TP,TP
+xlsx-row-5,C2,predictablepbepasswordbbcase1,"BB: basic, one method",FN,TP,TP
+xlsx-row-6,C2,predictablepbepasswordbbcase2,"BB: basic, one method",FN,TP,TP
+xlsx-row-7,C2,predictablekeystorepasswordbbcase1,"BB: basic, one method",FN,TP,TP
+xlsx-row-8,C17,dummyhostnameverifiercase1,other,TP,TP,TP
+xlsx-row-9,C17,dummycertvalidationcase1,other,TP,TP,TP
+xlsx-row-10,C17,dummycertvalidationcase2,other,TP,TP,TP
+xlsx-row-11,C17,dummycertvalidationcase3,other,TP,TP,TP
+xlsx-row-12,C17,impropersocketmanualhostbbcase1,"BB: basic, one method",TP,TP,TP
+xlsx-row-13,C18,httpprotocolbbcase1,"BB: basic, one method",TP,TP,TP
+xlsx-row-14,C9,predictableseedsbbcase1,"BB: basic, one method",FN,TP,TP
+xlsx-row-15,C9,predictableseedsbbcase2,"BB: basic, one method",TP,TP,TP
+xlsx-row-16,C9,untrustedprngcase1,other,TP,TP,TP
+xlsx-row-17,C8,staticsaltsbbcase1,"BB: basic, one method",FN,TP,TP
+xlsx-row-18,C1,ecbinsymmcryptobbcase1,"BB: basic, one method",TP,TP,TP
+xlsx-row-19,C3,staticinitializationvectorbbcase1,"BB: basic, one method",FN,TP,TP
+xlsx-row-20,C7,lessthan1000iterationpbebbcase1,"BB: basic, one method",FN,TP,TP
+xlsx-row-21,C14,brokencryptobbcase1,"BB: basic, one method",TP,TP,TP
+xlsx-row-22,C14,brokencryptobbcase2,"BB: basic, one method",TP,TP,TP
+xlsx-row-23,C14,brokencryptobbcase3,"BB: basic, one method",TP,TP,TP
+xlsx-row-24,C14,brokencryptobbcase4,"BB: basic, one method",TP,TP,TP
+xlsx-row-25,C14,brokencryptobbcase5,"BB: basic, one method",TP,TP,TP
+xlsx-row-26,C13,insecureasymmetriccipherbbcase1,"BB: basic, one method",FN,TP,TP
+xlsx-row-27,C5,brokenhashbbcase1,"BB: basic, one method",TP,TP,TP
+xlsx-row-28,C5,brokenhashbbcase2,"BB: basic, one method",TP,TP,TP
+xlsx-row-29,C5,brokenhashbbcase3,"BB: basic, one method",TP,TP,TP
+xlsx-row-30,C5,brokenhashbbcase4,"BB: basic, one method",TP,TP,TP
+xlsx-row-31,C15,brokenmacbbcase1,"BB: basic, one method",TP,TP,TP
+xlsx-row-32,C15,brokenmacbbcase2,"BB: basic, one method",TP,TP,TP
+xlsx-row-33,C14,brokencryptocorrected,other,TN,TN,TN
+xlsx-row-34,C5,brokenhashcorrected,other,TN,TN,TN
+xlsx-row-35,C1,ecbinsymmcryptocorrected,other,TN,TN,TN
+xlsx-row-36,C17,dummyhostnameverifiercorrected,other,TN,TN,TN
+xlsx-row-37,C18,httpprotocolcase1corrected,other,TN,TN,TN
+xlsx-row-38,C7,lessthan1000iterationpbecorrected,other,TN,FP,FP
+xlsx-row-39,C2,predictablecryptographickeycorrected,other,TN,TN,TN
+xlsx-row-40,C2,predictablekeystorepasswordcorrected,other,TN,TN,TN
+xlsx-row-41,C2,predictablepbepasswordcorrected,other,TN,TN,TN
+xlsx-row-42,C9,predictableseedscorrected,other,TN,TN,TN
+xlsx-row-43,C3,staticinitializationvectorcorrected,other,TN,TN,TN
+xlsx-row-44,C8,staticsaltscorrected,other,TN,TN,TN
+xlsx-row-45,C9,untrustedprngcorrected,other,TN,TN,TN
+xlsx-row-47,C15,brokenmaccorrected,other,TN,TN,TN
+xlsx-row-49,C2,predictablecryptographickeyabicase1,ABI: interprocedural,FN,FN,TP
+xlsx-row-51,C2,predictablepbepasswordabicase1,ABI: interprocedural,FN,FN,TP
+xlsx-row-52,C2,predictablekeystorepasswordabicase1,ABI: interprocedural,FN,FN,TP
+xlsx-row-53,C18,httpprotocolabicase1,ABI: interprocedural,TP,FN,TP
+xlsx-row-54,C9,predictableseedsabicase1,ABI: interprocedural,FN,FN,TP
+xlsx-row-55,C9,predictableseedsabicase2,ABI: interprocedural,TP,FN,TP
+xlsx-row-56,C8,staticsaltsabicase1,ABI: interprocedural,FN,FN,TP
+xlsx-row-57,C1,ecbinsymmcryptoabicase1,ABI: interprocedural,FN,FN,TP
+xlsx-row-58,C3,staticinitializationvectorabicase1,ABI: interprocedural,FN,FN,TP
+xlsx-row-59,C7,lessthan1000iterationpbeabicase1,ABI: interprocedural,FN,TP,TP
+xlsx-row-60,C14,brokencryptoabicase1,ABI: interprocedural,FN,FN,TP
+xlsx-row-61,C14,brokencryptoabicase2,ABI: interprocedural,FN,FN,TP
+xlsx-row-62,C14,brokencryptoabicase3,ABI: interprocedural,FN,FN,TP
+xlsx-row-63,C14,brokencryptoabicase4,ABI: interprocedural,FN,FN,TP
+xlsx-row-64,C14,brokencryptoabicase9,ABI: interprocedural,FN,FN,TP
+xlsx-row-65,C13,insecureasymmetriccipherabicase1,ABI: interprocedural,FN,FN,TP
+xlsx-row-66,C5,brokenhashabicase1,ABI: interprocedural,FN,FN,TP
+xlsx-row-67,C5,brokenhashabicase2,ABI: interprocedural,FN,FN,TP
+xlsx-row-68,C5,brokenhashabicase3,ABI: interprocedural,FN,FN,TP
+xlsx-row-69,C5,brokenhashabicase4,ABI: interprocedural,FN,FN,TP
+xlsx-row-71,C2,predictablecryptographickeyabicase3,ABI: interprocedural,FN,FN,TP
+xlsx-row-73,C2,predictablepbepasswordabicase3,ABI: interprocedural,FN,FN,TP
+xlsx-row-74,C2,predictablekeystorepasswordabicase3,ABI: interprocedural,FN,FN,TP
+xlsx-row-75,C18,httpprotocolabicase3,ABI: interprocedural,TP,FN,TP
+xlsx-row-76,C9,predictableseedsabicase5,ABI: interprocedural,FN,FN,TP
+xlsx-row-77,C9,predictableseedsabicase6,ABI: interprocedural,TP,FN,TP
+xlsx-row-78,C8,staticsaltsabicase3,ABI: interprocedural,FN,FN,TP
+xlsx-row-79,C1,ecbinsymmcryptoabicase3,ABI: interprocedural,FN,FN,TP
+xlsx-row-80,C3,staticinitializationvectorabicase3,ABI: interprocedural,FN,FN,TP
+xlsx-row-81,C7,lessthan1000iterationpbeabicase3,ABI: interprocedural,FN,TP,TP
+xlsx-row-82,C14,brokencryptoabicase11,ABI: interprocedural,FN,FN,TP
+xlsx-row-83,C14,brokencryptoabicase12,ABI: interprocedural,FN,FN,TP
+xlsx-row-84,C14,brokencryptoabicase13,ABI: interprocedural,FN,FN,TP
+xlsx-row-85,C14,brokencryptoabicase14,ABI: interprocedural,FN,FN,TP
+xlsx-row-86,C14,brokencryptoabicase15,ABI: interprocedural,FN,FN,TP
+xlsx-row-87,C13,insecureasymmetriccipherabicase3,ABI: interprocedural,FN,FN,TP
+xlsx-row-88,C5,brokenhashabicase9,ABI: interprocedural,FN,FN,TP
+xlsx-row-89,C5,brokenhashabicase10,ABI: interprocedural,FN,FN,TP
+xlsx-row-90,C5,brokenhashabicase11,ABI: interprocedural,FN,FN,TP
+xlsx-row-91,C5,brokenhashabicase12,ABI: interprocedural,FN,FN,TP
+xlsx-row-93,C2,predictablecryptographickeyabscase1,ABS: field,FN,FN,FN
+xlsx-row-95,C2,predictablepbepasswordabscase1,ABS: field,FN,FN,TP
+xlsx-row-96,C2,predictablekeystorepasswordabscase1,ABS: field,FN,FN,TP
+xlsx-row-97,C18,httpprotocolabscase1,ABS: field,TP,FN,TP
+xlsx-row-98,C9,predictableseedsabscase1,ABS: field,FN,FN,TP
+xlsx-row-99,C9,predictableseedsabscase2,ABS: field,TP,FN,TP
+xlsx-row-100,C8,staticsaltsabscase1,ABS: field,FN,FN,TP
+xlsx-row-101,C1,ecbinsymmcryptoabscase1,ABS: field,FN,FN,TP
+xlsx-row-102,C3,staticinitializationvectorabscase1,ABS: field,FN,FN,TP
+xlsx-row-103,C7,lessthan1000iterationpbeabscase1,ABS: field,FN,TP,TP
+xlsx-row-104,C14,brokencryptoabscase1,ABS: field,FN,FN,TP
+xlsx-row-105,C14,brokencryptoabscase2,ABS: field,FN,FN,TP
+xlsx-row-106,C14,brokencryptoabscase3,ABS: field,FN,FN,TP
+xlsx-row-107,C14,brokencryptoabscase4,ABS: field,FN,FN,TP
+xlsx-row-108,C14,brokencryptoabscase5,ABS: field,FN,FN,TP
+xlsx-row-109,C5,brokenhashabscase1,ABS: field,FN,FN,TP
+xlsx-row-110,C5,brokenhashabscase2,ABS: field,FN,FN,TP
+xlsx-row-111,C5,brokenhashabscase3,ABS: field,FN,FN,TP
+xlsx-row-112,C5,brokenhashabscase4,ABS: field,FN,FN,TP
+xlsx-row-115,C2,predictablecryptographickeyabhcase2,ABH: helper method,FN,TP,TP
+xlsx-row-116,C2,predictablepbepasswordabhcase1,ABH: helper method,TN,TN,TN
+xlsx-row-117,C2,predictablepbepasswordabhcase2,ABH: helper method,FN,FN,TP
+xlsx-row-118,C2,predictablekeystorepasswordabhcase1,ABH: helper method,TN,TN,TN
+xlsx-row-119,C2,predictablekeystorepasswordabhcase2,ABH: helper method,FN,TP,TP
+xlsx-row-120,C9,predictableseedsabhcase2,ABH: helper method,FN,TP,TP
+xlsx-row-121,C9,predictableseedsabhcase4,ABH: helper method,TP,TP,TP
+xlsx-row-122,C8,staticsaltsabhcase1,ABH: helper method,FN,TP,TP
+xlsx-row-123,C3,staticinitializationvectorabhcase1,ABH: helper method,FN,TP,TP
+xlsx-row-124,C3,staticinitializationvectorabhcase2,ABH: helper method,FN,TP,TP
+xlsx-row-125,C7,lessthan1000iterationpbeabhcase1,ABH: helper method,FN,TP,TP
+xlsx-row-127,C2,predictablecryptographickeyabicase2,ABI: interprocedural,FN,FN,TP
+xlsx-row-129,C2,predictablepbepasswordabicase2,ABI: interprocedural,FN,FN,TP
+xlsx-row-130,C2,predictablekeystorepasswordabicase2,ABI: interprocedural,FN,FN,TP
+xlsx-row-131,C18,httpprotocolabicase2,ABI: interprocedural,TP,FN,FN
+xlsx-row-132,C9,predictableseedsabicase3,ABI: interprocedural,FN,FN,TP
+xlsx-row-133,C9,predictableseedsabicase4,ABI: interprocedural,TP,FN,FN
+xlsx-row-134,C8,staticsaltsabicase2,ABI: interprocedural,TP,FN,FN
+xlsx-row-135,C1,ecbinsymmcryptoabicase2,ABI: interprocedural,FN,FN,TP
+xlsx-row-136,C3,staticinitializationvectorabicase2,ABI: interprocedural,TP,FN,FN
+xlsx-row-137,C7,lessthan1000iterationpbeabicase2,ABI: interprocedural,FN,TP,TP
+xlsx-row-138,C14,brokencryptoabicase5,ABI: interprocedural,FN,FN,TP
+xlsx-row-139,C14,brokencryptoabicase6,ABI: interprocedural,FN,FN,TP
+xlsx-row-140,C14,brokencryptoabicase7,ABI: interprocedural,FN,FN,TP
+xlsx-row-141,C14,brokencryptoabicase8,ABI: interprocedural,FN,FN,TP
+xlsx-row-142,C14,brokencryptoabicase10,ABI: interprocedural,FN,FN,TP
+xlsx-row-143,C13,insecureasymmetriccipherabicase2,ABI: interprocedural,FN,FN,TP
+xlsx-row-144,C5,brokenhashabicase5,ABI: interprocedural,FN,FN,TP
+xlsx-row-145,C5,brokenhashabicase6,ABI: interprocedural,FN,FN,TP
+xlsx-row-146,C5,brokenhashabicase7,ABI: interprocedural,FN,FN,TP
+xlsx-row-147,C5,brokenhashabicase8,ABI: interprocedural,FN,FN,TP
+xlsx-row-149,C2,predictablecryptographickeyabpscase1,ABPS: path-sensitive,TN,TN,TN
+xlsx-row-150,C2,predictablepbepasswordabpscase1,ABPS: path-sensitive,TN,TN,TN
+xlsx-row-151,C2,predictablekeystorepasswordabpscase1,ABPS: path-sensitive,TN,TN,TN
+xlsx-row-152,C18,httpprotocolabpscase1,ABPS: path-sensitive,FP,FP,TN
+xlsx-row-153,C9,predictableseedsabpscase1,ABPS: path-sensitive,TN,TN,TN
+xlsx-row-154,C9,predictableseedsabpscase2,ABPS: path-sensitive,TN,TN,TN
+xlsx-row-155,C8,staticsaltsabpscase1,ABPS: path-sensitive,TN,TN,TN
+xlsx-row-156,C1,ecbinsymmcryptoabpscase1,ABPS: path-sensitive,FP,FP,TN
+xlsx-row-157,C3,staticinitializationvectorabpscase1,ABPS: path-sensitive,TN,TN,TN
+xlsx-row-158,C7,lessthan1000iterationpbeabpscase1,ABPS: path-sensitive,TN,TN,FP
+xlsx-row-159,C14,brokencryptoabpscase1,ABPS: path-sensitive,FP,FP,TN
+xlsx-row-160,C14,brokencryptoabpscase2,ABPS: path-sensitive,FP,FP,TN
+xlsx-row-161,C14,brokencryptoabpscase3,ABPS: path-sensitive,FP,FP,TN
+xlsx-row-162,C14,brokencryptoabpscase4,ABPS: path-sensitive,FP,FP,TN
+xlsx-row-163,C14,brokencryptoabpscase5,ABPS: path-sensitive,FP,FP,TN
+xlsx-row-164,C13,insecureasymmetriccipherabpscase1,ABPS: path-sensitive,TN,TN,TN
+xlsx-row-165,C5,brokenhashabpscase1,ABPS: path-sensitive,FP,FP,TN
+xlsx-row-166,C5,brokenhashabpscase2,ABPS: path-sensitive,FP,FP,TN
+xlsx-row-167,C5,brokenhashabpscase3,ABPS: path-sensitive,FP,FP,TN
+xlsx-row-168,C5,brokenhashabpscase4,ABPS: path-sensitive,FP,FP,TN
+xlsx-row-170,C2,"predictablecryptographickeyabmc1,predictablecryptographickeyabmccase1",ABMC: across classes,FN,FN,TP
+xlsx-row-172,C2,"predictablepbepasswordabmc1,predictablepbepasswordabmccase1",ABMC: across classes,FN,FN,TP
+xlsx-row-173,C2,"predictablekeystorepasswordabmc1,predictablekeystorepasswordabmccase1",ABMC: across classes,FN,FN,TP
+xlsx-row-174,C18,"httpprotocolabmc1,httpprotocolabmccase1",ABMC: across classes,TP,FN,TP
+xlsx-row-175,C9,"predictableseedsabmc1,predictableseedsabmccase1",ABMC: across classes,FN,FN,TP
+xlsx-row-176,C9,"predictableseedsabmc2,predictableseedsabmccase2",ABMC: across classes,TP,FN,TP
+xlsx-row-177,C8,"staticsaltsabmc1,staticsaltsabmccase1",ABMC: across classes,FN,FN,TP
+xlsx-row-178,C1,"ecbinsymmcryptoabmc1,ecbinsymmcryptoabmccase1",ABMC: across classes,FN,FN,TP
+xlsx-row-179,C3,"staticinitializationvectorabmc1,staticinitializationvectorabmccase1",ABMC: across classes,FN,FN,TP
+xlsx-row-180,C7,"lessthan1000iterationpbeabmc1,lessthan1000iterationpbeabmccase1",ABMC: across classes,FN,TP,TP
+xlsx-row-181,C14,"brokencryptoabmc1,brokencryptoabmccase1",ABMC: across classes,FN,FN,TP
+xlsx-row-182,C14,"brokencryptoabmc2,brokencryptoabmccase2",ABMC: across classes,FN,FN,TP
+xlsx-row-183,C14,"brokencryptoabmc3,brokencryptoabmccase3",ABMC: across classes,FN,FN,TP
+xlsx-row-184,C14,"brokencryptoabmc4,brokencryptoabmccase4",ABMC: across classes,FN,FN,TP
+xlsx-row-185,C14,"brokencryptoabmc5,brokencryptoabmccase5",ABMC: across classes,FN,FN,TP
+xlsx-row-186,C13,"insecureasymmetriccipherabmc1,insecureasymmetriccipherabmccase1",ABMC: across classes,FN,FN,TP
+xlsx-row-187,C5,"brokenhashabmc1,brokenhashabmccase1",ABMC: across classes,FN,FN,TP
+xlsx-row-188,C5,"brokenhashabmc2,brokenhashabmccase2",ABMC: across classes,FN,FN,TP
+xlsx-row-189,C5,"brokenhashabmc3,brokenhashabmccase3",ABMC: across classes,FN,FN,TP
+xlsx-row-190,C5,"brokenhashabmc4,brokenhashabmccase4",ABMC: across classes,FN,FN,TP

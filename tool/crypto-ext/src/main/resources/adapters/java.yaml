@@ -1,0 +1,470 @@
+version: 1
+language: JAVA
+rules:
+  # Hutool 5.x SecureUtil.aes(byte[]) delegates to AES's ECB/PKCS5Padding default.
+  - id: java-hutool-aes-default
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: CONFIGURE
+    lifecycleRole: FACTORY
+    priority: 100
+    api:
+      methodFullName: ['cn\.hutool\.crypto\.SecureUtil\.aes:.*']
+      callName: ['aes']
+    extract:
+      - target: algorithm
+        source: CONSTANT
+        value: AES
+      - target: mode
+        source: CONSTANT
+        value: ECB
+      - target: padding
+        source: CONSTANT
+        value: PKCS5Padding
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+
+  # Secret.getCipher delegates to JCE, optionally selecting a provider (JENKINS-6459).
+  - id: java-cipher-jenkins-get-cipher
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: CONFIGURE
+    lifecycleRole: FACTORY
+    priority: 100
+    api:
+      methodFullName: ['hudson\.util\.Secret\.getCipher:.*']
+      callName: ['getCipher']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 1
+        pattern: '^\s*["'']?([^/"'']+)'
+      - target: mode
+        source: ARGUMENT
+        argumentIndex: 1
+        pattern: '/([^/"'']+)/'
+      - target: padding
+        source: ARGUMENT
+        argumentIndex: 1
+        pattern: '/([^/"'']+)["'']?\s*$'
+
+  - id: java-cipher-get-instance
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: CONFIGURE
+    lifecycleRole: FACTORY
+    priority: 100
+    api:
+      methodFullName: ['javax\.crypto\.Cipher\.getInstance.*']
+      callName: ['getInstance']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 1
+        pattern: '^\s*["'']?([^/"'']+)'
+      - target: mode
+        source: ARGUMENT
+        argumentIndex: 1
+        pattern: '/([^/"'']+)/'
+      - target: padding
+        source: ARGUMENT
+        argumentIndex: 1
+        pattern: '/([^/"'']+)["'']?\s*$'
+
+  - id: java-hutool-aes-constructor-default
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: CONFIGURE
+    lifecycleRole: FACTORY
+    priority: 100
+    api:
+      methodFullName: ['cn\.hutool\.crypto\.symmetric\.AES\.<init>:.*\((?:byte\[\]|[01])?\)$']
+      callName: ['<init>']
+    extract:
+      - target: algorithm
+        source: CONSTANT
+        value: AES
+      - target: mode
+        source: CONSTANT
+        value: ECB
+      - target: padding
+        source: CONSTANT
+        value: PKCS5Padding
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+
+  - id: java-cipher-init
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: INITIALIZE
+    lifecycleRole: INITIALIZE
+    priority: 90
+    api:
+      methodFullName: ['javax\.crypto\.Cipher\.init.*']
+      callName: ['init']
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 2
+      - parameter: IV
+        argumentIndex: 3
+
+  - id: java-cipher-update
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: UPDATE
+    lifecycleRole: UPDATE
+    priority: 90
+    api:
+      methodFullName: ['javax\.crypto\.Cipher\.update.*']
+      callName: ['update']
+
+  - id: java-cipher-final
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: FINALIZE
+    lifecycleRole: FINALIZE
+    priority: 90
+    api:
+      methodFullName: ['javax\.crypto\.Cipher\.doFinal.*']
+      callName: ['doFinal']
+
+  - id: java-secret-key-spec-slice
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: KEY_SPEC
+    lifecycleRole: PARAMETER_SPEC
+    priority: 110
+    api:
+      methodFullName: ['javax\.crypto\.spec\.SecretKeySpec\.<init>:.*\((?:byte\[\],int,int,java\.lang\.String|4)\)$']
+      callName: ['<init>']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 4
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+
+  - id: java-secret-key-spec
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: KEY_SPEC
+    lifecycleRole: PARAMETER_SPEC
+    priority: 100
+    api:
+      methodFullName: ['javax\.crypto\.spec\.SecretKeySpec\.<init>.*']
+      callName: ['<init>']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 2
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+
+  - id: java-iv-parameter-spec
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: IV_SPEC
+    lifecycleRole: PARAMETER_SPEC
+    priority: 100
+    api:
+      methodFullName: ['javax\.crypto\.spec\.IvParameterSpec\.<init>.*']
+      callName: ['<init>']
+    sensitiveParameters:
+      - parameter: IV
+        argumentIndex: 1
+
+  - id: java-des-key-spec
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: KEY_SPEC
+    lifecycleRole: PARAMETER_SPEC
+    priority: 100
+    api:
+      methodFullName: ['javax\.crypto\.spec\.DESKeySpec\.<init>.*']
+      callName: ['<init>']
+    extract:
+      - target: algorithm
+        source: CONSTANT
+        value: DES
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+
+  - id: java-desede-key-spec
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: KEY_SPEC
+    lifecycleRole: PARAMETER_SPEC
+    priority: 100
+    api:
+      methodFullName: ['javax\.crypto\.spec\.DESedeKeySpec\.<init>.*']
+      callName: ['<init>']
+    extract:
+      - target: algorithm
+        source: CONSTANT
+        value: DESede
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+
+  - id: java-message-digest
+    operationType: HASH_FUNCTION
+    operation: HASH
+    lifecycleRole: FACTORY
+    priority: 100
+    api:
+      methodFullName: ['java\.security\.MessageDigest\.getInstance.*']
+      callName: ['getInstance']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 1
+
+  - id: java-message-digest-update
+    operationType: HASH_FUNCTION
+    operation: HASH
+    lifecycleRole: UPDATE
+    priority: 100
+    api:
+      methodFullName: ['java\.security\.MessageDigest\.update.*']
+      callName: ['update']
+    sensitiveParameters:
+      - parameter: PASSWORD
+        argumentIndex: 1
+
+  - id: java-message-digest-final-with-input
+    operationType: HASH_FUNCTION
+    operation: HASH
+    lifecycleRole: FINALIZE
+    priority: 110
+    api:
+      methodFullName: ['java\.security\.MessageDigest\.digest.*']
+      callName: ['digest']
+      code: ['.*\.digest\(.+\).*']
+    sensitiveParameters:
+      - parameter: PASSWORD
+        argumentIndex: 1
+
+  - id: java-message-digest-final-empty
+    operationType: HASH_FUNCTION
+    operation: HASH
+    lifecycleRole: FINALIZE
+    priority: 100
+    api:
+      methodFullName: ['java\.security\.MessageDigest\.digest.*']
+      callName: ['digest']
+      code: ['.*\.digest\(\s*\).*']
+
+  - id: java-mac-get-instance
+    operationType: MAC_SIGNATURE
+    operation: MAC
+    lifecycleRole: FACTORY
+    priority: 100
+    api:
+      methodFullName: ['javax\.crypto\.Mac\.getInstance.*']
+      callName: ['getInstance']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 1
+
+  - id: java-mac-init
+    operationType: MAC_SIGNATURE
+    operation: MAC
+    lifecycleRole: INITIALIZE
+    priority: 100
+    api:
+      methodFullName: ['javax\.crypto\.Mac\.init.*']
+      callName: ['init']
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+
+  - id: java-mac-final
+    operationType: MAC_SIGNATURE
+    operation: MAC
+    lifecycleRole: FINALIZE
+    priority: 100
+    api:
+      methodFullName: ['javax\.crypto\.Mac\.doFinal.*']
+      callName: ['doFinal']
+
+  - id: java-signature-get-instance
+    operationType: MAC_SIGNATURE
+    operation: SIGNATURE
+    lifecycleRole: FACTORY
+    priority: 100
+    api:
+      methodFullName: ['java\.security\.Signature\.getInstance.*']
+      callName: ['getInstance']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 1
+
+  - id: java-pbe-key-spec
+    operationType: KEY_DERIVATION
+    operation: PBKDF2
+    lifecycleRole: DERIVE
+    priority: 100
+    api:
+      methodFullName: ['javax\.crypto\.spec\.PBEKeySpec\.<init>.*']
+      callName: ['<init>']
+    extract:
+      - target: iterations
+        source: ARGUMENT
+        argumentIndex: 3
+        normalize: NONE
+      - target: keyLength
+        source: ARGUMENT
+        argumentIndex: 4
+        normalize: NONE
+    sensitiveParameters:
+      - parameter: PASSWORD
+        argumentIndex: 1
+      - parameter: SALT
+        argumentIndex: 2
+
+  - id: java-pbe-parameter-spec
+    operationType: KEY_DERIVATION
+    operation: KDF_PARAMETERS
+    lifecycleRole: PARAMETER_SPEC
+    priority: 100
+    api:
+      methodFullName: ['javax\.crypto\.spec\.PBEParameterSpec\.<init>.*']
+      callName: ['<init>']
+    extract:
+      - target: iterations
+        source: ARGUMENT
+        argumentIndex: 2
+        normalize: NONE
+    sensitiveParameters:
+      - parameter: SALT
+        argumentIndex: 1
+
+  - id: java-secret-key-factory
+    operationType: KEY_DERIVATION
+    operation: CONFIGURE
+    lifecycleRole: FACTORY
+    priority: 100
+    api:
+      methodFullName: ['javax\.crypto\.SecretKeyFactory\.getInstance.*']
+      callName: ['getInstance']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 1
+
+  - id: java-key-generator
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: KEY_GENERATION
+    lifecycleRole: GENERATE
+    priority: 100
+    api:
+      methodFullName: ['javax\.crypto\.KeyGenerator\.getInstance.*']
+      callName: ['getInstance']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 1
+
+  - id: java-gcm-parameter-spec
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: NONCE_SPEC
+    lifecycleRole: PARAMETER_SPEC
+    priority: 100
+    api:
+      methodFullName: ['javax\.crypto\.spec\.GCMParameterSpec\.<init>.*']
+      callName: ['<init>']
+    sensitiveParameters:
+      - parameter: NONCE
+        argumentIndex: 2
+
+  - id: java-secure-random-seeded-constructor
+    operationType: RANDOMNESS
+    operation: SEED
+    lifecycleRole: RANDOM
+    priority: 120
+    api:
+      methodFullName: ['java\.security\.SecureRandom\.<init>.*']
+      callName: ['<init>']
+      code: ['.*SecureRandom\(\s*[^)].*']
+    extract:
+      - target: source
+        source: CONSTANT
+        value: CSPRNG
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+
+  - id: java-secure-random-set-seed
+    operationType: RANDOMNESS
+    operation: SEED
+    lifecycleRole: RANDOM
+    priority: 120
+    api:
+      methodFullName: ['java\.security\.SecureRandom\.setSeed.*']
+      callName: ['setSeed']
+    extract:
+      - target: source
+        source: CONSTANT
+        value: CSPRNG
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+
+  - id: java-secure-random
+    operationType: RANDOMNESS
+    operation: GENERATE
+    lifecycleRole: RANDOM
+    priority: 100
+    api:
+      methodFullName: ['java\.security\.SecureRandom\.(?!setSeed).*']
+      code: ['(?!.*SecureRandom\(\s*[^)]).*']
+    extract:
+      - target: source
+        source: CONSTANT
+        value: CSPRNG
+
+  - id: java-key-pair-generator
+    operationType: ASYMMETRIC_ENCRYPTION
+    operation: KEY_GENERATION
+    lifecycleRole: FACTORY
+    priority: 100
+    api:
+      methodFullName: ['java\.security\.KeyPairGenerator\.getInstance.*']
+      callName: ['getInstance']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 1
+
+  - id: java-key-pair-initialize
+    operationType: ASYMMETRIC_ENCRYPTION
+    operation: KEY_GENERATION
+    lifecycleRole: INITIALIZE
+    priority: 100
+    api:
+      methodFullName: ['java\.security\.KeyPairGenerator\.initialize.*']
+      callName: ['initialize']
+    extract:
+      - target: keySize
+        source: ARGUMENT
+        argumentIndex: 1
+        normalize: NONE
+
+  - id: java-weak-random
+    operationType: RANDOMNESS
+    operation: GENERATE
+    lifecycleRole: RANDOM
+    priority: 80
+    api:
+      methodFullName: ['java\.util\.Random\..*']
+    extract:
+      - target: source
+        source: CONSTANT
+        value: WEAK_RANDOM
+
+  - id: java-thread-local-random
+    operationType: RANDOMNESS
+    operation: GENERATE
+    lifecycleRole: RANDOM
+    priority: 90
+    api:
+      methodFullName: ['java\.util\.concurrent\.ThreadLocalRandom\.next(?:Long|Int|Bytes|Double|Float|Boolean).*']
+    extract:
+      - target: source
+        source: CONSTANT
+        value: WEAK_RANDOM

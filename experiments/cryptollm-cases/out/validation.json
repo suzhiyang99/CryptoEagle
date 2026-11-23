@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-11-20T07:59:19.194861+00:00",
+  "scope": "Saved sources, slices, predictions, metrics and tables; no model inference or PDF compilation rerun.",
+  "cases": 181,
+  "positive": 144,
+  "negative": 37,
+  "multi_file_cases": 21,
+  "source_files_verified": 201,
+  "missing_source_cases": 1,
+  "cross_file_slices": 29,
+  "aggregation_both_arms": "any",
+  "model_hash_matches_recorded_run": true,
+  "metrics_independent_recount": {
+    "CryptoLLM original front end": {
+      "counts": {
+        "TP": 40,
+        "FP": 0,
+        "FN": 104,
+        "TN": 37
+      },
+      "P": 1.0,
+      "R": 0.2777777777777778,
+      "F1": 0.43478260869565216
+    },
+    "CA-CPG front end": {
+      "counts": {
+        "TP": 86,
+        "FP": 6,
+        "FN": 58,
+        "TN": 31
+      },
+      "P": 0.9347826086956522,
+      "R": 0.5972222222222222,
+      "F1": 0.7288135593220338
+    }
+  },
+  "publication_table_columns": [
+    "Front end",
+    "TP",
+    "FP",
+    "FN",
+    "TN",
+    "R",
+    "F1"
+  ],
+  "publication_tables_match": true,
+  "code_sha256": {
+    "experiments/cryptollm-cases/scripts/01_cases.py": "e38da0ddd59c1424cb0d89a489ff4395c16eefc979ac069d120598a963b416f9",
+    "experiments/cryptollm-cases/scripts/02_slices.py": "20f4a483d4ca71854d2dca98f458162ee69ea4c500cb80add7eaf3acc35b37a0",
+    "experiments/cryptollm-cases/scripts/03_predict.py": "f7b54d903e8763ffa76c7886913da0f65fa151e9ad0353a9b45c336e04f0c174",
+    "experiments/cryptollm-cases/scripts/04_evaluate.py": "9814a057f4c12655bdbc75965cc362291de33eda3ddc8fa2d4eff8de475078cb",
+    "experiments/cryptollm-cases/scripts/05_validate.py": "17aff7874a302783644f4193288581aa9bdfa6e32f2558c1b6e0d000dab872eb",
+    "experiments/cryptollm-cases/scripts/frozen_model.py": "6d065b50e97dba5a79e417a92f0ae02b822735563f2fe06ee4db4f9ac7f1ed4c",
+    "experiments/cryptollm-cases/scripts/normalization_helpers.py": "1e8b9bd8253060c860694f165ecd7f7e405d2bbfeca81092a5ae677abf4254dd"
+  },
+  "data_sha256": {
+    "experiments/cryptollm-cases/inputs/cases.json": "c6065e7cccd3e093de345c4cc62b1dda699c894e1c29aeafbdaad6ecfe342b1d",
+    "experiments/cryptollm-cases/out/case-results.csv": "5705bcb8980f79db05b4657741bcab2a777a93e8689b53ef9ec1376bb84db7a7",
+    "experiments/cryptollm-cases/out/operations.json": "359a4fb4ef88e4416bd01d274853157eb2c8937482e451122c42cf4ff4caddc4",
+    "experiments/cryptollm-cases/out/predictions.json": "acdac89f7f7fa11ba8884989efdadfa677457eb066de66f25b9ea1df02f256c4",
+    "experiments/cryptollm-cases/out/baseline/slices.json": "7fecb27cfed7ea2a5f0909f4b8247eb1d075473a3d332f91fa13858587519274",
+    "experiments/cryptollm-cases/out/cacpg/slices.json": "1737ce12071ed325a684a6b94021d2d457f82c65545db84619e947181e48e640"
+  },
+  "paper": {
+    "path": "\u63d0\u4ea4JSS\u7248/output/pdf/CryptoEagle-JSS.pdf",
+    "sha256": "7e3fa8ccd5a4605f66c6c9baa8a203a329c58a5cdaf2d8e1007716d06cf29e61",
+    "check": "Current file fingerprint only; compilation and layout are not checked by this script."
+  }
+}

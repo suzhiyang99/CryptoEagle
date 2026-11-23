@@ -1,0 +1,34 @@
+{
+  "language": "python",
+  "id": "python/Tautulli__Tautulli__Python-reject__row4__842e36485a6b/TARGET_ONLY",
+  "repository": "Tautulli/Tautulli",
+  "commit": "842e36485a6b4e718ad870cf0024c23bdc7d8d16",
+  "target_path": "lib/dns/dnssec.py",
+  "report_target_row": "4",
+  "final": false,
+  "source_root": "benchmarks/cryptogpt-realworld-python-full/Tautulli__Tautulli/2023-08-15_842e36485a6b",
+  "scope": "TARGET_ONLY",
+  "input": "experiments/cryptogpt/runs/_inputs/python/Tautulli__Tautulli__Python-reject__row4__842e36485a6b/TARGET_ONLY",
+  "source_files": [
+    "lib/dns/dnssec.py"
+  ],
+  "status": "SUCCESS",
+  "seconds": 1.543,
+  "raw_findings": 0,
+  "rules": {},
+  "source_unchanged": true,
+  "report": "experiments/cryptogpt/runs/python/Tautulli__Tautulli__Python-reject__row4__842e36485a6b/TARGET_ONLY/findings.json",
+  "command": [
+    "java",
+    "-Xmx8g",
+    "-Xss128m",
+    "-cp",
+    "<tools/crypto-ext runtime classpath>",
+    "org.codeminers.standalone.EvaluationMain",
+    "python",
+    "experiments/cryptogpt/runs/_inputs/python/Tautulli__Tautulli__Python-reject__row4__842e36485a6b/TARGET_ONLY",
+    "--metrics-output=experiments/cryptogpt/runs/python/Tautulli__Tautulli__Python-reject__row4__842e36485a6b/TARGET_ONLY/performance.json",
+    "--report=json",
+    "--report-output=experiments/cryptogpt/runs/python/Tautulli__Tautulli__Python-reject__row4__842e36485a6b/TARGET_ONLY/findings.json"
+  ]
+}

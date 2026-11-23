@@ -1,0 +1,51 @@
+{
+  "unit": "ground-truth case",
+  "metrics": [
+    {
+      "front_end": "CryptoLLM original front end",
+      "cases": 181,
+      "TP": 40,
+      "FP": 0,
+      "FN": 104,
+      "TN": 37,
+      "Precision": 1.0,
+      "Recall": 0.2777777777777778,
+      "F1": 0.43478260869565216,
+      "positive_coverage": 69,
+      "positive_total": 144,
+      "negative_coverage": 17,
+      "negative_total": 37,
+      "slices": 117,
+      "max_tokens": 312,
+      "slices_over_512": 0
+    },
+    {
+      "front_end": "CA-CPG front end",
+      "cases": 181,
+      "TP": 86,
+      "FP": 6,
+      "FN": 58,
+      "TN": 31,
+      "Precision": 0.9347826086956522,
+      "Recall": 0.5972222222222222,
+      "F1": 0.7288135593220338,
+      "positive_coverage": 130,
+      "positive_total": 144,
+      "negative_coverage": 35,
+      "negative_total": 37,
+      "slices": 333,
+      "max_tokens": 227,
+      "slices_over_512": 0
+    }
+  ],
+  "validation": {
+    "baseline": {
+      "errors": 0,
+      "cross_file_slices": 0
+    },
+    "cacpg": {
+      "errors": 0,
+      "cross_file_slices": 29
+    }
+  }
+}

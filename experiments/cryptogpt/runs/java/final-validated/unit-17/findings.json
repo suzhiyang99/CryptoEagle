@@ -1,0 +1,3 @@
+[
+  {"fingerprint":"c47304fe","ruleId":"C16","ruleSet":"C1-C18","title":"Weak signature digest","category":"Signature","cwe":327,"severity":"HIGH","message":"A digital signature uses SHA-1 or MD5.","remediation":"Use an appropriate signature algorithm with a modern digest.","srcFile":"src/main/java/org/keycloak/saml/BaseSAML2BindingBuilder.java","lineNo":69,"operationType":"MAC_SIGNATURE","operation":"SIGNATURE","algorithm":"SHA1","mode":"","evidence":[{"kind":"API","nodeLabel":"CALL","code":"SignatureAlgorithm this.signatureAlgorithm = SignatureAlgorithm.RSA_SHA1; used by this.signatureAlgorithm.createSignature()"}]}
+]

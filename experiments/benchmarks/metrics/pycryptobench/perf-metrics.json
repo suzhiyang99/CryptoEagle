@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"PYTHON",
+  "input":"benchmarks/PyCryptoBench",
+  "source":{"files":1836,"lines":25701,"bytes":366127},
+  "graph":{"standardNodes":149809,"standardEdges":878977,"cryptoAwareNodes":150045,"cryptoAwareEdges":879505,"addedNodes":236,"addedEdges":528,"serializedBytes":2726631},
+  "memory":{"peakHeapBytes":551642368},
+  "findings":{"core":180,"extended":0,"byRule":{"C1":12,"C13":12,"C14":1,"C17":46,"C18":18,"C2":47,"C4":10,"C5":12,"C7":11,"C8":11}},
+  "operations":{"ASYMMETRIC_ENCRYPTION":11,"HASH_FUNCTION":12,"KEY_DERIVATION":23,"MAC_SIGNATURE":1,"RANDOMNESS":26,"SYMMETRIC_ENCRYPTION":68,"TRANSPORT":49,"VERIFICATION":46},
+  "selectionOperations":{"ASYMMETRIC_ENCRYPTION":11,"HASH_FUNCTION":12,"KEY_DERIVATION":23,"MAC_SIGNATURE":1,"RANDOMNESS":12,"SYMMETRIC_ENCRYPTION":68,"TRANSPORT":49,"VERIFICATION":46},
+  "selectionOperationResolutions":{"COMPLETE":208,"PARTIAL":14},
+  "timingsMillis":{"adapterConfigLoad":62.959,"cpgFrontend":784.483,"overlays":659.033,"dataflow":733.021,"enrichmentWall":10249.286,"coreRules":50885.524,"extendedRules":0.000,"totalWall":63984.473},
+  "enrichment":{"callsScanned":25657,"callsMatched":202,"localOperationsMatched":0,"operationGroups":236,"sensitiveBindings":106,"resolvedSourceNodes":103,"adapterMillis":6741.488,"provenanceMillis":3149.406,"provenanceFlowQueries":0,"provenanceMultiSinkQueries":0,"lifecycleMillis":41.266,"contextAnalysisMillis":282.534,"materializationMillis":11.138,"runMillis":10249.276},
+  "enrichmentOverheadPercent":470.899
+}

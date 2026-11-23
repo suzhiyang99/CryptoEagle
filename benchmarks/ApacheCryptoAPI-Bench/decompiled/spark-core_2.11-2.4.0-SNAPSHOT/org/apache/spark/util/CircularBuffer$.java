@@ -1,0 +1,17 @@
+package org.apache.spark.util;
+
+public final class CircularBuffer$ {
+   public static final CircularBuffer$ MODULE$;
+
+   static {
+      new CircularBuffer$();
+   }
+
+   public int $lessinit$greater$default$1() {
+      return 10240;
+   }
+
+   private CircularBuffer$() {
+      MODULE$ = this;
+   }
+}

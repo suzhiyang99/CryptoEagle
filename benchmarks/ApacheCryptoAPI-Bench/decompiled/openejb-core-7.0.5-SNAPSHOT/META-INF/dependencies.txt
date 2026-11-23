@@ -1,0 +1,52 @@
+activemq-broker-5.14.5.jar
+ activemq-client-5.14.5.jar
+  hawtbuf-1.11.jar
+ activemq-openwire-legacy-5.14.5.jar
+activemq-jdbc-store-5.14.5.jar
+activemq-ra-5.14.5.jar
+ activemq-kahadb-store-5.14.5.jar
+  activemq-protobuf-1.1.jar
+bval-core-1.1.2.jar
+bval-jsr-1.1.2.jar
+commons-cli-1.2.jar
+commons-collections-3.2.2.jar
+commons-dbcp2-2.1.jar
+commons-lang3-3.5.jar
+commons-logging-1.2.jar
+commons-pool2-2.3.jar
+geronimo-connector-3.1.4.jar
+ geronimo-j2ee-connector_1.6_spec-1.0.jar
+geronimo-javamail_1.4_mail-1.9.0-alpha-2.jar
+geronimo-transaction-3.1.4.jar
+howl-1.0.1-1.jar
+hsqldb-2.3.2.jar
+javaee-api-7.0-1.jar
+mbean-annotation-api-7.0.5-SNAPSHOT.jar
+openejb-api-7.0.5-SNAPSHOT.jar
+openejb-javaagent-7.0.5-SNAPSHOT.jar
+openejb-jee-7.0.5-SNAPSHOT.jar
+openejb-jee-accessors-7.0.5-SNAPSHOT.jar
+ sxc-jaxb-core-0.8.jar
+  sxc-runtime-0.8.jar
+openejb-jpa-integration-7.0.5-SNAPSHOT.jar
+openejb-loader-7.0.5-SNAPSHOT.jar
+openjpa-2.4.2.jar
+ commons-lang-2.6.jar
+ serp-1.15.1.jar
+openwebbeans-ee-1.7.4.jar
+openwebbeans-ee-common-1.7.4.jar
+openwebbeans-ejb-1.7.4.jar
+openwebbeans-impl-1.7.4.jar
+openwebbeans-spi-1.7.4.jar
+openwebbeans-web-1.7.4.jar
+ openwebbeans-el22-1.7.4.jar
+quartz-openejb-shade-2.2.1.jar
+slf4j-api-1.7.21.jar
+slf4j-jdk14-1.7.21.jar
+swizzle-stream-1.6.2.jar
+wsdl4j-1.6.3.jar (optional)
+xbean-asm5-shaded-4.5.jar
+xbean-bundleutils-4.5.jar
+xbean-finder-shaded-4.5.jar
+xbean-naming-4.5.jar
+xbean-reflect-4.5.jar

@@ -1,0 +1,4 @@
+﻿Variant,Precision,Recall,F1
+Base (string matching),0.750,0.241,0.365
++Ontology,0.778,0.307,0.440
++Provenance (full),0.985,0.964,0.974

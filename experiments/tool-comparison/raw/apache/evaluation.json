@@ -1,0 +1,30 @@
+{
+  "generated_utc": "2026-11-22T12:14:21.083807+00:00",
+  "rule_set": "C1-C18",
+  "matching_unit": "ground-truth case: outer class/file + mapped rule; no line/method requirement",
+  "cases": 121,
+  "scored_cases": 94,
+  "counts": {
+    "cryptoguard": {
+      "FP": 18,
+      "TP": 42,
+      "NOT_RUN": 26,
+      "TN": 25,
+      "FN": 9,
+      "CLASS_MISSING": 1
+    },
+    "cognicrypt": {
+      "TN": 18,
+      "FN": 6,
+      "NOT_RUN": 26,
+      "TP": 45,
+      "FP": 25,
+      "CLASS_MISSING": 1
+    }
+  },
+  "source_cases_sha256": "9d3393d5c8a738cbc65ff9c43f945b5b3c935ef9a0e507a9786b56f5a980c639",
+  "mapping_sha256": "469130baa2de39ea585a8ae77fbf1a35ae41642f6ba86dcca4b167d1b011e432",
+  "rule_schema_sha256": "ca87fbfcfd2f61b6ecf96191ac649720870cb2950f95c08d1a18f64a5a261972",
+  "run_metadata_sha256": "2e44776a71a1533ac10bab925a1772f5539d0cefae8a0c47af4b0383c1e23ece",
+  "verdicts_sha256": "c93d1189dfcff691e396da311b66280f9a1b81431500a63fd89d1dfc30586750"
+}

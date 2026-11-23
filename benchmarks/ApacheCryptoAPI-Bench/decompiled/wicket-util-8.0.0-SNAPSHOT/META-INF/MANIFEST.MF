@@ -1,0 +1,79 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1511330449791
+Build-Jdk: 1.8.0_151
+Built-By: fahad
+Bundle-Description: Wicket is a Java-based open source component web app
+ lication framework.
+Bundle-DocURL: http://apache.org
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Wicket Util
+Bundle-SymbolicName: org.apache.wicket.util
+Bundle-Vendor: Apache Software Foundation
+Bundle-Version: 8.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.wicket.util.convert;version="8.0.0";uses:="ja
+ vax.swing.text,org.apache.wicket.util.io",org.apache.wicket.util.conver
+ t.converter;version="8.0.0";uses:="org.apache.wicket.util.convert",org.
+ apache.wicket.util.markup.xhtml;version="8.0.0";uses:="org.junit",org.a
+ pache.wicket.util.xml;version="8.0.0";uses:="org.xml.sax",org.apache.wi
+ cket.util.io;version="8.0.0";uses:="org.apache.wicket.util.string,org.a
+ pache.wicket.util.time",org.apache.wicket.util.listener;version="8.0.0"
+ ,org.apache.wicket.util.value;version="8.0.0";uses:="org.apache.wicket.
+ util.parse.metapattern,org.apache.wicket.util.string,org.apache.wicket.
+ util.time",org.apache.wicket.util;version="8.0.0";uses:="org.apache.wic
+ ket.util.io",org.apache.wicket.util.time;version="8.0.0";uses:="org.apa
+ che.wicket.util.lang,org.apache.wicket.util.string,org.apache.wicket.ut
+ il.thread,org.slf4j",org.apache.wicket.util.file;version="8.0.0";uses:=
+ "javax.servlet,javax.xml.parsers,org.apache.commons.io,org.apache.wicke
+ t.util.lang,org.apache.wicket.util.resource,org.apache.wicket.util.time
+ ,org.apache.wicket.util.watch,org.xml.sax",org.apache.wicket.util.parse
+ .metapattern;version="8.0.0";uses:="org.apache.wicket.util.io",org.apac
+ he.wicket.util.parse.metapattern.parsers;version="8.0.0";uses:="org.apa
+ che.wicket.util.parse.metapattern",org.apache.wicket.util.string;versio
+ n="8.0.0";uses:="org.apache.wicket.util.convert,org.apache.wicket.util.
+ io,org.apache.wicket.util.time",org.apache.wicket.util.string.interpola
+ tor;version="8.0.0";uses:="org.apache.wicket.util.io",org.apache.wicket
+ .util.diff;version="8.0.0",org.apache.wicket.util.diff.myers;version="8
+ .0.0";uses:="org.apache.wicket.util.diff",org.apache.wicket.util.crypt;
+ version="8.0.0";uses:="javax.crypto",org.apache.wicket.util.thread;vers
+ ion="8.0.0";uses:="org.apache.wicket.util.time,org.slf4j",org.apache.wi
+ cket.util.encoding;version="8.0.0",org.apache.wicket.util.resource;vers
+ ion="8.0.0";uses:="org.apache.wicket.util.file,org.apache.wicket.util.i
+ o,org.apache.wicket.util.lang,org.apache.wicket.util.time,org.apache.wi
+ cket.util.watch",org.apache.wicket.util.watch;version="8.0.0";uses:="or
+ g.apache.wicket.util.listener,org.apache.wicket.util.time",org.apache.w
+ icket.util.license;version="8.0.0";uses:="org.junit",org.apache.wicket.
+ util.collections;version="8.0.0",org.apache.wicket.util.lang;version="8
+ .0.0";uses:="org.apache.wicket.util.io,org.apache.wicket.util.string,or
+ g.apache.wicket.util.value,org.slf4j",org.apache.wicket.util.visit;vers
+ ion="8.0.0"
+Implementation-Title: Wicket Util
+Implementation-URL: http://wicket.apache.org/wicket-util
+Implementation-Vendor: Apache Software Foundation
+Implementation-Vendor-Id: org.apache.wicket
+Implementation-Version: 8.0.0-SNAPSHOT
+Import-Package: javax.crypto,javax.crypto.spec,javax.servlet;version="[3
+ .1,4)",javax.swing.text,javax.xml.parsers,javax.xml.transform,javax.xml
+ .transform.stream,org.apache.commons.io;version="[1.4,2)",org.apache.wi
+ cket.util.collections;version="[8.0,9)",org.apache.wicket.util.convert;
+ version="[8.0,9)",org.apache.wicket.util.diff;version="[8.0,9)",org.apa
+ che.wicket.util.diff.myers;version="[8.0,9)",org.apache.wicket.util.enc
+ oding;version="[8.0,9)",org.apache.wicket.util.file;version="[8.0,9)",o
+ rg.apache.wicket.util.io;version="[8.0,9)",org.apache.wicket.util.lang;
+ version="[8.0,9)",org.apache.wicket.util.listener;version="[8.0,9)",org
+ .apache.wicket.util.parse.metapattern;version="[8.0,9)",org.apache.wick
+ et.util.parse.metapattern.parsers;version="[8.0,9)",org.apache.wicket.u
+ til.resource;version="[8.0,9)",org.apache.wicket.util.string;version="[
+ 8.0,9)",org.apache.wicket.util.string.interpolator;version="[8.0,9)",or
+ g.apache.wicket.util.thread;version="[8.0,9)",org.apache.wicket.util.ti
+ me;version="[8.0,9)",org.apache.wicket.util.value;version="[8.0,9)",org
+ .apache.wicket.util.watch;version="[8.0,9)",org.apache.wicket.util.xml;
+ version="[8.0,9)",org.junit,org.slf4j;version="[1.7,2)",org.w3c.dom,org
+ .xml.sax
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Wicket Util
+Specification-Vendor: Apache Software Foundation
+Specification-Version: 8.0.0-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906
+

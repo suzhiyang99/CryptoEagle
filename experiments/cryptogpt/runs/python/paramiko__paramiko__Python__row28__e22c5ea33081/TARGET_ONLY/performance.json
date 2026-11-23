@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"PYTHON",
+  "input":"experiments/cryptogpt/runs/_inputs/python/paramiko__paramiko__Python__row28__e22c5ea33081/TARGET_ONLY",
+  "source":{"files":1,"lines":258,"bytes":8248},
+  "graph":{"standardNodes":1944,"standardEdges":13846,"cryptoAwareNodes":1949,"cryptoAwareEdges":13853,"addedNodes":5,"addedEdges":7,"serializedBytes":182543},
+  "memory":{"peakHeapBytes":69948552},
+  "findings":{"core":3,"extended":0,"byRule":{"C13":1,"C16":2}},
+  "operations":{"MAC_SIGNATURE":5},
+  "selectionOperations":{"MAC_SIGNATURE":5},
+  "selectionOperationResolutions":{"COMPLETE":5},
+  "timingsMillis":{"adapterConfigLoad":62.823,"cpgFrontend":282.878,"overlays":83.982,"dataflow":75.787,"enrichmentWall":86.651,"coreRules":10.494,"extendedRules":0.000,"totalWall":1077.592},
+  "enrichment":{"callsScanned":399,"callsMatched":3,"localOperationsMatched":0,"operationGroups":5,"sensitiveBindings":0,"resolvedSourceNodes":0,"adapterMillis":36.262,"provenanceMillis":0.524,"provenanceFlowQueries":0,"provenanceMultiSinkQueries":0,"lifecycleMillis":1.367,"contextAnalysisMillis":22.054,"materializationMillis":11.738,"runMillis":86.642},
+  "enrichmentOverheadPercent":19.576
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"PYTHON",
+  "input":"experiments/cryptogpt/runs/_inputs/python/lbryio__lbry-sdk__Python__row25__eb5da9511e16/TARGET_ONLY",
+  "source":{"files":1,"lines":71,"bytes":3076},
+  "graph":{"standardNodes":902,"standardEdges":6622,"cryptoAwareNodes":912,"cryptoAwareEdges":6679,"addedNodes":10,"addedEdges":57,"serializedBytes":147992},
+  "memory":{"peakHeapBytes":56319832},
+  "findings":{"core":2,"extended":0,"byRule":{"C4":2}},
+  "operations":{"RANDOMNESS":2,"SYMMETRIC_ENCRYPTION":8},
+  "selectionOperations":{"RANDOMNESS":2,"SYMMETRIC_ENCRYPTION":8},
+  "selectionOperationResolutions":{"COMPLETE":10},
+  "timingsMillis":{"adapterConfigLoad":63.814,"cpgFrontend":258.556,"overlays":65.661,"dataflow":55.680,"enrichmentWall":92.644,"coreRules":19.849,"extendedRules":0.000,"totalWall":1039.406},
+  "enrichment":{"callsScanned":230,"callsMatched":16,"localOperationsMatched":0,"operationGroups":10,"sensitiveBindings":8,"resolvedSourceNodes":23,"adapterMillis":27.683,"provenanceMillis":19.383,"provenanceFlowQueries":0,"provenanceMultiSinkQueries":0,"lifecycleMillis":4.095,"contextAnalysisMillis":19.795,"materializationMillis":5.611,"runMillis":92.635},
+  "enrichmentOverheadPercent":24.386
+}

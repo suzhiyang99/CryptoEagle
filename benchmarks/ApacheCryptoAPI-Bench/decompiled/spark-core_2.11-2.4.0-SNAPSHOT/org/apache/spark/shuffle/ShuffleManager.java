@@ -1,0 +1,22 @@
+package org.apache.spark.shuffle;
+
+import org.apache.spark.ShuffleDependency;
+import org.apache.spark.TaskContext;
+import scala.reflect.ScalaSignature;
+
+@ScalaSignature(
+   bytes = "\u0006\u0001A4\u0001\"\u0001\u0002\u0011\u0002G\u0005AA\u0003\u0002\u000f'\",hM\u001a7f\u001b\u0006t\u0017mZ3s\u0015\t\u0019A!A\u0004tQV4g\r\\3\u000b\u0005\u00151\u0011!B:qCJ\\'BA\u0004\t\u0003\u0019\t\u0007/Y2iK*\t\u0011\"A\u0002pe\u001e\u001c\"\u0001A\u0006\u0011\u00051yQ\"A\u0007\u000b\u00039\tQa]2bY\u0006L!\u0001E\u0007\u0003\r\u0005s\u0017PU3g\u0011\u0015\u0011\u0002A\"\u0001\u0015\u0003=\u0011XmZ5ti\u0016\u00148\u000b[;gM2,7\u0001A\u000b\u0005+%\u001ad\u0007\u0006\u0003\u00175}\t\u0003CA\f\u0019\u001b\u0005\u0011\u0011BA\r\u0003\u00055\u0019\u0006.\u001e4gY\u0016D\u0015M\u001c3mK\")1$\u0005a\u00019\u0005I1\u000f[;gM2,\u0017\n\u001a\t\u0003\u0019uI!AH\u0007\u0003\u0007%sG\u000fC\u0003!#\u0001\u0007A$A\u0004ok6l\u0015\r]:\t\u000b\t\n\u0002\u0019A\u0012\u0002\u0015\u0011,\u0007/\u001a8eK:\u001c\u0017\u0010E\u0003%K\u001d\u0012T'D\u0001\u0005\u0013\t1CAA\tTQV4g\r\\3EKB,g\u000eZ3oGf\u0004\"\u0001K\u0015\r\u0001\u0011)!&\u0005b\u0001W\t\t1*\u0005\u0002-_A\u0011A\"L\u0005\u0003]5\u0011qAT8uQ&tw\r\u0005\u0002\ra%\u0011\u0011'\u0004\u0002\u0004\u0003:L\bC\u0001\u00154\t\u0015!\u0014C1\u0001,\u0005\u00051\u0006C\u0001\u00157\t\u00159\u0014C1\u0001,\u0005\u0005\u0019\u0005\"B\u001d\u0001\r\u0003Q\u0014!C4fi^\u0013\u0018\u000e^3s+\rY\u0004I\u0011\u000b\u0005y\r+u\t\u0005\u0003\u0018{}\n\u0015B\u0001 \u0003\u00055\u0019\u0006.\u001e4gY\u0016<&/\u001b;feB\u0011\u0001\u0006\u0011\u0003\u0006Ua\u0012\ra\u000b\t\u0003Q\t#Q\u0001\u000e\u001dC\u0002-BQ\u0001\u0012\u001dA\u0002Y\ta\u0001[1oI2,\u0007\"\u0002$9\u0001\u0004a\u0012!B7ba&#\u0007\"\u0002%9\u0001\u0004I\u0015aB2p]R,\u0007\u0010\u001e\t\u0003I)K!a\u0013\u0003\u0003\u0017Q\u000b7o[\"p]R,\u0007\u0010\u001e\u0005\u0006\u001b\u00021\tAT\u0001\nO\u0016$(+Z1eKJ,2a\u0014+W)\u0015\u0001v\u000b\u0017.]!\u00119\u0012kU+\n\u0005I\u0013!!D*ik\u001a4G.\u001a*fC\u0012,'\u000f\u0005\u0002))\u0012)!\u0006\u0014b\u0001WA\u0011\u0001F\u0016\u0003\u0006o1\u0013\ra\u000b\u0005\u0006\t2\u0003\rA\u0006\u0005\u000632\u0003\r\u0001H\u0001\u000fgR\f'\u000f\u001e)beRLG/[8o\u0011\u0015YF\n1\u0001\u001d\u00031)g\u000e\u001a)beRLG/[8o\u0011\u0015AE\n1\u0001J\u0011\u0015q\u0006A\"\u0001`\u0003E)hN]3hSN$XM]*ik\u001a4G.\u001a\u000b\u0003A\u000e\u0004\"\u0001D1\n\u0005\tl!a\u0002\"p_2,\u0017M\u001c\u0005\u00067u\u0003\r\u0001\b\u0005\u0006K\u00021\tAZ\u0001\u0015g\",hM\u001a7f\u00052|7m\u001b*fg>dg/\u001a:\u0016\u0003\u001d\u0004\"a\u00065\n\u0005%\u0014!\u0001F*ik\u001a4G.\u001a\"m_\u000e\\'+Z:pYZ,'\u000fC\u0003l\u0001\u0019\u0005A.\u0001\u0003ti>\u0004H#A7\u0011\u00051q\u0017BA8\u000e\u0005\u0011)f.\u001b;"
+)
+public interface ShuffleManager {
+   <K, V, C> ShuffleHandle registerShuffle(int var1, int var2, ShuffleDependency<K, V, C> var3);
+
+   <K, V> ShuffleWriter<K, V> getWriter(ShuffleHandle var1, int var2, TaskContext var3);
+
+   <K, C> ShuffleReader<K, C> getReader(ShuffleHandle var1, int var2, int var3, TaskContext var4);
+
+   boolean unregisterShuffle(int var1);
+
+   ShuffleBlockResolver shuffleBlockResolver();
+
+   void stop();
+}

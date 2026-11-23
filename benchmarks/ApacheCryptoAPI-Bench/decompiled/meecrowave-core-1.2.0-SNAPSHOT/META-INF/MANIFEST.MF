@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: Meecrowave :: Core
+Implementation-Version: 1.2.0-SNAPSHOT
+Archiver-Version: Plexus Archiver
+Built-By: fahad
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: Meecrowave :: Core
+Implementation-Vendor-Id: org.apache.meecrowave
+Implementation-Vendor: The Apache Software Foundation
+Created-By: Apache Maven 3.5.2
+Build-Jdk: 1.8.0_151
+Specification-Version: 1.2
+Implementation-URL: https://www.apache.org/meecrowave/meecrowave-core/
+

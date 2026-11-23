@@ -1,0 +1,52 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1515104138874
+Build-Jdk: 1.8.0_151
+Built-By: fahad
+Bundle-Description: Graphical workbench for editing and running Apache T
+ averna workflows
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Taverna myExperiment perspective
+Bundle-SymbolicName: org.apache.taverna.workbench.taverna-perspective-my
+ experiment
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.1.0.incubating-SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.taverna.ui.perspectives.myexperiment;version=
+ "3.1.0";uses:="javax.swing,javax.swing.event,javax.swing.text.html,org.
+ apache.log4j,org.apache.taverna.ui.menu,org.apache.taverna.ui.perspecti
+ ves.myexperiment.model,org.apache.taverna.workbench.configuration.colou
+ r,org.apache.taverna.workbench.configuration.workbench,org.apache.taver
+ na.workbench.edits,org.apache.taverna.workbench.file,org.apache.taverna
+ .workbench.helper,org.apache.taverna.workbench.selection,org.apache.tav
+ erna.workbench.ui.zaria",org.apache.taverna.ui.perspectives.myexperimen
+ t.model;version="3.1.0";uses:="javax.swing,org.apache.log4j,org.apache.
+ taverna.configuration.app,org.apache.taverna.security.credentialmanager
+ ,org.apache.taverna.ui.perspectives.myexperiment,org.apache.taverna.wor
+ kbench,org.jdom",org.apache.taverna.workbench.myexperiment.config;versi
+ on="3.1.0";uses:="javax.swing,org.apache.taverna.configuration"
+Import-Package: javax.crypto,javax.crypto.spec,javax.imageio,javax.swing
+ ,javax.swing.border,javax.swing.event,javax.swing.table,javax.swing.tex
+ t,javax.swing.text.html,org.apache.log4j;version="[1.2,2)",org.apache.t
+ averna.configuration;version="[0.2,1)",org.apache.taverna.configuration
+ .app;version="[0.2,1)",org.apache.taverna.lang.ui;version="[3.1,4)",org
+ .apache.taverna.scufl2.api.container;version="[0.16,1)",org.apache.tave
+ rna.security.credentialmanager;version="[3.1,4)",org.apache.taverna.ser
+ vicedescriptions;version="[3.1,4)",org.apache.taverna.ui.menu;version="
+ [3.1,4)",org.apache.taverna.workbench,org.apache.taverna.workbench.acti
+ vityicons;version="[3.1,4)",org.apache.taverna.workbench.configuration.
+ colour;version="[3.1,4)",org.apache.taverna.workbench.configuration.wor
+ kbench;version="[3.1,4)",org.apache.taverna.workbench.edits;version="[3
+ .1,4)",org.apache.taverna.workbench.file;version="[3.1,4)",org.apache.t
+ averna.workbench.file.exceptions;version="[3.1,4)",org.apache.taverna.w
+ orkbench.file.impl.actions,org.apache.taverna.workbench.file.importwork
+ flow.gui;version="[3.1,4)",org.apache.taverna.workbench.helper;version=
+ "[3.1,4)",org.apache.taverna.workbench.icons;version="[3.1,4)",org.apac
+ he.taverna.workbench.selection;version="[3.1,4)",org.apache.taverna.wor
+ kbench.ui.zaria;version="[3.1,4)",org.apache.taverna.workflowmodel;vers
+ ion="[3.1,4)",org.jdom;version="[1.1,2)",org.jdom.input;version="[1.1,2
+ )",org.xml.sax,uk.org.taverna.configuration
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-2.4.1.201501161923
+

@@ -1,0 +1,38 @@
+{
+  "language": "python",
+  "id": "python/mstamy2__PyPDF2__Python__row12__0fbe963c4d21/TARGET_ONLY",
+  "repository": "mstamy2/PyPDF2",
+  "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+  "target_path": "pypdf/_crypt_providers/_pycryptodome.py",
+  "report_target_row": "12",
+  "final": false,
+  "source_root": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21",
+  "scope": "TARGET_ONLY",
+  "input": "experiments/cryptogpt/runs/_inputs/python/mstamy2__PyPDF2__Python__row12__0fbe963c4d21/TARGET_ONLY",
+  "source_files": [
+    "pypdf/_crypt_providers/_pycryptodome.py"
+  ],
+  "status": "SUCCESS",
+  "seconds": 1.171,
+  "raw_findings": 10,
+  "rules": {
+    "C14": 4,
+    "C4": 4,
+    "C1": 2
+  },
+  "source_unchanged": true,
+  "report": "experiments/cryptogpt/runs/python/mstamy2__PyPDF2__Python__row12__0fbe963c4d21/TARGET_ONLY/findings.json",
+  "command": [
+    "java",
+    "-Xmx8g",
+    "-Xss128m",
+    "-cp",
+    "<tools/crypto-ext runtime classpath>",
+    "org.codeminers.standalone.EvaluationMain",
+    "python",
+    "experiments/cryptogpt/runs/_inputs/python/mstamy2__PyPDF2__Python__row12__0fbe963c4d21/TARGET_ONLY",
+    "--metrics-output=experiments/cryptogpt/runs/python/mstamy2__PyPDF2__Python__row12__0fbe963c4d21/TARGET_ONLY/performance.json",
+    "--report=json",
+    "--report-output=experiments/cryptogpt/runs/python/mstamy2__PyPDF2__Python__row12__0fbe963c4d21/TARGET_ONLY/findings.json"
+  ]
+}

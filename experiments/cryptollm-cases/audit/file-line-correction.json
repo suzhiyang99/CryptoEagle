@@ -1,0 +1,620 @@
+[
+  {
+    "file": "xlsx-row-185/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC5.java",
+    "line": 14,
+    "old": [
+      {
+        "file": "xlsx-row-185/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC5.java",
+        "lines": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "file": "xlsx-row-185/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase5.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-185/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC5.java",
+        "lines": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "file": "xlsx-row-185/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase5.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ]
+  },
+  {
+    "file": "xlsx-row-181/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC1.java",
+    "line": 14,
+    "old": [
+      {
+        "file": "xlsx-row-181/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC1.java",
+        "lines": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "file": "xlsx-row-181/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase1.java",
+        "lines": [
+          8,
+          10,
+          11,
+          12
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-181/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC1.java",
+        "lines": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "file": "xlsx-row-181/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase1.java",
+        "lines": [
+          8,
+          10,
+          11,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "file": "xlsx-row-184/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC4.java",
+    "line": 14,
+    "old": [
+      {
+        "file": "xlsx-row-184/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC4.java",
+        "lines": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "file": "xlsx-row-184/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase4.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-184/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC4.java",
+        "lines": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "file": "xlsx-row-184/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase4.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ]
+  },
+  {
+    "file": "xlsx-row-182/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC2.java",
+    "line": 14,
+    "old": [
+      {
+        "file": "xlsx-row-182/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC2.java",
+        "lines": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "file": "xlsx-row-182/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase2.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-182/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC2.java",
+        "lines": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "file": "xlsx-row-182/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase2.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ]
+  },
+  {
+    "file": "xlsx-row-178/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABMC1.java",
+    "line": 15,
+    "old": [
+      {
+        "file": "xlsx-row-178/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABMC1.java",
+        "lines": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "file": "xlsx-row-178/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABMCCase1.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-178/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABMC1.java",
+        "lines": [
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "file": "xlsx-row-178/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABMCCase1.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ]
+  },
+  {
+    "file": "xlsx-row-179/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMC1.java",
+    "line": 17,
+    "old": [
+      {
+        "file": "xlsx-row-179/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMC1.java",
+        "lines": [
+          11,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19
+        ]
+      },
+      {
+        "file": "xlsx-row-179/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMCCase1.java",
+        "lines": [
+          9,
+          11,
+          13
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-179/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMC1.java",
+        "lines": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          19
+        ]
+      },
+      {
+        "file": "xlsx-row-179/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMCCase1.java",
+        "lines": [
+          9,
+          11,
+          13
+        ]
+      }
+    ]
+  },
+  {
+    "file": "xlsx-row-186/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABMC1.java",
+    "line": 13,
+    "old": [
+      {
+        "file": "xlsx-row-186/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABMC1.java",
+        "lines": [
+          11,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "file": "xlsx-row-186/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABMCCase1.java",
+        "lines": [
+          11,
+          13,
+          15
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-186/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABMC1.java",
+        "lines": [
+          11,
+          13,
+          14
+        ]
+      },
+      {
+        "file": "xlsx-row-186/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABMCCase1.java",
+        "lines": [
+          11,
+          13,
+          15
+        ]
+      }
+    ]
+  },
+  {
+    "file": "xlsx-row-170/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABMC1.java",
+    "line": 11,
+    "old": [
+      {
+        "file": "xlsx-row-170/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABMC1.java",
+        "lines": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "file": "xlsx-row-170/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABMCCase1.java",
+        "lines": [
+          4,
+          6,
+          7
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-170/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABMC1.java",
+        "lines": [
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "file": "xlsx-row-170/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABMCCase1.java",
+        "lines": [
+          4,
+          6,
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "file": "xlsx-row-172/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABMC1.java",
+    "line": 16,
+    "old": [
+      {
+        "file": "xlsx-row-172/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABMC1.java",
+        "lines": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "file": "xlsx-row-172/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABMCCase1.java",
+        "lines": [
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-172/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABMC1.java",
+        "lines": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "file": "xlsx-row-172/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABMCCase1.java",
+        "lines": [
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "file": "xlsx-row-179/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMC1.java",
+    "line": 14,
+    "old": [
+      {
+        "file": "xlsx-row-179/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMC1.java",
+        "lines": [
+          11,
+          13,
+          14
+        ]
+      },
+      {
+        "file": "xlsx-row-179/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMCCase1.java",
+        "lines": [
+          9,
+          11,
+          13
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-179/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMC1.java",
+        "lines": [
+          13,
+          14
+        ]
+      },
+      {
+        "file": "xlsx-row-179/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMCCase1.java",
+        "lines": [
+          9,
+          11,
+          13
+        ]
+      }
+    ]
+  },
+  {
+    "file": "xlsx-row-180/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABMC1.java",
+    "line": 13,
+    "old": [
+      {
+        "file": "xlsx-row-180/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABMC1.java",
+        "lines": [
+          6,
+          7,
+          8,
+          10,
+          11,
+          13
+        ]
+      },
+      {
+        "file": "xlsx-row-180/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABMCCase1.java",
+        "lines": [
+          4,
+          6,
+          7
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-180/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABMC1.java",
+        "lines": [
+          7,
+          8,
+          10,
+          11,
+          13
+        ]
+      },
+      {
+        "file": "xlsx-row-180/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABMCCase1.java",
+        "lines": [
+          4,
+          6,
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "file": "xlsx-row-182/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC2.java",
+    "line": 12,
+    "old": [
+      {
+        "file": "xlsx-row-182/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC2.java",
+        "lines": [
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "file": "xlsx-row-182/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase2.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-182/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC2.java",
+        "lines": [
+          11,
+          12
+        ]
+      },
+      {
+        "file": "xlsx-row-182/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase2.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ]
+  },
+  {
+    "file": "xlsx-row-184/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC4.java",
+    "line": 12,
+    "old": [
+      {
+        "file": "xlsx-row-184/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC4.java",
+        "lines": [
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "file": "xlsx-row-184/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase4.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-184/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC4.java",
+        "lines": [
+          11,
+          12
+        ]
+      },
+      {
+        "file": "xlsx-row-184/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase4.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ]
+  },
+  {
+    "file": "xlsx-row-185/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC5.java",
+    "line": 12,
+    "old": [
+      {
+        "file": "xlsx-row-185/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC5.java",
+        "lines": [
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "file": "xlsx-row-185/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase5.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ],
+    "new": [
+      {
+        "file": "xlsx-row-185/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC5.java",
+        "lines": [
+          11,
+          12
+        ]
+      },
+      {
+        "file": "xlsx-row-185/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase5.java",
+        "lines": [
+          8,
+          10,
+          11
+        ]
+      }
+    ]
+  }
+]

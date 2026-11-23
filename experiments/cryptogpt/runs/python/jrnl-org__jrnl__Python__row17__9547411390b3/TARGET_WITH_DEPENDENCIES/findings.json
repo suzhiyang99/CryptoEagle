@@ -1,0 +1,3 @@
+[
+  {"fingerprint":"9bc8d22a","ruleId":"C6","ruleSet":"C1-C18","title":"Password hashed without KDF","category":"Hash","cwe":916,"severity":"HIGH","message":"Password-like input is passed directly to a hash operation.","remediation":"Use a password KDF such as PBKDF2, scrypt, Argon2, or bcrypt.","srcFile":"jrnl/encryption/Jrnlv1Encryption.py","lineNo":28,"operationType":"HASH_FUNCTION","operation":"HASH","algorithm":"SHA256","mode":"","evidence":[{"kind":"KEY","nodeLabel":"CALL","code":"self._password"},{"kind":"KEY","nodeLabel":"LITERAL","code":"\"\""}]}
+]

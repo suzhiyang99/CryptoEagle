@@ -1,0 +1,34 @@
+package org.apache.spark.ui;
+
+import scala.collection.Seq;
+import scala.reflect.ScalaSignature;
+import scala.xml.Node;
+
+@ScalaSignature(
+   bytes = "\u0006\u000154\u0001\"\u0001\u0002\u0011\u0002\u0007\u0005!A\u0003\u0002\u000b!\u0006<W\r\u001a+bE2,'BA\u0002\u0005\u0003\t)\u0018N\u0003\u0002\u0006\r\u0005)1\u000f]1sW*\u0011q\u0001C\u0001\u0007CB\f7\r[3\u000b\u0003%\t1a\u001c:h+\tYAg\u0005\u0002\u0001\u0019A\u0011Q\u0002E\u0007\u0002\u001d)\tq\"A\u0003tG\u0006d\u0017-\u0003\u0002\u0012\u001d\t1\u0011I\\=SK\u001aDQa\u0005\u0001\u0005\u0002U\ta\u0001J5oSR$3\u0001\u0001\u000b\u0002-A\u0011QbF\u0005\u000319\u0011A!\u00168ji\")!\u0004\u0001D\u00017\u00059A/\u00192mK&#W#\u0001\u000f\u0011\u0005u\u0001cBA\u0007\u001f\u0013\tyb\"\u0001\u0004Qe\u0016$WMZ\u0005\u0003C\t\u0012aa\u0015;sS:<'BA\u0010\u000f\u0011\u0015!\u0003A\"\u0001\u001c\u00035!\u0018M\u00197f\u0007N\u001c8\t\\1tg\")a\u0005\u0001D\u00017\u0005\t\u0002/Y4f'&TXMR8s[\u001aKW\r\u001c3\t\u000b!\u0002a\u0011A\u000e\u0002+A\u0014XM\u001e)bO\u0016\u001c\u0016N_3G_Jlg)[3mI\")!\u0006\u0001D\u00017\u0005\u0019\u0002/Y4f\u001dVl'-\u001a:G_Jlg)[3mI\")A\u0006\u0001D\u0001[\u0005QA-\u0019;b'>,(oY3\u0016\u00039\u00022a\f\u00193\u001b\u0005\u0011\u0011BA\u0019\u0003\u0005=\u0001\u0016mZ3e\t\u0006$\u0018mU8ve\u000e,\u0007CA\u001a5\u0019\u0001!Q!\u000e\u0001C\u0002Y\u0012\u0011\u0001V\t\u0003oi\u0002\"!\u0004\u001d\n\u0005er!a\u0002(pi\"Lgn\u001a\t\u0003\u001bmJ!\u0001\u0010\b\u0003\u0007\u0005s\u0017\u0010C\u0003?\u0001\u0019\u0005q(A\u0004iK\u0006$WM]:\u0016\u0003\u0001\u00032!Q%M\u001d\t\u0011uI\u0004\u0002D\r6\tAI\u0003\u0002F)\u00051AH]8pizJ\u0011aD\u0005\u0003\u0011:\tq\u0001]1dW\u0006<W-\u0003\u0002K\u0017\n\u00191+Z9\u000b\u0005!s\u0001CA'Q\u001b\u0005q%BA(\u000f\u0003\rAX\u000e\\\u0005\u0003#:\u0013AAT8eK\")1\u000b\u0001D\u0001)\u0006\u0019!o\\<\u0015\u0005\u0001+\u0006\"\u0002,S\u0001\u0004\u0011\u0014!\u0001;\t\u000ba\u0003A\u0011A-\u0002\u000bQ\f'\r\\3\u0015\u0005\u0001S\u0006\"B.X\u0001\u0004a\u0016\u0001\u00029bO\u0016\u0004\"!D/\n\u0005ys!aA%oi\"1\u0001\r\u0001C\u0001\u0005\u0005\fa\u0002]1hK:\u000bg/[4bi&|g\u000e\u0006\u0003AE\u000e,\u0007\"B.`\u0001\u0004a\u0006\"\u00023`\u0001\u0004a\u0016\u0001\u00039bO\u0016\u001c\u0016N_3\t\u000b\u0019|\u0006\u0019\u0001/\u0002\u0015Q|G/\u00197QC\u001e,7\u000fC\u0003i\u0001\u0019\u0005\u0011.\u0001\u0005qC\u001e,G*\u001b8l)\ta\"\u000eC\u0003\\O\u0002\u0007A\fC\u0003m\u0001\u0019\u00051$\u0001\th_\n+H\u000f^8o\r>\u0014X\u000eU1uQ\u0002"
+)
+public interface PagedTable<T> {
+   String tableId();
+
+   String tableCssClass();
+
+   String pageSizeFormField();
+
+   String prevPageSizeFormField();
+
+   String pageNumberFormField();
+
+   PagedDataSource<T> dataSource();
+
+   Seq<Node> headers();
+
+   Seq<Node> row(T var1);
+
+   Seq<Node> table(int var1);
+
+   Seq<Node> pageNavigation(int var1, int var2, int var3);
+
+   String pageLink(int var1);
+
+   String goButtonFormPath();
+}

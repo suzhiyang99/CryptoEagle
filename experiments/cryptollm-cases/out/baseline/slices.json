@@ -1,0 +1,3249 @@
+{
+  "arm": "baseline",
+  "unit": "ground-truth case",
+  "results": {
+    "xlsx-row-2": {
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "source_status": "complete",
+      "files": [
+        "PredictableCryptographicKeyBBCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableCryptographicKeyBBCase1.java",
+          "name": "PredictableCryptographicKeyBBCase1.java_9.java",
+          "code": "public class PredictableCryptographicKeyBBCase1{\npublic static void FUN1(String [] VAR1){\nbyte VAR2[] ={20,10,30,5,5,6,8,7};\nVAR2 = VAR3.copyOf(VAR2,16);\nSecretKeySpec VAR4 = new SecretKeySpec(VAR2, \"AES\");}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableCryptographicKeyBBCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-3": {
+      "label": true,
+      "vuln_type": "Credential in String",
+      "source_status": "complete",
+      "files": [
+        "CredentialInStringBBCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "CredentialInStringBBCase1.java",
+          "name": "CredentialInStringBBCase1.java_16.java",
+          "code": "public class CredentialInStringBBCase1{\npublic static void FUN1(String [] VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nSecureRandom VAR2 = new SecureRandom();\nString VAR3 = String.valueOf(VAR2.ints());\nbyte[] VAR4 = VAR3.getBytes();\nVAR4 = VAR5.copyOf(VAR4,16);\nSecretKeySpec VAR6 = new SecretKeySpec(VAR4, \"AES\");\nString VAR7 = \"Testing\";\nCipher VAR8 = Cipher.getInstance(\"AES/CBC/PKCS5PADDING\");\nVAR8.init(VAR9, VAR6);\nString VAR10 = Base64.getEncoder().encodeToString(VAR8.doFinal(VAR7.getBytes(\"UTF-8\")));\nVAR11.println(VAR10);}}\n"
+        },
+        {
+          "file": "CredentialInStringBBCase1.java",
+          "name": "CredentialInStringBBCase1.java_18.java",
+          "code": "public class CredentialInStringBBCase1{\npublic static void FUN1(String [] VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nSecureRandom VAR2 = new SecureRandom();\nString VAR3 = String.valueOf(VAR2.ints());\nbyte[] VAR4 = VAR3.getBytes();\nVAR4 = VAR5.copyOf(VAR4,16);\nSecretKeySpec VAR6 = new SecretKeySpec(VAR4, \"AES\");\nString VAR7 = \"Testing\";\nCipher VAR8 = Cipher.getInstance(\"AES/CBC/PKCS5PADDING\");\nVAR8.init(VAR9, VAR6);\nString VAR10 = Base64.getEncoder().encodeToString(VAR8.doFinal(VAR7.getBytes(\"UTF-8\")));\nVAR11.println(VAR10);}}\n"
+        }
+      ],
+      "file_status": {
+        "CredentialInStringBBCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-4": {
+      "label": true,
+      "vuln_type": "Credential in String",
+      "source_status": "missing_source",
+      "files": [],
+      "slices": [],
+      "file_status": {},
+      "errors": [],
+      "status": "missing_source"
+    },
+    "xlsx-row-5": {
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "source_status": "complete",
+      "files": [
+        "PredictablePBEPasswordBBCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictablePBEPasswordBBCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-6": {
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "source_status": "complete",
+      "files": [
+        "PredictablePBEPasswordBBCase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictablePBEPasswordBBCase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-7": {
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "source_status": "complete",
+      "files": [
+        "PredictableKeyStorePasswordBBCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableKeyStorePasswordBBCase1.java",
+          "name": "PredictableKeyStorePasswordBBCase1.java_18.java",
+          "code": "public class PredictableKeyStorePasswordBBCase1{\nURL VAR1;\npublic static void FUN1(String args[]) throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException{\nPredictableKeyStorePasswordBBCase1 VAR2 = new PredictableKeyStorePasswordBBCase1();\nVAR2.FUN2();}\npublic void FUN2() throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException{\nString VAR3 = \"JKS\";\nKeyStore VAR4 = KeyStore.getInstance(VAR3);\nVAR1 = new URL(\"https://www.google.com\");\nString VAR5 = \"changeit\";\nVAR4.load(VAR1.openStream(), VAR5.toCharArray());}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableKeyStorePasswordBBCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-8": {
+      "label": true,
+      "vuln_type": "Dummy Verifier",
+      "source_status": "complete",
+      "files": [
+        "DummyHostNameVerifierCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "DummyHostNameVerifierCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-9": {
+      "label": true,
+      "vuln_type": "Dummy Certificate",
+      "source_status": "complete",
+      "files": [
+        "DummyCertValidationCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "DummyCertValidationCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-10": {
+      "label": true,
+      "vuln_type": "Dummy Certificate",
+      "source_status": "complete",
+      "files": [
+        "DummyCertValidationCase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "DummyCertValidationCase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-11": {
+      "label": true,
+      "vuln_type": "Dummy Certificate",
+      "source_status": "complete",
+      "files": [
+        "DummyCertValidationCase3.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "DummyCertValidationCase3.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-12": {
+      "label": true,
+      "vuln_type": "Socket Hostname w/o verification",
+      "source_status": "complete",
+      "files": [
+        "ImproperSocketManualHostBBCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "ImproperSocketManualHostBBCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-13": {
+      "label": true,
+      "vuln_type": "HTTP ",
+      "source_status": "complete",
+      "files": [
+        "HttpProtocolBBCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "HttpProtocolBBCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-14": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsBBCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsBBCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-15": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsBBCase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsBBCase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-16": {
+      "label": true,
+      "vuln_type": "Usage of Random Method from Library",
+      "source_status": "complete",
+      "files": [
+        "UntrustedPRNGCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "UntrustedPRNGCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-17": {
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "source_status": "complete",
+      "files": [
+        "StaticSaltsBBCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "StaticSaltsBBCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-18": {
+      "label": true,
+      "vuln_type": "Usage of ECB ",
+      "source_status": "complete",
+      "files": [
+        "EcbInSymmCryptoBBCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "EcbInSymmCryptoBBCase1.java",
+          "name": "EcbInSymmCryptoBBCase1.java_12.java",
+          "code": "public class EcbInSymmCryptoBBCase1{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"AES/ECB/PKCS5Padding\");\nVAR3.init(VAR4, VAR2);}\npublic static void FUN2(String [] VAR5) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nEcbInSymmCryptoBBCase1 VAR6 = new EcbInSymmCryptoBBCase1();\nVAR6.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "EcbInSymmCryptoBBCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-19": {
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "source_status": "complete",
+      "files": [
+        "StaticInitializationVectorBBCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "StaticInitializationVectorBBCase1.java",
+          "name": "StaticInitializationVectorBBCase1.java_11.java",
+          "code": "public class StaticInitializationVectorBBCase1{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nbyte [] VAR4 = \"abcde\".getBytes();\nIvParameterSpec VAR5 = new IvParameterSpec(VAR4);\nVAR3.init(VAR6,VAR2,VAR5);}\npublic static void FUN2(String [] VAR7) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nStaticInitializationVectorBBCase1 VAR8 = new StaticInitializationVectorBBCase1();\nVAR8.FUN1();}}\n"
+        },
+        {
+          "file": "StaticInitializationVectorBBCase1.java",
+          "name": "StaticInitializationVectorBBCase1.java_13.java",
+          "code": "public class StaticInitializationVectorBBCase1{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nbyte [] VAR4 = \"abcde\".getBytes();\nIvParameterSpec VAR5 = new IvParameterSpec(VAR4);\nVAR3.init(VAR6,VAR2,VAR5);}\npublic static void FUN2(String [] VAR7) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nStaticInitializationVectorBBCase1 VAR8 = new StaticInitializationVectorBBCase1();\nVAR8.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "StaticInitializationVectorBBCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-20": {
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "source_status": "complete",
+      "files": [
+        "LessThan1000IterationPBEBBCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "LessThan1000IterationPBEBBCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-21": {
+      "label": true,
+      "vuln_type": "DES used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoBBCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoBBCase1.java",
+          "name": "BrokenCryptoBBCase1.java_12.java",
+          "code": "public class BrokenCryptoBBCase1{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"DES\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"DES/ECB/PKCS5Padding\");\nVAR3.init(VAR4, VAR2);}\npublic static void FUN2(String [] VAR5) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoBBCase1 VAR6 = new BrokenCryptoBBCase1();\nVAR6.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoBBCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-22": {
+      "label": true,
+      "vuln_type": "Blowfish used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoBBCase2.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoBBCase2.java",
+          "name": "BrokenCryptoBBCase2.java_12.java",
+          "code": "public class BrokenCryptoBBCase2{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"Blowfish\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"Blowfish\");\nVAR3.init(VAR4, VAR2);}\npublic static void FUN2(String [] VAR5) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoBBCase2 VAR6 = new BrokenCryptoBBCase2();\nVAR6.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoBBCase2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-23": {
+      "label": true,
+      "vuln_type": "RC4 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoBBCase3.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoBBCase3.java",
+          "name": "BrokenCryptoBBCase3.java_12.java",
+          "code": "public class BrokenCryptoBBCase3{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"RC4\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"RC4\");\nVAR3.init(VAR4, VAR2);}\npublic static void FUN2(String [] VAR5) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoBBCase3 VAR6 = new BrokenCryptoBBCase3();\nVAR6.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoBBCase3.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-24": {
+      "label": true,
+      "vuln_type": "RC2 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoBBCase4.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoBBCase4.java",
+          "name": "BrokenCryptoBBCase4.java_12.java",
+          "code": "public class BrokenCryptoBBCase4{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"RC2\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"RC2\");\nVAR3.init(VAR4, VAR2);}\npublic static void FUN2(String [] VAR5) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoBBCase4 VAR6 = new BrokenCryptoBBCase4();\nVAR6.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoBBCase4.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-25": {
+      "label": true,
+      "vuln_type": "IDEA used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoBBCase5.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoBBCase5.java",
+          "name": "BrokenCryptoBBCase5.java_12.java",
+          "code": "public class BrokenCryptoBBCase5{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"IDEA\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"IDEA\");\nVAR3.init(VAR4, VAR2);}\npublic static void FUN2(String [] VAR5) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoBBCase5 VAR6 = new BrokenCryptoBBCase5();\nVAR6.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoBBCase5.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-26": {
+      "label": true,
+      "vuln_type": "RSA keysize 1024 bits",
+      "source_status": "complete",
+      "files": [
+        "InsecureAsymmetricCipherBBCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "InsecureAsymmetricCipherBBCase1.java",
+          "name": "InsecureAsymmetricCipherBBCase1.java_11.java",
+          "code": "public class InsecureAsymmetricCipherBBCase1{\npublic void FUN1() throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nKeyPairGenerator VAR1 = KeyPairGenerator.getInstance(\"RSA\");\nint VAR2 = 1024;\nVAR1.initialize(VAR2);\nKeyPair VAR3 = VAR1.generateKeyPair();\nCipher VAR4 = Cipher.getInstance(\"RSA\");\nVAR4.init(VAR5, VAR3.getPublic());\nString VAR6 = new String(\"Secret Message\");\nSealedObject VAR7 = new SealedObject(VAR6,VAR4);\nCipher VAR8 = Cipher.getInstance(\"RSA\");\nVAR8.init(VAR9, VAR3.getPrivate());\nString VAR10 = (String) VAR7.getObject(VAR8);\nVAR11.println(VAR10);}\npublic static void FUN2(String [] VAR12) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nInsecureAsymmetricCipherBBCase1 VAR13 = new InsecureAsymmetricCipherBBCase1();\nVAR13.FUN1();}}\n"
+        },
+        {
+          "file": "InsecureAsymmetricCipherBBCase1.java",
+          "name": "InsecureAsymmetricCipherBBCase1.java_15.java",
+          "code": "public class InsecureAsymmetricCipherBBCase1{\npublic void FUN1() throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nKeyPairGenerator VAR1 = KeyPairGenerator.getInstance(\"RSA\");\nint VAR2 = 1024;\nVAR1.initialize(VAR2);\nKeyPair VAR3 = VAR1.generateKeyPair();\nCipher VAR4 = Cipher.getInstance(\"RSA\");\nVAR4.init(VAR5, VAR3.getPublic());\nString VAR6 = new String(\"Secret Message\");\nSealedObject VAR7 = new SealedObject(VAR6,VAR4);\nCipher VAR8 = Cipher.getInstance(\"RSA\");\nVAR8.init(VAR9, VAR3.getPrivate());\nString VAR10 = (String) VAR7.getObject(VAR8);\nVAR11.println(VAR10);}\npublic static void FUN2(String [] VAR12) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nInsecureAsymmetricCipherBBCase1 VAR13 = new InsecureAsymmetricCipherBBCase1();\nVAR13.FUN1();}}\n"
+        },
+        {
+          "file": "InsecureAsymmetricCipherBBCase1.java",
+          "name": "InsecureAsymmetricCipherBBCase1.java_9.java",
+          "code": "public class InsecureAsymmetricCipherBBCase1{\npublic void FUN1() throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nKeyPairGenerator VAR1 = KeyPairGenerator.getInstance(\"RSA\");\nint VAR2 = 1024;\nVAR1.initialize(VAR2);\nKeyPair VAR3 = VAR1.generateKeyPair();\nCipher VAR4 = Cipher.getInstance(\"RSA\");\nVAR4.init(VAR5, VAR3.getPublic());\nString VAR6 = new String(\"Secret Message\");\nSealedObject VAR7 = new SealedObject(VAR6,VAR4);\nCipher VAR8 = Cipher.getInstance(\"RSA\");\nVAR8.init(VAR9, VAR3.getPrivate());\nString VAR10 = (String) VAR7.getObject(VAR8);\nVAR11.println(VAR10);}\npublic static void FUN2(String [] VAR12) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nInsecureAsymmetricCipherBBCase1 VAR13 = new InsecureAsymmetricCipherBBCase1();\nVAR13.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "InsecureAsymmetricCipherBBCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-27": {
+      "label": true,
+      "vuln_type": "SHA1 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashBBCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashBBCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-28": {
+      "label": true,
+      "vuln_type": "MD5 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashBBCase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashBBCase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-29": {
+      "label": true,
+      "vuln_type": "MD4 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashBBCase3.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashBBCase3.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-30": {
+      "label": true,
+      "vuln_type": "MD2 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashBBCase4.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashBBCase4.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-31": {
+      "label": true,
+      "vuln_type": "HmacMD5",
+      "source_status": "complete",
+      "files": [
+        "BrokenMacBBCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenMacBBCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-32": {
+      "label": true,
+      "vuln_type": "HmacSHA1",
+      "source_status": "complete",
+      "files": [
+        "BrokenMacBBCase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenMacBBCase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-33": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoCorrected.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoCorrected.java",
+          "name": "BrokenCryptoCorrected.java_12.java",
+          "code": "public void FUN1() throws NoSuchPaddingException, VAR1, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoCorrected.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-34": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashCorrected.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashCorrected.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-35": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "EcbInSymmCryptoCorrected.java"
+      ],
+      "slices": [
+        {
+          "file": "EcbInSymmCryptoCorrected.java",
+          "name": "EcbInSymmCryptoCorrected.java_12.java",
+          "code": "public void FUN1() throws NoSuchPaddingException, VAR1, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\n"
+        }
+      ],
+      "file_status": {
+        "EcbInSymmCryptoCorrected.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-36": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "DummyHostNameVerifierCorrected.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "DummyHostNameVerifierCorrected.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-37": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "HttpProtocolCase1Corrected.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "HttpProtocolCase1Corrected.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-38": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "LessThan1000IterationPBECorrected.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "LessThan1000IterationPBECorrected.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-39": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "PredictableCryptographicKeyCorrected.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableCryptographicKeyCorrected.java",
+          "name": "PredictableCryptographicKeyCorrected.java_15.java",
+          "code": "public class PredictableCryptographicKeyCorrected{\npublic static void FUN1(String [] VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nSecureRandom VAR2 = new SecureRandom();\nbyte [] VAR3 = new byte[16];\nVAR2.nextBytes(VAR3);\nSecretKeySpec VAR4 = new SecretKeySpec(VAR3, \"AES\");\nString VAR5 = \"Testing\";\nCipher VAR6 = Cipher.getInstance(\"AES/CBC/PKCS5PADDING\");\nVAR6.init(VAR7, VAR4);\nString VAR8 = Base64.getEncoder().encodeToString(VAR6.doFinal(VAR5.getBytes(\"UTF-8\")));\nVAR9.println(VAR8);}}\n"
+        },
+        {
+          "file": "PredictableCryptographicKeyCorrected.java",
+          "name": "PredictableCryptographicKeyCorrected.java_17.java",
+          "code": "public class PredictableCryptographicKeyCorrected{\npublic static void FUN1(String [] VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nSecureRandom VAR2 = new SecureRandom();\nbyte [] VAR3 = new byte[16];\nVAR2.nextBytes(VAR3);\nSecretKeySpec VAR4 = new SecretKeySpec(VAR3, \"AES\");\nString VAR5 = \"Testing\";\nCipher VAR6 = Cipher.getInstance(\"AES/CBC/PKCS5PADDING\");\nVAR6.init(VAR7, VAR4);\nString VAR8 = Base64.getEncoder().encodeToString(VAR6.doFinal(VAR5.getBytes(\"UTF-8\")));\nVAR9.println(VAR8);}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableCryptographicKeyCorrected.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-40": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "PredictableKeyStorePasswordCorrected.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableKeyStorePasswordCorrected.java",
+          "name": "PredictableKeyStorePasswordCorrected.java_20.java",
+          "code": "public class PredictableKeyStorePasswordCorrected{\nURL VAR1;\npublic static void FUN1(String args[]) throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException{\nPredictableKeyStorePasswordCorrected VAR2 = new PredictableKeyStorePasswordCorrected();\nVAR2.FUN2();}\npublic void FUN2() throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException{\nString VAR3 = \"JKS\";\nKeyStore VAR4 = KeyStore.getInstance(VAR3);\nVAR1 = new URL(\"https://www.google.com\");\nSecureRandom VAR5 = new SecureRandom();\nString VAR6 = String.valueOf(VAR5.ints());\nVAR4.load(VAR1.openStream(), VAR6.toCharArray());}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableKeyStorePasswordCorrected.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-41": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "PredictablePBEPasswordCorrected.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictablePBEPasswordCorrected.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-42": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsCorrected.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsCorrected.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-43": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "StaticInitializationVectorCorrected.java"
+      ],
+      "slices": [
+        {
+          "file": "StaticInitializationVectorCorrected.java",
+          "name": "StaticInitializationVectorCorrected.java_15.java",
+          "code": "public class StaticInitializationVectorCorrected{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nSecureRandom VAR4 = new SecureRandom();\nbyte [] VAR5 = new byte[16];\nVAR4.nextBytes(VAR5);\nIvParameterSpec VAR6 = new IvParameterSpec(VAR5);\nVAR3.init(VAR7,VAR2,VAR6);}\npublic static void FUN2(String [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nStaticInitializationVectorCorrected VAR9 = new StaticInitializationVectorCorrected();\nVAR9.FUN1();}}\n"
+        },
+        {
+          "file": "StaticInitializationVectorCorrected.java",
+          "name": "StaticInitializationVectorCorrected.java_19.java",
+          "code": "public class StaticInitializationVectorCorrected{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nSecureRandom VAR4 = new SecureRandom();\nbyte [] VAR5 = new byte[16];\nVAR4.nextBytes(VAR5);\nIvParameterSpec VAR6 = new IvParameterSpec(VAR5);\nVAR3.init(VAR7,VAR2,VAR6);}\npublic static void FUN2(String [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nStaticInitializationVectorCorrected VAR9 = new StaticInitializationVectorCorrected();\nVAR9.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "StaticInitializationVectorCorrected.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-44": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "StaticSaltsCorrected.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "StaticSaltsCorrected.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-45": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "UntrustedPRNGCorrected.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "UntrustedPRNGCorrected.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-46": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "CredentialInStringCorrected.java"
+      ],
+      "slices": [
+        {
+          "file": "CredentialInStringCorrected.java",
+          "name": "CredentialInStringCorrected.java_15.java",
+          "code": "public class CredentialInStringCorrected{\npublic static void FUN1(String [] VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nSecureRandom VAR2 = new SecureRandom();\nbyte [] VAR3 = new byte[16];\nVAR2.nextBytes(VAR3);\nSecretKeySpec VAR4 = new SecretKeySpec(VAR3, \"AES\");\nString VAR5 = \"Testing\";\nCipher VAR6 = Cipher.getInstance(\"AES/CBC/PKCS5PADDING\");\nVAR6.init(VAR7, VAR4);\nString VAR8 = Base64.getEncoder().encodeToString(VAR6.doFinal(VAR5.getBytes(\"UTF-8\")));\nVAR9.println(VAR8);}}\n"
+        },
+        {
+          "file": "CredentialInStringCorrected.java",
+          "name": "CredentialInStringCorrected.java_17.java",
+          "code": "public class CredentialInStringCorrected{\npublic static void FUN1(String [] VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nSecureRandom VAR2 = new SecureRandom();\nbyte [] VAR3 = new byte[16];\nVAR2.nextBytes(VAR3);\nSecretKeySpec VAR4 = new SecretKeySpec(VAR3, \"AES\");\nString VAR5 = \"Testing\";\nCipher VAR6 = Cipher.getInstance(\"AES/CBC/PKCS5PADDING\");\nVAR6.init(VAR7, VAR4);\nString VAR8 = Base64.getEncoder().encodeToString(VAR6.doFinal(VAR5.getBytes(\"UTF-8\")));\nVAR9.println(VAR8);}}\n"
+        }
+      ],
+      "file_status": {
+        "CredentialInStringCorrected.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-47": {
+      "label": false,
+      "vuln_type": "HmacSHA256",
+      "source_status": "complete",
+      "files": [
+        "BrokenMacCorrected.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenMacCorrected.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-49": {
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "source_status": "complete",
+      "files": [
+        "PredictableCryptographicKeyABICase1.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableCryptographicKeyABICase1.java",
+          "name": "PredictableCryptographicKeyABICase1.java_11.java",
+          "code": "private static void FUN1(byte [] VAR1){\nVAR1 = VAR2.copyOf(VAR1,16);\nSecretKeySpec VAR3 = new SecretKeySpec(VAR1, \"AES\");}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableCryptographicKeyABICase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-50": {
+      "label": true,
+      "vuln_type": "Credential in String",
+      "source_status": "complete",
+      "files": [
+        "CredentialInStringABICase1.java"
+      ],
+      "slices": [
+        {
+          "file": "CredentialInStringABICase1.java",
+          "name": "CredentialInStringABICase1.java_14.java",
+          "code": "public class CredentialInStringABICase1{\npublic static void FUN1(String [] VAR1){\nSecureRandom VAR2 = new SecureRandom();\nString VAR3 = String.valueOf(VAR2.ints());\nFUN2(VAR3);}\nprivate static void FUN2(String VAR3){\nbyte[] VAR4 = VAR3.getBytes();\nVAR4 = VAR5.copyOf(VAR4,16);\nSecretKeySpec VAR6 = new SecretKeySpec(VAR4, \"AES\");}}\n"
+        }
+      ],
+      "file_status": {
+        "CredentialInStringABICase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-51": {
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "source_status": "complete",
+      "files": [
+        "PredictablePBEPasswordABICase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictablePBEPasswordABICase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-52": {
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "source_status": "complete",
+      "files": [
+        "PredictableKeyStorePasswordABICase1.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableKeyStorePasswordABICase1.java",
+          "name": "PredictableKeyStorePasswordABICase1.java_18.java",
+          "code": "public class PredictableKeyStorePasswordABICase1{\nURL VAR1;\npublic static void FUN1(String args[]) throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException{\nPredictableKeyStorePasswordABICase1 VAR2 = new PredictableKeyStorePasswordABICase1();\nString VAR3 = \"changeit\";\nVAR2.FUN2(VAR3);}\npublic void FUN2(String VAR3) throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException{\nString VAR4 = \"JKS\";\nKeyStore VAR5 = KeyStore.getInstance(VAR4);\nVAR1 = new URL(\"https://www.google.com\");\nVAR5.load(VAR1.openStream(), VAR3.toCharArray());}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableKeyStorePasswordABICase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-53": {
+      "label": true,
+      "vuln_type": "HTTP ",
+      "source_status": "complete",
+      "files": [
+        "HttpProtocolABICase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "HttpProtocolABICase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-54": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABICase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABICase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-55": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABICase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABICase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-56": {
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "source_status": "complete",
+      "files": [
+        "StaticSaltsABICase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "StaticSaltsABICase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-57": {
+      "label": true,
+      "vuln_type": "Usage of ECB ",
+      "source_status": "complete",
+      "files": [
+        "EcbInSymmCryptoABICase1.java"
+      ],
+      "slices": [
+        {
+          "file": "EcbInSymmCryptoABICase1.java",
+          "name": "EcbInSymmCryptoABICase1.java_12.java",
+          "code": "public class EcbInSymmCryptoABICase1{\npublic void FUN1(String VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(VAR1);\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nEcbInSymmCryptoABICase1 VAR7 = new EcbInSymmCryptoABICase1();\nString VAR1 = \"AES/ECB/PKCS5Padding\";\nVAR7.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "EcbInSymmCryptoABICase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-58": {
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "source_status": "complete",
+      "files": [
+        "StaticInitializationVectorABICase1.java"
+      ],
+      "slices": [
+        {
+          "file": "StaticInitializationVectorABICase1.java",
+          "name": "StaticInitializationVectorABICase1.java_10.java",
+          "code": "public void FUN1(byte[] VAR1) throws NoSuchPaddingException, VAR2, VAR3, InvalidAlgorithmParameterException{\nIvParameterSpec VAR4 = new IvParameterSpec(VAR1);\nKeyGenerator VAR5 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR6 = VAR5.generateKey();\nCipher VAR7 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR7.init(VAR8,VAR6,VAR4);}\n"
+        },
+        {
+          "file": "StaticInitializationVectorABICase1.java",
+          "name": "StaticInitializationVectorABICase1.java_13.java",
+          "code": "public void FUN1(byte[] VAR1) throws NoSuchPaddingException, VAR2, VAR3, InvalidAlgorithmParameterException{\nIvParameterSpec VAR4 = new IvParameterSpec(VAR1);\nKeyGenerator VAR5 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR6 = VAR5.generateKey();\nCipher VAR7 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR7.init(VAR8,VAR6,VAR4);}\n"
+        }
+      ],
+      "file_status": {
+        "StaticInitializationVectorABICase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-59": {
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "source_status": "complete",
+      "files": [
+        "LessThan1000IterationPBEABICase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "LessThan1000IterationPBEABICase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-60": {
+      "label": true,
+      "vuln_type": "DES used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase1.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase1.java",
+          "name": "BrokenCryptoABICase1.java_12.java",
+          "code": "public class BrokenCryptoABICase1{\npublic void FUN1(String VAR1, String VAR2) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR3 = KeyGenerator.getInstance(VAR2);\nSecretKey VAR4 = VAR3.generateKey();\nCipher VAR5 = Cipher.getInstance(VAR1);\nVAR5.init(VAR6, VAR4);}\npublic static void FUN2(String [] VAR7) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABICase1 VAR8 = new BrokenCryptoABICase1();\nString VAR1 = \"DES/ECB/PKCS5Padding\";\nString VAR2 = \"DES\";\nVAR8.FUN1(VAR1,VAR2);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-61": {
+      "label": true,
+      "vuln_type": "Blowfish used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase2.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase2.java",
+          "name": "BrokenCryptoABICase2.java_12.java",
+          "code": "public class BrokenCryptoABICase2{\npublic void FUN1(String VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(VAR1);\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(VAR1);\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABICase2 VAR7 = new BrokenCryptoABICase2();\nString VAR1 = \"Blowfish\";\nVAR7.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-62": {
+      "label": true,
+      "vuln_type": "RC4 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase3.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase3.java",
+          "name": "BrokenCryptoABICase3.java_12.java",
+          "code": "public class BrokenCryptoABICase3{\npublic void FUN1(String VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(VAR1);\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(VAR1);\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABICase3 VAR7 = new BrokenCryptoABICase3();\nString VAR1 = \"RC4\";\nVAR7.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase3.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-63": {
+      "label": true,
+      "vuln_type": "RC2 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase4.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase4.java",
+          "name": "BrokenCryptoABICase4.java_12.java",
+          "code": "public class BrokenCryptoABICase4{\npublic void FUN1(String VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(VAR1);\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(VAR1);\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABICase4 VAR7 = new BrokenCryptoABICase4();\nString VAR1 = \"RC2\";\nVAR7.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase4.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-64": {
+      "label": true,
+      "vuln_type": "IDEA used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase9.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase9.java",
+          "name": "BrokenCryptoABICase9.java_12.java",
+          "code": "public class BrokenCryptoABICase9{\npublic void FUN1(String VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(VAR1);\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(VAR1);\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABICase9 VAR7 = new BrokenCryptoABICase9();\nString VAR1 = \"IDEA\";\nVAR7.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase9.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-65": {
+      "label": true,
+      "vuln_type": "RSA keysize 1024 bits",
+      "source_status": "complete",
+      "files": [
+        "InsecureAsymmetricCipherABICase1.java"
+      ],
+      "slices": [
+        {
+          "file": "InsecureAsymmetricCipherABICase1.java",
+          "name": "InsecureAsymmetricCipherABICase1.java_11.java",
+          "code": "public class InsecureAsymmetricCipherABICase1{\npublic void FUN1(int VAR1) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nKeyPairGenerator VAR2 = KeyPairGenerator.getInstance(\"RSA\");\nVAR2.initialize(VAR1);\nKeyPair VAR3 = VAR2.generateKeyPair();\nCipher VAR4 = Cipher.getInstance(\"RSA\");\nVAR4.init(VAR5, VAR3.getPublic());\nString VAR6 = new String(\"Secret Message\");\nSealedObject VAR7 = new SealedObject(VAR6,VAR4);\nCipher VAR8 = Cipher.getInstance(\"RSA\");\nVAR8.init(VAR9, VAR3.getPrivate());\nString VAR10 = (String) VAR7.getObject(VAR8);\nVAR11.println(VAR10);}\npublic static void FUN2(String [] VAR12) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nInsecureAsymmetricCipherABICase1 VAR13 = new InsecureAsymmetricCipherABICase1();\nint VAR1 = 1024;\nVAR13.FUN1(VAR1);}}\n"
+        },
+        {
+          "file": "InsecureAsymmetricCipherABICase1.java",
+          "name": "InsecureAsymmetricCipherABICase1.java_13.java",
+          "code": "public class InsecureAsymmetricCipherABICase1{\npublic void FUN1(int VAR1) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nKeyPairGenerator VAR2 = KeyPairGenerator.getInstance(\"RSA\");\nVAR2.initialize(VAR1);\nKeyPair VAR3 = VAR2.generateKeyPair();\nCipher VAR4 = Cipher.getInstance(\"RSA\");\nVAR4.init(VAR5, VAR3.getPublic());\nString VAR6 = new String(\"Secret Message\");\nSealedObject VAR7 = new SealedObject(VAR6,VAR4);\nCipher VAR8 = Cipher.getInstance(\"RSA\");\nVAR8.init(VAR9, VAR3.getPrivate());\nString VAR10 = (String) VAR7.getObject(VAR8);\nVAR11.println(VAR10);}\npublic static void FUN2(String [] VAR12) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nInsecureAsymmetricCipherABICase1 VAR13 = new InsecureAsymmetricCipherABICase1();\nint VAR1 = 1024;\nVAR13.FUN1(VAR1);}}\n"
+        },
+        {
+          "file": "InsecureAsymmetricCipherABICase1.java",
+          "name": "InsecureAsymmetricCipherABICase1.java_17.java",
+          "code": "public class InsecureAsymmetricCipherABICase1{\npublic void FUN1(int VAR1) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nKeyPairGenerator VAR2 = KeyPairGenerator.getInstance(\"RSA\");\nVAR2.initialize(VAR1);\nKeyPair VAR3 = VAR2.generateKeyPair();\nCipher VAR4 = Cipher.getInstance(\"RSA\");\nVAR4.init(VAR5, VAR3.getPublic());\nString VAR6 = new String(\"Secret Message\");\nSealedObject VAR7 = new SealedObject(VAR6,VAR4);\nCipher VAR8 = Cipher.getInstance(\"RSA\");\nVAR8.init(VAR9, VAR3.getPrivate());\nString VAR10 = (String) VAR7.getObject(VAR8);\nVAR11.println(VAR10);}\npublic static void FUN2(String [] VAR12) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nInsecureAsymmetricCipherABICase1 VAR13 = new InsecureAsymmetricCipherABICase1();\nint VAR1 = 1024;\nVAR13.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "InsecureAsymmetricCipherABICase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-66": {
+      "label": true,
+      "vuln_type": "SHA1 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABICase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABICase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-67": {
+      "label": true,
+      "vuln_type": "MD5 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABICase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABICase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-68": {
+      "label": true,
+      "vuln_type": "MD4 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABICase3.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABICase3.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-69": {
+      "label": true,
+      "vuln_type": "MD2 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABICase4.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABICase4.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-71": {
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "source_status": "complete",
+      "files": [
+        "PredictableCryptographicKeyABICase3.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableCryptographicKeyABICase3.java",
+          "name": "PredictableCryptographicKeyABICase3.java_13.java",
+          "code": "public static void FUN1(byte [] VAR1){\nFUN2(VAR1);}\nprivate static void FUN2(byte [] VAR2){\nbyte[] VAR3 = VAR2;\nVAR3 = VAR4.copyOf(VAR3,16);\nSecretKeySpec VAR5 = new SecretKeySpec(VAR3, \"AES\");}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableCryptographicKeyABICase3.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-72": {
+      "label": true,
+      "vuln_type": "Credential in String",
+      "source_status": "complete",
+      "files": [
+        "CredentialInStringABICase3.java"
+      ],
+      "slices": [
+        {
+          "file": "CredentialInStringABICase3.java",
+          "name": "CredentialInStringABICase3.java_16.java",
+          "code": "public class CredentialInStringABICase3{\npublic static void FUN1(String [] VAR1){\nSecureRandom VAR2 = new SecureRandom();\nString VAR3 = String.valueOf(VAR2.ints());\nFUN2(VAR3);}\npublic static void FUN2(String VAR4){\nString VAR5 = VAR4;\nFUN3(VAR5);}\nprivate static void FUN3(String VAR3){\nbyte[] VAR6 = VAR3.getBytes();\nVAR6 = VAR7.copyOf(VAR6,16);\nSecretKeySpec VAR8 = new SecretKeySpec(VAR6, \"AES\");}}\n"
+        }
+      ],
+      "file_status": {
+        "CredentialInStringABICase3.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-73": {
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "source_status": "complete",
+      "files": [
+        "PredictablePBEPasswordABICase3.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictablePBEPasswordABICase3.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-74": {
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "source_status": "complete",
+      "files": [
+        "PredictableKeyStorePasswordABICase3.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableKeyStorePasswordABICase3.java",
+          "name": "PredictableKeyStorePasswordABICase3.java_21.java",
+          "code": "public class PredictableKeyStorePasswordABICase3{\nURL VAR1;\npublic static void FUN1(String args[]) throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException{\nPredictableKeyStorePasswordABICase3 VAR2 = new PredictableKeyStorePasswordABICase3();\nString VAR3 = \"changeit\";\nVAR2.FUN2(VAR3);}\npublic void FUN2(String VAR4) throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException{\nString VAR5 = VAR4;\nFUN3(VAR5);}\npublic void FUN3(String VAR3) throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException{\nString VAR6 = \"JKS\";\nKeyStore VAR7 = KeyStore.getInstance(VAR6);\nVAR1 = new URL(\"https://www.google.com\");\nVAR7.load(VAR1.openStream(), VAR3.toCharArray());}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableKeyStorePasswordABICase3.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-75": {
+      "label": true,
+      "vuln_type": "HTTP ",
+      "source_status": "complete",
+      "files": [
+        "HttpProtocolABICase3.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "HttpProtocolABICase3.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-76": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABICase5.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABICase5.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-77": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABICase6.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABICase6.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-78": {
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "source_status": "complete",
+      "files": [
+        "StaticSaltsABICase3.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "StaticSaltsABICase3.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-79": {
+      "label": true,
+      "vuln_type": "Usage of ECB ",
+      "source_status": "complete",
+      "files": [
+        "EcbInSymmCryptoABICase3.java"
+      ],
+      "slices": [
+        {
+          "file": "EcbInSymmCryptoABICase3.java",
+          "name": "EcbInSymmCryptoABICase3.java_15.java",
+          "code": "public class EcbInSymmCryptoABICase3{\npublic static void FUN1(String VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nString VAR2 = VAR1;\nFUN2(VAR2);}\npublic static void FUN2(String VAR3) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR4 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR5 = VAR4.generateKey();\nCipher VAR6 = Cipher.getInstance(VAR3);\nVAR6.init(VAR7, VAR5);}\npublic static void FUN3(String [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nString VAR3 = \"AES/ECB/PKCS5Padding\";\nFUN1(VAR3);}}\n"
+        }
+      ],
+      "file_status": {
+        "EcbInSymmCryptoABICase3.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-80": {
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "source_status": "complete",
+      "files": [
+        "StaticInitializationVectorABICase3.java"
+      ],
+      "slices": [
+        {
+          "file": "StaticInitializationVectorABICase3.java",
+          "name": "StaticInitializationVectorABICase3.java_10.java",
+          "code": "public static void FUN1(byte[] VAR1) throws NoSuchPaddingException, VAR2, VAR3, InvalidAlgorithmParameterException{\nIvParameterSpec VAR4 = new IvParameterSpec(VAR1);\nKeyGenerator VAR5 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR6 = VAR5.generateKey();\nCipher VAR7 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR7.init(VAR8,VAR6,VAR4);}\npublic static void FUN2(byte[] VAR1) throws NoSuchPaddingException, VAR2, VAR3, InvalidAlgorithmParameterException{\nFUN1(VAR1);}\n"
+        },
+        {
+          "file": "StaticInitializationVectorABICase3.java",
+          "name": "StaticInitializationVectorABICase3.java_13.java",
+          "code": "public static void FUN1(byte[] VAR1) throws NoSuchPaddingException, VAR2, VAR3, InvalidAlgorithmParameterException{\nIvParameterSpec VAR4 = new IvParameterSpec(VAR1);\nKeyGenerator VAR5 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR6 = VAR5.generateKey();\nCipher VAR7 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR7.init(VAR8,VAR6,VAR4);}\npublic static void FUN2(byte[] VAR1) throws NoSuchPaddingException, VAR2, VAR3, InvalidAlgorithmParameterException{\nFUN1(VAR1);}\n"
+        }
+      ],
+      "file_status": {
+        "StaticInitializationVectorABICase3.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-81": {
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "source_status": "complete",
+      "files": [
+        "LessThan1000IterationPBEABICase3.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "LessThan1000IterationPBEABICase3.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-82": {
+      "label": true,
+      "vuln_type": "DES used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase11.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase11.java",
+          "name": "BrokenCryptoABICase11.java_15.java",
+          "code": "public class BrokenCryptoABICase11{\npublic static void FUN1(String VAR1, String VAR2) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nString VAR3 = VAR1;\nFUN2(VAR3,VAR2);}\npublic static void FUN2(String VAR4,String VAR5) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR6 = KeyGenerator.getInstance(VAR5);\nSecretKey VAR2 = VAR6.generateKey();\nCipher VAR7 = Cipher.getInstance(VAR4);\nVAR7.init(VAR8, VAR2);}\npublic static void FUN3(String [] VAR9) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nString VAR2 = \"DES\";\nString VAR4 = \"DES/ECB/PKCS5Padding\";\nFUN1(VAR4,VAR2);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase11.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-83": {
+      "label": true,
+      "vuln_type": "Blowfish used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase12.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase12.java",
+          "name": "BrokenCryptoABICase12.java_15.java",
+          "code": "public class BrokenCryptoABICase12{\npublic static void FUN1(String VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nString VAR2 = VAR1;\nFUN2(VAR2);}\npublic static void FUN2(String VAR3) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR4 = KeyGenerator.getInstance(VAR3);\nSecretKey VAR5 = VAR4.generateKey();\nCipher VAR6 = Cipher.getInstance(VAR3);\nVAR6.init(VAR7, VAR5);}\npublic static void FUN3(String [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nString VAR3 = \"Blowfish\";\nFUN1(VAR3);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase12.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-84": {
+      "label": true,
+      "vuln_type": "RC4 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase13.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase13.java",
+          "name": "BrokenCryptoABICase13.java_15.java",
+          "code": "public class BrokenCryptoABICase13{\npublic static void FUN1(String VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nString VAR2 = VAR1;\nFUN2(VAR2);}\npublic static void FUN2(String VAR3) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR4 = KeyGenerator.getInstance(VAR3);\nSecretKey VAR5 = VAR4.generateKey();\nCipher VAR6 = Cipher.getInstance(VAR3);\nVAR6.init(VAR7, VAR5);}\npublic static void FUN3(String [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nString VAR3 = \"RC4\";\nFUN1(VAR3);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase13.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-85": {
+      "label": true,
+      "vuln_type": "RC2 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase14.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase14.java",
+          "name": "BrokenCryptoABICase14.java_15.java",
+          "code": "public class BrokenCryptoABICase14{\npublic static void FUN1(String VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nString VAR2 = VAR1;\nFUN2(VAR2);}\npublic static void FUN2(String VAR3) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR4 = KeyGenerator.getInstance(VAR3);\nSecretKey VAR5 = VAR4.generateKey();\nCipher VAR6 = Cipher.getInstance(VAR3);\nVAR6.init(VAR7, VAR5);}\npublic static void FUN3(String [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nString VAR3 = \"RC2\";\nFUN1(VAR3);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase14.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-86": {
+      "label": true,
+      "vuln_type": "IDEA used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase15.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase15.java",
+          "name": "BrokenCryptoABICase15.java_15.java",
+          "code": "public class BrokenCryptoABICase15{\npublic static void FUN1(String VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nString VAR2 = VAR1;\nFUN2(VAR2);}\npublic static void FUN2(String VAR3) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR4 = KeyGenerator.getInstance(VAR3);\nSecretKey VAR5 = VAR4.generateKey();\nCipher VAR6 = Cipher.getInstance(VAR3);\nVAR6.init(VAR7, VAR5);}\npublic static void FUN3(String [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nString VAR3 = \"IDEA\";\nFUN1(VAR3);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase15.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-87": {
+      "label": true,
+      "vuln_type": "RSA keysize 1024 bits",
+      "source_status": "complete",
+      "files": [
+        "InsecureAsymmetricCipherABICase3.java"
+      ],
+      "slices": [
+        {
+          "file": "InsecureAsymmetricCipherABICase3.java",
+          "name": "InsecureAsymmetricCipherABICase3.java_14.java",
+          "code": "public class InsecureAsymmetricCipherABICase3{\npublic static void FUN1(int VAR1) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nint VAR2 = VAR1;\nFUN2(VAR2);}\npublic static void FUN2(int VAR3) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nKeyPairGenerator VAR4 = KeyPairGenerator.getInstance(\"RSA\");\nVAR4.initialize(VAR3);\nKeyPair VAR5 = VAR4.generateKeyPair();\nCipher VAR6 = Cipher.getInstance(\"RSA\");\nVAR6.init(VAR7, VAR5.getPublic());\nString VAR8 = new String(\"Secret Message\");\nSealedObject VAR9 = new SealedObject(VAR8,VAR6);\nCipher VAR10 = Cipher.getInstance(\"RSA\");\nVAR10.init(VAR11, VAR5.getPrivate());\nString VAR12 = (String) VAR9.getObject(VAR10);\nVAR13.println(VAR12);}\npublic static void FUN3(String [] VAR14) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nint VAR3 = 1024;\nFUN1(VAR3);}}\n"
+        },
+        {
+          "file": "InsecureAsymmetricCipherABICase3.java",
+          "name": "InsecureAsymmetricCipherABICase3.java_16.java",
+          "code": "public class InsecureAsymmetricCipherABICase3{\npublic static void FUN1(int VAR1) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nint VAR2 = VAR1;\nFUN2(VAR2);}\npublic static void FUN2(int VAR3) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nKeyPairGenerator VAR4 = KeyPairGenerator.getInstance(\"RSA\");\nVAR4.initialize(VAR3);\nKeyPair VAR5 = VAR4.generateKeyPair();\nCipher VAR6 = Cipher.getInstance(\"RSA\");\nVAR6.init(VAR7, VAR5.getPublic());\nString VAR8 = new String(\"Secret Message\");\nSealedObject VAR9 = new SealedObject(VAR8,VAR6);\nCipher VAR10 = Cipher.getInstance(\"RSA\");\nVAR10.init(VAR11, VAR5.getPrivate());\nString VAR12 = (String) VAR9.getObject(VAR10);\nVAR13.println(VAR12);}\npublic static void FUN3(String [] VAR14) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nint VAR3 = 1024;\nFUN1(VAR3);}}\n"
+        },
+        {
+          "file": "InsecureAsymmetricCipherABICase3.java",
+          "name": "InsecureAsymmetricCipherABICase3.java_20.java",
+          "code": "public class InsecureAsymmetricCipherABICase3{\npublic static void FUN1(int VAR1) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nint VAR2 = VAR1;\nFUN2(VAR2);}\npublic static void FUN2(int VAR3) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nKeyPairGenerator VAR4 = KeyPairGenerator.getInstance(\"RSA\");\nVAR4.initialize(VAR3);\nKeyPair VAR5 = VAR4.generateKeyPair();\nCipher VAR6 = Cipher.getInstance(\"RSA\");\nVAR6.init(VAR7, VAR5.getPublic());\nString VAR8 = new String(\"Secret Message\");\nSealedObject VAR9 = new SealedObject(VAR8,VAR6);\nCipher VAR10 = Cipher.getInstance(\"RSA\");\nVAR10.init(VAR11, VAR5.getPrivate());\nString VAR12 = (String) VAR9.getObject(VAR10);\nVAR13.println(VAR12);}\npublic static void FUN3(String [] VAR14) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nint VAR3 = 1024;\nFUN1(VAR3);}}\n"
+        }
+      ],
+      "file_status": {
+        "InsecureAsymmetricCipherABICase3.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-88": {
+      "label": true,
+      "vuln_type": "SHA1 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABICase9.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABICase9.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-89": {
+      "label": true,
+      "vuln_type": "MD5 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABICase10.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABICase10.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-90": {
+      "label": true,
+      "vuln_type": "MD4 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABICase11.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABICase11.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-91": {
+      "label": true,
+      "vuln_type": "MD2 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABICase12.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABICase12.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-93": {
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "source_status": "complete",
+      "files": [
+        "PredictableCryptographicKeyABSCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableCryptographicKeyABSCase1.java",
+          "name": "PredictableCryptographicKeyABSCase1.java_30.java",
+          "code": "public class VAR1{\nCrypto VAR2;\npublic FUN1() throws NoSuchAlgorithmException, NoSuchPaddingException, UnsupportedEncodingException{\nString VAR3 = VAR1.getKey(\"pass.key\");\nif(VAR3 == null){\nbyte VAR4[] ={20,10,30,5,5,6,8,7};\nVAR2 = new Crypto(VAR4);}\nelse{ VAR2 = new Crypto(VAR3.getBytes(\"UTF-8\"));}}\nclass Crypto{\nCipher VAR5;\nString VAR6 = \"AES/CBC/PKCS5Padding\";\nString VAR7 = \"AES\";\nbyte [] VAR4;\npublic Crypto(byte [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException{\nVAR5 = Cipher.getInstance(VAR6);\nVAR4 = VAR8;}\n"
+        },
+        {
+          "file": "PredictableCryptographicKeyABSCase1.java",
+          "name": "PredictableCryptographicKeyABSCase1.java_38.java",
+          "code": "public class VAR1{\nCrypto VAR2;\npublic FUN1() throws NoSuchAlgorithmException, NoSuchPaddingException, UnsupportedEncodingException{\nString VAR3 = VAR1.getKey(\"pass.key\");\nif(VAR3 == null){\nbyte VAR4[] ={20,10,30,5,5,6,8,7};\nVAR2 = new Crypto(VAR4);}\nelse{ VAR2 = new Crypto(VAR3.getBytes(\"UTF-8\"));}}\nclass Crypto{\nCipher VAR5;\nString VAR6 = \"AES/CBC/PKCS5Padding\";\nString VAR7 = \"AES\";\nbyte [] VAR4;\npublic Crypto(byte [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException{\nVAR5 = Cipher.getInstance(VAR6);\nVAR4 = VAR8;}\npublic byte[] FUN2(String VAR9, byte [] VAR10) throws UnsupportedEncodingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException{\nif(VAR10 == null){\nVAR10 = VAR4;}\nbyte[] VAR11 = VAR10;\nbyte [] VAR12 = VAR9.getBytes();\nVAR11 = VAR13.copyOf(VAR11,16);\nSecretKeySpec VAR14 = new SecretKeySpec(VAR11,VAR7);\nVAR5.init(VAR15,VAR14);\nreturn VAR5.doFinal(VAR12);}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableCryptographicKeyABSCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-95": {
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "source_status": "complete",
+      "files": [
+        "PredictablePBEPasswordABSCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictablePBEPasswordABSCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-96": {
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "source_status": "complete",
+      "files": [
+        "PredictableKeyStorePasswordABSCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableKeyStorePasswordABSCase1.java",
+          "name": "PredictableKeyStorePasswordABSCase1.java_24.java",
+          "code": "public class PredictableKeyStorePasswordABSCase1{\nCryptoPredictableKeyStorePassword1 VAR1;\npublic FUN1() throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException{\nString VAR2 = \"changeit\";\nVAR1 = new CryptoPredictableKeyStorePassword1(VAR2);\nVAR1.FUN2(\"\");}}\nclass CryptoPredictableKeyStorePassword1{\nString VAR3;\nURL VAR4;\npublic CryptoPredictableKeyStorePassword1(String VAR2){\nVAR3 = VAR2;}\npublic void FUN2(String VAR5) throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException{\nVAR5 = VAR3;\nString VAR6 = \"JKS\";\nKeyStore VAR7 = KeyStore.getInstance(VAR6);\nVAR4 = new URL(\"https://www.google.com\");\nVAR7.load(VAR4.openStream(), VAR5.toCharArray());}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableKeyStorePasswordABSCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-97": {
+      "label": true,
+      "vuln_type": "HTTP ",
+      "source_status": "complete",
+      "files": [
+        "HttpProtocolABSCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "HttpProtocolABSCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-98": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABSCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABSCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-99": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABSCase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABSCase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-100": {
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "source_status": "complete",
+      "files": [
+        "StaticSaltsABSCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "StaticSaltsABSCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-101": {
+      "label": true,
+      "vuln_type": "Usage of ECB ",
+      "source_status": "complete",
+      "files": [
+        "EcbInSymmCryptoABSCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "EcbInSymmCryptoABSCase1.java",
+          "name": "EcbInSymmCryptoABSCase1.java_23.java",
+          "code": "public class EcbInSymmCryptoABSCase1{\nCryptoECB1 VAR1;\npublic FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nString VAR2 = \"AES/ECB/PKCS5Padding\";\nVAR1 = new CryptoECB1(VAR2);\nVAR1.FUN2(\"\");}}\nclass CryptoECB1{\nString VAR3;\npublic CryptoECB1(String VAR4){\nVAR3 = VAR4;}\npublic void FUN2(String VAR5) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException{\nif(VAR5.isEmpty()){\nVAR5 = VAR3;}\nKeyGenerator VAR6 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR7 = VAR6.generateKey();\nCipher VAR8 = Cipher.getInstance(VAR5);\nVAR8.init(VAR9, VAR7);}}\n"
+        }
+      ],
+      "file_status": {
+        "EcbInSymmCryptoABSCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-102": {
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "source_status": "complete",
+      "files": [
+        "StaticInitializationVectorABSCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "StaticInitializationVectorABSCase1.java",
+          "name": "StaticInitializationVectorABSCase1.java_22.java",
+          "code": "public class StaticInitializationVectorABSCase1{\nCryptoStaticIV1 VAR1;\npublic FUN1() throws InvalidKeyException, NoSuchAlgorithmException, NoSuchPaddingException, InvalidAlgorithmParameterException{\nbyte [] VAR2 = \"abcde\".getBytes();\nVAR1 = new CryptoStaticIV1(VAR2);\nVAR1.FUN2(null);}}\nclass CryptoStaticIV1{\nbyte [] VAR3;\npublic CryptoStaticIV1(byte[] VAR2){\nVAR3 = VAR2;}\npublic void FUN2(byte[] VAR4) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, InvalidAlgorithmParameterException{\nVAR4 = VAR3;\nIvParameterSpec VAR5 = new IvParameterSpec(VAR4);\nKeyGenerator VAR6 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR7 = VAR6.generateKey();\nCipher VAR8 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR8.init(VAR9,VAR7,VAR5);}}\n"
+        },
+        {
+          "file": "StaticInitializationVectorABSCase1.java",
+          "name": "StaticInitializationVectorABSCase1.java_25.java",
+          "code": "public void FUN1(byte[] VAR1) throws NoSuchAlgorithmException, VAR2, VAR3, InvalidAlgorithmParameterException{\nVAR1 = VAR4;\nIvParameterSpec VAR5 = new IvParameterSpec(VAR1);\nKeyGenerator VAR6 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR7 = VAR6.generateKey();\nCipher VAR8 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR8.init(VAR9,VAR7,VAR5);}}\n"
+        }
+      ],
+      "file_status": {
+        "StaticInitializationVectorABSCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-103": {
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "source_status": "complete",
+      "files": [
+        "LessThan1000IterationPBEABSCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "LessThan1000IterationPBEABSCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-104": {
+      "label": true,
+      "vuln_type": "DES used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABSCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABSCase1.java",
+          "name": "BrokenCryptoABSCase1.java_21.java",
+          "code": "public class BrokenCryptoABSCase1{\nCrypto2 VAR1;\npublic FUN1() throws NoSuchAlgorithmException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, InvalidKeyException, UnsupportedEncodingException{\nVAR1 = new Crypto2(\"DES/ECB/PKCS5Padding\");\nVAR1.FUN2(\"abc\",\"\");}}\nclass Crypto2{\nCipher VAR2;\nString VAR3;\npublic Crypto2(String VAR4) throws NoSuchPaddingException, NoSuchAlgorithmException{\nVAR3 = VAR4;}\npublic byte[] FUN2(String VAR5, String VAR6) throws UnsupportedEncodingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, NoSuchPaddingException{\nif(VAR6.isEmpty()){\nVAR6 = VAR3;}\nKeyGenerator VAR7 = KeyGenerator.getInstance(VAR3);\nSecretKey VAR8 = VAR7.generateKey();\nCipher VAR2 = Cipher.getInstance(VAR3);\nVAR2.init(VAR9, VAR8);\nbyte [] VAR10 = VAR5.getBytes();\nreturn VAR2.doFinal(VAR10);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABSCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-105": {
+      "label": true,
+      "vuln_type": "Blowfish used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABSCase2.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABSCase2.java",
+          "name": "BrokenCryptoABSCase2.java_21.java",
+          "code": "public class BrokenCryptoABSCase2{\nCrypto3 VAR1;\npublic FUN1() throws NoSuchAlgorithmException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, InvalidKeyException, UnsupportedEncodingException{\nVAR1 = new Crypto3(\"Blowfish\");\nVAR1.FUN2(\"abc\",\"\");}}\nclass Crypto3{\nCipher VAR2;\nString VAR3;\npublic Crypto3(String VAR4) throws NoSuchPaddingException, NoSuchAlgorithmException{\nVAR3 = VAR4;}\npublic byte[] FUN2(String VAR5, String VAR6) throws UnsupportedEncodingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, NoSuchPaddingException{\nif(VAR6.isEmpty()){\nVAR6 = VAR3;}\nKeyGenerator VAR7 = KeyGenerator.getInstance(VAR3);\nSecretKey VAR8 = VAR7.generateKey();\nCipher VAR2 = Cipher.getInstance(VAR3);\nVAR2.init(VAR9, VAR8);\nbyte [] VAR10 = VAR5.getBytes();\nreturn VAR2.doFinal(VAR10);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABSCase2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-106": {
+      "label": true,
+      "vuln_type": "RC4 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABSCase3.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABSCase3.java",
+          "name": "BrokenCryptoABSCase3.java_21.java",
+          "code": "public class BrokenCryptoABSCase3{\nCrypto4 VAR1;\npublic FUN1() throws NoSuchAlgorithmException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, InvalidKeyException, UnsupportedEncodingException{\nVAR1 = new Crypto4(\"RC4\");\nVAR1.FUN2(\"abc\",\"\");}}\nclass Crypto4{\nCipher VAR2;\nString VAR3;\npublic Crypto4(String VAR4) throws NoSuchPaddingException, NoSuchAlgorithmException{\nVAR3 = VAR4;}\npublic byte[] FUN2(String VAR5, String VAR6) throws UnsupportedEncodingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, NoSuchPaddingException{\nif(VAR6.isEmpty()){\nVAR6 = VAR3;}\nKeyGenerator VAR7 = KeyGenerator.getInstance(VAR3);\nSecretKey VAR8 = VAR7.generateKey();\nCipher VAR2 = Cipher.getInstance(VAR3);\nVAR2.init(VAR9, VAR8);\nbyte [] VAR10 = VAR5.getBytes();\nreturn VAR2.doFinal(VAR10);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABSCase3.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-107": {
+      "label": true,
+      "vuln_type": "RC2 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABSCase4.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABSCase4.java",
+          "name": "BrokenCryptoABSCase4.java_21.java",
+          "code": "public class BrokenCryptoABSCase4{\nCrypto5 VAR1;\npublic FUN1() throws NoSuchAlgorithmException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, InvalidKeyException, UnsupportedEncodingException{\nVAR1 = new Crypto5(\"RC2\");\nVAR1.FUN2(\"abc\",\"\");}}\nclass Crypto5{\nCipher VAR2;\nString VAR3;\npublic Crypto5(String VAR4) throws NoSuchPaddingException, NoSuchAlgorithmException{\nVAR3 = VAR4;}\npublic byte[] FUN2(String VAR5, String VAR6) throws UnsupportedEncodingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, NoSuchPaddingException{\nif(VAR6.isEmpty()){\nVAR6 = VAR3;}\nKeyGenerator VAR7 = KeyGenerator.getInstance(VAR3);\nSecretKey VAR8 = VAR7.generateKey();\nCipher VAR2 = Cipher.getInstance(VAR3);\nVAR2.init(VAR9, VAR8);\nbyte [] VAR10 = VAR5.getBytes();\nreturn VAR2.doFinal(VAR10);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABSCase4.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-108": {
+      "label": true,
+      "vuln_type": "IDEA used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABSCase5.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABSCase5.java",
+          "name": "BrokenCryptoABSCase5.java_21.java",
+          "code": "public class BrokenCryptoABSCase5{\nCrypto6 VAR1;\npublic FUN1() throws NoSuchAlgorithmException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, InvalidKeyException, UnsupportedEncodingException{\nVAR1 = new Crypto6(\"IDEA\");\nVAR1.FUN2(\"abc\",\"\");}}\nclass Crypto6{\nCipher VAR2;\nString VAR3;\npublic Crypto6(String VAR4) throws NoSuchPaddingException, NoSuchAlgorithmException{\nVAR3 = VAR4;}\npublic byte[] FUN2(String VAR5, String VAR6) throws UnsupportedEncodingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, NoSuchPaddingException{\nif(VAR6.isEmpty()){\nVAR6 = VAR3;}\nKeyGenerator VAR7 = KeyGenerator.getInstance(VAR3);\nSecretKey VAR8 = VAR7.generateKey();\nCipher VAR2 = Cipher.getInstance(VAR3);\nVAR2.init(VAR9, VAR8);\nbyte [] VAR10 = VAR5.getBytes();\nreturn VAR2.doFinal(VAR10);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABSCase5.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-109": {
+      "label": true,
+      "vuln_type": "SHA1 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABSCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABSCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-110": {
+      "label": true,
+      "vuln_type": "MD5 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABSCase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABSCase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-111": {
+      "label": true,
+      "vuln_type": "MD4 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABSCase3.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABSCase3.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-112": {
+      "label": true,
+      "vuln_type": "MD2 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABSCase4.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABSCase4.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-114": {
+      "label": true,
+      "vuln_type": "Credential in String",
+      "source_status": "complete",
+      "files": [
+        "CredentialInStringABHCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "CredentialInStringABHCase1.java",
+          "name": "CredentialInStringABHCase1.java_12.java",
+          "code": "public class CredentialInStringABHCase1{\npublic static void FUN1(String [] VAR1) throws UnsupportedEncodingException{\nSecureRandom VAR2 = new SecureRandom();\nString VAR3 = String.valueOf(VAR2.ints());\nbyte [] VAR4 = VAR3.getBytes(\"UTF-8\");\nVAR4 = VAR5.copyOf(VAR4,16);\nSecretKeySpec VAR6 = new SecretKeySpec(VAR4, \"AES\");}}\n"
+        }
+      ],
+      "file_status": {
+        "CredentialInStringABHCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-115": {
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "source_status": "complete",
+      "files": [
+        "PredictableCryptographicKeyABHCase2.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableCryptographicKeyABHCase2.java",
+          "name": "PredictableCryptographicKeyABHCase2.java_27.java",
+          "code": "public class PredictableCryptographicKeyABHCase2{\npublic static void FUN1(String [] VAR1) throws UnsupportedEncodingException{\nMap<String, Integer> VAR2 = new HashMap<String, Integer>();\nVAR2.put(\"aaa\", 32);\nVAR2.put(\"bbb\", 33);\nbyte [] VAR3 = new byte [5];\nint VAR4 = VAR2.get(\"aaa\");\nif (VAR4 == 32){\nVAR3[0] = 20;\nVAR3[1] = 30;\nVAR3[2] = 40;\nVAR3[3] = 50;\nVAR3[4] = 10;\n} else{ VAR3[0] = 25;\nVAR3[1] = 35;\nVAR3[2] = 45;\nVAR3[3] = 55;\nVAR3[4] = 15;}\nbyte [] VAR5 = VAR3;\nVAR5 = VAR6.copyOf(VAR5,16);\nSecretKeySpec VAR7 = new SecretKeySpec(VAR5, \"AES\");}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableCryptographicKeyABHCase2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-116": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "PredictablePBEPasswordABHCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictablePBEPasswordABHCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-117": {
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "source_status": "complete",
+      "files": [
+        "PredictablePBEPasswordABHCase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictablePBEPasswordABHCase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-118": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "PredictableKeyStorePasswordABHCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableKeyStorePasswordABHCase1.java",
+          "name": "PredictableKeyStorePasswordABHCase1.java_21.java",
+          "code": "public void FUN1() throws KeyStoreException, VAR1, VAR2, NoSuchAlgorithmException{\nString VAR3 = \"JKS\";\nSecureRandom VAR4 = new SecureRandom();\nString VAR5 = String.valueOf(VAR4.ints());\nbyte [] VAR6 = VAR5.getBytes(\"UTF-8\");\nKeyStore VAR7 = KeyStore.getInstance(VAR3);\nVAR8 = new URL(\"https://www.google.com\");\nVAR7.load(VAR8.openStream(), new String(VAR6).toCharArray());}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableKeyStorePasswordABHCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-119": {
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "source_status": "complete",
+      "files": [
+        "PredictableKeyStorePasswordABHCase2.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableKeyStorePasswordABHCase2.java",
+          "name": "PredictableKeyStorePasswordABHCase2.java_25.java",
+          "code": "public void FUN1() throws KeyStoreException, VAR1, VAR2, NoSuchAlgorithmException{\nString VAR3 = \"JKS\";\nMap<String,String> VAR4 = new HashMap<String, String>();\nVAR4.put(\"aaa\", \"afix\");\nVAR4.put(\"bbb\", \"bfix\");\nVAR4.put(\"ccc\", \"cfix\");\nVAR4.put(\"ddd\", \"dfix\");\nString VAR5 = VAR4.get(\"aaa\");\nKeyStore VAR6 = KeyStore.getInstance(VAR3);\nVAR7 = new URL(\"https://www.google.com\");\nVAR6.load(VAR7.openStream(), VAR5.toCharArray());}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableKeyStorePasswordABHCase2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-120": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABHCase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABHCase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-121": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABHCase4.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABHCase4.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-122": {
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "source_status": "complete",
+      "files": [
+        "StaticSaltsABHCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "StaticSaltsABHCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-123": {
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "source_status": "complete",
+      "files": [
+        "StaticInitializationVectorABHCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "StaticInitializationVectorABHCase1.java",
+          "name": "StaticInitializationVectorABHCase1.java_15.java",
+          "code": "public class StaticInitializationVectorABHCase1{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException, UnsupportedEncodingException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nbyte [] VAR4 = \"abcde\".getBytes(\"UTF-8\");\nIvParameterSpec VAR5 = new IvParameterSpec(VAR4);\nVAR3.init(VAR6,VAR2,VAR5);}\npublic static void FUN2(String [] VAR7) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException, UnsupportedEncodingException{\nStaticInitializationVectorABHCase1 VAR8 = new StaticInitializationVectorABHCase1();\nVAR8.FUN1();}}\n"
+        },
+        {
+          "file": "StaticInitializationVectorABHCase1.java",
+          "name": "StaticInitializationVectorABHCase1.java_17.java",
+          "code": "public class StaticInitializationVectorABHCase1{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException, UnsupportedEncodingException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nbyte [] VAR4 = \"abcde\".getBytes(\"UTF-8\");\nIvParameterSpec VAR5 = new IvParameterSpec(VAR4);\nVAR3.init(VAR6,VAR2,VAR5);}\npublic static void FUN2(String [] VAR7) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException, UnsupportedEncodingException{\nStaticInitializationVectorABHCase1 VAR8 = new StaticInitializationVectorABHCase1();\nVAR8.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "StaticInitializationVectorABHCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-124": {
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "source_status": "complete",
+      "files": [
+        "StaticInitializationVectorABHCase2.java"
+      ],
+      "slices": [
+        {
+          "file": "StaticInitializationVectorABHCase2.java",
+          "name": "StaticInitializationVectorABHCase2.java_16.java",
+          "code": "public class StaticInitializationVectorABHCase2{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nString VAR4 = \"abcdef\";\nMap<String,String> VAR5 = new HashMap<String, String>();\nVAR5.put(\"aaa\", \"abcde\");\nVAR5.put(\"bbb\", \"fghij\");\nVAR5.put(\"ccc\", \"klmno\");\nVAR5.put(\"ddd\", \"pqrst\");\nString VAR6 = VAR5.get(\"aaa\");\nbyte [] VAR7 = VAR6.getBytes();\nIvParameterSpec VAR8 = new IvParameterSpec(VAR7);\nVAR3.init(VAR9,VAR2,VAR8);}\npublic static void FUN2(String [] VAR10) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nStaticInitializationVectorABHCase2 VAR11 = new StaticInitializationVectorABHCase2();\nVAR11.FUN1();}}\n"
+        },
+        {
+          "file": "StaticInitializationVectorABHCase2.java",
+          "name": "StaticInitializationVectorABHCase2.java_25.java",
+          "code": "public class StaticInitializationVectorABHCase2{\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nKeyGenerator VAR1 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR2 = VAR1.generateKey();\nCipher VAR3 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nString VAR4 = \"abcdef\";\nMap<String,String> VAR5 = new HashMap<String, String>();\nVAR5.put(\"aaa\", \"abcde\");\nVAR5.put(\"bbb\", \"fghij\");\nVAR5.put(\"ccc\", \"klmno\");\nVAR5.put(\"ddd\", \"pqrst\");\nString VAR6 = VAR5.get(\"aaa\");\nbyte [] VAR7 = VAR6.getBytes();\nIvParameterSpec VAR8 = new IvParameterSpec(VAR7);\nVAR3.init(VAR9,VAR2,VAR8);}\npublic static void FUN2(String [] VAR10) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nStaticInitializationVectorABHCase2 VAR11 = new StaticInitializationVectorABHCase2();\nVAR11.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "StaticInitializationVectorABHCase2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-125": {
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "source_status": "complete",
+      "files": [
+        "LessThan1000IterationPBEABHCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "LessThan1000IterationPBEABHCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-127": {
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "source_status": "complete",
+      "files": [
+        "PredictableCryptographicKeyABICase2.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableCryptographicKeyABICase2.java",
+          "name": "PredictableCryptographicKeyABICase2.java_20.java",
+          "code": "public class PredictableCryptographicKeyABICase2{\npublic static final byte [] VAR1 ={20,10,30,5,5,6,8,7};\nprivate static byte [] VAR2;\nprivate static byte [] VAR3;\npublic static void FUN1(String [] VAR4){\nFUN2();\nFUN3();\nFUN4();}\nprivate static void FUN2(){\nVAR2 = VAR1;}\nprivate static void FUN3(){\nVAR3 = VAR2;}\nprivate static void FUN4(){\nbyte[] VAR5 = VAR3;\nVAR5 = VAR6.copyOf(VAR5,16);\nSecretKeySpec VAR7 = new SecretKeySpec(VAR5, \"AES\");}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableCryptographicKeyABICase2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-128": {
+      "label": true,
+      "vuln_type": "Credential in String",
+      "source_status": "complete",
+      "files": [
+        "CredentialInStringABICase2.java"
+      ],
+      "slices": [
+        {
+          "file": "CredentialInStringABICase2.java",
+          "name": "CredentialInStringABICase2.java_20.java",
+          "code": "public class CredentialInStringABICase2{\npublic static byte [] VAR1 ={20,10,30,5,5,6,8,7};\nprivate static byte[] VAR2;\nprivate static byte[] VAR3;\npublic static void FUN1(String [] VAR4){\nFUN2();\nFUN3();\nFUN4();}\nprivate static void FUN2(){\nVAR2 = VAR1;}\nprivate static void FUN3(){\nVAR3 = VAR2;}\nprivate static void FUN4(){\nbyte[] VAR5 = VAR3;\nVAR5 = VAR6.copyOf(VAR5,16);\nSecretKeySpec VAR7 = new SecretKeySpec(VAR5, \"AES\");}}\n"
+        }
+      ],
+      "file_status": {
+        "CredentialInStringABICase2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-129": {
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "source_status": "complete",
+      "files": [
+        "PredictablePBEPasswordABICase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictablePBEPasswordABICase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-130": {
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "source_status": "complete",
+      "files": [
+        "PredictableKeyStorePasswordABICase2.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableKeyStorePasswordABICase2.java",
+          "name": "PredictableKeyStorePasswordABICase2.java_26.java",
+          "code": "public class PredictableKeyStorePasswordABICase2{\npublic static final String VAR1 = \"changeit\";\nprivate static char[] VAR2;\nprivate static char[] VAR3;\nURL VAR4;\npublic static void FUN1(String [] VAR5) throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException{\nPredictableKeyStorePasswordABICase2 VAR6 = new PredictableKeyStorePasswordABICase2();\nFUN2();\nFUN3();\nVAR6.FUN4();}\nprivate static void FUN2(){\nVAR2 = VAR1.toCharArray();}\nprivate static void FUN3(){\nVAR3 = VAR2;}\nprivate void FUN4() throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException{\nString VAR7 = \"JKS\";\nKeyStore VAR8 = KeyStore.getInstance(VAR7);\nVAR4 = new URL(\"https://www.google.com\");\nVAR8.load(VAR4.openStream(), VAR3);}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableKeyStorePasswordABICase2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-131": {
+      "label": true,
+      "vuln_type": "HTTP ",
+      "source_status": "complete",
+      "files": [
+        "HttpProtocolABICase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "HttpProtocolABICase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-132": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABICase3.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABICase3.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-133": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABICase4.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABICase4.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-134": {
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "source_status": "complete",
+      "files": [
+        "StaticSaltsABICase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "StaticSaltsABICase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-135": {
+      "label": true,
+      "vuln_type": "Usage of ECB ",
+      "source_status": "complete",
+      "files": [
+        "EcbInSymmCryptoABICase2.java"
+      ],
+      "slices": [
+        {
+          "file": "EcbInSymmCryptoABICase2.java",
+          "name": "EcbInSymmCryptoABICase2.java_15.java",
+          "code": "public class EcbInSymmCryptoABICase2{\npublic static final String VAR1 = \"AES/ECB/PKCS5Padding\";\nprivate static char[] VAR2;\nprivate static char[] VAR3;\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR4 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR5 = VAR4.generateKey();\nCipher VAR6 = Cipher.getInstance(String.valueOf(VAR3));\nVAR6.init(VAR7, VAR5);}\nprivate static void FUN2(){\nVAR2 = VAR1.toCharArray();}\nprivate static void FUN3(){\nVAR3 = VAR2;}\npublic static void FUN4(String [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nEcbInSymmCryptoABICase2 VAR9 = new EcbInSymmCryptoABICase2();\nFUN2();\nFUN3();\nVAR9.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "EcbInSymmCryptoABICase2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-136": {
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "source_status": "complete",
+      "files": [
+        "StaticInitializationVectorABICase2.java"
+      ],
+      "slices": [
+        {
+          "file": "StaticInitializationVectorABICase2.java",
+          "name": "StaticInitializationVectorABICase2.java_15.java",
+          "code": "public class StaticInitializationVectorABICase2{\npublic static final String VAR1 = \"abcde\";\nprivate static char[] VAR2;\nprivate static char[] VAR3;\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nIvParameterSpec VAR4 = new IvParameterSpec(new byte[]{VAR5.parseByte(String.valueOf(VAR3))});\nKeyGenerator VAR6 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR7 = VAR6.generateKey();\nCipher VAR8 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR8.init(VAR9,VAR7,VAR4);}\nprivate static void FUN2(){\nVAR2 = VAR1.toCharArray();}\nprivate static void FUN3(){\nVAR3 = VAR2;}\npublic static void FUN4(String [] VAR10) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nStaticInitializationVectorABICase2 VAR11 = new StaticInitializationVectorABICase2();\nFUN2();\nFUN3();\nVAR11.FUN1();}}\n"
+        },
+        {
+          "file": "StaticInitializationVectorABICase2.java",
+          "name": "StaticInitializationVectorABICase2.java_18.java",
+          "code": "public class StaticInitializationVectorABICase2{\npublic static final String VAR1 = \"abcde\";\nprivate static char[] VAR2;\nprivate static char[] VAR3;\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nIvParameterSpec VAR4 = new IvParameterSpec(new byte[]{VAR5.parseByte(String.valueOf(VAR3))});\nKeyGenerator VAR6 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR7 = VAR6.generateKey();\nCipher VAR8 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR8.init(VAR9,VAR7,VAR4);}\npublic static void FUN2(String [] VAR10) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nStaticInitializationVectorABICase2 VAR11 = new StaticInitializationVectorABICase2();\ngo2();\ngo3();\nVAR11.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "StaticInitializationVectorABICase2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-137": {
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "source_status": "complete",
+      "files": [
+        "LessThan1000IterationPBEABICase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "LessThan1000IterationPBEABICase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-138": {
+      "label": true,
+      "vuln_type": "DES used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase5.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase5.java",
+          "name": "BrokenCryptoABICase5.java_18.java",
+          "code": "public class BrokenCryptoABICase5{\npublic static final String VAR1 = \"DES/ECB/PKCS5Padding\";\nprivate static char[] VAR2;\nprivate static char[] VAR3;\npublic static final String VAR4 = \"DES\";\nprivate static char[] VAR5;\nprivate static char[] VAR6;\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR7 = KeyGenerator.getInstance(String.valueOf(VAR6));\nSecretKey VAR8 = VAR7.generateKey();\nCipher VAR9 = Cipher.getInstance(String.valueOf(VAR3));\nVAR9.init(VAR10, VAR8);}\nprivate static void FUN2(){\nVAR2 = VAR1.toCharArray();\nVAR5 = VAR4.toCharArray();}\nprivate static void FUN3(){\nVAR3 = VAR2;\nVAR6 = VAR5;}\npublic static void FUN4(String [] VAR11) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABICase5 VAR12 = new BrokenCryptoABICase5();\nFUN2();\nFUN3();\nVAR12.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase5.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-139": {
+      "label": true,
+      "vuln_type": "Blowfish used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase6.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase6.java",
+          "name": "BrokenCryptoABICase6.java_15.java",
+          "code": "public class BrokenCryptoABICase6{\npublic static final String VAR1 = \"Blowfish\";\nprivate static char[] VAR2;\nprivate static char[] VAR3;\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR4 = KeyGenerator.getInstance(String.valueOf(VAR3));\nSecretKey VAR5 = VAR4.generateKey();\nCipher VAR6 = Cipher.getInstance(String.valueOf(VAR3));\nVAR6.init(VAR7, VAR5);}\nprivate static void FUN2(){\nVAR2 = VAR1.toCharArray();}\nprivate static void FUN3(){\nVAR3 = VAR2;}\npublic static void FUN4(String [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABICase6 VAR9 = new BrokenCryptoABICase6();\nFUN2();\nFUN3();\nVAR9.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase6.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-140": {
+      "label": true,
+      "vuln_type": "RC4 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase7.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase7.java",
+          "name": "BrokenCryptoABICase7.java_15.java",
+          "code": "public class BrokenCryptoABICase7{\npublic static final String VAR1 = \"RC4\";\nprivate static char[] VAR2;\nprivate static char[] VAR3;\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR4 = KeyGenerator.getInstance(String.valueOf(VAR3));\nSecretKey VAR5 = VAR4.generateKey();\nCipher VAR6 = Cipher.getInstance(String.valueOf(VAR3));\nVAR6.init(VAR7, VAR5);}\nprivate static void FUN2(){\nVAR2 = VAR1.toCharArray();}\nprivate static void FUN3(){\nVAR3 = VAR2;}\npublic static void FUN4(String [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABICase7 VAR9 = new BrokenCryptoABICase7();\nFUN2();\nFUN3();\nVAR9.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase7.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-141": {
+      "label": true,
+      "vuln_type": "RC2 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase8.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase8.java",
+          "name": "BrokenCryptoABICase8.java_15.java",
+          "code": "public class BrokenCryptoABICase8{\npublic static final String VAR1 = \"RC2\";\nprivate static char[] VAR2;\nprivate static char[] VAR3;\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR4 = KeyGenerator.getInstance(String.valueOf(VAR3));\nSecretKey VAR5 = VAR4.generateKey();\nCipher VAR6 = Cipher.getInstance(String.valueOf(VAR3));\nVAR6.init(VAR7, VAR5);}\nprivate static void FUN2(){\nVAR2 = VAR1.toCharArray();}\nprivate static void FUN3(){\nVAR3 = VAR2;}\npublic static void FUN4(String [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABICase8 VAR9 = new BrokenCryptoABICase8();\nFUN2();\nFUN3();\nVAR9.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase8.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-142": {
+      "label": true,
+      "vuln_type": "IDEA used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABICase10.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABICase10.java",
+          "name": "BrokenCryptoABICase10.java_15.java",
+          "code": "public class BrokenCryptoABICase10{\npublic static final String VAR1 = \"IDEA\";\nprivate static char[] VAR2;\nprivate static char[] VAR3;\npublic void FUN1() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR4 = KeyGenerator.getInstance(String.valueOf(VAR3));\nSecretKey VAR5 = VAR4.generateKey();\nCipher VAR6 = Cipher.getInstance(String.valueOf(VAR3));\nVAR6.init(VAR7, VAR5);}\nprivate static void FUN2(){\nVAR2 = VAR1.toCharArray();}\nprivate static void FUN3(){\nVAR3 = VAR2;}\npublic static void FUN4(String [] VAR8) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABICase10 VAR9 = new BrokenCryptoABICase10();\nFUN2();\nFUN3();\nVAR9.FUN1();}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABICase10.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-143": {
+      "label": true,
+      "vuln_type": "RSA keysize 1024 bits",
+      "source_status": "complete",
+      "files": [
+        "InsecureAsymmetricCipherABICase2.java"
+      ],
+      "slices": [
+        {
+          "file": "InsecureAsymmetricCipherABICase2.java",
+          "name": "InsecureAsymmetricCipherABICase2.java_13.java",
+          "code": "public class InsecureAsymmetricCipherABICase2{\npublic static final int VAR1 = 1024;\nprivate static int VAR2;\nprivate static int VAR3;\npublic void FUN1(KeyPairGenerator VAR4, KeyPair VAR5) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nCipher VAR6 = Cipher.getInstance(\"RSA\");\nVAR6.init(VAR7, VAR5.getPublic());\nString VAR8 = new String(\"Secret Message\");\nSealedObject VAR9 = new SealedObject(VAR8,VAR6);\nCipher VAR10 = Cipher.getInstance(\"RSA\");\nVAR10.init(VAR11, VAR5.getPrivate());\nString VAR12 = (String) VAR9.getObject(VAR10);\nVAR13.println(VAR12);}\npublic static void FUN2(String [] VAR14) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nInsecureAsymmetricCipherABICase2 VAR15 = new InsecureAsymmetricCipherABICase2();\ngo2();\ngo3();\nKeyPairGenerator VAR4 = KeyPairGenerator.getInstance(\"RSA\");\nVAR4.initialize(VAR3);\nKeyPair VAR5 = VAR4.generateKeyPair();\nVAR15.FUN1(VAR4,VAR5);}}\n"
+        },
+        {
+          "file": "InsecureAsymmetricCipherABICase2.java",
+          "name": "InsecureAsymmetricCipherABICase2.java_17.java",
+          "code": "public class InsecureAsymmetricCipherABICase2{\npublic static final int VAR1 = 1024;\nprivate static int VAR2;\nprivate static int VAR3;\npublic void FUN1(KeyPairGenerator VAR4, KeyPair VAR5) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nCipher VAR6 = Cipher.getInstance(\"RSA\");\nVAR6.init(VAR7, VAR5.getPublic());\nString VAR8 = new String(\"Secret Message\");\nSealedObject VAR9 = new SealedObject(VAR8,VAR6);\nCipher VAR10 = Cipher.getInstance(\"RSA\");\nVAR10.init(VAR11, VAR5.getPrivate());\nString VAR12 = (String) VAR9.getObject(VAR10);\nVAR13.println(VAR12);}\npublic static void FUN2(String [] VAR14) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nInsecureAsymmetricCipherABICase2 VAR15 = new InsecureAsymmetricCipherABICase2();\ngo2();\ngo3();\nKeyPairGenerator VAR4 = KeyPairGenerator.getInstance(\"RSA\");\nVAR4.initialize(VAR3);\nKeyPair VAR5 = VAR4.generateKeyPair();\nVAR15.FUN1(VAR4,VAR5);}}\n"
+        },
+        {
+          "file": "InsecureAsymmetricCipherABICase2.java",
+          "name": "InsecureAsymmetricCipherABICase2.java_30.java",
+          "code": "public class InsecureAsymmetricCipherABICase2{\npublic static final int VAR1 = 1024;\nprivate static int VAR2;\nprivate static int VAR3;\npublic void FUN1(KeyPairGenerator VAR4, KeyPair VAR5) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nCipher VAR6 = Cipher.getInstance(\"RSA\");\nVAR6.init(VAR7, VAR5.getPublic());\nString VAR8 = new String(\"Secret Message\");\nSealedObject VAR9 = new SealedObject(VAR8,VAR6);\nCipher VAR10 = Cipher.getInstance(\"RSA\");\nVAR10.init(VAR11, VAR5.getPrivate());\nString VAR12 = (String) VAR9.getObject(VAR10);\nVAR13.println(VAR12);}\nprivate static void FUN2(){\nVAR2 = VAR1;}\nprivate static void FUN3(){\nVAR3 = VAR2;}\npublic static void FUN4(String [] VAR14) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nInsecureAsymmetricCipherABICase2 VAR15 = new InsecureAsymmetricCipherABICase2();\nFUN2();\nFUN3();\nKeyPairGenerator VAR4 = KeyPairGenerator.getInstance(\"RSA\");\nVAR4.initialize(VAR3);\nKeyPair VAR5 = VAR4.generateKeyPair();\nVAR15.FUN1(VAR4,VAR5);}}\n"
+        }
+      ],
+      "file_status": {
+        "InsecureAsymmetricCipherABICase2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-144": {
+      "label": true,
+      "vuln_type": "SHA1 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABICase5.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABICase5.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-145": {
+      "label": true,
+      "vuln_type": "MD5 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABICase6.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABICase6.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-146": {
+      "label": true,
+      "vuln_type": "MD4 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABICase7.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABICase7.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-147": {
+      "label": true,
+      "vuln_type": "MD2 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABICase8.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABICase8.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-149": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "PredictableCryptographicKeyABPSCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableCryptographicKeyABPSCase1.java",
+          "name": "PredictableCryptographicKeyABPSCase1.java_13.java",
+          "code": "public class PredictableCryptographicKeyABPSCase1{\npublic static void FUN1(String [] VAR1){\nString VAR2 = \"defaultkey\";\nint VAR3 = 2;\nbyte[] VAR4 = VAR2.getBytes();\nif(VAR3>1){\nSecureRandom VAR5 = new SecureRandom();\nVAR5.nextBytes(VAR4);}\nSecretKeySpec VAR6 = new SecretKeySpec(VAR4, \"AES\");}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableCryptographicKeyABPSCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-150": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "PredictablePBEPasswordABPSCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictablePBEPasswordABPSCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-151": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "PredictableKeyStorePasswordABPSCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableKeyStorePasswordABPSCase1.java",
+          "name": "PredictableKeyStorePasswordABPSCase1.java_23.java",
+          "code": "public class PredictableKeyStorePasswordABPSCase1{\nURL VAR1;\npublic static void FUN1(String args[]) throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException{\nPredictableKeyStorePasswordABPSCase1 VAR2 = new PredictableKeyStorePasswordABPSCase1();\nint VAR3=2;\nVAR2.FUN2(VAR3);}\npublic void FUN2(int VAR3) throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException{\nString VAR4 = \"JKS\";\nKeyStore VAR5 = KeyStore.getInstance(VAR4);\nVAR1 = new URL(\"https://www.google.com\");\nString VAR6 = \"changeit\";\nif(VAR3>1){\nSecureRandom VAR7 = new SecureRandom();\nVAR6 = String.valueOf(VAR7.ints());}\nVAR5.load(VAR1.openStream(), VAR6.toCharArray());}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableKeyStorePasswordABPSCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-152": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "HttpProtocolABPSCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "HttpProtocolABPSCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-153": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABPSCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABPSCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-154": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABPSCase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABPSCase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-155": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "StaticSaltsABPSCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "StaticSaltsABPSCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-156": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "EcbInSymmCryptoABPSCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "EcbInSymmCryptoABPSCase1.java",
+          "name": "EcbInSymmCryptoABPSCase1.java_12.java",
+          "code": "public class EcbInSymmCryptoABPSCase1{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"AES/ECB/PKCS5Padding\");\nif(VAR1>1)\nVAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nEcbInSymmCryptoABPSCase1 VAR7 = new EcbInSymmCryptoABPSCase1();\nint VAR1 = 2;\nVAR7.FUN1(VAR1);}}\n"
+        },
+        {
+          "file": "EcbInSymmCryptoABPSCase1.java",
+          "name": "EcbInSymmCryptoABPSCase1.java_14.java",
+          "code": "public class EcbInSymmCryptoABPSCase1{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"AES/ECB/PKCS5Padding\");\nif(VAR1>1)\nVAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nEcbInSymmCryptoABPSCase1 VAR7 = new EcbInSymmCryptoABPSCase1();\nint VAR1 = 2;\nVAR7.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "EcbInSymmCryptoABPSCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-157": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "StaticInitializationVectorABPSCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "StaticInitializationVectorABPSCase1.java",
+          "name": "StaticInitializationVectorABPSCase1.java_12.java",
+          "code": "public class StaticInitializationVectorABPSCase1{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nSecureRandom VAR5 = new SecureRandom();\nbyte [] VAR6 = \"abcde\".getBytes();\nif(VAR1>1){\nVAR6 = new byte[16];\nVAR5.nextBytes(VAR6);}\nIvParameterSpec VAR7 = new IvParameterSpec(VAR6);\nVAR4.init(VAR8,VAR3,VAR7);}\npublic static void FUN2(String [] VAR9) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nStaticInitializationVectorABPSCase1 VAR10 = new StaticInitializationVectorABPSCase1();\nint VAR1 = 2;\nVAR10.FUN1(VAR1);}}\n"
+        },
+        {
+          "file": "StaticInitializationVectorABPSCase1.java",
+          "name": "StaticInitializationVectorABPSCase1.java_18.java",
+          "code": "public class StaticInitializationVectorABPSCase1{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nSecureRandom VAR5 = new SecureRandom();\nbyte [] VAR6 = \"abcde\".getBytes();\nif(VAR1>1){\nVAR6 = new byte[16];\nVAR5.nextBytes(VAR6);}\nIvParameterSpec VAR7 = new IvParameterSpec(VAR6);\nVAR4.init(VAR8,VAR3,VAR7);}\npublic static void FUN2(String [] VAR9) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException{\nStaticInitializationVectorABPSCase1 VAR10 = new StaticInitializationVectorABPSCase1();\nint VAR1 = 2;\nVAR10.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "StaticInitializationVectorABPSCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-158": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "LessThan1000IterationPBEABPSCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "LessThan1000IterationPBEABPSCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-159": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABPSCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABPSCase1.java",
+          "name": "BrokenCryptoABPSCase1.java_12.java",
+          "code": "public class BrokenCryptoABPSCase1{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"DES/ECB/PKCS5Padding\");\nif (VAR1 > 1)\nVAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABPSCase1 VAR7 = new BrokenCryptoABPSCase1();\nint VAR1=2;\nVAR7.FUN1(VAR1);}}\n"
+        },
+        {
+          "file": "BrokenCryptoABPSCase1.java",
+          "name": "BrokenCryptoABPSCase1.java_14.java",
+          "code": "public class BrokenCryptoABPSCase1{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"DES/ECB/PKCS5Padding\");\nif (VAR1 > 1)\nVAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABPSCase1 VAR7 = new BrokenCryptoABPSCase1();\nint VAR1=2;\nVAR7.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABPSCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-160": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABPSCase2.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABPSCase2.java",
+          "name": "BrokenCryptoABPSCase2.java_12.java",
+          "code": "public class BrokenCryptoABPSCase2{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"Blowfish\");\nif (VAR1 > 1)\nVAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABPSCase2 VAR7 = new BrokenCryptoABPSCase2();\nint VAR1=2;\nVAR7.FUN1(VAR1);}}\n"
+        },
+        {
+          "file": "BrokenCryptoABPSCase2.java",
+          "name": "BrokenCryptoABPSCase2.java_14.java",
+          "code": "public class BrokenCryptoABPSCase2{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"Blowfish\");\nif (VAR1 > 1)\nVAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABPSCase2 VAR7 = new BrokenCryptoABPSCase2();\nint VAR1=2;\nVAR7.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABPSCase2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-161": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABPSCase3.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABPSCase3.java",
+          "name": "BrokenCryptoABPSCase3.java_12.java",
+          "code": "public class BrokenCryptoABPSCase3{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"RC4\");\nif (VAR1 > 1)\nVAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABPSCase3 VAR7 = new BrokenCryptoABPSCase3();\nint VAR1=2;\nVAR7.FUN1(VAR1);}}\n"
+        },
+        {
+          "file": "BrokenCryptoABPSCase3.java",
+          "name": "BrokenCryptoABPSCase3.java_14.java",
+          "code": "public class BrokenCryptoABPSCase3{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"RC4\");\nif (VAR1 > 1)\nVAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABPSCase3 VAR7 = new BrokenCryptoABPSCase3();\nint VAR1=2;\nVAR7.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABPSCase3.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-162": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABPSCase4.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABPSCase4.java",
+          "name": "BrokenCryptoABPSCase4.java_12.java",
+          "code": "public class BrokenCryptoABPSCase4{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"RC2\");\nif (VAR1 > 1)\nVAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABPSCase4 VAR7 = new BrokenCryptoABPSCase4();\nint VAR1=2;\nVAR7.FUN1(VAR1);}}\n"
+        },
+        {
+          "file": "BrokenCryptoABPSCase4.java",
+          "name": "BrokenCryptoABPSCase4.java_14.java",
+          "code": "public class BrokenCryptoABPSCase4{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"RC2\");\nif (VAR1 > 1)\nVAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABPSCase4 VAR7 = new BrokenCryptoABPSCase4();\nint VAR1=2;\nVAR7.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABPSCase4.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-163": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABPSCase5.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABPSCase5.java",
+          "name": "BrokenCryptoABPSCase5.java_12.java",
+          "code": "public class BrokenCryptoABPSCase5{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"IDEA\");\nif (VAR1 > 1)\nVAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABPSCase5 VAR7 = new BrokenCryptoABPSCase5();\nint VAR1=2;\nVAR7.FUN1(VAR1);}}\n"
+        },
+        {
+          "file": "BrokenCryptoABPSCase5.java",
+          "name": "BrokenCryptoABPSCase5.java_14.java",
+          "code": "public class BrokenCryptoABPSCase5{\npublic void FUN1(int VAR1) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nKeyGenerator VAR2 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR3 = VAR2.generateKey();\nCipher VAR4 = Cipher.getInstance(\"IDEA\");\nif (VAR1 > 1)\nVAR4 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR4.init(VAR5, VAR3);}\npublic static void FUN2(String [] VAR6) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException{\nBrokenCryptoABPSCase5 VAR7 = new BrokenCryptoABPSCase5();\nint VAR1=2;\nVAR7.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABPSCase5.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-164": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "InsecureAsymmetricCipherABPSCase1.java"
+      ],
+      "slices": [
+        {
+          "file": "InsecureAsymmetricCipherABPSCase1.java",
+          "name": "InsecureAsymmetricCipherABPSCase1.java_13.java",
+          "code": "public class InsecureAsymmetricCipherABPSCase1{\npublic void FUN1(int VAR1) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nKeyPairGenerator VAR2 = KeyPairGenerator.getInstance(\"RSA\");\nint VAR3;\nif (VAR1>1)\nVAR3 = 2048;\nVAR3 = 1024;\nVAR2.initialize(VAR3);\nKeyPair VAR4 = VAR2.generateKeyPair();\nCipher VAR5 = Cipher.getInstance(\"RSA\");\nVAR5.init(VAR6, VAR4.getPublic());\nString VAR7 = new String(\"Secret Message\");\nSealedObject VAR8 = new SealedObject(VAR7,VAR5);\nVAR9.println(VAR8);}\npublic static void FUN2(String [] VAR10) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nInsecureAsymmetricCipherABPSCase1 VAR11 = new InsecureAsymmetricCipherABPSCase1();\nint VAR1 = 2;\nVAR11.FUN1(VAR1);}}\n"
+        },
+        {
+          "file": "InsecureAsymmetricCipherABPSCase1.java",
+          "name": "InsecureAsymmetricCipherABPSCase1.java_15.java",
+          "code": "public class InsecureAsymmetricCipherABPSCase1{\npublic void FUN1(int VAR1) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nKeyPairGenerator VAR2 = KeyPairGenerator.getInstance(\"RSA\");\nint VAR3;\nif (VAR1>1)\nVAR3 = 2048;\nVAR3 = 1024;\nVAR2.initialize(VAR3);\nKeyPair VAR4 = VAR2.generateKeyPair();\nCipher VAR5 = Cipher.getInstance(\"RSA\");\nVAR5.init(VAR6, VAR4.getPublic());\nString VAR7 = new String(\"Secret Message\");\nSealedObject VAR8 = new SealedObject(VAR7,VAR5);\nVAR9.println(VAR8);}\npublic static void FUN2(String [] VAR10) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, ClassNotFoundException{\nInsecureAsymmetricCipherABPSCase1 VAR11 = new InsecureAsymmetricCipherABPSCase1();\nint VAR1 = 2;\nVAR11.FUN1(VAR1);}}\n"
+        }
+      ],
+      "file_status": {
+        "InsecureAsymmetricCipherABPSCase1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-165": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABPSCase1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABPSCase1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-166": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABPSCase2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABPSCase2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-167": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABPSCase3.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABPSCase3.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-168": {
+      "label": false,
+      "vuln_type": "---",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABPSCase4.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABPSCase4.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-170": {
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "source_status": "complete",
+      "files": [
+        "PredictableCryptographicKeyABMCCase1.java",
+        "PredictableCryptographicKeyABMC1.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableCryptographicKeyABMC1.java",
+          "name": "PredictableCryptographicKeyABMC1.java_8.java",
+          "code": "public void FUN1(byte [] VAR1){\nbyte [] VAR2;\nVAR2 = VAR3.copyOf(VAR1,16);\nSecretKeySpec VAR4 = new SecretKeySpec(VAR2, \"AES\");}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableCryptographicKeyABMCCase1.java": "no_anchor",
+        "PredictableCryptographicKeyABMC1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-171": {
+      "label": true,
+      "vuln_type": "Credential in String",
+      "source_status": "complete",
+      "files": [
+        "CredentialInStringABMCCase1.java",
+        "CredentialInStringABMC1.java"
+      ],
+      "slices": [
+        {
+          "file": "CredentialInStringABMC1.java",
+          "name": "CredentialInStringABMC1.java_8.java",
+          "code": "public void FUN1(String VAR1){\nbyte[] VAR2 = VAR1.getBytes();\nVAR2 = VAR3.copyOf(VAR2,16);\nSecretKeySpec VAR4 = new SecretKeySpec(VAR2, \"AES\");}}\n"
+        }
+      ],
+      "file_status": {
+        "CredentialInStringABMCCase1.java": "no_anchor",
+        "CredentialInStringABMC1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-172": {
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "source_status": "complete",
+      "files": [
+        "PredictablePBEPasswordABMCCase1.java",
+        "PredictablePBEPasswordABMC1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictablePBEPasswordABMCCase1.java": "no_anchor",
+        "PredictablePBEPasswordABMC1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-173": {
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "source_status": "complete",
+      "files": [
+        "PredictableKeyStorePasswordABMCCase1.java",
+        "PredictableKeyStorePasswordABMC1.java"
+      ],
+      "slices": [
+        {
+          "file": "PredictableKeyStorePasswordABMC1.java",
+          "name": "PredictableKeyStorePasswordABMC1.java_15.java",
+          "code": "public void FUN1(String VAR1) throws KeyStoreException, VAR2, VAR3, NoSuchAlgorithmException{\nString VAR4 = \"JKS\";\nKeyStore VAR5 = KeyStore.getInstance(VAR4);\nVAR6 = new URL(\"https://www.google.com\");\nVAR5.load(VAR6.openStream(), VAR1.toCharArray());}}\n"
+        }
+      ],
+      "file_status": {
+        "PredictableKeyStorePasswordABMCCase1.java": "no_anchor",
+        "PredictableKeyStorePasswordABMC1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-174": {
+      "label": true,
+      "vuln_type": "HTTP ",
+      "source_status": "complete",
+      "files": [
+        "HttpProtocolABMCCase1.java",
+        "HttpProtocolABMC1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "HttpProtocolABMCCase1.java": "no_anchor",
+        "HttpProtocolABMC1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-175": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABMCCase1.java",
+        "PredictableSeedsABMC1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABMCCase1.java": "no_anchor",
+        "PredictableSeedsABMC1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-176": {
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "source_status": "complete",
+      "files": [
+        "PredictableSeedsABMCCase2.java",
+        "PredictableSeedsABMC2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "PredictableSeedsABMCCase2.java": "no_anchor",
+        "PredictableSeedsABMC2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-177": {
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "source_status": "complete",
+      "files": [
+        "StaticSaltsABMCCase1.java",
+        "StaticSaltsABMC1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "StaticSaltsABMCCase1.java": "no_anchor",
+        "StaticSaltsABMC1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-178": {
+      "label": true,
+      "vuln_type": "Usage of ECB ",
+      "source_status": "complete",
+      "files": [
+        "EcbInSymmCryptoABMCCase1.java",
+        "EcbInSymmCryptoABMC1.java"
+      ],
+      "slices": [
+        {
+          "file": "EcbInSymmCryptoABMC1.java",
+          "name": "EcbInSymmCryptoABMC1.java_12.java",
+          "code": "public void FUN1(String VAR1) throws NoSuchAlgorithmException, VAR2, InvalidKeyException{\nKeyGenerator VAR3 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR4 = VAR3.generateKey();\nCipher VAR5 = Cipher.getInstance(VAR1);\nVAR5.init(VAR6, VAR4);}}\n"
+        }
+      ],
+      "file_status": {
+        "EcbInSymmCryptoABMCCase1.java": "no_anchor",
+        "EcbInSymmCryptoABMC1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-179": {
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "source_status": "complete",
+      "files": [
+        "StaticInitializationVectorABMCCase1.java",
+        "StaticInitializationVectorABMC1.java"
+      ],
+      "slices": [
+        {
+          "file": "StaticInitializationVectorABMC1.java",
+          "name": "StaticInitializationVectorABMC1.java_12.java",
+          "code": "public void FUN1(byte [] VAR1) throws NoSuchAlgorithmException, VAR2, VAR3, InvalidKeyException{\nIvParameterSpec VAR4 = new IvParameterSpec(VAR1);\nKeyGenerator VAR5 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR6 = VAR5.generateKey();\nCipher VAR7 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR7.init(VAR8,VAR6,VAR4);}}\n"
+        },
+        {
+          "file": "StaticInitializationVectorABMC1.java",
+          "name": "StaticInitializationVectorABMC1.java_15.java",
+          "code": "public void FUN1(byte [] VAR1) throws NoSuchAlgorithmException, VAR2, VAR3, InvalidKeyException{\nIvParameterSpec VAR4 = new IvParameterSpec(VAR1);\nKeyGenerator VAR5 = KeyGenerator.getInstance(\"AES\");\nSecretKey VAR6 = VAR5.generateKey();\nCipher VAR7 = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\nVAR7.init(VAR8,VAR6,VAR4);}}\n"
+        }
+      ],
+      "file_status": {
+        "StaticInitializationVectorABMCCase1.java": "no_anchor",
+        "StaticInitializationVectorABMC1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-180": {
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "source_status": "complete",
+      "files": [
+        "LessThan1000IterationPBEABMCCase1.java",
+        "LessThan1000IterationPBEABMC1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "LessThan1000IterationPBEABMCCase1.java": "no_anchor",
+        "LessThan1000IterationPBEABMC1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-181": {
+      "label": true,
+      "vuln_type": "DES used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABMCCase1.java",
+        "BrokenCryptoABMC1.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABMC1.java",
+          "name": "BrokenCryptoABMC1.java_12.java",
+          "code": "public void FUN1(String VAR1, String VAR2) throws VAR3, VAR4, InvalidKeyException{\nKeyGenerator VAR5 = KeyGenerator.getInstance(VAR2);\nSecretKey VAR6 = VAR5.generateKey();\nCipher VAR7 = Cipher.getInstance(VAR1);\nVAR7.init(VAR8, VAR6);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABMCCase1.java": "no_anchor",
+        "BrokenCryptoABMC1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-182": {
+      "label": true,
+      "vuln_type": "Blowfish used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABMCCase2.java",
+        "BrokenCryptoABMC2.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABMC2.java",
+          "name": "BrokenCryptoABMC2.java_12.java",
+          "code": "public void FUN1(String VAR1) throws NoSuchAlgorithmException, VAR2, InvalidKeyException{\nKeyGenerator VAR3 = KeyGenerator.getInstance(VAR1);\nSecretKey VAR4 = VAR3.generateKey();\nCipher VAR5 = Cipher.getInstance(VAR1);\nVAR5.init(VAR6, VAR4);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABMCCase2.java": "no_anchor",
+        "BrokenCryptoABMC2.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-183": {
+      "label": true,
+      "vuln_type": "RC4 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABMCCase3.java",
+        "BrokenCryptoABMC3.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABMC3.java",
+          "name": "BrokenCryptoABMC3.java_12.java",
+          "code": "public void FUN1(String VAR1) throws NoSuchAlgorithmException, VAR2, InvalidKeyException{\nKeyGenerator VAR3 = KeyGenerator.getInstance(VAR1);\nSecretKey VAR4 = VAR3.generateKey();\nCipher VAR5 = Cipher.getInstance(VAR1);\nVAR5.init(VAR6, VAR4);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABMCCase3.java": "no_anchor",
+        "BrokenCryptoABMC3.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-184": {
+      "label": true,
+      "vuln_type": "RC2 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABMCCase4.java",
+        "BrokenCryptoABMC4.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABMC4.java",
+          "name": "BrokenCryptoABMC4.java_12.java",
+          "code": "public void FUN1(String VAR1) throws NoSuchAlgorithmException, VAR2, InvalidKeyException{\nKeyGenerator VAR3 = KeyGenerator.getInstance(VAR1);\nSecretKey VAR4 = VAR3.generateKey();\nCipher VAR5 = Cipher.getInstance(VAR1);\nVAR5.init(VAR6, VAR4);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABMCCase4.java": "no_anchor",
+        "BrokenCryptoABMC4.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-185": {
+      "label": true,
+      "vuln_type": "IDEA used",
+      "source_status": "complete",
+      "files": [
+        "BrokenCryptoABMCCase5.java",
+        "BrokenCryptoABMC5.java"
+      ],
+      "slices": [
+        {
+          "file": "BrokenCryptoABMC5.java",
+          "name": "BrokenCryptoABMC5.java_12.java",
+          "code": "public void FUN1(String VAR1) throws NoSuchAlgorithmException, VAR2, InvalidKeyException{\nKeyGenerator VAR3 = KeyGenerator.getInstance(VAR1);\nSecretKey VAR4 = VAR3.generateKey();\nCipher VAR5 = Cipher.getInstance(VAR1);\nVAR5.init(VAR6, VAR4);}}\n"
+        }
+      ],
+      "file_status": {
+        "BrokenCryptoABMCCase5.java": "no_anchor",
+        "BrokenCryptoABMC5.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-186": {
+      "label": true,
+      "vuln_type": "RSA keysize 1024 bits",
+      "source_status": "complete",
+      "files": [
+        "InsecureAsymmetricCipherABMCCase1.java",
+        "InsecureAsymmetricCipherABMC1.java"
+      ],
+      "slices": [
+        {
+          "file": "InsecureAsymmetricCipherABMC1.java",
+          "name": "InsecureAsymmetricCipherABMC1.java_11.java",
+          "code": "public void FUN1(int VAR1) throws VAR2, IllegalBlockSizeException, VAR3, VAR4, VAR5, VAR6, NoSuchPaddingException{\nKeyPairGenerator VAR7 = KeyPairGenerator.getInstance(\"RSA\");\nVAR7.initialize(VAR1);\nKeyPair VAR8 = VAR7.generateKeyPair();\nCipher VAR9 = Cipher.getInstance(\"RSA\");\nCipher VAR10 = Cipher.getInstance(\"RSA\");\nVAR9.init(VAR11, VAR8.getPublic());\nString VAR12 = new String(\"Secret Message\");\nSealedObject VAR13 = new SealedObject(VAR12,VAR9);\nVAR10.init(VAR14, VAR8.getPrivate());\nString VAR15 = (String) VAR13.getObject(VAR10);\nVAR16.println(VAR15);}}\n"
+        },
+        {
+          "file": "InsecureAsymmetricCipherABMC1.java",
+          "name": "InsecureAsymmetricCipherABMC1.java_13.java",
+          "code": "public void FUN1(int VAR1) throws VAR2, IllegalBlockSizeException, VAR3, VAR4, VAR5, VAR6, NoSuchPaddingException{\nKeyPairGenerator VAR7 = KeyPairGenerator.getInstance(\"RSA\");\nVAR7.initialize(VAR1);\nKeyPair VAR8 = VAR7.generateKeyPair();\nCipher VAR9 = Cipher.getInstance(\"RSA\");\nCipher VAR10 = Cipher.getInstance(\"RSA\");\nVAR9.init(VAR11, VAR8.getPublic());\nString VAR12 = new String(\"Secret Message\");\nSealedObject VAR13 = new SealedObject(VAR12,VAR9);\nVAR10.init(VAR14, VAR8.getPrivate());\nString VAR15 = (String) VAR13.getObject(VAR10);\nVAR16.println(VAR15);}}\n"
+        },
+        {
+          "file": "InsecureAsymmetricCipherABMC1.java",
+          "name": "InsecureAsymmetricCipherABMC1.java_14.java",
+          "code": "public void FUN1(int VAR1) throws VAR2, IllegalBlockSizeException, VAR3, VAR4, VAR5, VAR6, NoSuchPaddingException{\nKeyPairGenerator VAR7 = KeyPairGenerator.getInstance(\"RSA\");\nVAR7.initialize(VAR1);\nKeyPair VAR8 = VAR7.generateKeyPair();\nCipher VAR9 = Cipher.getInstance(\"RSA\");\nCipher VAR10 = Cipher.getInstance(\"RSA\");\nVAR9.init(VAR11, VAR8.getPublic());\nString VAR12 = new String(\"Secret Message\");\nSealedObject VAR13 = new SealedObject(VAR12,VAR9);\nVAR10.init(VAR14, VAR8.getPrivate());\nString VAR15 = (String) VAR13.getObject(VAR10);\nVAR16.println(VAR15);}}\n"
+        }
+      ],
+      "file_status": {
+        "InsecureAsymmetricCipherABMCCase1.java": "no_anchor",
+        "InsecureAsymmetricCipherABMC1.java": "ok"
+      },
+      "errors": [],
+      "status": "ok"
+    },
+    "xlsx-row-187": {
+      "label": true,
+      "vuln_type": "SHA1 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABMCCase1.java",
+        "BrokenHashABMC1.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABMCCase1.java": "no_anchor",
+        "BrokenHashABMC1.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-188": {
+      "label": true,
+      "vuln_type": "MD5 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABMCCase2.java",
+        "BrokenHashABMC2.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABMCCase2.java": "no_anchor",
+        "BrokenHashABMC2.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-189": {
+      "label": true,
+      "vuln_type": "MD4 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABMCCase3.java",
+        "BrokenHashABMC3.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABMCCase3.java": "no_anchor",
+        "BrokenHashABMC3.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    },
+    "xlsx-row-190": {
+      "label": true,
+      "vuln_type": "MD2 used",
+      "source_status": "complete",
+      "files": [
+        "BrokenHashABMCCase4.java",
+        "BrokenHashABMC4.java"
+      ],
+      "slices": [],
+      "file_status": {
+        "BrokenHashABMCCase4.java": "no_anchor",
+        "BrokenHashABMC4.java": "no_anchor"
+      },
+      "errors": [],
+      "status": "no_slice"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+﻿file,line,rule,issue,crypto,evidence,fix,path
+"StaticDESPasswordCipher.java","18","C2","Hardcoded or predictable key","3DES (configure)","KEY = 118, 111, 70 … (+5); KEY_DEFAULT = 118, 111, 70 … (+5)","Load keys from a protected secret store or derive them from a strong secret with a KDF.","org/apache/openejb/cipher"
+"StaticDESPasswordCipher.java","18","C14","Weak symmetric cipher","3DES (configure)","","Use an authenticated modern cipher such as AES-GCM.","org/apache/openejb/cipher"
+"StaticDESPasswordCipher.java","34","C2","Hardcoded or predictable key","3DES (configure)","KEY = 118, 111, 70 … (+5); KEY_DEFAULT = 118, 111, 70 … (+5)","Load keys from a protected secret store or derive them from a strong secret with a KDF.","org/apache/openejb/cipher"
+"StaticDESPasswordCipher.java","34","C14","Weak symmetric cipher","3DES (configure)","","Use an authenticated modern cipher such as AES-GCM.","org/apache/openejb/cipher"
+"StaticDESPasswordCipher.java","46","C2","Hardcoded or predictable key","3DES (key spec)","KEY = 118, 111, 70 … (+5); KEY_DEFAULT = 118, 111, 70 … (+5)","Load keys from a protected secret store or derive them from a strong secret with a KDF.","org/apache/openejb/cipher"
+"StaticDESPasswordCipher.java","46","C14","Weak symmetric cipher","3DES (key spec)","","Use an authenticated modern cipher such as AES-GCM.","org/apache/openejb/cipher"
+"SQLLoginModule.java","76","C5","Weak hash","3DES (hash)","MessageDigest.getInstance(this.digest)","Use SHA-256 or a stronger approved hash for security-sensitive hashing.","org/apache/openejb/core/security/jaas"
+"SQLLoginModule.java","299","C6","Password hashed without KDF","THIS.DIGEST (hash)","KEY = this.cbPassword","Use a password KDF such as PBKDF2, scrypt, Argon2, or bcrypt.","org/apache/openejb/core/security/jaas"

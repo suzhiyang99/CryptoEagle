@@ -1,0 +1,25 @@
+package org.spark_project.jetty.server;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import org.spark_project.jetty.util.component.LifeCycle;
+
+public interface SessionIdManager extends LifeCycle {
+   boolean idInUse(String var1);
+
+   void addSession(HttpSession var1);
+
+   void removeSession(HttpSession var1);
+
+   void invalidateAll(String var1);
+
+   String newSessionId(HttpServletRequest var1, long var2);
+
+   String getWorkerName();
+
+   String getClusterId(String var1);
+
+   String getNodeId(String var1, HttpServletRequest var2);
+
+   void renewSessionId(String var1, String var2, HttpServletRequest var3);
+}

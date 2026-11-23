@@ -1,0 +1,3 @@
+[
+  {"fingerprint":"b9f69a88","ruleId":"C8","ruleSet":"C1-C18","title":"Missing or insecure salt","category":"KDF","cwe":759,"severity":"HIGH","message":"The KDF salt is absent, static, or predictably generated.","remediation":"Use a fresh CSPRNG-generated salt for every password.","srcFile":"jrnl/encryption/Jrnlv2Encryption.py","lineNo":40,"operationType":"KEY_DERIVATION","operation":"PBKDF2","algorithm":"","mode":"","evidence":[{"kind":"SALT","nodeLabel":"LITERAL","code":"b\"\\xf2\\xd5q\\x0e\\xc1\\x8d.\\xde\\xdc\\x8e6t\\x89\\x04\\xce\\xf8\""}]}
+]

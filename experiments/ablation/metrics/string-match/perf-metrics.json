@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"JAVA",
+  "input":"benchmarks/CryptoAPI-Bench",
+  "source":{"files":203,"lines":4759,"bytes":160945},
+  "graph":{"standardNodes":18725,"standardEdges":97385,"cryptoAwareNodes":18725,"cryptoAwareEdges":97385,"addedNodes":0,"addedEdges":0,"serializedBytes":521050},
+  "memory":{"peakHeapBytes":141735456},
+  "findings":{"core":65,"extended":0,"byRule":{"C1":4,"C11":11,"C14":15,"C15":2,"C17":8,"C18":7,"C3":1,"C5":8,"C8":1,"C9":8}},
+  "operations":{},
+  "selectionOperations":{},
+  "selectionOperationResolutions":{},
+  "timingsMillis":{"adapterConfigLoad":70.868,"cpgFrontend":1468.306,"overlays":275.647,"dataflow":235.694,"enrichmentWall":0.005,"coreRules":48.057,"extendedRules":0.000,"totalWall":2445.484},
+  "enrichment":{"callsScanned":0,"callsMatched":0,"localOperationsMatched":0,"operationGroups":0,"sensitiveBindings":0,"resolvedSourceNodes":0,"adapterMillis":0.000,"provenanceMillis":0.000,"provenanceFlowQueries":0,"provenanceMultiSinkQueries":0,"lifecycleMillis":0.000,"contextAnalysisMillis":0.000,"materializationMillis":0.000,"runMillis":0.000},
+  "enrichmentOverheadPercent":0.000
+}

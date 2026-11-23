@@ -1,0 +1,398 @@
+version: 1
+language: PYTHON
+rules:
+  - id: python-cryptography-cipher
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: CONFIGURE
+    lifecycleRole: FACTORY
+    priority: 100
+    api:
+      callName: ['Cipher']
+      # Match the cryptography constructor imported as Cipher, but not an
+      # unrelated qualified API such as M2Crypto.EVP.Cipher.
+      code: ['(?:Cipher\(.*|.*[^A-Za-z0-9_.]Cipher\(.*)']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 1
+        keyword: algorithm
+        pattern: '(?:[A-Za-z_][A-Za-z0-9_]*\.)?([A-Z][A-Za-z0-9_]*)\('
+      - target: mode
+        source: ARGUMENT
+        argumentIndex: 2
+        keyword: mode
+        pattern: '(?:[A-Za-z_][A-Za-z0-9_]*\.)?([A-Z][A-Za-z0-9_]*)(?:\(|$)'
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+        keyword: algorithm
+      - parameter: IV
+        argumentIndex: 2
+        keyword: mode
+
+  - id: python-pycryptodome-arc4-constructor
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: CONFIGURE
+    lifecycleRole: FACTORY
+    priority: 100
+    api:
+      callName: ['ARC4Cipher']
+      code: ['.*ARC4\.ARC4Cipher\(.*']
+    extract:
+      - target: algorithm
+        source: CONSTANT
+        value: RC4
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+
+  - id: python-pycryptodome-pbkdf2
+    operationType: KEY_DERIVATION
+    operation: PBKDF2
+    lifecycleRole: DERIVE
+    priority: 100
+    api:
+      callName: ['PBKDF2']
+      code: ['.*PBKDF2\(.*']
+    extract:
+      - target: iterations
+        source: ARGUMENT
+        argumentIndex: 4
+        keyword: count
+        normalize: NONE
+    sensitiveParameters:
+      - parameter: PASSWORD
+        argumentIndex: 1
+        keyword: password
+      - parameter: SALT
+        argumentIndex: 2
+        keyword: salt
+
+  - id: python-cryptography-encryptor
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: ENCRYPT
+    lifecycleRole: INITIALIZE
+    priority: 100
+    api:
+      callName: ['encryptor']
+      code: ['.*\.encryptor\(\).*']
+
+  - id: python-cryptography-decryptor
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: DECRYPT
+    lifecycleRole: INITIALIZE
+    priority: 100
+    api:
+      callName: ['decryptor']
+      code: ['.*\.decryptor\(\).*']
+
+  - id: python-pycryptodome-cipher-new
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: CONFIGURE
+    lifecycleRole: FACTORY
+    priority: 90
+    api:
+      callName: ['new']
+      code: ['.*(?:AES|DES|DES3|ARC2|ARC4|Blowfish)\.new\(.*']
+    extract:
+      - target: algorithm
+        source: CODE
+        pattern: '(AES|DES|DES3|ARC2|ARC4|Blowfish)\.new\('
+      - target: mode
+        source: CODE
+        pattern: 'MODE_([A-Za-z0-9_]+)'
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+      - parameter: IV
+        argumentIndex: 3
+        keyword: iv
+      - parameter: NONCE
+        keyword: nonce
+
+  - id: python-hashlib-direct
+    operationType: HASH_FUNCTION
+    operation: HASH
+    lifecycleRole: HASH
+    priority: 100
+    api:
+      callName: ['md5', 'sha1', 'sha224', 'sha256', 'sha384', 'sha512']
+      code: ['.*hashlib\.[A-Za-z0-9_]+\(.+\).*']
+    extract:
+      - target: algorithm
+        source: CODE
+        pattern: 'hashlib\.([A-Za-z0-9_]+)\('
+    sensitiveParameters:
+      - parameter: PASSWORD
+        argumentIndex: 1
+
+  - id: python-hashlib-direct-empty
+    operationType: HASH_FUNCTION
+    operation: HASH
+    lifecycleRole: HASH
+    priority: 90
+    api:
+      callName: ['md5', 'sha1', 'sha224', 'sha256', 'sha384', 'sha512']
+      code: ['.*hashlib\.[A-Za-z0-9_]+\(\s*\).*']
+    extract:
+      - target: algorithm
+        source: CODE
+        pattern: 'hashlib\.([A-Za-z0-9_]+)\('
+
+  - id: python-cryptography-hash
+    operationType: HASH_FUNCTION
+    operation: HASH
+    lifecycleRole: HASH
+    priority: 100
+    api:
+      callName: ['Hash']
+      code: ['.*hashes\.Hash\(.*hashes\.[A-Za-z0-9_]+\(.*']
+    extract:
+      - target: algorithm
+        source: CODE
+        pattern: 'hashes\.([A-Za-z0-9_]+)\('
+
+  - id: python-hashlib-new
+    operationType: HASH_FUNCTION
+    operation: HASH
+    lifecycleRole: HASH
+    priority: 100
+    api:
+      callName: ['new']
+      code: ['.*hashlib\.new\([^,]+,.+\).*']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 1
+    sensitiveParameters:
+      - parameter: PASSWORD
+        argumentIndex: 2
+
+  - id: python-hashlib-new-without-input
+    operationType: HASH_FUNCTION
+    operation: HASH
+    lifecycleRole: HASH
+    priority: 90
+    api:
+      callName: ['new']
+      code: ['.*hashlib\.new\([^,]+\).*']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 1
+
+  - id: python-pycryptodome-hash-new-with-input
+    operationType: HASH_FUNCTION
+    operation: HASH
+    lifecycleRole: HASH
+    priority: 95
+    api:
+      callName: ['new']
+      code: ['.*(?:MD2|MD4|MD5|SHA|SHA1|SHA224|SHA256|SHA384|SHA512)\.new\(.+\).*']
+    extract:
+      - target: algorithm
+        source: CODE
+        pattern: '(MD2|MD4|MD5|SHA|SHA1|SHA224|SHA256|SHA384|SHA512)\.new\('
+    sensitiveParameters:
+      - parameter: PASSWORD
+        argumentIndex: 1
+
+  - id: python-pycryptodome-hash-new
+    operationType: HASH_FUNCTION
+    operation: HASH
+    lifecycleRole: HASH
+    priority: 90
+    api:
+      callName: ['new']
+      code: ['.*(?:MD2|MD4|MD5|SHA|SHA1|SHA224|SHA256|SHA384|SHA512)\.new\(\s*\).*']
+    extract:
+      - target: algorithm
+        source: CODE
+        pattern: '(MD2|MD4|MD5|SHA|SHA1|SHA224|SHA256|SHA384|SHA512)\.new\('
+
+  - id: python-pbkdf2-hmac
+    operationType: KEY_DERIVATION
+    operation: PBKDF2
+    lifecycleRole: DERIVE
+    priority: 100
+    api:
+      callName: ['pbkdf2_hmac']
+      code: ['.*(?:hashlib\.)?pbkdf2_hmac\(.*']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 1
+      - target: iterations
+        source: ARGUMENT
+        argumentIndex: 4
+        normalize: NONE
+    sensitiveParameters:
+      - parameter: PASSWORD
+        argumentIndex: 2
+      - parameter: SALT
+        argumentIndex: 3
+
+  - id: python-cryptography-pbkdf2
+    operationType: KEY_DERIVATION
+    operation: PBKDF2
+    lifecycleRole: DERIVE
+    priority: 100
+    api:
+      callName: ['PBKDF2HMAC']
+      code: ['.*PBKDF2HMAC\(.*']
+    extract:
+      - target: iterations
+        source: KEYWORD
+        keyword: iterations
+        normalize: NONE
+      - target: keyLength
+        source: KEYWORD
+        keyword: length
+        normalize: NONE
+    sensitiveParameters:
+      - parameter: SALT
+        keyword: salt
+
+  - id: python-hmac-new
+    operationType: MAC_SIGNATURE
+    operation: MAC
+    lifecycleRole: MAC
+    priority: 100
+    api:
+      callName: ['new', 'HMAC']
+      code: ['.*hmac\.(?:new|HMAC)\(.*']
+    extract:
+      - target: algorithm
+        source: ARGUMENT
+        argumentIndex: 3
+        keyword: digestmod
+        pattern: '(?i)(?:hashlib\.)?(MD5|SHA1|SHA256|SHA384|SHA512)'
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+
+  - id: python-pycryptodome-rsa-oaep
+    operationType: ASYMMETRIC_ENCRYPTION
+    operation: CONFIGURE
+    lifecycleRole: FACTORY
+    priority: 100
+    api:
+      callName: ['new']
+      code: ['.*PKCS1_OAEP\.new\(.*']
+    extract:
+      - target: algorithm
+        source: CONSTANT
+        value: RSA
+      - target: padding
+        source: CONSTANT
+        value: OAEP
+
+  - id: python-pycryptodome-rsa-generate
+    operationType: ASYMMETRIC_ENCRYPTION
+    operation: KEY_GENERATION
+    lifecycleRole: GENERATE
+    priority: 100
+    api:
+      callName: ['generate']
+      code: ['.*RSA\.generate\(.*']
+    extract:
+      - target: algorithm
+        source: CONSTANT
+        value: RSA
+      - target: keySize
+        source: ARGUMENT
+        argumentIndex: 1
+        normalize: NONE
+
+  - id: python-cryptography-rsa-generate
+    operationType: ASYMMETRIC_ENCRYPTION
+    operation: KEY_GENERATION
+    lifecycleRole: GENERATE
+    priority: 100
+    api:
+      callName: ['generate_private_key']
+      code: ['.*__cryptoaware_rsa__\.generate_private_key\(.*']
+    extract:
+      - target: algorithm
+        source: CONSTANT
+        value: RSA
+      - target: keySize
+        source: KEYWORD
+        keyword: key_size
+        normalize: NONE
+
+  - id: python-cryptography-dsa-generate
+    operationType: MAC_SIGNATURE
+    operation: KEY_GENERATION
+    lifecycleRole: GENERATE
+    priority: 100
+    api:
+      callName: ['generate_private_key']
+      code: ['.*__cryptoaware_dsa__\.generate_private_key\(.*']
+    extract:
+      - target: algorithm
+        source: CONSTANT
+        value: DSA
+      - target: keySize
+        source: ARGUMENT
+        keyword: key_size
+        argumentIndex: 1
+        normalize: NONE
+
+  - id: python-fernet
+    operationType: SYMMETRIC_ENCRYPTION
+    operation: CONFIGURE
+    lifecycleRole: FACTORY
+    priority: 100
+    api:
+      callName: ['Fernet']
+      code: ['.*Fernet\(.*']
+    extract:
+      - target: algorithm
+        source: CONSTANT
+        value: FERNET
+      - target: mode
+        source: CONSTANT
+        value: CBC
+    sensitiveParameters:
+      - parameter: KEY
+        argumentIndex: 1
+
+  - id: python-secrets-random
+    operationType: RANDOMNESS
+    operation: GENERATE
+    lifecycleRole: RANDOM
+    priority: 100
+    api:
+      callName: ['token_bytes', 'token_hex', 'token_urlsafe']
+      code: ['.*secrets\..*']
+    extract:
+      - target: source
+        source: CONSTANT
+        value: CSPRNG
+
+  - id: python-os-urandom
+    operationType: RANDOMNESS
+    operation: GENERATE
+    lifecycleRole: RANDOM
+    priority: 100
+    api:
+      callName: ['urandom']
+      code: ['.*os\.urandom\(.*']
+    extract:
+      - target: source
+        source: CONSTANT
+        value: CSPRNG
+
+  - id: python-weak-random
+    operationType: RANDOMNESS
+    operation: GENERATE
+    lifecycleRole: RANDOM
+    priority: 80
+    api:
+      callName: ['randint', 'random', 'choice', 'randrange', 'uniform', 'shuffle', 'sample', 'getrandbits']
+      code: ['.*random\..*']
+    extract:
+      - target: source
+        source: CONSTANT
+        value: WEAK_RANDOM

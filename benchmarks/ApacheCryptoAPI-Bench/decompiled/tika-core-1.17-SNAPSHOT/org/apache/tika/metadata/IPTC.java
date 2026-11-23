@@ -1,0 +1,124 @@
+package org.apache.tika.metadata;
+
+public interface IPTC {
+   String NAMESPACE_URI_IPTC_CORE = "http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/";
+   String NAMESPACE_URI_IPTC_EXT = "http://iptc.org/std/Iptc4xmpExt/2008-02-29/";
+   String NAMESPACE_URI_PLUS = "http://ns.useplus.org/ldf/xmp/1.0/";
+   String PREFIX_IPTC_CORE = "Iptc4xmpCore";
+   String PREFIX_IPTC_EXT = "Iptc4xmpExt";
+   String PREFIX_PLUS = "plus";
+   Property CITY = Photoshop.CITY;
+   Property COUNTRY = Photoshop.COUNTRY;
+   Property COUNTRY_CODE = Property.internalText("Iptc4xmpCore:CountryCode");
+   Property DESCRIPTION = DublinCore.DESCRIPTION;
+   Property HEADLINE = Photoshop.HEADLINE;
+   Property INTELLECTUAL_GENRE = Property.internalText("Iptc4xmpCore:IntellectualGenre");
+   Property KEYWORDS = DublinCore.SUBJECT;
+   Property PROVINCE_OR_STATE = Photoshop.STATE;
+   Property SCENE_CODE = Property.internalTextBag("Iptc4xmpCore:Scene");
+   Property SUBJECT_CODE = Property.internalTextBag("Iptc4xmpCore:SubjectCode");
+   Property SUBLOCATION = Property.internalText("Iptc4xmpCore:Location");
+   Property DATE_CREATED = Photoshop.DATE_CREATED;
+   Property DESCRIPTION_WRITER = Photoshop.CAPTION_WRITER;
+   Property INSTRUCTIONS = Photoshop.INSTRUCTIONS;
+   Property JOB_ID = Photoshop.TRANSMISSION_REFERENCE;
+   Property TITLE = DublinCore.TITLE;
+   Property COPYRIGHT_NOTICE = DublinCore.RIGHTS;
+   Property CREATOR = DublinCore.CREATOR;
+   Property CREATORS_CONTACT_INFO = Property.internalText("Iptc4xmpCore:CreatorContactInfo");
+   Property CREATORS_JOB_TITLE = Photoshop.AUTHORS_POSITION;
+   Property CREDIT_LINE = Photoshop.CREDIT;
+   Property RIGHTS_USAGE_TERMS = XMPRights.USAGE_TERMS;
+   Property SOURCE = Photoshop.SOURCE;
+   Property CONTACT_INFO_ADDRESS = Property.internalTextBag("Iptc4xmpCore:CiAdrExtadr");
+   Property CONTACT_INFO_CITY = Property.internalText("Iptc4xmpCore:CiAdrCity");
+   Property CONTACT_INFO_COUNTRY = Property.internalText("Iptc4xmpCore:CiAdrCtry");
+   Property CONTACT_INFO_EMAIL = Property.internalTextBag("Iptc4xmpCore:CiEmailWork");
+   Property CONTACT_INFO_PHONE = Property.internalTextBag("Iptc4xmpCore:CiTelWork");
+   Property CONTACT_INFO_POSTAL_CODE = Property.internalText("Iptc4xmpCore:CiAdrPcode");
+   Property CONTACT_INFO_STATE_PROVINCE = Property.internalText("Iptc4xmpCore:CiAdrRegion");
+   Property CONTACT_INFO_WEB_URL = Property.internalTextBag("Iptc4xmpCore:CiUrlWork");
+   /** @deprecated */
+   Property URGENCY = Photoshop.URGENCY;
+   /** @deprecated */
+   Property CATEGORY = Photoshop.CATEGORY;
+   /** @deprecated */
+   Property SUPPLEMENTAL_CATEGORIES = Photoshop.SUPPLEMENTAL_CATEGORIES;
+   Property ADDITIONAL_MODEL_INFO = Property.internalText("Iptc4xmpExt:AddlModelInfo");
+   Property ARTWORK_OR_OBJECT = Property.internalTextBag("Iptc4xmpExt:ArtworkOrObject");
+   Property ORGANISATION_CODE = Property.internalTextBag("Iptc4xmpExt:OrganisationInImageCode");
+   Property CONTROLLED_VOCABULARY_TERM = Property.internalTextBag("Iptc4xmpExt:CVterm");
+   Property LOCATION_SHOWN = Property.internalTextBag("Iptc4xmpExt:LocationShown");
+   Property MODEL_AGE = Property.internalTextBag("Iptc4xmpExt:ModelAge");
+   Property ORGANISATION_NAME = Property.internalTextBag("Iptc4xmpExt:OrganisationInImageName");
+   Property PERSON = Property.internalTextBag("Iptc4xmpExt:PersonInImage");
+   Property DIGITAL_IMAGE_GUID = Property.internalText("Iptc4xmpExt:DigImageGUID");
+   /** @deprecated */
+   Property DIGITAL_SOURCE_FILE_TYPE = Property.internalText("Iptc4xmpExt:DigitalSourcefileType");
+   Property DIGITAL_SOURCE_TYPE = Property.internalText("Iptc4xmpExt:DigitalSourceType");
+   Property EVENT = Property.internalText("Iptc4xmpExt:Event");
+   Property IMAGE_REGISTRY_ENTRY = Property.internalTextBag("Iptc4xmpExt:RegistryId");
+   Property IMAGE_SUPPLIER = Property.internalText("plus:ImageSupplier");
+   Property IMAGE_SUPPLIER_ID = Property.composite(Property.internalText("plus:ImageSupplierID"), new Property[]{Property.internalText("plus:ImageSupplierId")});
+   /** @deprecated */
+   String IMAGE_SUPPLIER_ID_WRONG_CASE = "plus:ImageSupplierId";
+   Property IMAGE_SUPPLIER_NAME = Property.internalText("plus:ImageSupplierName");
+   Property IMAGE_SUPPLIER_IMAGE_ID = Property.internalText("plus:ImageSupplierImageID");
+   Property IPTC_LAST_EDITED = Property.internalDate("Iptc4xmpExt:IptcLastEdited");
+   Property LOCATION_CREATED = Property.internalTextBag("Iptc4xmpExt:LocationCreated");
+   Property MAX_AVAIL_HEIGHT = Property.internalInteger("Iptc4xmpExt:MaxAvailHeight");
+   Property MAX_AVAIL_WIDTH = Property.internalInteger("Iptc4xmpExt:MaxAvailWidth");
+   Property PLUS_VERSION = Property.internalText("plus:Version");
+   Property COPYRIGHT_OWNER = Property.internalTextBag("plus:CopyrightOwner");
+   Property COPYRIGHT_OWNER_ID = Property.composite(Property.internalTextBag("plus:CopyrightOwnerID"), new Property[]{Property.internalTextBag("plus:CopyrightOwnerId")});
+   /** @deprecated */
+   String COPYRIGHT_OWNER_ID_WRONG_CASE = "plus:CopyrightOwnerId";
+   Property COPYRIGHT_OWNER_NAME = Property.internalTextBag("plus:CopyrightOwnerName");
+   Property IMAGE_CREATOR = Property.internalTextBag("plus:ImageCreator");
+   Property IMAGE_CREATOR_ID = Property.composite(Property.internalTextBag("plus:ImageCreatorID"), new Property[]{Property.internalTextBag("plus:ImageCreatorId")});
+   /** @deprecated */
+   String IMAGE_CREATOR_ID_WRONG_CASE = "plus:ImageCreatorId";
+   Property IMAGE_CREATOR_NAME = Property.internalTextBag("plus:ImageCreatorName");
+   Property LICENSOR = Property.internalTextBag("plus:Licensor");
+   Property LICENSOR_ID = Property.composite(Property.internalTextBag("plus:LicensorID"), new Property[]{Property.internalTextBag("plus:LicensorId")});
+   /** @deprecated */
+   String LICENSOR_ID_WRONG_CASE = "plus:LicensorId";
+   Property LICENSOR_NAME = Property.internalTextBag("plus:LicensorName");
+   Property LICENSOR_CITY = Property.internalTextBag("plus:LicensorCity");
+   Property LICENSOR_COUNTRY = Property.internalTextBag("plus:LicensorCountry");
+   Property LICENSOR_EMAIL = Property.internalTextBag("plus:LicensorEmail");
+   Property LICENSOR_EXTENDED_ADDRESS = Property.internalTextBag("plus:LicensorExtendedAddress");
+   Property LICENSOR_POSTAL_CODE = Property.internalTextBag("plus:LicensorPostalCode");
+   Property LICENSOR_REGION = Property.internalTextBag("plus:LicensorRegion");
+   Property LICENSOR_STREET_ADDRESS = Property.internalTextBag("plus:LicensorStreetAddress");
+   Property LICENSOR_TELEPHONE_1 = Property.internalTextBag("plus:LicensorTelephone1");
+   Property LICENSOR_TELEPHONE_2 = Property.internalTextBag("plus:LicensorTelephone2");
+   Property LICENSOR_URL = Property.internalTextBag("plus:LicensorURL");
+   Property MINOR_MODEL_AGE_DISCLOSURE = Property.internalText("plus:MinorModelAgeDisclosure");
+   Property MODEL_RELEASE_ID = Property.internalTextBag("plus:ModelReleaseID");
+   Property MODEL_RELEASE_STATUS = Property.internalText("plus:ModelReleaseStatus");
+   Property PROPERTY_RELEASE_ID = Property.internalTextBag("plus:PropertyReleaseID");
+   Property PROPERTY_RELEASE_STATUS = Property.internalText("plus:PropertyReleaseStatus");
+   Property ARTWORK_OR_OBJECT_DETAIL_COPYRIGHT_NOTICE = Property.internalTextBag("Iptc4xmpExt:AOCopyrightNotice");
+   Property ARTWORK_OR_OBJECT_DETAIL_CREATOR = Property.internalTextBag("Iptc4xmpExt:AOCreator");
+   Property ARTWORK_OR_OBJECT_DETAIL_DATE_CREATED = Property.internalTextBag("Iptc4xmpExt:AODateCreated");
+   Property ARTWORK_OR_OBJECT_DETAIL_SOURCE = Property.internalTextBag("Iptc4xmpExt:AOSource");
+   Property ARTWORK_OR_OBJECT_DETAIL_SOURCE_INVENTORY_NUMBER = Property.internalTextBag("Iptc4xmpExt:AOSourceInvNo");
+   Property ARTWORK_OR_OBJECT_DETAIL_TITLE = Property.internalTextBag("Iptc4xmpExt:AOTitle");
+   Property LOCATION_SHOWN_CITY = Property.internalTextBag("Iptc4xmpExt:LocationShownCity");
+   Property LOCATION_SHOWN_COUNTRY_CODE = Property.internalTextBag("Iptc4xmpExt:LocationShownCountryCode");
+   Property LOCATION_SHOWN_COUNTRY_NAME = Property.internalTextBag("Iptc4xmpExt:LocationShownCountryName");
+   Property LOCATION_SHOWN_PROVINCE_OR_STATE = Property.internalTextBag("Iptc4xmpExt:LocationShownProvinceState");
+   Property LOCATION_SHOWN_SUBLOCATION = Property.internalTextBag("Iptc4xmpExt:LocationShownSublocation");
+   Property LOCATION_SHOWN_WORLD_REGION = Property.internalTextBag("Iptc4xmpExt:LocationShownWorldRegion");
+   Property LOCATION_CREATED_CITY = Property.internalText("Iptc4xmpExt:LocationCreatedCity");
+   Property LOCATION_CREATED_COUNTRY_CODE = Property.internalText("Iptc4xmpExt:LocationCreatedCountryCode");
+   Property LOCATION_CREATED_COUNTRY_NAME = Property.internalText("Iptc4xmpExt:LocationCreatedCountryName");
+   Property LOCATION_CREATED_PROVINCE_OR_STATE = Property.internalText("Iptc4xmpExt:LocationCreatedProvinceState");
+   Property LOCATION_CREATED_SUBLOCATION = Property.internalText("Iptc4xmpExt:LocationCreatedSublocation");
+   Property LOCATION_CREATED_WORLD_REGION = Property.internalText("Iptc4xmpExt:LocationCreatedWorldRegion");
+   Property REGISTRY_ENTRY_CREATED_ITEM_ID = Property.internalTextBag("Iptc4xmpExt:RegItemId");
+   Property REGISTRY_ENTRY_CREATED_ORGANISATION_ID = Property.internalTextBag("Iptc4xmpExt:RegOrgId");
+   Property[] PROPERTY_GROUP_IPTC_CORE = new Property[]{CITY, COUNTRY, COUNTRY_CODE, DESCRIPTION, HEADLINE, INTELLECTUAL_GENRE, KEYWORDS, PROVINCE_OR_STATE, SCENE_CODE, SUBJECT_CODE, SUBLOCATION, DATE_CREATED, DESCRIPTION_WRITER, INSTRUCTIONS, JOB_ID, TITLE, COPYRIGHT_NOTICE, CREATOR, CREATORS_JOB_TITLE, CREDIT_LINE, RIGHTS_USAGE_TERMS, SOURCE, CONTACT_INFO_ADDRESS, CONTACT_INFO_CITY, CONTACT_INFO_COUNTRY, CONTACT_INFO_EMAIL, CONTACT_INFO_PHONE, CONTACT_INFO_POSTAL_CODE, CONTACT_INFO_STATE_PROVINCE, CONTACT_INFO_WEB_URL};
+   Property[] PROPERTY_GROUP_IPTC_EXT = new Property[]{ADDITIONAL_MODEL_INFO, ORGANISATION_CODE, CONTROLLED_VOCABULARY_TERM, MODEL_AGE, ORGANISATION_NAME, PERSON, DIGITAL_IMAGE_GUID, DIGITAL_SOURCE_TYPE, EVENT, IMAGE_SUPPLIER_ID, IMAGE_SUPPLIER_NAME, IMAGE_SUPPLIER_IMAGE_ID, IPTC_LAST_EDITED, MAX_AVAIL_HEIGHT, MAX_AVAIL_WIDTH, PLUS_VERSION, COPYRIGHT_OWNER_ID, COPYRIGHT_OWNER_NAME, IMAGE_CREATOR_ID, IMAGE_CREATOR_NAME, LICENSOR_ID, LICENSOR_NAME, LICENSOR_CITY, LICENSOR_COUNTRY, LICENSOR_EMAIL, LICENSOR_EXTENDED_ADDRESS, LICENSOR_POSTAL_CODE, LICENSOR_REGION, LICENSOR_STREET_ADDRESS, LICENSOR_TELEPHONE_1, LICENSOR_TELEPHONE_2, LICENSOR_URL, MINOR_MODEL_AGE_DISCLOSURE, MODEL_RELEASE_ID, MODEL_RELEASE_STATUS, PROPERTY_RELEASE_ID, PROPERTY_RELEASE_STATUS, ARTWORK_OR_OBJECT_DETAIL_COPYRIGHT_NOTICE, ARTWORK_OR_OBJECT_DETAIL_CREATOR, ARTWORK_OR_OBJECT_DETAIL_DATE_CREATED, ARTWORK_OR_OBJECT_DETAIL_SOURCE, ARTWORK_OR_OBJECT_DETAIL_SOURCE_INVENTORY_NUMBER, ARTWORK_OR_OBJECT_DETAIL_TITLE, LOCATION_SHOWN_CITY, LOCATION_SHOWN_COUNTRY_CODE, LOCATION_SHOWN_COUNTRY_NAME, LOCATION_SHOWN_PROVINCE_OR_STATE, LOCATION_SHOWN_SUBLOCATION, LOCATION_SHOWN_WORLD_REGION, LOCATION_CREATED_CITY, LOCATION_CREATED_COUNTRY_CODE, LOCATION_CREATED_COUNTRY_NAME, LOCATION_CREATED_PROVINCE_OR_STATE, LOCATION_CREATED_SUBLOCATION, LOCATION_CREATED_WORLD_REGION, REGISTRY_ENTRY_CREATED_ITEM_ID, REGISTRY_ENTRY_CREATED_ORGANISATION_ID};
+}

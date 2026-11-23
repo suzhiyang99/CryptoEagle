@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"PYTHON",
+  "input":"experiments/cryptogpt/runs/_inputs/python/cowrie__cowrie__Python__row16__bf55a591bfad/TARGET_ONLY",
+  "source":{"files":1,"lines":107,"bytes":4224},
+  "graph":{"standardNodes":1401,"standardEdges":11726,"cryptoAwareNodes":1403,"cryptoAwareEdges":11728,"addedNodes":2,"addedEdges":2,"serializedBytes":158171},
+  "memory":{"peakHeapBytes":60198416},
+  "findings":{"core":1,"extended":0,"byRule":{"C13":1}},
+  "operations":{"ASYMMETRIC_ENCRYPTION":1,"MAC_SIGNATURE":1},
+  "selectionOperations":{"ASYMMETRIC_ENCRYPTION":1,"MAC_SIGNATURE":1},
+  "selectionOperationResolutions":{"COMPLETE":2},
+  "timingsMillis":{"adapterConfigLoad":62.487,"cpgFrontend":271.479,"overlays":81.856,"dataflow":80.099,"enrichmentWall":81.543,"coreRules":9.682,"extendedRules":0.000,"totalWall":1065.654},
+  "enrichment":{"callsScanned":378,"callsMatched":2,"localOperationsMatched":0,"operationGroups":2,"sensitiveBindings":0,"resolvedSourceNodes":0,"adapterMillis":29.023,"provenanceMillis":0.640,"provenanceFlowQueries":0,"provenanceMultiSinkQueries":0,"lifecycleMillis":1.464,"contextAnalysisMillis":28.791,"materializationMillis":4.601,"runMillis":81.533},
+  "enrichmentOverheadPercent":18.813
+}

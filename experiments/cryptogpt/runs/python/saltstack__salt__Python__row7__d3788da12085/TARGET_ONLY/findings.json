@@ -1,0 +1,3 @@
+[
+  {"fingerprint":"4d953075","ruleId":"C14","ruleSet":"C1-C18","title":"Weak symmetric cipher","category":"SymEnc","cwe":327,"severity":"HIGH","message":"A deprecated symmetric cipher algorithm is used.","remediation":"Use an authenticated modern cipher such as AES-GCM.","srcFile":"salt/runners/digicertapi.py","lineNo":538,"operationType":"SYMMETRIC_ENCRYPTION","operation":"KEY_EXPORT","algorithm":"3DES","mode":"CBC","evidence":[{"kind":"API","nodeLabel":"CRYPTO_OPERATION","code":"KEY_EXPORT:3DES:CBC"}]}
+]

@@ -1,0 +1,11 @@
+package org.apache.spark.deploy;
+
+import org.apache.spark.SparkConf;
+import scala.reflect.ScalaSignature;
+
+@ScalaSignature(
+   bytes = "\u0006\u0001)2\u0001\"\u0001\u0002\u0011\u0002G\u0005AA\u0003\u0002\u0011'B\f'o[!qa2L7-\u0019;j_:T!a\u0001\u0003\u0002\r\u0011,\u0007\u000f\\8z\u0015\t)a!A\u0003ta\u0006\u00148N\u0003\u0002\b\u0011\u00051\u0011\r]1dQ\u0016T\u0011!C\u0001\u0004_J<7C\u0001\u0001\f!\taq\"D\u0001\u000e\u0015\u0005q\u0011!B:dC2\f\u0017B\u0001\t\u000e\u0005\u0019\te.\u001f*fM\")!\u0003\u0001D\u0001)\u0005)1\u000f^1si\u000e\u0001AcA\u000b\u0019IA\u0011ABF\u0005\u0003/5\u0011A!\u00168ji\")\u0011$\u0005a\u00015\u0005!\u0011M]4t!\ra1$H\u0005\u000395\u0011Q!\u0011:sCf\u0004\"AH\u0011\u000f\u00051y\u0012B\u0001\u0011\u000e\u0003\u0019\u0001&/\u001a3fM&\u0011!e\t\u0002\u0007'R\u0014\u0018N\\4\u000b\u0005\u0001j\u0001\"B\u0013\u0012\u0001\u00041\u0013\u0001B2p]\u001a\u0004\"a\n\u0015\u000e\u0003\u0011I!!\u000b\u0003\u0003\u0013M\u0003\u0018M]6D_:4\u0007"
+)
+public interface SparkApplication {
+   void start(String[] var1, SparkConf var2);
+}

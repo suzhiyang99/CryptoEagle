@@ -1,0 +1,37 @@
+{
+  "language": "java",
+  "id": "java/final-validated/unit-24",
+  "snapshot": "netty__netty/2024-12-16_a739efa31516",
+  "scope": "six related SSL source files",
+  "source_root": "benchmarks/cryptogpt-realworld-java-full/netty__netty/2024-12-16_a739efa31516",
+  "input": "experiments/cryptogpt/runs/_inputs/java/final-validated/unit-24",
+  "java_files": 6,
+  "source_files": [
+    "handler/src/main/java/io/netty/handler/ssl/JdkSslServerContext.java",
+    "handler/src/main/java/io/netty/handler/ssl/JdkSslContext.java",
+    "handler/src/main/java/io/netty/handler/ssl/SslContext.java",
+    "handler/src/main/java/io/netty/handler/ssl/SslUtils.java",
+    "handler/src/main/java/io/netty/handler/ssl/CipherSuiteFilter.java",
+    "handler/src/main/java/io/netty/handler/ssl/IdentityCipherSuiteFilter.java"
+  ],
+  "status": "SUCCESS",
+  "seconds": 2.03,
+  "raw_findings": 0,
+  "rules": {},
+  "source_unchanged": true,
+  "report": "experiments/cryptogpt/runs/java/final-validated/unit-24/findings.json",
+  "command": [
+    "java",
+    "-Xmx8g",
+    "-Xss128m",
+    "-cp",
+    "<tools/crypto-ext runtime classpath>",
+    "org.codeminers.standalone.JavaEnrichmentMain",
+    "experiments/cryptogpt/runs/_inputs/java/final-validated/unit-24",
+    "--no-delombok",
+    "--max-flow-call-depth=2",
+    "--summary",
+    "--report=json",
+    "--report-output=experiments/cryptogpt/runs/java/final-validated/unit-24/findings.json"
+  ]
+}

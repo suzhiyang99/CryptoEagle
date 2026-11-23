@@ -1,0 +1,3 @@
+[
+  {"fingerprint":"e9637bfa","ruleId":"C13","ruleSet":"C1-C18","title":"Insufficient asymmetric parameter strength","category":"AsymEnc","cwe":326,"severity":"HIGH","message":"The RSA, DSA or DH parameters are below the configured minimum strength.","remediation":"Use RSA keys of at least 2048 bits or a modern signature algorithm with adequate strength.","srcFile":"src/twisted/conch/scripts/ckeygen.py","lineNo":158,"operationType":"MAC_SIGNATURE","operation":"KEY_GENERATION","algorithm":"DSA","mode":"","evidence":[{"kind":"CALL","nodeLabel":"CALL","code":"dsa.generate_private_key(key_size = int(options[\"bits\"]), backend = default_backend())"},{"kind":"KEY_SIZE","nodeLabel":"CRYPTO_OPERATION","code":"1024 bits"}]}
+]

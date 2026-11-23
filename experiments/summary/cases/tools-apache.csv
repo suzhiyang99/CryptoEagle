@@ -1,0 +1,95 @@
+﻿case_id,file,ground_truth,rule,CryptoEagle (this work),CryptoGuard,CogniCrypt
+xlsx-row-2,openejb-core-7.0.5-SNAPSHOT/org/apache/openejb/config/OutputGeneratedDescriptors.java,Random: no misuse (`new Random().nextInt()`),C9,TN,FP,TN
+xlsx-row-3,wicket-util-8.0.0-SNAPSHOT/org/apache/wicket/util/diff/Diff.java,Random: no misuse (`r.nextInt()`),C9,TN,FP,TN
+xlsx-row-4,wicket-util-8.0.0-SNAPSHOT/org/apache/wicket/util/diff/Diff.java,Random: no misuse (`r.nextInt(size)`),C9,TN,FP,TN
+xlsx-row-5,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/RandomUtil.java,Random: no misuse (`random.nextLong()`),C9,TN,FP,TN
+xlsx-row-6,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/RandomUtil.java,Random: no misuse (`random.nextInt()`),C9,TN,FP,TN
+xlsx-row-7,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/RandomUtil.java,Random: no misuse (`random.nextInt(max - min)`),C9,TN,FP,TN
+xlsx-row-8,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/RandomUtil.java,Random: no misuse (`random.nextInt(65536)`),C9,TN,FP,TN
+xlsx-row-9,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/RandomUtil.java,Random: no misuse (`random.nextInt(32767)`),C9,TN,FP,TN
+xlsx-row-10,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/RandomUtil.java,Random: misuse (`random.nextInt().byteValue()`),C9,TP,TP,FN
+xlsx-row-11,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/RandomUtil.java,Random: no misuse (`random.nextBoolean()`),C9,TN,FP,TN
+xlsx-row-12,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/RandomUtil.java,Random: no misuse (`random.nextDouble()`),C9,TN,FP,TN
+xlsx-row-13,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/RandomUtil.java,Random: no misuse (`random.nextFloat()`),C9,TN,FP,TN
+xlsx-row-14,mcf-core-2.9-SNAPSHOT/org/apache/manifoldcf/core/connectorpool/ConnectorPool.java,Random: no misuse (`randomNumberGenerator.nextInt(numServices)`),C9,TN,FP,TN
+xlsx-row-15,mcf-core-2.9-SNAPSHOT/org/apache/manifoldcf/core/database/Database.java,Random: no misuse (`random.nextDouble()`),C9,TN,FP,TN
+xlsx-row-27,tika-core-1.17-SNAPSHOT/org/apache/tika/parser/CryptoParser.java,"Random: no misuse (`cipher.init(2, key, params, random);`)",C9,TN,TN,TN
+xlsx-row-28,taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT/org/apache/taverna/ui/perspectives/myexperiment/model/Util.java,"MessageDigest: misuse (`MessageDigest.getInstance(""MD5"")`)",C5,TP,TP,TP
+xlsx-row-29,mcf-core-2.9-SNAPSHOT/org/apache/manifoldcf/core/system/ManifoldCF.java,"MessageDigest: no misuse (`MessageDigest.getInstance(""SHA"")`)",C5,TN,FP,FP
+xlsx-row-34,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/checksum/HmacMd5Checksum.java,"Mac: misuse (`Mac.getInstance(""HmacMD5"")`)",C15,TP,FN,TP
+xlsx-row-35,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption.java,"Mac: misuse (`Mac.getInstance(""HmacMD5"")`)",C15,TP,FN,TP
+xlsx-row-36,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.java,"Mac: misuse (`Mac.getInstance(""HmacSHA1"")`)",C15,TP,FN,TP
+xlsx-row-37,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/checksum/HmacMd5Checksum.java,"CipherAlgo: misuse (`SecretKeySpec(key, ""ARCFOUR"");`)",C14,TP,FN,FN
+xlsx-row-38,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption.java,"CipherAlgo: misuse (`Cipher.getInstance(""ARCFOUR"");`)",C14,TP,FN,TP
+xlsx-row-39,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption.java,"CipherAlgo: misuse (`SecretKeySpec(keyBytes, ""ARCFOUR"")`)",C14,TP,FN,TP
+xlsx-row-40,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.java,"CipherAlgo: misuse (`Cipher.getInstance(""DESede/CBC/NoPadding"")`)",C14,TP,TP,TP
+xlsx-row-41,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.java,"CipherAlgo: misuse (`SecretKeySpec(keyBytes, ""DESede"")`)",C14,TP,TP,TP
+xlsx-row-42,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.java,"CipherAlgo: misuse (`SecretKeySpec(key, ""DESede"")`)",C14,TP,TP,TP
+xlsx-row-43,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.java,"CipherAlgo: misuse (`Cipher.getInstance(""DES/CBC/NoPadding"")`)",C14,TP,TP,TP
+xlsx-row-44,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.java,"CipherAlgo: misuse (`SecretKeySpec(keyBytes, ""DES"")`)",C14,TP,TP,TP
+xlsx-row-45,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.java,"CipherAlgo: misuse (`Cipher.getInstance(""DES/CBC/NoPadding"")`)",C14,TP,TP,TP
+xlsx-row-46,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.java,"CipherAlgo: misuse (`SecretKeySpec(keyBytes, ""DES"")`)",C14,TP,TP,TP
+xlsx-row-47,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey.java,"CipherAlgo: misuse (`Cipher.getInstance(""DES/CBC/NoPadding"")`)",C14,TP,TP,TP
+xlsx-row-48,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey.java,"CipherAlgo: misuse (`SecretKeySpec(keyBytes, ""DES"")`)",C14,TP,TP,TP
+xlsx-row-49,taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT/org/apache/taverna/ui/perspectives/myexperiment/model/Util.java,"CipherAlgo: misuse (`SecretKeyFactory.getInstance(""PBEWithMD5AndDES"")`)",C14,TP,TP,TP
+xlsx-row-50,taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT/org/apache/taverna/ui/perspectives/myexperiment/model/Util.java,"CipherAlgo: misuse (`Cipher.getInstance(""PBEWithMD5AndDES"")`)",C14,TP,TP,TP
+xlsx-row-51,meecrowave-core-1.2.0-SNAPSHOT/org/apache/meecrowave/Meecrowave.java,"CipherAlgo: misuse (`SecretKeySpec(new byte[] { 118, 111, -70, 57, 49, 47, 13,...`)",C14,TP,TP,FN
+xlsx-row-52,meecrowave-core-1.2.0-SNAPSHOT/org/apache/meecrowave/Meecrowave.java,"CipherAlgo: misuse (`Cipher.getInstance(""DESede"")`)",C14,TP,TP,FN
+xlsx-row-53,openejb-core-7.0.5-SNAPSHOT/org/apache/openejb/cipher/StaticDESPasswordCipher.java,"CipherAlgo: misuse (`Cipher.getInstance(""DESede"")`)",C14,TP,TP,TP
+xlsx-row-54,openejb-core-7.0.5-SNAPSHOT/org/apache/openejb/cipher/StaticDESPasswordCipher.java,"CipherAlgo: misuse (`Cipher.getInstance(""DESede"")`)",C14,TP,TP,TP
+xlsx-row-55,openejb-core-7.0.5-SNAPSHOT/org/apache/openejb/cipher/StaticDESPasswordCipher.java,"CipherAlgo: misuse (`SecretKeySpec(StaticDESPasswordCipher._3desData, ""DESede"");`)",C14,TP,TP,TP
+xlsx-row-56,wicket-util-8.0.0-SNAPSHOT/org/apache/wicket/util/crypt/SunJceCrypt.java,"CipherAlgo: misuse (`[""PBEWithMD5AndDES""]`)",C14,TP,TP,TP
+xlsx-row-57,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/DefaultSensitiveStringCodec.java,"CipherAlgo: misuse (`Cipher.getInstance(""Blowfish"")`)",C14,TP,TP,TP
+xlsx-row-58,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/DefaultSensitiveStringCodec.java,"CipherAlgo: misuse (`Cipher.getInstance(""Blowfish"")`)",C14,TP,TP,TP
+xlsx-row-59,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/DefaultSensitiveStringCodec.java,"CipherAlgo: misuse (`SecretKeySpec(internalKey, ""Blowfish"")`)",C14,TP,TP,TP
+xlsx-row-60,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/DefaultSensitiveStringCodec.java,"CipherAlgo: misuse (`SecretKeySpec(internalKey, ""Blowfish"")`)",C14,TP,TP,TP
+xlsx-row-61,deltaspike-core-impl-1.8.1-SNAPSHOT/org/apache/deltaspike/core/impl/crypto/DefaultCipherService.java,"CipherAlgo: no misuse (`Cipher.getInstance(""AES"")`)",C14,TN,FP,TN
+xlsx-row-62,deltaspike-core-impl-1.8.1-SNAPSHOT/org/apache/deltaspike/core/impl/crypto/DefaultCipherService.java,"CipherAlgo: no misuse (`Cipher.getInstance(""AES"")`)",C14,TN,FP,TN
+xlsx-row-63,deltaspike-core-impl-1.8.1-SNAPSHOT/org/apache/deltaspike/core/impl/crypto/DefaultCipherService.java,"CipherAlgo: no misuse (`SecretKeySpec(key, ""AES"")`)",C14,TN,FP,TN
+xlsx-row-64,deltaspike-core-impl-1.8.1-SNAPSHOT/org/apache/deltaspike/core/impl/crypto/DefaultCipherService.java,"ModeofOperation: misuse (`Cipher.getInstance(""AES"")`)",C1,TP,TP,TP
+xlsx-row-65,deltaspike-core-impl-1.8.1-SNAPSHOT/org/apache/deltaspike/core/impl/crypto/DefaultCipherService.java,"ModeofOperation: misuse (`Cipher.getInstance(""AES"")`)",C1,TP,TP,TP
+xlsx-row-66,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.java,static IV: misuse (`IvParameterSpec(Des3CbcSha1KdEncryption.iv)`),C3,TP,TP,TP
+xlsx-row-67,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.java,static IV: misuse (`IvParameterSpec(DesCbcCrcEncryption.iv)`),C3,TP,TP,TP
+xlsx-row-68,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.java,static IV: misuse (`IvParameterSpec(DesCbcCrcEncryption.iv)`),C3,TP,TP,TP
+xlsx-row-69,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.java,static IV: misuse (`IvParameterSpec(AesCtsSha1Encryption.iv)`),C3,TP,TP,TP
+xlsx-row-70,mcf-core-2.9-SNAPSHOT/org/apache/manifoldcf/core/system/ManifoldCF.java,"Constantkey: misuse (`SecretKeySpec(secretKey.getEncoded(), ""AES"");`)",C2 or C10,TP,TP,TP
+xlsx-row-71,meecrowave-core-1.2.0-SNAPSHOT/org/apache/meecrowave/Meecrowave.java,"Constantkey: misuse (`SecretKeySpec(new byte[] { 118, 111, -70, 57, 49, 47, 13,...`)",C2 or C10,TP,TP,TP
+xlsx-row-72,openejb-core-7.0.5-SNAPSHOT/org/apache/openejb/cipher/StaticDESPasswordCipher.java,"Constantkey: misuse (`SecretKeySpec(_3desData, ""DESede"");`)",C2 or C10,TP,TP,TP
+xlsx-row-73,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/DefaultSensitiveStringCodec.java,"Constantkey: misuse (`SecretKeySpec(this.internalKey, ""Blowfish"")`)",C2 or C10,TP,TP,TP
+xlsx-row-74,artemis-commons-2.5.0-SNAPSHOT/org/apache/activemq/artemis/utils/DefaultSensitiveStringCodec.java,"Constantkey: misuse (`SecretKeySpec(this.internalKey, ""Blowfish"")`)",C2 or C10,TP,TP,TP
+xlsx-row-75,deltaspike-core-impl-1.8.1-SNAPSHOT/org/apache/deltaspike/core/impl/crypto/DefaultCipherService.java,"Constantkey: no misuse (`cipher.init(1, secretKeySpec)`)",C2 or C10,TN,TN,FP
+xlsx-row-76,deltaspike-core-impl-1.8.1-SNAPSHOT/org/apache/deltaspike/core/impl/crypto/DefaultCipherService.java,"Constantkey: no misuse (`SecretKeySpec(key, ""AES"")`)",C2 or C10,TN,TN,FP
+xlsx-row-77,deltaspike-core-impl-1.8.1-SNAPSHOT/org/apache/deltaspike/core/impl/crypto/DefaultCipherService.java,"Constantkey: no misuse (`cipher.init(1, secretKeySpec)`)",C2 or C10,TN,TN,FP
+xlsx-row-78,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/checksum/HmacMd5Checksum.java,"Constantkey: no misuse (`SecretKeySpec(key, ""ARCFOUR"");`)",C2 or C10,TN,TN,FP
+xlsx-row-79,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption.java,"Constantkey: no misuse (`SecretKeySpec(keyBytes, ""ARCFOUR"")`)",C2 or C10,TN,TN,FP
+xlsx-row-80,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption.java,"Constantkey: no misuse (`cipher.init(1, key)`)",C2 or C10,TN,TN,FP
+xlsx-row-81,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.java,"Constantkey: no misuse (`SecretKeySpec(keyBytes, ""DESede"")`)",C2 or C10,TN,TN,FP
+xlsx-row-82,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.java,"Constantkey: no misuse (`cipher.init(1, key, paramSpec)`)",C2 or C10,TN,TN,FP
+xlsx-row-83,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.java,"Constantkey: no misuse (`SecretKeySpec(key, ""DESede"")`)",C2 or C10,TN,TN,FP
+xlsx-row-84,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.java,"Constantkey: no misuse (`cipher.init(1, key, paramSpec)`)",C2 or C10,TN,TN,FP
+xlsx-row-85,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.java,"Constantkey: no misuse (`SecretKeySpec(keyBytes, ""DES"")`)",C2 or C10,TN,TN,FP
+xlsx-row-86,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.java,"Constantkey: no misuse (`cipher.init(1, key, paramSpec)`)",C2 or C10,TN,TN,FP
+xlsx-row-87,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.java,"Constantkey: no misuse (`SecretKeySpec(keyBytes, ""DES"")`)",C2 or C10,TN,TN,FP
+xlsx-row-88,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey.java,"Constantkey: no misuse (`cipher.init(1, key, paramSpec)`)",C2 or C10,TN,TN,FP
+xlsx-row-89,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey.java,"Constantkey: no misuse (`cipher.init(1, key, paramSpec)`)",C2 or C10,TN,TN,FP
+xlsx-row-90,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey.java,"Constantkey: no misuse (`SecretKeySpec(keyBytes, ""DES"")`)",C2 or C10,TN,TN,FP
+xlsx-row-91,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey.java,Constantkey: no misuse (`IvParameterSpec(keyBytes)`),C2 or C10,TN,TN,FP
+xlsx-row-92,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.java,"Constantkey: no misuse (`SecretKeySpec(keyBytes, ""AES"")`)",C2 or C10,TN,TN,FP
+xlsx-row-93,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.java,"Constantkey: no misuse (`cipher.init(1, key, paramSpec)`)",C2 or C10,TN,TN,FP
+xlsx-row-94,apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.java,"Constantkey: no misuse (`SecretKeySpec(key, ""AES"")`)",C2 or C10,TN,TN,FP
+xlsx-row-95,taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT/org/apache/taverna/ui/perspectives/myexperiment/model/Util.java,Constantkey: misuse (`keyFactory.generateSecret(keySpec)`),C2 or C10,TP,FN,TP
+xlsx-row-96,taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT/org/apache/taverna/ui/perspectives/myexperiment/model/Util.java,"Constantkey: misuse (`cipher.init(mode, key, paramSpec)`)",C2 or C10,TP,FN,TP
+xlsx-row-97,mcf-core-2.9-SNAPSHOT/org/apache/manifoldcf/core/system/ManifoldCF.java,"Constantkey: misuse (`cipher.init(mode, key, parameterSpec)`)",C2 or C10,TP,TP,TP
+xlsx-row-98,tika-core-1.17-SNAPSHOT/org/apache/tika/parser/CryptoParser.java,"Constantkey: no misuse (`cipher.init(2, key, ..)`)",C2 or C10,TN,TN,FP
+xlsx-row-99,openejb-core-7.0.5-SNAPSHOT/org/apache/openejb/cipher/StaticDESPasswordCipher.java,"Constantkey: misuse (`cipher.init(1, KEY)`)",C2 or C10,TP,TP,TP
+xlsx-row-100,openejb-core-7.0.5-SNAPSHOT/org/apache/openejb/cipher/StaticDESPasswordCipher.java,"Constantkey: misuse (`cipher.init(2, KEY)`)",C2 or C10,TP,TP,TP
+xlsx-row-101,wicket-util-8.0.0-SNAPSHOT/org/apache/wicket/util/crypt/SunJceCrypt.java,"Constantkey: no misuse (`cipher.init(mode, key, spec);`)",C2 or C10,TN,TN,FP
+xlsx-row-102,wicket-util-8.0.0-SNAPSHOT/org/apache/wicket/util/crypt/SunJceCrypt.java,Constantkey: no misuse (`keyFactory.generateSecret(spec)`),C2 or C10,TN,TN,FP
+xlsx-row-103,taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT/org/apache/taverna/ui/perspectives/myexperiment/model/MyExperimentClient.java,"http: misuse (`""http://www.myexperiment.org"";`)",C18,TP,TP,FN
+xlsx-row-107,openejb-core-7.0.5-SNAPSHOT/org/apache/openejb/util/UpdateChecker.java,http: no misuse (`http://localhost:`),C18,TN,FP,TN
+xlsx-row-108,taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT/org/apache/taverna/ui/perspectives/myexperiment/model/Util.java,"PBESalt: misuse (`PBEParameterSpec(salt, 20)`)",C8,TP,FN,TP
+xlsx-row-109,mcf-core-2.9-SNAPSHOT/org/apache/manifoldcf/core/system/ManifoldCF.java,"PBESalt: misuse (`PBEKeySpec(passCode.toCharArray(), ..., 1024, 128)`)",C8,TP,TP,FN
+xlsx-row-110,wicket-util-8.0.0-SNAPSHOT/org/apache/wicket/util/crypt/SunJceCrypt.java,"PBESalt: misuse (`PBEParameterSpec(SunJceCrypt.SALT, 17)`)",C8,TP,TP,TP
+xlsx-row-111,taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT/org/apache/taverna/ui/perspectives/myexperiment/model/Util.java,"PBEIteration: misuse (`PBEParameterSpec(salt, 20)`)",C7,TP,TP,TP
+xlsx-row-112,mcf-core-2.9-SNAPSHOT/org/apache/manifoldcf/core/system/ManifoldCF.java,"PBEIteration: no misuse (`PBEKeySpec(... , 1024, 128)`)",C7,FP,TN,FP
+xlsx-row-113,wicket-util-8.0.0-SNAPSHOT/org/apache/wicket/util/crypt/SunJceCrypt.java,"PBEIteration: misuse (`PBEParameterSpec(SunJceCrypt.SALT, 17)`)",C7,TP,TP,TP

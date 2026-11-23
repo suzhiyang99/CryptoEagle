@@ -1,0 +1,4 @@
+﻿file,line,rule,issue,crypto,evidence,fix,path
+"Meecrowave.java","2284","C2","Hardcoded or predictable key","3DES (key spec)","KEY = 118, 111, 70 … (+5)","Load keys from a protected secret store or derive them from a strong secret with a KDF.","org/apache/meecrowave"
+"Meecrowave.java","2284","C14","Weak symmetric cipher","3DES (key spec)","","Use an authenticated modern cipher such as AES-GCM.","org/apache/meecrowave"
+"Meecrowave.java","2295","C14","Weak symmetric cipher","3DES (configure)","","Use an authenticated modern cipher such as AES-GCM.","org/apache/meecrowave"

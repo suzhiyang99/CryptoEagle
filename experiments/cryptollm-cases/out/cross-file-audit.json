@@ -1,0 +1,508 @@
+[
+  {
+    "case_id": "xlsx-row-170",
+    "anchor_file": "PredictableCryptographicKeyABMC1.java",
+    "source_lines": {
+      "PredictableCryptographicKeyABMC1.java": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "PredictableCryptographicKeyABMCCase1.java": [
+        4,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-171",
+    "anchor_file": "CredentialInStringABMC1.java",
+    "source_lines": {
+      "CredentialInStringABMC1.java": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "CredentialInStringABMCCase1.java": [
+        6,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-172",
+    "anchor_file": "PredictablePBEPasswordABMC1.java",
+    "source_lines": {
+      "PredictablePBEPasswordABMC1.java": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "PredictablePBEPasswordABMCCase1.java": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-175",
+    "anchor_file": "PredictableSeedsABMC1.java",
+    "source_lines": {
+      "PredictableSeedsABMC1.java": [
+        6,
+        7,
+        8
+      ],
+      "PredictableSeedsABMCCase1.java": [
+        4,
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-175",
+    "anchor_file": "PredictableSeedsABMC1.java",
+    "source_lines": {
+      "PredictableSeedsABMC1.java": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "PredictableSeedsABMCCase1.java": [
+        4,
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-176",
+    "anchor_file": "PredictableSeedsABMC2.java",
+    "source_lines": {
+      "PredictableSeedsABMC2.java": [
+        6,
+        7
+      ],
+      "PredictableSeedsABMCCase2.java": [
+        4,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-176",
+    "anchor_file": "PredictableSeedsABMC2.java",
+    "source_lines": {
+      "PredictableSeedsABMC2.java": [
+        6,
+        7,
+        8
+      ],
+      "PredictableSeedsABMCCase2.java": [
+        4,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-177",
+    "anchor_file": "StaticSaltsABMC1.java",
+    "source_lines": {
+      "StaticSaltsABMC1.java": [
+        6,
+        7,
+        8
+      ],
+      "StaticSaltsABMCCase1.java": [
+        4,
+        6,
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-178",
+    "anchor_file": "EcbInSymmCryptoABMC1.java",
+    "source_lines": {
+      "EcbInSymmCryptoABMC1.java": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "EcbInSymmCryptoABMCCase1.java": [
+        8,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-179",
+    "anchor_file": "StaticInitializationVectorABMC1.java",
+    "source_lines": {
+      "StaticInitializationVectorABMC1.java": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        19
+      ],
+      "StaticInitializationVectorABMCCase1.java": [
+        9,
+        11,
+        13
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-179",
+    "anchor_file": "StaticInitializationVectorABMC1.java",
+    "source_lines": {
+      "StaticInitializationVectorABMC1.java": [
+        13,
+        14
+      ],
+      "StaticInitializationVectorABMCCase1.java": [
+        9,
+        11,
+        13
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-180",
+    "anchor_file": "LessThan1000IterationPBEABMC1.java",
+    "source_lines": {
+      "LessThan1000IterationPBEABMC1.java": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        13
+      ],
+      "LessThan1000IterationPBEABMCCase1.java": [
+        4,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-181",
+    "anchor_file": "BrokenCryptoABMC1.java",
+    "source_lines": {
+      "BrokenCryptoABMC1.java": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "BrokenCryptoABMCCase1.java": [
+        8,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-181",
+    "anchor_file": "BrokenCryptoABMC1.java",
+    "source_lines": {
+      "BrokenCryptoABMC1.java": [
+        11,
+        12
+      ],
+      "BrokenCryptoABMCCase1.java": [
+        8,
+        11,
+        12
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-182",
+    "anchor_file": "BrokenCryptoABMC2.java",
+    "source_lines": {
+      "BrokenCryptoABMC2.java": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "BrokenCryptoABMCCase2.java": [
+        8,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-182",
+    "anchor_file": "BrokenCryptoABMC2.java",
+    "source_lines": {
+      "BrokenCryptoABMC2.java": [
+        11,
+        12
+      ],
+      "BrokenCryptoABMCCase2.java": [
+        8,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-183",
+    "anchor_file": "BrokenCryptoABMC3.java",
+    "source_lines": {
+      "BrokenCryptoABMC3.java": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "BrokenCryptoABMCCase3.java": [
+        9,
+        11,
+        12
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-183",
+    "anchor_file": "BrokenCryptoABMC3.java",
+    "source_lines": {
+      "BrokenCryptoABMC3.java": [
+        11,
+        12
+      ],
+      "BrokenCryptoABMCCase3.java": [
+        9,
+        11,
+        12
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-184",
+    "anchor_file": "BrokenCryptoABMC4.java",
+    "source_lines": {
+      "BrokenCryptoABMC4.java": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "BrokenCryptoABMCCase4.java": [
+        8,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-184",
+    "anchor_file": "BrokenCryptoABMC4.java",
+    "source_lines": {
+      "BrokenCryptoABMC4.java": [
+        11,
+        12
+      ],
+      "BrokenCryptoABMCCase4.java": [
+        8,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-185",
+    "anchor_file": "BrokenCryptoABMC5.java",
+    "source_lines": {
+      "BrokenCryptoABMC5.java": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "BrokenCryptoABMCCase5.java": [
+        8,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-185",
+    "anchor_file": "BrokenCryptoABMC5.java",
+    "source_lines": {
+      "BrokenCryptoABMC5.java": [
+        11,
+        12
+      ],
+      "BrokenCryptoABMCCase5.java": [
+        8,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-186",
+    "anchor_file": "InsecureAsymmetricCipherABMC1.java",
+    "source_lines": {
+      "InsecureAsymmetricCipherABMC1.java": [
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19
+      ],
+      "InsecureAsymmetricCipherABMCCase1.java": [
+        11,
+        13,
+        15
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-186",
+    "anchor_file": "InsecureAsymmetricCipherABMC1.java",
+    "source_lines": {
+      "InsecureAsymmetricCipherABMC1.java": [
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        26
+      ],
+      "InsecureAsymmetricCipherABMCCase1.java": [
+        11,
+        13,
+        15
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-186",
+    "anchor_file": "InsecureAsymmetricCipherABMC1.java",
+    "source_lines": {
+      "InsecureAsymmetricCipherABMC1.java": [
+        11,
+        13,
+        14
+      ],
+      "InsecureAsymmetricCipherABMCCase1.java": [
+        11,
+        13,
+        15
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-187",
+    "anchor_file": "BrokenHashABMC1.java",
+    "source_lines": {
+      "BrokenHashABMC1.java": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "BrokenHashABMCCase1.java": [
+        6,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-188",
+    "anchor_file": "BrokenHashABMC2.java",
+    "source_lines": {
+      "BrokenHashABMC2.java": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "BrokenHashABMCCase2.java": [
+        6,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-189",
+    "anchor_file": "BrokenHashABMC3.java",
+    "source_lines": {
+      "BrokenHashABMC3.java": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "BrokenHashABMCCase3.java": [
+        6,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  {
+    "case_id": "xlsx-row-190",
+    "anchor_file": "BrokenHashABMC4.java",
+    "source_lines": {
+      "BrokenHashABMC4.java": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "BrokenHashABMCCase4.java": [
+        6,
+        8,
+        9,
+        10
+      ]
+    }
+  }
+]

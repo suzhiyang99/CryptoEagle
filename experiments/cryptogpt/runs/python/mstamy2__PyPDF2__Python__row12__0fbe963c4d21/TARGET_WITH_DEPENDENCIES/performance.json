@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"PYTHON",
+  "input":"experiments/cryptogpt/runs/_inputs/python/mstamy2__PyPDF2__Python__row12__0fbe963c4d21/TARGET_WITH_DEPENDENCIES",
+  "source":{"files":3,"lines":1351,"bytes":55353},
+  "graph":{"standardNodes":6951,"standardEdges":52327,"cryptoAwareNodes":6983,"cryptoAwareEdges":52478,"addedNodes":32,"addedEdges":151,"serializedBytes":383852},
+  "memory":{"peakHeapBytes":371722600},
+  "findings":{"core":17,"extended":0,"byRule":{"C14":4,"C4":4,"C5":6,"C6":3}},
+  "operations":{"HASH_FUNCTION":7,"RANDOMNESS":5,"SYMMETRIC_ENCRYPTION":20},
+  "selectionOperations":{"HASH_FUNCTION":7,"RANDOMNESS":1,"SYMMETRIC_ENCRYPTION":20},
+  "selectionOperationResolutions":{"COMPLETE":26,"PARTIAL":2},
+  "timingsMillis":{"adapterConfigLoad":62.655,"cpgFrontend":300.282,"overlays":138.111,"dataflow":147.366,"enrichmentWall":644.541,"coreRules":112.581,"extendedRules":0.000,"totalWall":1923.220},
+  "enrichment":{"callsScanned":1515,"callsMatched":32,"localOperationsMatched":0,"operationGroups":32,"sensitiveBindings":29,"resolvedSourceNodes":89,"adapterMillis":69.852,"provenanceMillis":500.602,"provenanceFlowQueries":0,"provenanceMultiSinkQueries":0,"lifecycleMillis":11.819,"contextAnalysisMillis":35.079,"materializationMillis":7.238,"runMillis":644.531},
+  "enrichmentOverheadPercent":110.035
+}

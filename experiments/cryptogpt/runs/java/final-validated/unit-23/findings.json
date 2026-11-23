@@ -1,0 +1,3 @@
+[
+  {"fingerprint":"c44177c5","ruleId":"C9","ruleSet":"C1-C18","title":"Insecure randomness for crypto","category":"Random","cwe":330,"severity":"HIGH","message":"Cryptographic material originates from a non-cryptographic random source.","remediation":"Use the platform cryptographic random generator.","srcFile":"CachedContentIndex.java","lineNo":635,"operationType":"RANDOMNESS","operation":"GENERATE","algorithm":"","mode":"","evidence":[{"kind":"CALL","nodeLabel":"CALL","code":"this.random.nextBytes(initializationVector)"}]}
+]

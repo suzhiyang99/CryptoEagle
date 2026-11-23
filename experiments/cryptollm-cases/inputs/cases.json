@@ -1,0 +1,3983 @@
+{
+  "meta": {
+    "unit": "ground-truth case",
+    "cases": 181,
+    "positive": 144,
+    "negative": 37,
+    "source_files": 201,
+    "multi_file_cases": 21,
+    "missing_source_cases": 1,
+    "spreadsheet_sha256": "8589f958cb2cb9dd23e41f4d763d1284d109d94b4d6e187c3b9f0e274a0a0705"
+  },
+  "excluded": [
+    {
+      "row": 94,
+      "files": "CredentialInStringABSCase1.java",
+      "reason": "empty or invalid label"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "xlsx-row-2",
+      "xlsx_row": 2,
+      "code_number": "1.1.1",
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "method": "main()",
+      "line_raw": "43720",
+      "files": [
+        {
+          "name": "PredictableCryptographicKeyBBCase1.java",
+          "truth_name": "PredictableCryptographicKeyBBCase1.java",
+          "path": "inputs/sources/xlsx-row-2/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyBBCase1.java",
+          "sha256": "ddb28b38ab695c7081af4377e982004cab21f49ae3a02b04cc9fa6471dc35afa",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-3",
+      "xlsx_row": 3,
+      "code_number": "18.1.1",
+      "label": true,
+      "vuln_type": "Credential in String",
+      "method": "main()",
+      "line_raw": "9",
+      "files": [
+        {
+          "name": "CredentialInStringBBCase1.java",
+          "truth_name": "CredentialInStringBBCase1.java",
+          "path": "inputs/sources/xlsx-row-3/org/cryptoapi/bench/credentialinstring/CredentialInStringBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/credentialinstring/CredentialInStringBBCase1.java",
+          "sha256": "324d206307b6fdb65a5b949b22e8e4b63b4e93eedcd3b5fa34039803179997ea",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-4",
+      "xlsx_row": 4,
+      "code_number": "18.1.2",
+      "label": true,
+      "vuln_type": "Credential in String",
+      "method": "main()",
+      "line_raw": "15",
+      "files": [],
+      "missing_files": [
+        "CredentialInStringBBCase2.java"
+      ],
+      "source_status": "missing_source"
+    },
+    {
+      "case_id": "xlsx-row-5",
+      "xlsx_row": 5,
+      "code_number": "2.1.1",
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "method": "key()",
+      "line_raw": "16, 22",
+      "files": [
+        {
+          "name": "PredictablePBEPasswordBBCase1.java",
+          "truth_name": "PredictablePBEPasswordBBCase1.java",
+          "path": "inputs/sources/xlsx-row-5/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordBBCase1.java",
+          "sha256": "2323da8d051a78c0ace92789008106d853d08bb432afa53b77f9515a0d4b8f7f",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-6",
+      "xlsx_row": 6,
+      "code_number": "2.1.2",
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "method": "key()",
+      "line_raw": "16,22",
+      "files": [
+        {
+          "name": "PredictablePBEPasswordBBCase2.java",
+          "truth_name": "PredictablePBEPasswordBBCase2.java",
+          "path": "inputs/sources/xlsx-row-6/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordBBCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordBBCase2.java",
+          "sha256": "0ca1738e31ce22c75faa6fdbd60d285253646ed40ea4dfe8400df81048889315",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-7",
+      "xlsx_row": 7,
+      "code_number": "3.1.1",
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "method": "go()",
+      "line_raw": "23,24",
+      "files": [
+        {
+          "name": "PredictableKeyStorePasswordBBCase1.java",
+          "truth_name": "PredictableKeyStorePasswordBBCase1.java",
+          "path": "inputs/sources/xlsx-row-7/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordBBCase1.java",
+          "sha256": "ef9adbccda5c6d6ec9bbc3c14df7d61df82066528c81ccfb6510ec126a605128",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-8",
+      "xlsx_row": 8,
+      "code_number": "4.1.1",
+      "label": true,
+      "vuln_type": "Dummy Verifier",
+      "method": "verify()",
+      "line_raw": "8",
+      "files": [
+        {
+          "name": "DummyHostNameVerifierCase1.java",
+          "truth_name": "DummyHostNameVerifierCase1.java",
+          "path": "inputs/sources/xlsx-row-8/org/cryptoapi/bench/dummyhostnameverifier/DummyHostNameVerifierCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/dummyhostnameverifier/DummyHostNameVerifierCase1.java",
+          "sha256": "a8dd617b5cf9195e72d8e9cf21f21e2d3146b78ea8af57e1f8120f1f28051a45",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-9",
+      "xlsx_row": 9,
+      "code_number": "5.1.1",
+      "label": true,
+      "vuln_type": "Dummy Certificate",
+      "method": "checkServerTrusted()",
+      "line_raw": "17",
+      "files": [
+        {
+          "name": "DummyCertValidationCase1.java",
+          "truth_name": "DummyCertValidationCase1.java",
+          "path": "inputs/sources/xlsx-row-9/org/cryptoapi/bench/dummycertvalidation/DummyCertValidationCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/dummycertvalidation/DummyCertValidationCase1.java",
+          "sha256": "6ce712c8afcfba230264be37ce5e401b6b4547df353968ed3dcaa18f12138f4a",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-10",
+      "xlsx_row": 10,
+      "code_number": "5.1.2",
+      "label": true,
+      "vuln_type": "Dummy Certificate",
+      "method": "checkClientTrusted(), checkServerTrusted()",
+      "line_raw": "11,16",
+      "files": [
+        {
+          "name": "DummyCertValidationCase2.java",
+          "truth_name": "DummyCertValidationCase2.java",
+          "path": "inputs/sources/xlsx-row-10/org/cryptoapi/bench/dummycertvalidation/DummyCertValidationCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/dummycertvalidation/DummyCertValidationCase2.java",
+          "sha256": "834972714e7d16b13ec2bf031cb67483a58c7a555769dcaab553e3abf1b3b05d",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-11",
+      "xlsx_row": 11,
+      "code_number": "5.1.3",
+      "label": true,
+      "vuln_type": "Dummy Certificate",
+      "method": "checkClientTrusted(), checkServerTrusted(), getAcceptedIssuers()",
+      "line_raw": "44119",
+      "files": [
+        {
+          "name": "DummyCertValidationCase3.java",
+          "truth_name": "DummyCertValidationCase3.java",
+          "path": "inputs/sources/xlsx-row-11/org/cryptoapi/bench/dummycertvalidation/DummyCertValidationCase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/dummycertvalidation/DummyCertValidationCase3.java",
+          "sha256": "3b937012cd6911b16be73dbe4576d4935eb7c763ba79cb9084ca76d526ed8894",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-12",
+      "xlsx_row": 12,
+      "code_number": "6.1.1",
+      "label": true,
+      "vuln_type": "Socket Hostname w/o verification",
+      "method": "main()",
+      "line_raw": "10",
+      "files": [
+        {
+          "name": "ImproperSocketManualHostBBCase1.java",
+          "truth_name": "ImproperSocketManualHostBBCase1.java",
+          "path": "inputs/sources/xlsx-row-12/org/cryptoapi/bench/impropersslsocketfactory/ImproperSocketManualHostBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/impropersslsocketfactory/ImproperSocketManualHostBBCase1.java",
+          "sha256": "429db635d15704f0dc004f27cc5ccede0a8652560001539dd68e680248e1b7c8",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-13",
+      "xlsx_row": 13,
+      "code_number": "7.1.1",
+      "label": true,
+      "vuln_type": "HTTP ",
+      "method": "main()",
+      "line_raw": "7",
+      "files": [
+        {
+          "name": "HttpProtocolBBCase1.java",
+          "truth_name": "HttpProtocolBBCase1.java",
+          "path": "inputs/sources/xlsx-row-13/org/cryptoapi/bench/http/HttpProtocolBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/http/HttpProtocolBBCase1.java",
+          "sha256": "8e5b537d6c1d0b81479a095304a4a87fe505e64d1bc012f5b453ac9acb304c96",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-14",
+      "xlsx_row": 14,
+      "code_number": "9.1.1",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "main()",
+      "line_raw": "9,10",
+      "files": [
+        {
+          "name": "PredictableSeedsBBCase1.java",
+          "truth_name": "PredictableSeedsBBCase1.java",
+          "path": "inputs/sources/xlsx-row-14/org/cryptoapi/bench/predictableseeds/PredictableSeedsBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsBBCase1.java",
+          "sha256": "a22aadb727c36ecee5fb826af71cda0c5f549b0cc77de913b86b90e3eea0a6bb",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-15",
+      "xlsx_row": 15,
+      "code_number": "9.1.2",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "main()",
+      "line_raw": "7,8",
+      "files": [
+        {
+          "name": "PredictableSeedsBBCase2.java",
+          "truth_name": "PredictableSeedsBBCase2.java",
+          "path": "inputs/sources/xlsx-row-15/org/cryptoapi/bench/predictableseeds/PredictableSeedsBBCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsBBCase2.java",
+          "sha256": "e8f382cde9f434e5f053f3063831aac79103e12c0bf532966745055ccdcdbf79",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-16",
+      "xlsx_row": 16,
+      "code_number": "8.1.1",
+      "label": true,
+      "vuln_type": "Usage of Random Method from Library",
+      "method": "main()",
+      "line_raw": "8",
+      "files": [
+        {
+          "name": "UntrustedPRNGCase1.java",
+          "truth_name": "UntrustedPRNGCase1.java",
+          "path": "inputs/sources/xlsx-row-16/org/cryptoapi/bench/untrustedprng/UntrustedPRNGCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/untrustedprng/UntrustedPRNGCase1.java",
+          "sha256": "64e478db185cdd3631efeaebf47e1106460c4b538dc23801f9e98ebbced9c99d",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-17",
+      "xlsx_row": 17,
+      "code_number": "10.1.1",
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "method": "key2()",
+      "line_raw": "13,15",
+      "files": [
+        {
+          "name": "StaticSaltsBBCase1.java",
+          "truth_name": "StaticSaltsBBCase1.java",
+          "path": "inputs/sources/xlsx-row-17/org/cryptoapi/bench/staticsalts/StaticSaltsBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticsalts/StaticSaltsBBCase1.java",
+          "sha256": "bfec3d7e922d9f76ea35c879acd290b0a5243d65190da2a65ae883fa6326ee88",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-18",
+      "xlsx_row": 18,
+      "code_number": "11.1.1",
+      "label": true,
+      "vuln_type": "Usage of ECB ",
+      "method": "go()",
+      "line_raw": "14,15",
+      "files": [
+        {
+          "name": "EcbInSymmCryptoBBCase1.java",
+          "truth_name": "EcbInSymmCryptoBBCase1.java",
+          "path": "inputs/sources/xlsx-row-18/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoBBCase1.java",
+          "sha256": "9d6b9df173e4281bf09e6a1ac5dfded57799d626be03bda1e03573ae152cde3c",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-19",
+      "xlsx_row": 19,
+      "code_number": "12.1.1",
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "method": "go()",
+      "line_raw": "17,18",
+      "files": [
+        {
+          "name": "StaticInitializationVectorBBCase1.java",
+          "truth_name": "StaticInitializationVectorBBCase1.java",
+          "path": "inputs/sources/xlsx-row-19/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorBBCase1.java",
+          "sha256": "4ee28fa24b2261bfd652a650769a6fdd13ab467fc5bcc0514028c001a2134aee",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-20",
+      "xlsx_row": 20,
+      "code_number": "13.1.1",
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "method": "key2()",
+      "line_raw": "16,17",
+      "files": [
+        {
+          "name": "LessThan1000IterationPBEBBCase1.java",
+          "truth_name": "LessThan1000IterationPBEBBCase1.java",
+          "path": "inputs/sources/xlsx-row-20/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEBBCase1.java",
+          "sha256": "713839e86e60715ac8ae48e0a33ac8470ba62fdd79f1e9c1e865093ab30dd68e",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-21",
+      "xlsx_row": 21,
+      "code_number": "14.1.1",
+      "label": true,
+      "vuln_type": "DES used",
+      "method": "go()",
+      "line_raw": "13,15,16",
+      "files": [
+        {
+          "name": "BrokenCryptoBBCase1.java",
+          "truth_name": "BrokenCryptoBBCase1.java",
+          "path": "inputs/sources/xlsx-row-21/org/cryptoapi/bench/brokencrypto/BrokenCryptoBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoBBCase1.java",
+          "sha256": "a1f5d8b03c245bb152989da8b7a77014caac3ff8d750530c9614a0188b963e8c",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-22",
+      "xlsx_row": 22,
+      "code_number": "14.1.2",
+      "label": true,
+      "vuln_type": "Blowfish used",
+      "method": "go()",
+      "line_raw": "12,14,15",
+      "files": [
+        {
+          "name": "BrokenCryptoBBCase2.java",
+          "truth_name": "BrokenCryptoBBCase2.java",
+          "path": "inputs/sources/xlsx-row-22/org/cryptoapi/bench/brokencrypto/BrokenCryptoBBCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoBBCase2.java",
+          "sha256": "ec1930ed69b73e9a911f242ecae547187bd42083d8a50ee1321bd8c794d4df93",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-23",
+      "xlsx_row": 23,
+      "code_number": "14.1.3",
+      "label": true,
+      "vuln_type": "RC4 used",
+      "method": "go()",
+      "line_raw": "12,14,15",
+      "files": [
+        {
+          "name": "BrokenCryptoBBCase3.java",
+          "truth_name": "BrokenCryptoBBCase3.java",
+          "path": "inputs/sources/xlsx-row-23/org/cryptoapi/bench/brokencrypto/BrokenCryptoBBCase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoBBCase3.java",
+          "sha256": "2058b3a407b4eb5f128ad38883ceec51ef75fdc0ef5bd3af9b6da286b2dda91c",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-24",
+      "xlsx_row": 24,
+      "code_number": "14.1.4",
+      "label": true,
+      "vuln_type": "RC2 used",
+      "method": "go()",
+      "line_raw": "12,14,15",
+      "files": [
+        {
+          "name": "BrokenCryptoBBCase4.java",
+          "truth_name": "BrokenCryptoBBCase4.java",
+          "path": "inputs/sources/xlsx-row-24/org/cryptoapi/bench/brokencrypto/BrokenCryptoBBCase4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoBBCase4.java",
+          "sha256": "1a7fdf858f8ceed9a578eba1d7c14e7080067d0695b38a9badc8f53fe861d60c",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-25",
+      "xlsx_row": 25,
+      "code_number": "14.1.5",
+      "label": true,
+      "vuln_type": "IDEA used",
+      "method": "go()",
+      "line_raw": "12,14,15",
+      "files": [
+        {
+          "name": "BrokenCryptoBBCase5.java",
+          "truth_name": "BrokenCryptoBBCase5.java",
+          "path": "inputs/sources/xlsx-row-25/org/cryptoapi/bench/brokencrypto/BrokenCryptoBBCase5.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoBBCase5.java",
+          "sha256": "3cc7ca51a73be8901a60cd224eeb1ffe2b927b6b0f2cf11defbd6b102f015458",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-26",
+      "xlsx_row": 26,
+      "code_number": "15.1.1",
+      "label": true,
+      "vuln_type": "RSA keysize 1024 bits",
+      "method": "go()",
+      "line_raw": "10",
+      "files": [
+        {
+          "name": "InsecureAsymmetricCipherBBCase1.java",
+          "truth_name": "InsecureAsymmetricCipherBBCase1.java",
+          "path": "inputs/sources/xlsx-row-26/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherBBCase1.java",
+          "sha256": "f83928fd697b3779bee4c31d6bfb468059f2d153df33dea4993ec9d31d93ffde",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-27",
+      "xlsx_row": 27,
+      "code_number": "16.1.1",
+      "label": true,
+      "vuln_type": "SHA1 used",
+      "method": "main()",
+      "line_raw": "9",
+      "files": [
+        {
+          "name": "BrokenHashBBCase1.java",
+          "truth_name": "BrokenHashBBCase1.java",
+          "path": "inputs/sources/xlsx-row-27/org/cryptoapi/bench/brokenhash/BrokenHashBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashBBCase1.java",
+          "sha256": "a7d6a05cca8f93980528f2d6860bc200e1880d6b07602de47cc880bc8161ce52",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-28",
+      "xlsx_row": 28,
+      "code_number": "16.1.2",
+      "label": true,
+      "vuln_type": "MD5 used",
+      "method": "main()",
+      "line_raw": "9",
+      "files": [
+        {
+          "name": "BrokenHashBBCase2.java",
+          "truth_name": "BrokenHashBBCase2.java",
+          "path": "inputs/sources/xlsx-row-28/org/cryptoapi/bench/brokenhash/BrokenHashBBCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashBBCase2.java",
+          "sha256": "51e838ba522971811e6307d529e38d474891264a9a04c147b969a7ab066748b7",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-29",
+      "xlsx_row": 29,
+      "code_number": "16.1.3",
+      "label": true,
+      "vuln_type": "MD4 used",
+      "method": "main()",
+      "line_raw": "9",
+      "files": [
+        {
+          "name": "BrokenHashBBCase3.java",
+          "truth_name": "BrokenHashBBCase3.java",
+          "path": "inputs/sources/xlsx-row-29/org/cryptoapi/bench/brokenhash/BrokenHashBBCase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashBBCase3.java",
+          "sha256": "7995815abbef1abfba1aa75fe06028d4753983e82df7282eb821fa7269c34d1e",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-30",
+      "xlsx_row": 30,
+      "code_number": "16.1.4",
+      "label": true,
+      "vuln_type": "MD2 used",
+      "method": "main()",
+      "line_raw": "9",
+      "files": [
+        {
+          "name": "BrokenHashBBCase4.java",
+          "truth_name": "BrokenHashBBCase4.java",
+          "path": "inputs/sources/xlsx-row-30/org/cryptoapi/bench/brokenhash/BrokenHashBBCase4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashBBCase4.java",
+          "sha256": "169a75afbbabcb2e7ea129194b9bafc5da4caf28dc654560beeeaaf6b09580c6",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-31",
+      "xlsx_row": 31,
+      "code_number": "17.1.1",
+      "label": true,
+      "vuln_type": "HmacMD5",
+      "method": "main()",
+      "line_raw": "16",
+      "files": [
+        {
+          "name": "BrokenMacBBCase1.java",
+          "truth_name": "BrokenMacBBCase1.java",
+          "path": "inputs/sources/xlsx-row-31/org/cryptoapi/bench/brokenmac/BrokenMacBBCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenmac/BrokenMacBBCase1.java",
+          "sha256": "1a01221cf50f1f8241e0c27f1982a81523c10c370474fc0c22fce49d32de662e",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-32",
+      "xlsx_row": 32,
+      "code_number": "17.1.2",
+      "label": true,
+      "vuln_type": "HmacSHA1",
+      "method": "main()",
+      "line_raw": "16",
+      "files": [
+        {
+          "name": "BrokenMacBBCase2.java",
+          "truth_name": "BrokenMacBBCase2.java",
+          "path": "inputs/sources/xlsx-row-32/org/cryptoapi/bench/brokenmac/BrokenMacBBCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenmac/BrokenMacBBCase2.java",
+          "sha256": "de4d79864519a326d048552d3f09df69875ece6769e46abfe486d0b26136396c",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-33",
+      "xlsx_row": 33,
+      "code_number": "14.1.6",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "BrokenCryptoCorrected.java",
+          "truth_name": "BrokenCryptoCorrected.java",
+          "path": "inputs/sources/xlsx-row-33/org/cryptoapi/bench/brokencrypto/BrokenCryptoCorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoCorrected.java",
+          "sha256": "d806e2ef4c4a62cce3c4e674e9ced82a3df31bcc3f0a91733ea0cc69ca3a214f",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-34",
+      "xlsx_row": 34,
+      "code_number": "16.1.5",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "BrokenHashCorrected.java",
+          "truth_name": "BrokenHashCorrected",
+          "path": "inputs/sources/xlsx-row-34/org/cryptoapi/bench/brokenhash/BrokenHashCorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashCorrected.java",
+          "sha256": "c970fc6fdcece94a56d5bbccb29aa3886330cd1b6cb96beefb71fbd912a45acd",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-35",
+      "xlsx_row": 35,
+      "code_number": "11.1.2",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "EcbInSymmCryptoCorrected.java",
+          "truth_name": "EcbInSymmCryptoCorrected",
+          "path": "inputs/sources/xlsx-row-35/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoCorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoCorrected.java",
+          "sha256": "1bd8bef7ff2c3fa473aa13c1b6b83b07f9bf2ccc0a7468d5a4205edbaae110aa",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-36",
+      "xlsx_row": 36,
+      "code_number": "4.1.2",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "DummyHostNameVerifierCorrected.java",
+          "truth_name": "DummyHostNameVerifierCorrected",
+          "path": "inputs/sources/xlsx-row-36/org/cryptoapi/bench/dummyhostnameverifier/DummyHostNameVerifierCorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/dummyhostnameverifier/DummyHostNameVerifierCorrected.java",
+          "sha256": "3daba5f4292ca017acb50ee220f980e580b2d4ab0efc67b81c5b548d62856131",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-37",
+      "xlsx_row": 37,
+      "code_number": "7.1.2",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "HttpProtocolCase1Corrected.java",
+          "truth_name": "HttpProtocolCase1Corrected",
+          "path": "inputs/sources/xlsx-row-37/org/cryptoapi/bench/http/HttpProtocolCase1Corrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/http/HttpProtocolCase1Corrected.java",
+          "sha256": "6106b465d04933b168c64a265d09aefa86368f8249425b77dc1f3e0f2cbd8737",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-38",
+      "xlsx_row": 38,
+      "code_number": "13.1.2",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "LessThan1000IterationPBECorrected.java",
+          "truth_name": "LessThan1000IterationPBECorrected",
+          "path": "inputs/sources/xlsx-row-38/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBECorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBECorrected.java",
+          "sha256": "6cf1a543889e99de0054733397f20b7815cdcecf008526bffdd908675d4fd1fb",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-39",
+      "xlsx_row": 39,
+      "code_number": "1.1.2",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "PredictableCryptographicKeyCorrected.java",
+          "truth_name": "PredictableCryptographicKeyCorrected",
+          "path": "inputs/sources/xlsx-row-39/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyCorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyCorrected.java",
+          "sha256": "6bd507ba0a6a2a88a603e1e0ab7f78d082f2c1f70fb0f74ca07ebb419450e69a",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-40",
+      "xlsx_row": 40,
+      "code_number": "2.1.3",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "PredictableKeyStorePasswordCorrected.java",
+          "truth_name": "PredictableKeyStorePasswordCorrected",
+          "path": "inputs/sources/xlsx-row-40/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordCorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordCorrected.java",
+          "sha256": "b70651eb975bcc91541210c58657049cfc1cfd88f502fd8252b1ca6dc398e912",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-41",
+      "xlsx_row": 41,
+      "code_number": "3.1.2",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "PredictablePBEPasswordCorrected.java",
+          "truth_name": "PredictablePBEPasswordCorrected",
+          "path": "inputs/sources/xlsx-row-41/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordCorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordCorrected.java",
+          "sha256": "24a32afadbf9683bc1eb6eb36ffa961f06dad827ef83e05efb3b8111f97437eb",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-42",
+      "xlsx_row": 42,
+      "code_number": "9.1.3",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "PredictableSeedsCorrected.java",
+          "truth_name": "PredictableSeedsCorrected",
+          "path": "inputs/sources/xlsx-row-42/org/cryptoapi/bench/predictableseeds/PredictableSeedsCorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsCorrected.java",
+          "sha256": "64a3a69f2e0c15f6715f193d76d8753ff1b2185ac130507c646961b645db31a3",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-43",
+      "xlsx_row": 43,
+      "code_number": "12.1.2",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "StaticInitializationVectorCorrected.java",
+          "truth_name": "StaticInitializationVectorCorrected",
+          "path": "inputs/sources/xlsx-row-43/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorCorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorCorrected.java",
+          "sha256": "bcf05e9200fa53ecccab2f9c1902e5ae64cf595a6b688cb240e2462a6579e54b",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-44",
+      "xlsx_row": 44,
+      "code_number": "10.1.2",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "StaticSaltsCorrected.java",
+          "truth_name": "StaticSaltsCorrected",
+          "path": "inputs/sources/xlsx-row-44/org/cryptoapi/bench/staticsalts/StaticSaltsCorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticsalts/StaticSaltsCorrected.java",
+          "sha256": "95c62aa0e1a125540f498761067e5e6829516a4ab4039f87780b9cc1da33f9f0",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-45",
+      "xlsx_row": 45,
+      "code_number": "8.1.2",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "UntrustedPRNGCorrected.java",
+          "truth_name": "UntrustedPRNGCorrected",
+          "path": "inputs/sources/xlsx-row-45/org/cryptoapi/bench/untrustedprng/UntrustedPRNGCorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/untrustedprng/UntrustedPRNGCorrected.java",
+          "sha256": "7a255edd8d59420de8ccbf93d5e643a7a7ce4e061b6cfc36a75d6516688976fd",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-46",
+      "xlsx_row": 46,
+      "code_number": "18.1.3",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "CredentialInStringCorrected.java",
+          "truth_name": "CredentialInStringCorrected.java",
+          "path": "inputs/sources/xlsx-row-46/org/cryptoapi/bench/credentialinstring/CredentialInStringCorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/credentialinstring/CredentialInStringCorrected.java",
+          "sha256": "9f8e0201018e0902b606533664d8bc5b743f6ce2abde43b6984d8409747120b0",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-47",
+      "xlsx_row": 47,
+      "code_number": "17.1.3",
+      "label": false,
+      "vuln_type": "HmacSHA256",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "BrokenMacCorrected.java",
+          "truth_name": "BrokenMacCorrected.java",
+          "path": "inputs/sources/xlsx-row-47/org/cryptoapi/bench/brokenmac/BrokenMacCorrected.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenmac/BrokenMacCorrected.java",
+          "sha256": "c9e5a6a7318dc22127629a7a106bb24afe5399541de7ff9eb562a9ba80db72c0",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-49",
+      "xlsx_row": 49,
+      "code_number": "1.2.1",
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "method": "main(), go()",
+      "line_raw": "9,16",
+      "files": [
+        {
+          "name": "PredictableCryptographicKeyABICase1.java",
+          "truth_name": "PredictableCryptographicKeyABICase1.java",
+          "path": "inputs/sources/xlsx-row-49/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABICase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABICase1.java",
+          "sha256": "64ee5993946da91973bfee40a65a2c6489c7985b1d6eab090cf293bd04c988d2",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-50",
+      "xlsx_row": 50,
+      "code_number": "18.2.1",
+      "label": true,
+      "vuln_type": "Credential in String",
+      "method": "main()",
+      "line_raw": "9",
+      "files": [
+        {
+          "name": "CredentialInStringABICase1.java",
+          "truth_name": "CredentialInStringABICase1.java",
+          "path": "inputs/sources/xlsx-row-50/org/cryptoapi/bench/credentialinstring/CredentialInStringABICase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/credentialinstring/CredentialInStringABICase1.java",
+          "sha256": "7cd42cc10934f9e32aeb80a5a78830c02cb9c7dc411cf523499525d512c4c0e0",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-51",
+      "xlsx_row": 51,
+      "code_number": "2.2.1",
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "method": "main(), go()",
+      "line_raw": "13,22",
+      "files": [
+        {
+          "name": "PredictablePBEPasswordABICase1.java",
+          "truth_name": "PredictablePBEPasswordABICase1.java",
+          "path": "inputs/sources/xlsx-row-51/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABICase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABICase1.java",
+          "sha256": "f205848404b7bd1cdb59ffb9a5b5678a0e9ca801e9f857958b04ec97b6fd218b",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-52",
+      "xlsx_row": 52,
+      "code_number": "3.2.1",
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "method": "main(), go()",
+      "line_raw": "14,22",
+      "files": [
+        {
+          "name": "PredictableKeyStorePasswordABICase1.java",
+          "truth_name": "PredictableKeyStorePasswordABICase1.java",
+          "path": "inputs/sources/xlsx-row-52/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABICase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABICase1.java",
+          "sha256": "98441a10c387eae6443a0827812401909b43906c4d127b71764b13f45dad6aac",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-53",
+      "xlsx_row": 53,
+      "code_number": "7.2.1",
+      "label": true,
+      "vuln_type": "HTTP ",
+      "method": "main(), go()",
+      "line_raw": "9,15",
+      "files": [
+        {
+          "name": "HttpProtocolABICase1.java",
+          "truth_name": "HttpProtocolABICase1.java",
+          "path": "inputs/sources/xlsx-row-53/org/cryptoapi/bench/http/HttpProtocolABICase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/http/HttpProtocolABICase1.java",
+          "sha256": "7da583942e7d8689ff38ecdf77e11db15063439881b2e71883d810bc7ce17609",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-54",
+      "xlsx_row": 54,
+      "code_number": "9.2.1",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "main(), go()",
+      "line_raw": "8,13",
+      "files": [
+        {
+          "name": "PredictableSeedsABICase1.java",
+          "truth_name": "PredictableSeedsABICase1.java",
+          "path": "inputs/sources/xlsx-row-54/org/cryptoapi/bench/predictableseeds/PredictableSeedsABICase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABICase1.java",
+          "sha256": "09e0369dc2bc851c088d48e386da0b98efb1d8bc4f27a7f8ec678b7359206345",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-55",
+      "xlsx_row": 55,
+      "code_number": "9.2.2",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "main(), go()",
+      "line_raw": "7,12",
+      "files": [
+        {
+          "name": "PredictableSeedsABICase2.java",
+          "truth_name": "PredictableSeedsABICase2.java",
+          "path": "inputs/sources/xlsx-row-55/org/cryptoapi/bench/predictableseeds/PredictableSeedsABICase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABICase2.java",
+          "sha256": "8dd040abd15e25a475bed872348272d7a945e7abcafa1aadd3d55293aa10efbf",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-56",
+      "xlsx_row": 56,
+      "code_number": "10.2.1",
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "method": "main(), key2()",
+      "line_raw": "9,16",
+      "files": [
+        {
+          "name": "StaticSaltsABICase1.java",
+          "truth_name": "StaticSaltsABICase1.java",
+          "path": "inputs/sources/xlsx-row-56/org/cryptoapi/bench/staticsalts/StaticSaltsABICase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticsalts/StaticSaltsABICase1.java",
+          "sha256": "3f0ec7b485a360b63daf425bf770f9ba92270940c1927f37feb9c1a97cee74b7",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-57",
+      "xlsx_row": 57,
+      "code_number": "11.2.1",
+      "label": true,
+      "vuln_type": "Usage of ECB ",
+      "method": "main(), go()",
+      "line_raw": "21,12",
+      "files": [
+        {
+          "name": "EcbInSymmCryptoABICase1.java",
+          "truth_name": "EcbInSymmCryptoABICase1.java",
+          "path": "inputs/sources/xlsx-row-57/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABICase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABICase1.java",
+          "sha256": "bde57ca9d5cc331f935e1e4eae36f39a4d80a9a184250f6cd44f09e08a0c5934",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-58",
+      "xlsx_row": 58,
+      "code_number": "12.2.1",
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "method": "main(), go()",
+      "line_raw": "21,16",
+      "files": [
+        {
+          "name": "StaticInitializationVectorABICase1.java",
+          "truth_name": "StaticInitializationVectorABICase1.java",
+          "path": "inputs/sources/xlsx-row-58/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABICase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABICase1.java",
+          "sha256": "8346ab7941e413e18b5f8024203aa9cb3ed68be7eef7ed8622af78dfbe2fe1a2",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-59",
+      "xlsx_row": 59,
+      "code_number": "13.2.1",
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "method": "main(), go()",
+      "line_raw": "10,19",
+      "files": [
+        {
+          "name": "LessThan1000IterationPBEABICase1.java",
+          "truth_name": "LessThan1000IterationPBEABICase1.java",
+          "path": "inputs/sources/xlsx-row-59/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABICase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABICase1.java",
+          "sha256": "8b7114a52127cf478317b4d3c911474a8f8874ab885b6395bfb8c3def30cc5e4",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-60",
+      "xlsx_row": 60,
+      "code_number": "14.2.1",
+      "label": true,
+      "vuln_type": "DES used",
+      "method": "main(), go()",
+      "line_raw": "20, 21,12, 14",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase1.java",
+          "truth_name": "BrokenCryptoABICase1.java",
+          "path": "inputs/sources/xlsx-row-60/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase1.java",
+          "sha256": "aa5a558e044c03de36ef89102447420d17d0eb8380be60ac4dbe594e74ea0f3d",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-61",
+      "xlsx_row": 61,
+      "code_number": "14.2.2",
+      "label": true,
+      "vuln_type": "Blowfish used",
+      "method": "main(), go()",
+      "line_raw": "20,12, 14",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase2.java",
+          "truth_name": "BrokenCryptoABICase2.java",
+          "path": "inputs/sources/xlsx-row-61/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase2.java",
+          "sha256": "a79c455c281ff53a21db344168c45ae463226a2fcd3bd8dc17e4595542b9f9da",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-62",
+      "xlsx_row": 62,
+      "code_number": "14.2.3",
+      "label": true,
+      "vuln_type": "RC4 used",
+      "method": "main(), go()",
+      "line_raw": "20,12, 14",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase3.java",
+          "truth_name": "BrokenCryptoABICase3.java",
+          "path": "inputs/sources/xlsx-row-62/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase3.java",
+          "sha256": "bb728e1c5a66dcecd161316d3bda61b0afd0f62da5a55471a1dde59cb7c5b703",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-63",
+      "xlsx_row": 63,
+      "code_number": "14.2.4",
+      "label": true,
+      "vuln_type": "RC2 used",
+      "method": "main(), go()",
+      "line_raw": "20,12, 14",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase4.java",
+          "truth_name": "BrokenCryptoABICase4.java",
+          "path": "inputs/sources/xlsx-row-63/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase4.java",
+          "sha256": "dab9830d5c789fd87c88d74b3103d2f3810a90e378cea61c09b1745583ad77ea",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-64",
+      "xlsx_row": 64,
+      "code_number": "14.2.5",
+      "label": true,
+      "vuln_type": "IDEA used",
+      "method": "main(), go()",
+      "line_raw": "20,12, 14",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase9.java",
+          "truth_name": "BrokenCryptoABICase9.java",
+          "path": "inputs/sources/xlsx-row-64/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase9.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase9.java",
+          "sha256": "70a5bb06d4ffafb9250d9a365d3500c029c2bb9c58df85dce17223be1d7f1347",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-65",
+      "xlsx_row": 65,
+      "code_number": "15.2.1",
+      "label": true,
+      "vuln_type": "RSA keysize 1024 bits",
+      "method": "main()",
+      "line_raw": "31",
+      "files": [
+        {
+          "name": "InsecureAsymmetricCipherABICase1.java",
+          "truth_name": "InsecureAsymmetricCipherABICase1.java",
+          "path": "inputs/sources/xlsx-row-65/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABICase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABICase1.java",
+          "sha256": "02403d226c4049b2c4105116fc9c7572519b5ba2f7e57ff888613b0d7f49802e",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-66",
+      "xlsx_row": 66,
+      "code_number": "16.2.1",
+      "label": true,
+      "vuln_type": "SHA1 used",
+      "method": "main()",
+      "line_raw": "9",
+      "files": [
+        {
+          "name": "BrokenHashABICase1.java",
+          "truth_name": "BrokenHashABICase1.java",
+          "path": "inputs/sources/xlsx-row-66/org/cryptoapi/bench/brokenhash/BrokenHashABICase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABICase1.java",
+          "sha256": "1fffe0801cfc026b76feaed138c43f73762c424b6a72fcc8ec12f6346461257f",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-67",
+      "xlsx_row": 67,
+      "code_number": "16.2.2",
+      "label": true,
+      "vuln_type": "MD5 used",
+      "method": "main()",
+      "line_raw": "9",
+      "files": [
+        {
+          "name": "BrokenHashABICase2.java",
+          "truth_name": "BrokenHashABICase2.java",
+          "path": "inputs/sources/xlsx-row-67/org/cryptoapi/bench/brokenhash/BrokenHashABICase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABICase2.java",
+          "sha256": "4b2b3cc46e561858ab13f3a9a8237a86a3b13b41518c6eb41e1f728b0377e67c",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-68",
+      "xlsx_row": 68,
+      "code_number": "16.2.3",
+      "label": true,
+      "vuln_type": "MD4 used",
+      "method": "main()",
+      "line_raw": "9",
+      "files": [
+        {
+          "name": "BrokenHashABICase3.java",
+          "truth_name": "BrokenHashABICase3.java",
+          "path": "inputs/sources/xlsx-row-68/org/cryptoapi/bench/brokenhash/BrokenHashABICase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABICase3.java",
+          "sha256": "4f5233527bbc4526a805d2c8f6a34a633f8c2075a2471715b5825e9cab2153ae",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-69",
+      "xlsx_row": 69,
+      "code_number": "16.2.4",
+      "label": true,
+      "vuln_type": "MD2 used",
+      "method": "main()",
+      "line_raw": "9",
+      "files": [
+        {
+          "name": "BrokenHashABICase4.java",
+          "truth_name": "BrokenHashABICase4.java",
+          "path": "inputs/sources/xlsx-row-69/org/cryptoapi/bench/brokenhash/BrokenHashABICase4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABICase4.java",
+          "sha256": "4ee78c99868c69bfd5be75663d76c775323d3a06b9c9b3b78537f9c5ae3c7539",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-71",
+      "xlsx_row": 71,
+      "code_number": "1.3.1",
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "method": "main(), method2()",
+      "line_raw": "7,18",
+      "files": [
+        {
+          "name": "PredictableCryptographicKeyABICase3.java",
+          "truth_name": "PredictableCryptographicKeyABICase3.java",
+          "path": "inputs/sources/xlsx-row-71/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABICase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABICase3.java",
+          "sha256": "2fd9faf91137a4f1a77ed28818cc3b97a74fce68538afad724a627a91df67286",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-72",
+      "xlsx_row": 72,
+      "code_number": "18.3.1",
+      "label": true,
+      "vuln_type": "Credential in String",
+      "method": "main()",
+      "line_raw": "7",
+      "files": [
+        {
+          "name": "CredentialInStringABICase3.java",
+          "truth_name": "CredentialInStringABICase3.java",
+          "path": "inputs/sources/xlsx-row-72/org/cryptoapi/bench/credentialinstring/CredentialInStringABICase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/credentialinstring/CredentialInStringABICase3.java",
+          "sha256": "7fb0dd26e9c3d191fd0564287e679229d333952c3286cf762dc8e4782e4ad6fb",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-73",
+      "xlsx_row": 73,
+      "code_number": "2.3.1",
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "method": "main(), method2()",
+      "line_raw": "13,28",
+      "files": [
+        {
+          "name": "PredictablePBEPasswordABICase3.java",
+          "truth_name": "PredictablePBEPasswordABICase3.java",
+          "path": "inputs/sources/xlsx-row-73/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABICase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABICase3.java",
+          "sha256": "fbcf23ea5e937ecf2ac40b55f90e3dd193678ba5b7c4451a90b263994cca3171",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-74",
+      "xlsx_row": 74,
+      "code_number": "3.3.1",
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "method": "main(), method2()",
+      "line_raw": "14,27",
+      "files": [
+        {
+          "name": "PredictableKeyStorePasswordABICase3.java",
+          "truth_name": "PredictableKeyStorePasswordABICase3.java",
+          "path": "inputs/sources/xlsx-row-74/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABICase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABICase3.java",
+          "sha256": "0e64540f75b483c0b1a59fe6dc9f5f7f54af64573afdf5eb992bea8b04f66d7e",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-75",
+      "xlsx_row": 75,
+      "code_number": "7.3.1",
+      "label": true,
+      "vuln_type": "HTTP ",
+      "method": "main(), method2()",
+      "line_raw": "8,18",
+      "files": [
+        {
+          "name": "HttpProtocolABICase3.java",
+          "truth_name": "HttpProtocolABICase3.java",
+          "path": "inputs/sources/xlsx-row-75/org/cryptoapi/bench/http/HttpProtocolABICase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/http/HttpProtocolABICase3.java",
+          "sha256": "ee89189a160c564a68c5cd620ef578279333eaa5ccd8148e7ee36c6d248faee7",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-76",
+      "xlsx_row": 76,
+      "code_number": "9.3.1",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "main(), method2()",
+      "line_raw": "8,17",
+      "files": [
+        {
+          "name": "PredictableSeedsABICase5.java",
+          "truth_name": "PredictableSeedsABICase5.java",
+          "path": "inputs/sources/xlsx-row-76/org/cryptoapi/bench/predictableseeds/PredictableSeedsABICase5.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABICase5.java",
+          "sha256": "e51f1955f19241956cb134ce3999c04d301f77dae61b93fe988e9449984210ea",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-77",
+      "xlsx_row": 77,
+      "code_number": "9.3.2",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "main(), method2()",
+      "line_raw": "7,16",
+      "files": [
+        {
+          "name": "PredictableSeedsABICase6.java",
+          "truth_name": "PredictableSeedsABICase6.java",
+          "path": "inputs/sources/xlsx-row-77/org/cryptoapi/bench/predictableseeds/PredictableSeedsABICase6.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABICase6.java",
+          "sha256": "cbc562d3661eb9821ddfd95837f9ac3d8294f71f8e1e816eb2ff5383158e2df6",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-78",
+      "xlsx_row": 78,
+      "code_number": "10.3.1",
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "method": "main(), method2()",
+      "line_raw": "7,18",
+      "files": [
+        {
+          "name": "StaticSaltsABICase3.java",
+          "truth_name": "StaticSaltsABICase3.java",
+          "path": "inputs/sources/xlsx-row-78/org/cryptoapi/bench/staticsalts/StaticSaltsABICase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticsalts/StaticSaltsABICase3.java",
+          "sha256": "e8e31260ccbfc3d56acca4c20e175d5f7bbee5a9ab39947ada68c1284db9f058",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-79",
+      "xlsx_row": 79,
+      "code_number": "11.3.1",
+      "label": true,
+      "vuln_type": "Usage of ECB ",
+      "method": "main(), method2()",
+      "line_raw": "23,19",
+      "files": [
+        {
+          "name": "EcbInSymmCryptoABICase3.java",
+          "truth_name": "EcbInSymmCryptoABICase3.java",
+          "path": "inputs/sources/xlsx-row-79/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABICase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABICase3.java",
+          "sha256": "03988ec3f1c7f31c5f3d0d4fee368fe966c60895d9d29f0366760c78ea0bbe1d",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-80",
+      "xlsx_row": 80,
+      "code_number": "12.3.1",
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "method": "main(), method2()",
+      "line_raw": "25, 12",
+      "files": [
+        {
+          "name": "StaticInitializationVectorABICase3.java",
+          "truth_name": "StaticInitializationVectorABICase3.java",
+          "path": "inputs/sources/xlsx-row-80/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABICase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABICase3.java",
+          "sha256": "2b48787b14c683923d5f95ea7505f74d5e89c3d126743d35e9a35753e0f5b182",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-81",
+      "xlsx_row": 81,
+      "code_number": "13.3.1",
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "method": "main(), method1()",
+      "line_raw": "11,23",
+      "files": [
+        {
+          "name": "LessThan1000IterationPBEABICase3.java",
+          "truth_name": "LessThan1000IterationPBEABICase3.java",
+          "path": "inputs/sources/xlsx-row-81/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABICase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABICase3.java",
+          "sha256": "b1faea6e5b6b26063841fbca3080b591388b59bd5252264e3347808d5aad5c60",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-82",
+      "xlsx_row": 82,
+      "code_number": "14.3.1",
+      "label": true,
+      "vuln_type": "DES used",
+      "method": "main(), method1()",
+      "line_raw": "23,24,16,18",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase11.java",
+          "truth_name": "BrokenCryptoABICase11.java",
+          "path": "inputs/sources/xlsx-row-82/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase11.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase11.java",
+          "sha256": "2fb77d227ca57e9199e01c295e64ef5f8e5211e758faba995c7be008466832c8",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-83",
+      "xlsx_row": 83,
+      "code_number": "14.3.2",
+      "label": true,
+      "vuln_type": "Blowfish used",
+      "method": "main(), method1()",
+      "line_raw": "23, 15, 17",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase12.java",
+          "truth_name": "BrokenCryptoABICase12.java",
+          "path": "inputs/sources/xlsx-row-83/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase12.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase12.java",
+          "sha256": "7d31a25cad9fc4d14733c7a66b9dafabaec8fed973288138e512233c40ffc524",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-84",
+      "xlsx_row": 84,
+      "code_number": "14.3.3",
+      "label": true,
+      "vuln_type": "RC4 used",
+      "method": "main(), method1()",
+      "line_raw": "24,17,19",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase13.java",
+          "truth_name": "BrokenCryptoABICase13.java",
+          "path": "inputs/sources/xlsx-row-84/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase13.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase13.java",
+          "sha256": "deaf311d19d1789939a2d8d3ea45153b8d6d4cf8049da040478b9a3ef6724e18",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-85",
+      "xlsx_row": 85,
+      "code_number": "14.3.4",
+      "label": true,
+      "vuln_type": "RC2 used",
+      "method": "main(), method1()",
+      "line_raw": "24,16,18",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase14.java",
+          "truth_name": "BrokenCryptoABICase14.java",
+          "path": "inputs/sources/xlsx-row-85/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase14.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase14.java",
+          "sha256": "800be674ffaa8f22fab5a71cd2c2a3ffc869f980b6509e40145270586e56a529",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-86",
+      "xlsx_row": 86,
+      "code_number": "14.3.5",
+      "label": true,
+      "vuln_type": "IDEA used",
+      "method": "main(), method1()",
+      "line_raw": "24, 16, 18",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase15.java",
+          "truth_name": "BrokenCryptoABICase15.java",
+          "path": "inputs/sources/xlsx-row-86/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase15.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase15.java",
+          "sha256": "fe4b4d888129ebba612e42c5e226dffc3d3e358b31a05daf597cb75a9d788e0a",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-87",
+      "xlsx_row": 87,
+      "code_number": "15.3.1",
+      "label": true,
+      "vuln_type": "RSA keysize 1024 bits",
+      "method": "main()",
+      "line_raw": "36",
+      "files": [
+        {
+          "name": "InsecureAsymmetricCipherABICase3.java",
+          "truth_name": "InsecureAsymmetricCipherABICase3.java",
+          "path": "inputs/sources/xlsx-row-87/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABICase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABICase3.java",
+          "sha256": "36675b009eb2adabc5326bddf96f8f24762c44000749036ddbd95fbdd50dfc12",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-88",
+      "xlsx_row": 88,
+      "code_number": "16.3.1",
+      "label": true,
+      "vuln_type": "SHA1 used",
+      "method": "main(), method1()",
+      "line_raw": "9,18",
+      "files": [
+        {
+          "name": "BrokenHashABICase9.java",
+          "truth_name": "BrokenHashABICase9.java",
+          "path": "inputs/sources/xlsx-row-88/org/cryptoapi/bench/brokenhash/BrokenHashABICase9.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABICase9.java",
+          "sha256": "049130f1ab4f2e1cff66f5c9830f8bf01b015b39318aa81852b59ac8465bd7a7",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-89",
+      "xlsx_row": 89,
+      "code_number": "16.3.2",
+      "label": true,
+      "vuln_type": "MD5 used",
+      "method": "main(), method1()",
+      "line_raw": "9,18",
+      "files": [
+        {
+          "name": "BrokenHashABICase10.java",
+          "truth_name": "BrokenHashABICase10.java",
+          "path": "inputs/sources/xlsx-row-89/org/cryptoapi/bench/brokenhash/BrokenHashABICase10.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABICase10.java",
+          "sha256": "a2a8cc9ddd1ecbf2886572a3f919ac692fa55b2b1654ce011ba67371d3de5c51",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-90",
+      "xlsx_row": 90,
+      "code_number": "16.3.3",
+      "label": true,
+      "vuln_type": "MD4 used",
+      "method": "main(), method1()",
+      "line_raw": "9,18",
+      "files": [
+        {
+          "name": "BrokenHashABICase11.java",
+          "truth_name": "BrokenHashABICase11.java",
+          "path": "inputs/sources/xlsx-row-90/org/cryptoapi/bench/brokenhash/BrokenHashABICase11.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABICase11.java",
+          "sha256": "37ad1d49104c8168574e56244a51dc67e73d07d692bd295b81de45899d83a06b",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-91",
+      "xlsx_row": 91,
+      "code_number": "16.3.4",
+      "label": true,
+      "vuln_type": "MD2 used",
+      "method": "main(), method1()",
+      "line_raw": "9,18",
+      "files": [
+        {
+          "name": "BrokenHashABICase12.java",
+          "truth_name": "BrokenHashABICase12.java",
+          "path": "inputs/sources/xlsx-row-91/org/cryptoapi/bench/brokenhash/BrokenHashABICase12.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABICase12.java",
+          "sha256": "3005b5d04fbb4c77409bcc210c8b41a1cc0a36126026d9e0cdfea103383ca7e1",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-93",
+      "xlsx_row": 93,
+      "code_number": "1.4.1",
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "method": "PredictableCryptographicKeyABSCase1(), method1()",
+      "line_raw": "19, 52",
+      "files": [
+        {
+          "name": "PredictableCryptographicKeyABSCase1.java",
+          "truth_name": "PredictableCryptographicKeyABSCase1.java",
+          "path": "inputs/sources/xlsx-row-93/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABSCase1.java",
+          "sha256": "c4f27f96460a561e15a7652b4071b4065840af9e9abc17616d539e44b2b06610",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-95",
+      "xlsx_row": 95,
+      "code_number": "2.4.1",
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "method": "PredictablePBEPasswordABSCase1(), method1()",
+      "line_raw": "10, 37",
+      "files": [
+        {
+          "name": "PredictablePBEPasswordABSCase1.java",
+          "truth_name": "PredictablePBEPasswordABSCase1.java",
+          "path": "inputs/sources/xlsx-row-95/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABSCase1.java",
+          "sha256": "1c5d0f3eee8a683af744db380029fc69f44a4ad8f7fc19e60bce21389461f77c",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-96",
+      "xlsx_row": 96,
+      "code_number": "3.4.1",
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "method": "PredictableKeyStorePasswordABSCase1(), method1()",
+      "line_raw": "13, 33",
+      "files": [
+        {
+          "name": "PredictableKeyStorePasswordABSCase1.java",
+          "truth_name": "PredictableKeyStorePasswordABSCase1.java",
+          "path": "inputs/sources/xlsx-row-96/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABSCase1.java",
+          "sha256": "5b623ebb53a29efca20a5b62110ef9e7f30fdd5f8ebce4d75e8062333149d7d2",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-97",
+      "xlsx_row": 97,
+      "code_number": "7.4.1",
+      "label": true,
+      "vuln_type": "HTTP ",
+      "method": "HttpProtocolABSCase1(),  method1()",
+      "line_raw": "9,27",
+      "files": [
+        {
+          "name": "HttpProtocolABSCase1.java",
+          "truth_name": "HttpProtocolABSCase1.java",
+          "path": "inputs/sources/xlsx-row-97/org/cryptoapi/bench/http/HttpProtocolABSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/http/HttpProtocolABSCase1.java",
+          "sha256": "5f34300be72660de5714b3c1eff470dd4348d5f2e519786c29dc061c0c116c59",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-98",
+      "xlsx_row": 98,
+      "code_number": "9.4.1",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "PredictableSeedsABSCase1(), method1()",
+      "line_raw": "16,33",
+      "files": [
+        {
+          "name": "PredictableSeedsABSCase1.java",
+          "truth_name": "PredictableSeedsABSCase1.java",
+          "path": "inputs/sources/xlsx-row-98/org/cryptoapi/bench/predictableseeds/PredictableSeedsABSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABSCase1.java",
+          "sha256": "8e42aab9f2b09e5644cef1ec553f4fb5e57af1fd846081e1cb3c1086a852767b",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-99",
+      "xlsx_row": 99,
+      "code_number": "9.4.2",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "PredictableSeedsABSCase2(), method1()",
+      "line_raw": "14,29",
+      "files": [
+        {
+          "name": "PredictableSeedsABSCase2.java",
+          "truth_name": "PredictableSeedsABSCase2.java",
+          "path": "inputs/sources/xlsx-row-99/org/cryptoapi/bench/predictableseeds/PredictableSeedsABSCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABSCase2.java",
+          "sha256": "8f87c1579537a5a538ce2a785f0ef055eb4ed29b8bb0331fb4a7f02cea998074",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-100",
+      "xlsx_row": 100,
+      "code_number": "10.4.1",
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "method": "StaticSaltsABSCase1(), method1()",
+      "line_raw": "8,26",
+      "files": [
+        {
+          "name": "StaticSaltsABSCase1.java",
+          "truth_name": "StaticSaltsABSCase1.java",
+          "path": "inputs/sources/xlsx-row-100/org/cryptoapi/bench/staticsalts/StaticSaltsABSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticsalts/StaticSaltsABSCase1.java",
+          "sha256": "58396a4821e5a728be2a9a253f8679112b0c1299e3aad38a34422d24ed1b4ca2",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-101",
+      "xlsx_row": 101,
+      "code_number": "11.4.1",
+      "label": true,
+      "vuln_type": "Usage of ECB ",
+      "method": "EcbInSymmCryptoABSCase1(), method1()",
+      "line_raw": "13,34",
+      "files": [
+        {
+          "name": "EcbInSymmCryptoABSCase1.java",
+          "truth_name": "EcbInSymmCryptoABSCase1.java",
+          "path": "inputs/sources/xlsx-row-101/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABSCase1.java",
+          "sha256": "67c1aa8bf3af5b09e64193a50aca77cde89bc33e55ca22c75fe94c56f5795768",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-102",
+      "xlsx_row": 102,
+      "code_number": "12.4.1",
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "method": "StaticInitializationVectorABSCase1(), method1()",
+      "line_raw": "15, 32",
+      "files": [
+        {
+          "name": "StaticInitializationVectorABSCase1.java",
+          "truth_name": "StaticInitializationVectorABSCase1.java",
+          "path": "inputs/sources/xlsx-row-102/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABSCase1.java",
+          "sha256": "2c1962f6f266a251079854e751fd627d31eddc185601de9653f71cb9476c853f",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-103",
+      "xlsx_row": 103,
+      "code_number": "13.4.1",
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "method": "LessThan1000IterationPBEABSCase1(), method1()",
+      "line_raw": "15,37",
+      "files": [
+        {
+          "name": "LessThan1000IterationPBEABSCase1.java",
+          "truth_name": "LessThan1000IterationPBEABSCase1.java",
+          "path": "inputs/sources/xlsx-row-103/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABSCase1.java",
+          "sha256": "d7c672b801405d4f075635aec1a38ee9b628d6bea5563b09c666fa3f66ec96f8",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-104",
+      "xlsx_row": 104,
+      "code_number": "14.4.1",
+      "label": true,
+      "vuln_type": "DES used",
+      "method": "BrokenCryptoABSCase1(), encrypt()",
+      "line_raw": "11290",
+      "files": [
+        {
+          "name": "BrokenCryptoABSCase1.java",
+          "truth_name": "BrokenCryptoABSCase1.java",
+          "path": "inputs/sources/xlsx-row-104/org/cryptoapi/bench/brokencrypto/BrokenCryptoABSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABSCase1.java",
+          "sha256": "9d2fd25fd98af0be65780cd0c5318e7006ef87f18dc3f374e723a4388eef96ae",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-105",
+      "xlsx_row": 105,
+      "code_number": "14.4.2",
+      "label": true,
+      "vuln_type": "Blowfish used",
+      "method": "BrokenCryptoABSCase2(), encrypt()",
+      "line_raw": "11290",
+      "files": [
+        {
+          "name": "BrokenCryptoABSCase2.java",
+          "truth_name": "BrokenCryptoABSCase2.java",
+          "path": "inputs/sources/xlsx-row-105/org/cryptoapi/bench/brokencrypto/BrokenCryptoABSCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABSCase2.java",
+          "sha256": "8b49a2ea355f6100d6e66e04c976032ed19e6ff609f156d06bba29b7d49b2b0b",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-106",
+      "xlsx_row": 106,
+      "code_number": "14.4.3",
+      "label": true,
+      "vuln_type": "RC4 used",
+      "method": "BrokenCryptoABSCase3(), encrypt()",
+      "line_raw": "11290",
+      "files": [
+        {
+          "name": "BrokenCryptoABSCase3.java",
+          "truth_name": "BrokenCryptoABSCase3.java",
+          "path": "inputs/sources/xlsx-row-106/org/cryptoapi/bench/brokencrypto/BrokenCryptoABSCase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABSCase3.java",
+          "sha256": "66100cec99b6fc203f6356c5ca83ec11b8ffe204ee23d70284d1e29f9f8c9b01",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-107",
+      "xlsx_row": 107,
+      "code_number": "14.4.4",
+      "label": true,
+      "vuln_type": "RC2 used",
+      "method": "BrokenCryptoABSCase4(), encrypt()",
+      "line_raw": "11290",
+      "files": [
+        {
+          "name": "BrokenCryptoABSCase4.java",
+          "truth_name": "BrokenCryptoABSCase4.java",
+          "path": "inputs/sources/xlsx-row-107/org/cryptoapi/bench/brokencrypto/BrokenCryptoABSCase4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABSCase4.java",
+          "sha256": "9a9105253c38ef85deb16c946e7bca8b35d6825605db76c4a5ea27a91ca748ef",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-108",
+      "xlsx_row": 108,
+      "code_number": "14.4.5",
+      "label": true,
+      "vuln_type": "IDEA used",
+      "method": "BrokenCryptoABSCase5(), encrypt()",
+      "line_raw": "11290",
+      "files": [
+        {
+          "name": "BrokenCryptoABSCase5.java",
+          "truth_name": "BrokenCryptoABSCase5.java",
+          "path": "inputs/sources/xlsx-row-108/org/cryptoapi/bench/brokencrypto/BrokenCryptoABSCase5.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABSCase5.java",
+          "sha256": "5751b566cc71ac5280c7ae08dc2c7024c14067f6341e6653a75a00c0c2b31547",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-109",
+      "xlsx_row": 109,
+      "code_number": "16.4.1",
+      "label": true,
+      "vuln_type": "SHA1 used",
+      "method": "BrokenHashABSCase1(), encrypt()",
+      "line_raw": "14,30",
+      "files": [
+        {
+          "name": "BrokenHashABSCase1.java",
+          "truth_name": "BrokenHashABSCase1.java",
+          "path": "inputs/sources/xlsx-row-109/org/cryptoapi/bench/brokenhash/BrokenHashABSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABSCase1.java",
+          "sha256": "f0fc55d1ac924360d518e6d9b60b52ed1422f2ad75ee15354322929a787b9b74",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-110",
+      "xlsx_row": 110,
+      "code_number": "16.4.2",
+      "label": true,
+      "vuln_type": "MD5 used",
+      "method": "BrokenHashABSCase2(), encrypt()",
+      "line_raw": "14,30",
+      "files": [
+        {
+          "name": "BrokenHashABSCase2.java",
+          "truth_name": "BrokenHashABSCase2.java",
+          "path": "inputs/sources/xlsx-row-110/org/cryptoapi/bench/brokenhash/BrokenHashABSCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABSCase2.java",
+          "sha256": "cac4b7e0d0fd5034819ed3cb68f134e65da45aa467b67ba29a76846f5076ed45",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-111",
+      "xlsx_row": 111,
+      "code_number": "16.4.3",
+      "label": true,
+      "vuln_type": "MD4 used",
+      "method": "BrokenHashABSCase3(), encrypt()",
+      "line_raw": "14,30",
+      "files": [
+        {
+          "name": "BrokenHashABSCase3.java",
+          "truth_name": "BrokenHashABSCase3.java",
+          "path": "inputs/sources/xlsx-row-111/org/cryptoapi/bench/brokenhash/BrokenHashABSCase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABSCase3.java",
+          "sha256": "66d60cf957c4b281b49d58b6b08bd1de2842fb7c2fe08d1272b3cb2ffb834de0",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-112",
+      "xlsx_row": 112,
+      "code_number": "16.4.4",
+      "label": true,
+      "vuln_type": "MD2 used",
+      "method": "BrokenHashABSCase4(), encrypt()",
+      "line_raw": "14,30",
+      "files": [
+        {
+          "name": "BrokenHashABSCase4.java",
+          "truth_name": "BrokenHashABSCase4.java",
+          "path": "inputs/sources/xlsx-row-112/org/cryptoapi/bench/brokenhash/BrokenHashABSCase4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABSCase4.java",
+          "sha256": "a31a2151eeff1c4626dbe01a19ebac2868c18804a75c0db34fd4a130f52db5d3",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-114",
+      "xlsx_row": 114,
+      "code_number": "18.5.1",
+      "label": true,
+      "vuln_type": "Credential in String",
+      "method": "main()",
+      "line_raw": "11",
+      "files": [
+        {
+          "name": "CredentialInStringABHCase1.java",
+          "truth_name": "CredentialInStringABHCase1.java",
+          "path": "inputs/sources/xlsx-row-114/org/cryptoapi/bench/credentialinstring/CredentialInStringABHCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/credentialinstring/CredentialInStringABHCase1.java",
+          "sha256": "d37204284139f2b919f25c3f3a8c5e62cfb56de795c52bf77ce6ef0908c43246",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-115",
+      "xlsx_row": 115,
+      "code_number": "1.5.2",
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "method": "main()",
+      "line_raw": "13,18,22",
+      "files": [
+        {
+          "name": "PredictableCryptographicKeyABHCase2.java",
+          "truth_name": "PredictableCryptographicKeyABHCase2.java",
+          "path": "inputs/sources/xlsx-row-115/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABHCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABHCase2.java",
+          "sha256": "89a75f02a35733ff9be155c76cdf3b253dc6cac3ea793c1be9cfb5bd177215bc",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-116",
+      "xlsx_row": 116,
+      "code_number": "2.5.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "PredictablePBEPasswordABHCase1.java",
+          "truth_name": "PredictablePBEPasswordABHCase1.java",
+          "path": "inputs/sources/xlsx-row-116/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABHCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABHCase1.java",
+          "sha256": "abd7fbf3a8c907ee157e50cb4f618ad6c401df1c3bcf9f98424ea832a17886cd",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-117",
+      "xlsx_row": 117,
+      "code_number": "2.5.2",
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "method": "main()",
+      "line_raw": "16, 21, 30",
+      "files": [
+        {
+          "name": "PredictablePBEPasswordABHCase2.java",
+          "truth_name": "PredictablePBEPasswordABHCase2.java",
+          "path": "inputs/sources/xlsx-row-117/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABHCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABHCase2.java",
+          "sha256": "4aaaa04ab1b653ae7c17eed16adf8d000defcec454398668498a0021702c8d6f",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-118",
+      "xlsx_row": 118,
+      "code_number": "3.5.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "PredictableKeyStorePasswordABHCase1.java",
+          "truth_name": "PredictableKeyStorePasswordABHCase1.java",
+          "path": "inputs/sources/xlsx-row-118/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABHCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABHCase1.java",
+          "sha256": "0ac91d6963f9187fb4a5dc43be834477685fe30bd3576ca8e1f411aabd53b01a",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-119",
+      "xlsx_row": 119,
+      "code_number": "3.5.2",
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "method": "go()",
+      "line_raw": "22,27,31",
+      "files": [
+        {
+          "name": "PredictableKeyStorePasswordABHCase2.java",
+          "truth_name": "PredictableKeyStorePasswordABHCase2.java",
+          "path": "inputs/sources/xlsx-row-119/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABHCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABHCase2.java",
+          "sha256": "b211990918c70636c800beba4792afd937a623acfff47a4bc3e517c2f40ea17f",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-120",
+      "xlsx_row": 120,
+      "code_number": "9.5.1",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "main()",
+      "line_raw": "16,19",
+      "files": [
+        {
+          "name": "PredictableSeedsABHCase2.java",
+          "truth_name": "PredictableSeedsABHCase2.java",
+          "path": "inputs/sources/xlsx-row-120/org/cryptoapi/bench/predictableseeds/PredictableSeedsABHCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABHCase2.java",
+          "sha256": "45e9ad75f4dbcee62f9b50ce9ab55e923aec5b3dce8d8343b3965b652b5c5fda",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-121",
+      "xlsx_row": 121,
+      "code_number": "9.5.2",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "main()",
+      "line_raw": "20,22",
+      "files": [
+        {
+          "name": "PredictableSeedsABHCase4.java",
+          "truth_name": "PredictableSeedsABHCase4.java",
+          "path": "inputs/sources/xlsx-row-121/org/cryptoapi/bench/predictableseeds/PredictableSeedsABHCase4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABHCase4.java",
+          "sha256": "1705d53cbb7e4decda0275de39e6a46a7da4a60f74ba8c5bb723dff8321caa6e",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-122",
+      "xlsx_row": 122,
+      "code_number": "10.5.2",
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "method": "key2()",
+      "line_raw": "15, 20, 25",
+      "files": [
+        {
+          "name": "StaticSaltsABHCase1.java",
+          "truth_name": "StaticSaltsABHCase1.java",
+          "path": "inputs/sources/xlsx-row-122/org/cryptoapi/bench/staticsalts/StaticSaltsABHCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticsalts/StaticSaltsABHCase1.java",
+          "sha256": "0275aaead8a0a45b93c531acbb1d68969f7e61da697b5bf1c0d6e79eeea477f0",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-123",
+      "xlsx_row": 123,
+      "code_number": "12.5.1",
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "method": "go()",
+      "line_raw": "19, 21",
+      "files": [
+        {
+          "name": "StaticInitializationVectorABHCase1.java",
+          "truth_name": "StaticInitializationVectorABHCase1.java",
+          "path": "inputs/sources/xlsx-row-123/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABHCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABHCase1.java",
+          "sha256": "d4a305b230b2192fbfea84c9f5753ba1090da8e4f8c26bf7ee57f84824772605",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-124",
+      "xlsx_row": 124,
+      "code_number": "12.5.2",
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "method": "go()",
+      "line_raw": "22, 31",
+      "files": [
+        {
+          "name": "StaticInitializationVectorABHCase2.java",
+          "truth_name": "StaticInitializationVectorABHCase2.java",
+          "path": "inputs/sources/xlsx-row-124/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABHCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABHCase2.java",
+          "sha256": "adc0a54db98e91699685ce33c4961d491fbbfc1f4af60c9ce4dcd404fa1bdc1a",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-125",
+      "xlsx_row": 125,
+      "code_number": "13.5.1",
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "method": "key2()",
+      "line_raw": "20,27",
+      "files": [
+        {
+          "name": "LessThan1000IterationPBEABHCase1.java",
+          "truth_name": "LessThan1000IterationPBEABHCase1.java",
+          "path": "inputs/sources/xlsx-row-125/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABHCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABHCase1.java",
+          "sha256": "d82760b61ccbe686bbfeacf532326af95b548dace05d4c12d5db61f4939f82d1",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-127",
+      "xlsx_row": 127,
+      "code_number": "1.6.1",
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "method": "go()",
+      "line_raw": "8,27",
+      "files": [
+        {
+          "name": "PredictableCryptographicKeyABICase2.java",
+          "truth_name": "PredictableCryptographicKeyABICase2.java",
+          "path": "inputs/sources/xlsx-row-127/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABICase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABICase2.java",
+          "sha256": "ca5368ada3e5fec98821e3a276af98b6d40145e53554bd858456eeeb6222153a",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-128",
+      "xlsx_row": 128,
+      "code_number": "18.6.1",
+      "label": true,
+      "vuln_type": "Credential in String",
+      "method": "---",
+      "line_raw": "8",
+      "files": [
+        {
+          "name": "CredentialInStringABICase2.java",
+          "truth_name": "CredentialInStringABICase2.java",
+          "path": "inputs/sources/xlsx-row-128/org/cryptoapi/bench/credentialinstring/CredentialInStringABICase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/credentialinstring/CredentialInStringABICase2.java",
+          "sha256": "b248ff98a10d99e8caaa0378bfd25fc934e8b22e21f41f170f8415175bd3e973",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-129",
+      "xlsx_row": 129,
+      "code_number": "2.6.1",
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "method": "go()",
+      "line_raw": "10,33",
+      "files": [
+        {
+          "name": "PredictablePBEPasswordABICase2.java",
+          "truth_name": "PredictablePBEPasswordABICase2.java",
+          "path": "inputs/sources/xlsx-row-129/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABICase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABICase2.java",
+          "sha256": "667b6cc4a45a39c816c1ab3458d9658ea68e0148e12e0479e7c2b14386800694",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-130",
+      "xlsx_row": 130,
+      "code_number": "3.6.1",
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "method": "go()",
+      "line_raw": "14, 33",
+      "files": [
+        {
+          "name": "PredictableKeyStorePasswordABICase2.java",
+          "truth_name": "PredictableKeyStorePasswordABICase2.java",
+          "path": "inputs/sources/xlsx-row-130/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABICase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABICase2.java",
+          "sha256": "032f65ff45a781c5159827ef7e8db55334b409700aa6e2aeadee0a9bce286d9d",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-131",
+      "xlsx_row": 131,
+      "code_number": "7.6.1",
+      "label": true,
+      "vuln_type": "HTTP ",
+      "method": "go()",
+      "line_raw": "7,23",
+      "files": [
+        {
+          "name": "HttpProtocolABICase2.java",
+          "truth_name": "HttpProtocolABICase2.java",
+          "path": "inputs/sources/xlsx-row-131/org/cryptoapi/bench/http/HttpProtocolABICase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/http/HttpProtocolABICase2.java",
+          "sha256": "1af764eb336bba338dd5578987cf6a57ec306789502ede30c8ec0796275dfca2",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-132",
+      "xlsx_row": 132,
+      "code_number": "9.6.1",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "go()",
+      "line_raw": "7,25",
+      "files": [
+        {
+          "name": "PredictableSeedsABICase3.java",
+          "truth_name": "PredictableSeedsABICase3.java",
+          "path": "inputs/sources/xlsx-row-132/org/cryptoapi/bench/predictableseeds/PredictableSeedsABICase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABICase3.java",
+          "sha256": "6c95ac6ef1ed9b8973f4431ee7d70b2ff1bed0e7bcaa692dc3c45610b5499ebb",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-133",
+      "xlsx_row": 133,
+      "code_number": "9.6.2",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "go()",
+      "line_raw": "6,24",
+      "files": [
+        {
+          "name": "PredictableSeedsABICase4.java",
+          "truth_name": "PredictableSeedsABICase4.java",
+          "path": "inputs/sources/xlsx-row-133/org/cryptoapi/bench/predictableseeds/PredictableSeedsABICase4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABICase4.java",
+          "sha256": "184a5a20a15d103a901320040e3b43e0984fdd57a4c69f365abe9e8dc39fb604",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-134",
+      "xlsx_row": 134,
+      "code_number": "10.6.1",
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "method": "key2()",
+      "line_raw": "6,27",
+      "files": [
+        {
+          "name": "StaticSaltsABICase2.java",
+          "truth_name": "StaticSaltsABICase2.java",
+          "path": "inputs/sources/xlsx-row-134/org/cryptoapi/bench/staticsalts/StaticSaltsABICase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticsalts/StaticSaltsABICase2.java",
+          "sha256": "d1558853491da3fc5e50dd5ad865a9548a10cbb94d5e35eae235a64aacc2a601",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-135",
+      "xlsx_row": 135,
+      "code_number": "11.6.1",
+      "label": true,
+      "vuln_type": "Usage of ECB ",
+      "method": "go()",
+      "line_raw": "11,18",
+      "files": [
+        {
+          "name": "EcbInSymmCryptoABICase2.java",
+          "truth_name": "EcbInSymmCryptoABICase2.java",
+          "path": "inputs/sources/xlsx-row-135/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABICase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABICase2.java",
+          "sha256": "4b9d48611d002f919e90b198edb7be0b6cddcc03d2527894a989a8a13941efc7",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-136",
+      "xlsx_row": 136,
+      "code_number": "12.6.1",
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "method": "go()",
+      "line_raw": "13,17",
+      "files": [
+        {
+          "name": "StaticInitializationVectorABICase2.java",
+          "truth_name": "StaticInitializationVectorABICase2.java",
+          "path": "inputs/sources/xlsx-row-136/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABICase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABICase2.java",
+          "sha256": "358b7afe5fecd7db7e67fcc85bc83fdd9c3ca44ad8dab3a9925e6556d7113170",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-137",
+      "xlsx_row": 137,
+      "code_number": "13.6.1",
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "method": "key2()",
+      "line_raw": "43674",
+      "files": [
+        {
+          "name": "LessThan1000IterationPBEABICase2.java",
+          "truth_name": "LessThan1000IterationPBEABICase2.java",
+          "path": "inputs/sources/xlsx-row-137/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABICase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABICase2.java",
+          "sha256": "22e4ae34a9da1fe39e4ffd44181cc6e4d3556a606b2adf877c50a2ee3e26f123",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-138",
+      "xlsx_row": 138,
+      "code_number": "14.6.1",
+      "label": true,
+      "vuln_type": "DES used",
+      "method": "go()",
+      "line_raw": "11,15,20,22",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase5.java",
+          "truth_name": "BrokenCryptoABICase5.java",
+          "path": "inputs/sources/xlsx-row-138/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase5.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase5.java",
+          "sha256": "84167f6950397944ee42c9640f44769421797b326a8b39610e7ffd7782fcacaf",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-139",
+      "xlsx_row": 139,
+      "code_number": "14.6.2",
+      "label": true,
+      "vuln_type": "Blowfish used",
+      "method": "go()",
+      "line_raw": "11,15,17",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase6.java",
+          "truth_name": "BrokenCryptoABICase6.java",
+          "path": "inputs/sources/xlsx-row-139/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase6.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase6.java",
+          "sha256": "f80cc8f6e2dfe86e94f3b17f2caf6761166be5bea52a5ec8dab94cfcf800c4ef",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-140",
+      "xlsx_row": 140,
+      "code_number": "14.6.3",
+      "label": true,
+      "vuln_type": "RC4 used",
+      "method": "go()",
+      "line_raw": "11,15,17",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase7.java",
+          "truth_name": "BrokenCryptoABICase7.java",
+          "path": "inputs/sources/xlsx-row-140/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase7.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase7.java",
+          "sha256": "41ddc92a8b9b6b1398984a7999a5ca0f6af0325b4be60d704a710d9d78d8c54e",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-141",
+      "xlsx_row": 141,
+      "code_number": "14.6.4",
+      "label": true,
+      "vuln_type": "RC2 used",
+      "method": "go()",
+      "line_raw": "11,15,17",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase8.java",
+          "truth_name": "BrokenCryptoABICase8.java",
+          "path": "inputs/sources/xlsx-row-141/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase8.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase8.java",
+          "sha256": "7d9831ea7a1a27b61fb92b41d315f2144c87f95d08bfad0aa15d178c1e29c772",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-142",
+      "xlsx_row": 142,
+      "code_number": "14.6.5",
+      "label": true,
+      "vuln_type": "IDEA used",
+      "method": "go()",
+      "line_raw": "11,15,17",
+      "files": [
+        {
+          "name": "BrokenCryptoABICase10.java",
+          "truth_name": "BrokenCryptoABICase10.java",
+          "path": "inputs/sources/xlsx-row-142/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase10.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABICase10.java",
+          "sha256": "f051332a5b0a0240e1d1e03b90f190b63cb10a65798114f36eb531789a2487f8",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-143",
+      "xlsx_row": 143,
+      "code_number": "15.6.1",
+      "label": true,
+      "vuln_type": "RSA keysize 1024 bits",
+      "method": "main()",
+      "line_raw": "11, 42",
+      "files": [
+        {
+          "name": "InsecureAsymmetricCipherABICase2.java",
+          "truth_name": "InsecureAsymmetricCipherABICase2.java",
+          "path": "inputs/sources/xlsx-row-143/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABICase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABICase2.java",
+          "sha256": "88d4ac27acb400cdd84744e44dfd4b973ea9e9277a205457e3454ebd8ea4e538",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-144",
+      "xlsx_row": 144,
+      "code_number": "16.6.1",
+      "label": true,
+      "vuln_type": "SHA1 used",
+      "method": "go()",
+      "line_raw": "7,25",
+      "files": [
+        {
+          "name": "BrokenHashABICase5.java",
+          "truth_name": "BrokenHashABICase5.java",
+          "path": "inputs/sources/xlsx-row-144/org/cryptoapi/bench/brokenhash/BrokenHashABICase5.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABICase5.java",
+          "sha256": "a89dbc154207b9a76fe17f2afa34a47d10e12efe779de2730a34f51639928e2f",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-145",
+      "xlsx_row": 145,
+      "code_number": "16.6.2",
+      "label": true,
+      "vuln_type": "MD5 used",
+      "method": "go()",
+      "line_raw": "7,25",
+      "files": [
+        {
+          "name": "BrokenHashABICase6.java",
+          "truth_name": "BrokenHashABICase6.java",
+          "path": "inputs/sources/xlsx-row-145/org/cryptoapi/bench/brokenhash/BrokenHashABICase6.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABICase6.java",
+          "sha256": "50eb2ddb62d2b93e5949c59f5da4e5544bef26d46ab2fc051bf14276f5345c45",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-146",
+      "xlsx_row": 146,
+      "code_number": "16.6.3",
+      "label": true,
+      "vuln_type": "MD4 used",
+      "method": "go()",
+      "line_raw": "7,25",
+      "files": [
+        {
+          "name": "BrokenHashABICase7.java",
+          "truth_name": "BrokenHashABICase7.java",
+          "path": "inputs/sources/xlsx-row-146/org/cryptoapi/bench/brokenhash/BrokenHashABICase7.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABICase7.java",
+          "sha256": "1a2897e310a58862c7e3f495c598fd0ae5481da804d8a19061fd48af08a09d87",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-147",
+      "xlsx_row": 147,
+      "code_number": "16.6.4",
+      "label": true,
+      "vuln_type": "MD2 used",
+      "method": "go()",
+      "line_raw": "7,25",
+      "files": [
+        {
+          "name": "BrokenHashABICase8.java",
+          "truth_name": "BrokenHashABICase8.java",
+          "path": "inputs/sources/xlsx-row-147/org/cryptoapi/bench/brokenhash/BrokenHashABICase8.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABICase8.java",
+          "sha256": "a9ad038d2ff76a689253c6e548a5cdfd067574f440605b4313ea33ac2934afe7",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-149",
+      "xlsx_row": 149,
+      "code_number": "1.7.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "PredictableCryptographicKeyABPSCase1.java",
+          "truth_name": "PredictableCryptographicKeyABPSCase1.java",
+          "path": "inputs/sources/xlsx-row-149/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABPSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABPSCase1.java",
+          "sha256": "b7f21f86ff8fa0645f25a7f0fb838bc56bc7d2ce265cd3b09aa8a245fdc4c1a3",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-150",
+      "xlsx_row": 150,
+      "code_number": "2.7.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "PredictablePBEPasswordABPSCase1.java",
+          "truth_name": "PredictablePBEPasswordABPSCase1.java",
+          "path": "inputs/sources/xlsx-row-150/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABPSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABPSCase1.java",
+          "sha256": "018c144fde9305baca1d6b5767c808670586c9da89a91e4f48b78fd3ffcbd610",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-151",
+      "xlsx_row": 151,
+      "code_number": "3.7.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "PredictableKeyStorePasswordABPSCase1.java",
+          "truth_name": "PredictableKeyStorePasswordABPSCase1.java",
+          "path": "inputs/sources/xlsx-row-151/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABPSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABPSCase1.java",
+          "sha256": "a136c2dcc2f44bde8687073a9b155dfd38b7a2ca3dc1dad59e48ef89e20f4a01",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-152",
+      "xlsx_row": 152,
+      "code_number": "7.7.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "HttpProtocolABPSCase1.java",
+          "truth_name": "HttpProtocolABPSCase1.java",
+          "path": "inputs/sources/xlsx-row-152/org/cryptoapi/bench/http/HttpProtocolABPSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/http/HttpProtocolABPSCase1.java",
+          "sha256": "ff8390e96299ce6328fa6979adb7e2307cf280e1b51129b2da19c46f39325343",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-153",
+      "xlsx_row": 153,
+      "code_number": "9.7.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "PredictableSeedsABPSCase1.java",
+          "truth_name": "PredictableSeedsABPSCase1.java",
+          "path": "inputs/sources/xlsx-row-153/org/cryptoapi/bench/predictableseeds/PredictableSeedsABPSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABPSCase1.java",
+          "sha256": "eecb2424b967ffcaba60aba84726d70ebe28697b9b9b95fcf34ff4e02e894bae",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-154",
+      "xlsx_row": 154,
+      "code_number": "9.7.2",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "PredictableSeedsABPSCase2.java",
+          "truth_name": "PredictableSeedsABPSCase2.java",
+          "path": "inputs/sources/xlsx-row-154/org/cryptoapi/bench/predictableseeds/PredictableSeedsABPSCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABPSCase2.java",
+          "sha256": "4ad2e66acd0140f775752ff2b0d8668f44c7e189bce4435aacffd5c133b8bae3",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-155",
+      "xlsx_row": 155,
+      "code_number": "10.7.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "StaticSaltsABPSCase1.java",
+          "truth_name": "StaticSaltsABPSCase1.java",
+          "path": "inputs/sources/xlsx-row-155/org/cryptoapi/bench/staticsalts/StaticSaltsABPSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticsalts/StaticSaltsABPSCase1.java",
+          "sha256": "23c1ea187e66ea41fb1fe80eb6d31516b9b1c9a01450851d2319dc21710c4d38",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-156",
+      "xlsx_row": 156,
+      "code_number": "11.7.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "EcbInSymmCryptoABPSCase1.java",
+          "truth_name": "EcbInSymmCryptoABPSCase1.java",
+          "path": "inputs/sources/xlsx-row-156/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABPSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABPSCase1.java",
+          "sha256": "9844a080e77208bfd4e1d9ad0844d606a64882b0901345d40e52083f128a2a48",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-157",
+      "xlsx_row": 157,
+      "code_number": "12.7.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "StaticInitializationVectorABPSCase1.java",
+          "truth_name": "StaticInitializationVectorABPSCase1.java",
+          "path": "inputs/sources/xlsx-row-157/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABPSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABPSCase1.java",
+          "sha256": "a0978eb32ec16baea63b8ba1311fa0f291c8af826609a6491d58c8184d151484",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-158",
+      "xlsx_row": 158,
+      "code_number": "13.7.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "LessThan1000IterationPBEABPSCase1.java",
+          "truth_name": "LessThan1000IterationPBEABPSCase1.java",
+          "path": "inputs/sources/xlsx-row-158/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABPSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABPSCase1.java",
+          "sha256": "514556b8e8e5b7214c4647d3b2827dae9ecb66f8cb5ec30225ddc9f36346e5f7",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-159",
+      "xlsx_row": 159,
+      "code_number": "14.7.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "BrokenCryptoABPSCase1.java",
+          "truth_name": "BrokenCryptoABPSCase1.java",
+          "path": "inputs/sources/xlsx-row-159/org/cryptoapi/bench/brokencrypto/BrokenCryptoABPSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABPSCase1.java",
+          "sha256": "550d6d6eb2ae682f18c873d87e8893535ae8a0533d303a3e4cdc35934ada2d34",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-160",
+      "xlsx_row": 160,
+      "code_number": "14.7.2",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "BrokenCryptoABPSCase2.java",
+          "truth_name": "BrokenCryptoABPSCase2.java",
+          "path": "inputs/sources/xlsx-row-160/org/cryptoapi/bench/brokencrypto/BrokenCryptoABPSCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABPSCase2.java",
+          "sha256": "eadb92f5e008f5177607a58ea8ba0dbf0fc62db0a42b1ab71ca30bb867c20211",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-161",
+      "xlsx_row": 161,
+      "code_number": "14.7.3",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "BrokenCryptoABPSCase3.java",
+          "truth_name": "BrokenCryptoABPSCase3.java",
+          "path": "inputs/sources/xlsx-row-161/org/cryptoapi/bench/brokencrypto/BrokenCryptoABPSCase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABPSCase3.java",
+          "sha256": "8456e2e9f13e3ddded881b30d41725a73914aee70b572ef415f7e147620b996a",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-162",
+      "xlsx_row": 162,
+      "code_number": "14.7.4",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "BrokenCryptoABPSCase4.java",
+          "truth_name": "BrokenCryptoABPSCase4.java",
+          "path": "inputs/sources/xlsx-row-162/org/cryptoapi/bench/brokencrypto/BrokenCryptoABPSCase4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABPSCase4.java",
+          "sha256": "322b7b06e1d947bdcbc4eca7c26813490ccb1e77ab383d200a626cb07bc86435",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-163",
+      "xlsx_row": 163,
+      "code_number": "14.7.5",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "BrokenCryptoABPSCase5.java",
+          "truth_name": "BrokenCryptoABPSCase5.java",
+          "path": "inputs/sources/xlsx-row-163/org/cryptoapi/bench/brokencrypto/BrokenCryptoABPSCase5.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABPSCase5.java",
+          "sha256": "f80120911dc3fd9a2b0b279b321ddb793d7fb5f444deb0820e10c4388dc37460",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-164",
+      "xlsx_row": 164,
+      "code_number": "15.7.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "InsecureAsymmetricCipherABPSCase1.java",
+          "truth_name": "InsecureAsymmetricCipherABPSCase1.java",
+          "path": "inputs/sources/xlsx-row-164/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABPSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABPSCase1.java",
+          "sha256": "93d5f60117f132361248651d11c65cb3e8bc0fb7e7628404f984ec29d54e5068",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-165",
+      "xlsx_row": 165,
+      "code_number": "16.7.1",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "BrokenHashABPSCase1.java",
+          "truth_name": "BrokenHashABPSCase1.java",
+          "path": "inputs/sources/xlsx-row-165/org/cryptoapi/bench/brokenhash/BrokenHashABPSCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABPSCase1.java",
+          "sha256": "bd0d80dd733dc02e91f417c8d67c1e5545ffc33a2e85f5cc24a2bbe565823230",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-166",
+      "xlsx_row": 166,
+      "code_number": "16.7.2",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "BrokenHashABPSCase2.java",
+          "truth_name": "BrokenHashABPSCase2.java",
+          "path": "inputs/sources/xlsx-row-166/org/cryptoapi/bench/brokenhash/BrokenHashABPSCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABPSCase2.java",
+          "sha256": "5f2ed8fb05e38a96ee4f17291c6eaa6a30b45fb3e6b53633b67bb4b7fc05d295",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-167",
+      "xlsx_row": 167,
+      "code_number": "16.7.3",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "BrokenHashABPSCase3.java",
+          "truth_name": "BrokenHashABPSCase3.java",
+          "path": "inputs/sources/xlsx-row-167/org/cryptoapi/bench/brokenhash/BrokenHashABPSCase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABPSCase3.java",
+          "sha256": "1ee63333f40bfcf27be9179b2d581758a03f0d3419c9ce3852584490f1a1e477",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-168",
+      "xlsx_row": 168,
+      "code_number": "16.7.4",
+      "label": false,
+      "vuln_type": "---",
+      "method": "---",
+      "line_raw": "---",
+      "files": [
+        {
+          "name": "BrokenHashABPSCase4.java",
+          "truth_name": "BrokenHashABPSCase4.java",
+          "path": "inputs/sources/xlsx-row-168/org/cryptoapi/bench/brokenhash/BrokenHashABPSCase4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABPSCase4.java",
+          "sha256": "cd40bb172a587dcfaab091b94f0613534316ba2a2fc37a09b27a9c39d8c74622",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-170",
+      "xlsx_row": 170,
+      "code_number": "1.8.1",
+      "label": true,
+      "vuln_type": "Static/Contant Key",
+      "method": "main(), go()",
+      "line_raw": "43626",
+      "files": [
+        {
+          "name": "PredictableCryptographicKeyABMCCase1.java",
+          "truth_name": "PredictableCryptographicKeyABMCCase1.java",
+          "path": "inputs/sources/xlsx-row-170/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABMCCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABMCCase1.java",
+          "sha256": "bf8dd25b7bd5b9634fa30c6b25b0a079286ce61f5774fbdbea255b51663536bd",
+          "alias": false
+        },
+        {
+          "name": "PredictableCryptographicKeyABMC1.java",
+          "truth_name": "PredictableCryptographicKeyABMC1.java",
+          "path": "inputs/sources/xlsx-row-170/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABMC1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablecryptographickey/PredictableCryptographicKeyABMC1.java",
+          "sha256": "dc8de5892d27aff428479be43fef1add7f4e17bc971aad5751ffc15f3c33f2ed",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-171",
+      "xlsx_row": 171,
+      "code_number": "18.8.1",
+      "label": true,
+      "vuln_type": "Credential in String",
+      "method": "main()",
+      "line_raw": "6",
+      "files": [
+        {
+          "name": "CredentialInStringABMCCase1.java",
+          "truth_name": "CredentialInStringABMCCase1.java",
+          "path": "inputs/sources/xlsx-row-171/org/cryptoapi/bench/credentialinstring/CredentialInStringABMCCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/credentialinstring/CredentialInStringABMCCase1.java",
+          "sha256": "666a4917b70dfd6a0749e4aa52d373da8e18e6b220ec39301d80b648fbb46b5b",
+          "alias": false
+        },
+        {
+          "name": "CredentialInStringABMC1.java",
+          "truth_name": "CredentialInStringABMC1.java",
+          "path": "inputs/sources/xlsx-row-171/org/cryptoapi/bench/credentialinstring/CredentialInStringABMC1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/credentialinstring/CredentialInStringABMC1.java",
+          "sha256": "c6ac3fa43854e6abe808f90558da2eed4153f66032b37252b4e46dd40372adf4",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-172",
+      "xlsx_row": 172,
+      "code_number": "2.8.1",
+      "label": true,
+      "vuln_type": "Static/Contant password",
+      "method": "main(), go()",
+      "line_raw": "43632",
+      "files": [
+        {
+          "name": "PredictablePBEPasswordABMCCase1.java",
+          "truth_name": "PredictablePBEPasswordABMCCase1.java",
+          "path": "inputs/sources/xlsx-row-172/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABMCCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABMCCase1.java",
+          "sha256": "851d0bf44b2d77f9a223f9ebdcc3b32bcfb5d4d5e8b8b0c421e19aae3cd19c81",
+          "alias": false
+        },
+        {
+          "name": "PredictablePBEPasswordABMC1.java",
+          "truth_name": "PredictablePBEPasswordABMC1.java",
+          "path": "inputs/sources/xlsx-row-172/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABMC1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablepbepassword/PredictablePBEPasswordABMC1.java",
+          "sha256": "9ef8463ed82be45df6da1b4a22b511e13a154727330568f53e34789bdf8b8f49",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-173",
+      "xlsx_row": 173,
+      "code_number": "3.8.1",
+      "label": true,
+      "vuln_type": "Static/Constant Password",
+      "method": "main(), go()",
+      "line_raw": "43786",
+      "files": [
+        {
+          "name": "PredictableKeyStorePasswordABMCCase1.java",
+          "truth_name": "PredictableKeyStorePasswordABMCCase1.java",
+          "path": "inputs/sources/xlsx-row-173/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABMCCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABMCCase1.java",
+          "sha256": "adb4240eb7ba29cd0768b074407fcab1e241b8de5cf6e229e64258b6c77b2dc3",
+          "alias": false
+        },
+        {
+          "name": "PredictableKeyStorePasswordABMC1.java",
+          "truth_name": "PredictableKeyStorePasswordABMC1.java",
+          "path": "inputs/sources/xlsx-row-173/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABMC1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictablekeystorepassword/PredictableKeyStorePasswordABMC1.java",
+          "sha256": "997fd15bf38f4a0dd6e1f5127f6762e82c96b80c8fcd4d5c580e86bae604a0c8",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-174",
+      "xlsx_row": 174,
+      "code_number": "7.8.1",
+      "label": true,
+      "vuln_type": "HTTP ",
+      "method": "main(), go()",
+      "line_raw": "43685",
+      "files": [
+        {
+          "name": "HttpProtocolABMCCase1.java",
+          "truth_name": "HttpProtocolABMCCase1.java",
+          "path": "inputs/sources/xlsx-row-174/org/cryptoapi/bench/http/HttpProtocolABMCCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/http/HttpProtocolABMCCase1.java",
+          "sha256": "f89a20864f00330307092b2905ae936c7c41a24f0b7652630584793e0f9e691b",
+          "alias": false
+        },
+        {
+          "name": "HttpProtocolABMC1.java",
+          "truth_name": "HttpProtocolABMC1.java",
+          "path": "inputs/sources/xlsx-row-174/org/cryptoapi/bench/http/HttpProtocolABMC1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/http/HttpProtocolABMC1.java",
+          "sha256": "43c13d956564ceb6b7af6ce90bc7d5b694d234259cbc861dcb288d0664a4e5f0",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-175",
+      "xlsx_row": 175,
+      "code_number": "9.8.1",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "main(), go()",
+      "line_raw": "7,8",
+      "files": [
+        {
+          "name": "PredictableSeedsABMCCase1.java",
+          "truth_name": "PredictableSeedsABMCCase1.java",
+          "path": "inputs/sources/xlsx-row-175/org/cryptoapi/bench/predictableseeds/PredictableSeedsABMCCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABMCCase1.java",
+          "sha256": "04bd2be9205979c2a9e8e0dd270bd804da9bac8c9d7d57771d94aa5577131705",
+          "alias": false
+        },
+        {
+          "name": "PredictableSeedsABMC1.java",
+          "truth_name": "PredictableSeedsABMC1.java",
+          "path": "inputs/sources/xlsx-row-175/org/cryptoapi/bench/predictableseeds/PredictableSeedsABMC1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABMC1.java",
+          "sha256": "4ac8b8c2ad2366eb6730cf4c1c176c9826d3d5d61f966651a3774f594fc957c6",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-176",
+      "xlsx_row": 176,
+      "code_number": "9.8.2",
+      "label": true,
+      "vuln_type": "Constant Seed",
+      "method": "main(), go()",
+      "line_raw": "6,7",
+      "files": [
+        {
+          "name": "PredictableSeedsABMCCase2.java",
+          "truth_name": "PredictableSeedsABPMCase2.java",
+          "path": "inputs/sources/xlsx-row-176/org/cryptoapi/bench/predictableseeds/PredictableSeedsABMCCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABMCCase2.java",
+          "sha256": "b6ec1f3342ffab2e1a8afe53a91fc7965b47ebdc7668a7c92f6e009483e8a02d",
+          "alias": true
+        },
+        {
+          "name": "PredictableSeedsABMC2.java",
+          "truth_name": "PredictableSeedsABPM2.java",
+          "path": "inputs/sources/xlsx-row-176/org/cryptoapi/bench/predictableseeds/PredictableSeedsABMC2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/predictableseeds/PredictableSeedsABMC2.java",
+          "sha256": "326175da2f341011e263a19d159289e72bfac4f63e17ef5e95fcb3dbab2d518f",
+          "alias": true
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-177",
+      "xlsx_row": 177,
+      "code_number": "10.8.1",
+      "label": true,
+      "vuln_type": "Static/Constant Salt",
+      "method": "main(), go()",
+      "line_raw": "43624",
+      "files": [
+        {
+          "name": "StaticSaltsABMCCase1.java",
+          "truth_name": "StaticSaltsABMCCase1.java",
+          "path": "inputs/sources/xlsx-row-177/org/cryptoapi/bench/staticsalts/StaticSaltsABMCCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticsalts/StaticSaltsABMCCase1.java",
+          "sha256": "ca5b190d52ecfad6f96cf1cd31e110c0f1042da568a023b6ee837ec619553101",
+          "alias": false
+        },
+        {
+          "name": "StaticSaltsABMC1.java",
+          "truth_name": "StaticSaltsABMC1.java",
+          "path": "inputs/sources/xlsx-row-177/org/cryptoapi/bench/staticsalts/StaticSaltsABMC1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticsalts/StaticSaltsABMC1.java",
+          "sha256": "c969d453c21ddb031aba4b230e64c0c2915652e4f327a7df27056ff4aeff7265",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-178",
+      "xlsx_row": 178,
+      "code_number": "11.8.1",
+      "label": true,
+      "vuln_type": "Usage of ECB ",
+      "method": "main(), go()",
+      "line_raw": "10,16",
+      "files": [
+        {
+          "name": "EcbInSymmCryptoABMCCase1.java",
+          "truth_name": "EcbInSymmCryptoABMCCase1",
+          "path": "inputs/sources/xlsx-row-178/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABMCCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABMCCase1.java",
+          "sha256": "41636c02a0dc2ddde9dc0fa44b6a490699c8b5af93f1f2c477013f339769e7ee",
+          "alias": false
+        },
+        {
+          "name": "EcbInSymmCryptoABMC1.java",
+          "truth_name": "EcbInSymmCryptoABMC1",
+          "path": "inputs/sources/xlsx-row-178/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABMC1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/ecbcrypto/EcbInSymmCryptoABMC1.java",
+          "sha256": "9418d5e758329e4cea17bf1e9c542738efa0ac5177ea7a8d5b87201ae5ef71f0",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-179",
+      "xlsx_row": 179,
+      "code_number": "12.8.1",
+      "label": true,
+      "vuln_type": "Static/Constant IV",
+      "method": "main(), go()",
+      "line_raw": "12,14",
+      "files": [
+        {
+          "name": "StaticInitializationVectorABMCCase1.java",
+          "truth_name": "StaticInitializationVectorABMCCase1.java",
+          "path": "inputs/sources/xlsx-row-179/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMCCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMCCase1.java",
+          "sha256": "9453968cdfaf55176f6e86369ba1b8a6f5b7b5d55c3d003febd0425043e4d324",
+          "alias": false
+        },
+        {
+          "name": "StaticInitializationVectorABMC1.java",
+          "truth_name": "StaticInitializationVectorABMC1.java",
+          "path": "inputs/sources/xlsx-row-179/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMC1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/staticinitializationvector/StaticInitializationVectorABMC1.java",
+          "sha256": "c2ff1a04e3e877e78a78f8cf5a636f14063e4277ae9f503cdcf37a2f627f5f6b",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-180",
+      "xlsx_row": 180,
+      "code_number": "13.8.1",
+      "label": true,
+      "vuln_type": "PBE iteration < 1000",
+      "method": "main(), go()",
+      "line_raw": "43629",
+      "files": [
+        {
+          "name": "LessThan1000IterationPBEABMCCase1.java",
+          "truth_name": "LessThan1000IterationPBEABMCCase1.java",
+          "path": "inputs/sources/xlsx-row-180/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABMCCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABMCCase1.java",
+          "sha256": "d60d75cf8c1cc06e1cc0cb8a2c84c0ae87e503399e312bba59c4a40b071c14a2",
+          "alias": false
+        },
+        {
+          "name": "LessThan1000IterationPBEABMC1.java",
+          "truth_name": "LessThan1000IterationPBEABMC1.java",
+          "path": "inputs/sources/xlsx-row-180/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABMC1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/pbeiteration/LessThan1000IterationPBEABMC1.java",
+          "sha256": "0648450aadfcb1670c9e92a2e5819bbf5a2f62a211e4c610d4791d01b50d95c8",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-181",
+      "xlsx_row": 181,
+      "code_number": "14.8.1",
+      "label": true,
+      "vuln_type": "DES used",
+      "method": "main(), go()",
+      "line_raw": "(10, 11), (12, 14)",
+      "files": [
+        {
+          "name": "BrokenCryptoABMCCase1.java",
+          "truth_name": "BrokenCryptoABMCCase1.java",
+          "path": "inputs/sources/xlsx-row-181/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase1.java",
+          "sha256": "a8d18902de765dc72d88acff9a20d32564d1aec254f9d41ed686930067018152",
+          "alias": false
+        },
+        {
+          "name": "BrokenCryptoABMC1.java",
+          "truth_name": "BrokenCryptoABMC1.java",
+          "path": "inputs/sources/xlsx-row-181/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC1.java",
+          "sha256": "aa82e43268a08d2e5b9894515be4007ca21262428c019e4944e34cb856408548",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-182",
+      "xlsx_row": 182,
+      "code_number": "14.8.2",
+      "label": true,
+      "vuln_type": "Blowfish used",
+      "method": "main(), go()",
+      "line_raw": "10, (12, 14)",
+      "files": [
+        {
+          "name": "BrokenCryptoABMCCase2.java",
+          "truth_name": "BrokenCryptoABMCCase2.java",
+          "path": "inputs/sources/xlsx-row-182/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase2.java",
+          "sha256": "dfdedc0aa791413a4437b47e7ea14be3023f9185f40d996f7c4b2dddd919f8a4",
+          "alias": false
+        },
+        {
+          "name": "BrokenCryptoABMC2.java",
+          "truth_name": "BrokenCryptoABMC2.java",
+          "path": "inputs/sources/xlsx-row-182/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC2.java",
+          "sha256": "3d1903147fb5e0fab7c07eff897e0d364ba45227a964166870fc586ae4dbb763",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-183",
+      "xlsx_row": 183,
+      "code_number": "14.8.3",
+      "label": true,
+      "vuln_type": "RC4 used",
+      "method": "main(), go()",
+      "line_raw": "11, (12, 14)",
+      "files": [
+        {
+          "name": "BrokenCryptoABMCCase3.java",
+          "truth_name": "BrokenCryptoABMCCase3.java",
+          "path": "inputs/sources/xlsx-row-183/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase3.java",
+          "sha256": "cebb263d4d2734d6be3796aeab5e100544e6ccba99cbfe48aada26c22869fece",
+          "alias": false
+        },
+        {
+          "name": "BrokenCryptoABMC3.java",
+          "truth_name": "BrokenCryptoABMC3.java",
+          "path": "inputs/sources/xlsx-row-183/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC3.java",
+          "sha256": "99cdf1b093314af82318dc11433633f901499b37dc77824a31b5f60fdd801aed",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-184",
+      "xlsx_row": 184,
+      "code_number": "14.8.4",
+      "label": true,
+      "vuln_type": "RC2 used",
+      "method": "main(), go()",
+      "line_raw": "13, (12, 14)",
+      "files": [
+        {
+          "name": "BrokenCryptoABMCCase4.java",
+          "truth_name": "BrokenCryptoABMCCase4.java",
+          "path": "inputs/sources/xlsx-row-184/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase4.java",
+          "sha256": "4c08485e9893b88228c91930787dce0a0d215d84e921fa958b655e34fb32d480",
+          "alias": false
+        },
+        {
+          "name": "BrokenCryptoABMC4.java",
+          "truth_name": "BrokenCryptoABMC4.java",
+          "path": "inputs/sources/xlsx-row-184/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC4.java",
+          "sha256": "94cdf7a3a3611a60b2f329ab502e43feec39ab4128ef08ef4f7ccce3e6685412",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-185",
+      "xlsx_row": 185,
+      "code_number": "14.8.5",
+      "label": true,
+      "vuln_type": "IDEA used",
+      "method": "main(), go()",
+      "line_raw": "13, (12, 14)",
+      "files": [
+        {
+          "name": "BrokenCryptoABMCCase5.java",
+          "truth_name": "BrokenCryptoABMCCase5.java",
+          "path": "inputs/sources/xlsx-row-185/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase5.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMCCase5.java",
+          "sha256": "bb5994004f93228069a9188c0039feed55c81b58aa03b6389792669665ef69d4",
+          "alias": false
+        },
+        {
+          "name": "BrokenCryptoABMC5.java",
+          "truth_name": "BrokenCryptoABMC5.java",
+          "path": "inputs/sources/xlsx-row-185/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC5.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokencrypto/BrokenCryptoABMC5.java",
+          "sha256": "befb2cc97246af7cf9cf85a75194aa16f4d62baf8fc792fc36a93cc2324fe657",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-186",
+      "xlsx_row": 186,
+      "code_number": "15.8.1",
+      "label": true,
+      "vuln_type": "RSA keysize 1024 bits",
+      "method": "main(), go()",
+      "line_raw": "16, 14",
+      "files": [
+        {
+          "name": "InsecureAsymmetricCipherABMCCase1.java",
+          "truth_name": "InsecureAsymmetricCipherABMCCase1.java",
+          "path": "inputs/sources/xlsx-row-186/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABMCCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABMCCase1.java",
+          "sha256": "7372c4af2815a575b512af3a3dfa0de2948f5dc488eb993d428df4894875d54e",
+          "alias": false
+        },
+        {
+          "name": "InsecureAsymmetricCipherABMC1.java",
+          "truth_name": "InsecureAsymmetricCipherABMC1.java",
+          "path": "inputs/sources/xlsx-row-186/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABMC1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/insecureasymmetriccrypto/InsecureAsymmetricCipherABMC1.java",
+          "sha256": "b30cb6d72247cbff4b1e1627465b34604ad2e2cbe33c3ca5eaf700c830b65b3c",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-187",
+      "xlsx_row": 187,
+      "code_number": "16.8.1",
+      "label": true,
+      "vuln_type": "SHA1 used",
+      "method": "main(), go()",
+      "line_raw": "43717",
+      "files": [
+        {
+          "name": "BrokenHashABMCCase1.java",
+          "truth_name": "BrokenHashABMCCase1.java",
+          "path": "inputs/sources/xlsx-row-187/org/cryptoapi/bench/brokenhash/BrokenHashABMCCase1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABMCCase1.java",
+          "sha256": "b0746ef7588e818905d7f97781ec60d2c3ff82ef93a83bfb592d41edc76ea200",
+          "alias": false
+        },
+        {
+          "name": "BrokenHashABMC1.java",
+          "truth_name": "BrokenHashABMC1.java",
+          "path": "inputs/sources/xlsx-row-187/org/cryptoapi/bench/brokenhash/BrokenHashABMC1.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABMC1.java",
+          "sha256": "bdcb11a8f304a74b416a6e23225cd7e8b82cbe04c9009d1960f245ff434acf19",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-188",
+      "xlsx_row": 188,
+      "code_number": "16.8.2",
+      "label": true,
+      "vuln_type": "MD5 used",
+      "method": "main(), go()",
+      "line_raw": "43718",
+      "files": [
+        {
+          "name": "BrokenHashABMCCase2.java",
+          "truth_name": "BrokenHashABMCCase2.java",
+          "path": "inputs/sources/xlsx-row-188/org/cryptoapi/bench/brokenhash/BrokenHashABMCCase2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABMCCase2.java",
+          "sha256": "17fe78a7c233664b23ae91f62d10cdd613cffe9a7da575ea5a150ef971103f98",
+          "alias": false
+        },
+        {
+          "name": "BrokenHashABMC2.java",
+          "truth_name": "BrokenHashABMC2.java",
+          "path": "inputs/sources/xlsx-row-188/org/cryptoapi/bench/brokenhash/BrokenHashABMC2.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABMC2.java",
+          "sha256": "7bc8befe9e5df23f4db70bae22e50c0b53372a622a02435022d0f039d787a4b0",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-189",
+      "xlsx_row": 189,
+      "code_number": "16.8.3",
+      "label": true,
+      "vuln_type": "MD4 used",
+      "method": "main(), go()",
+      "line_raw": "43719",
+      "files": [
+        {
+          "name": "BrokenHashABMCCase3.java",
+          "truth_name": "BrokenHashABMCCase3.java",
+          "path": "inputs/sources/xlsx-row-189/org/cryptoapi/bench/brokenhash/BrokenHashABMCCase3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABMCCase3.java",
+          "sha256": "57f6ed857626008b53f5d2b4f051f04518c1a5e05baf2667062ee6f2a9d68cf0",
+          "alias": false
+        },
+        {
+          "name": "BrokenHashABMC3.java",
+          "truth_name": "BrokenHashABMC3.java",
+          "path": "inputs/sources/xlsx-row-189/org/cryptoapi/bench/brokenhash/BrokenHashABMC3.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABMC3.java",
+          "sha256": "9ad50ee80782fdf655e503f18bf27b49c8edbceaf9e4c5cc0f7cbd290367ffb1",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    },
+    {
+      "case_id": "xlsx-row-190",
+      "xlsx_row": 190,
+      "code_number": "16.8.4",
+      "label": true,
+      "vuln_type": "MD2 used",
+      "method": "main(), go()",
+      "line_raw": "43720",
+      "files": [
+        {
+          "name": "BrokenHashABMCCase4.java",
+          "truth_name": "BrokenHashABMCCase4.java",
+          "path": "inputs/sources/xlsx-row-190/org/cryptoapi/bench/brokenhash/BrokenHashABMCCase4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABMCCase4.java",
+          "sha256": "e8372f5b00a02e8bd110436bf64e1386800331793583219ef692e5f815b04407",
+          "alias": false
+        },
+        {
+          "name": "BrokenHashABMC4.java",
+          "truth_name": "BrokenHashABMC4.java",
+          "path": "inputs/sources/xlsx-row-190/org/cryptoapi/bench/brokenhash/BrokenHashABMC4.java",
+          "benchmark_path": "benchmarks/CryptoAPI-Bench/src/main/java/org/cryptoapi/bench/brokenhash/BrokenHashABMC4.java",
+          "sha256": "4d0013cadfacc5532fd6eef33a9ef33c91ad3cbef29c024f91c820f0deff08b6",
+          "alias": false
+        }
+      ],
+      "missing_files": [],
+      "source_status": "complete"
+    }
+  ]
+}

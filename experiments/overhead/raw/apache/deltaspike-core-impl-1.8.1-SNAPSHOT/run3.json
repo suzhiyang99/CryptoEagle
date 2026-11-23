@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"JAVA",
+  "input":"benchmarks/ApacheCryptoAPI-Bench/decompiled/deltaspike-core-impl-1.8.1-SNAPSHOT",
+  "source":{"files":87,"lines":5535,"bytes":220895},
+  "graph":{"standardNodes":28181,"standardEdges":174187,"cryptoAwareNodes":28188,"cryptoAwareEdges":174226,"addedNodes":7,"addedEdges":39,"serializedBytes":1015091},
+  "memory":{"peakHeapBytes":312446776},
+  "findings":{"core":3,"extended":0,"byRule":{"C1":2,"C4":1}},
+  "operations":{"HASH_FUNCTION":1,"SYMMETRIC_ENCRYPTION":6},
+  "selectionOperations":{"HASH_FUNCTION":1,"SYMMETRIC_ENCRYPTION":6},
+  "selectionOperationResolutions":{"COMPLETE":7},
+  "timingsMillis":{"adapterConfigLoad":72.826,"cpgFrontend":1573.986,"overlays":248.320,"dataflow":269.665,"enrichmentWall":403.077,"coreRules":35.473,"extendedRules":0.000,"totalWall":3015.177},
+  "enrichment":{"callsScanned":5415,"callsMatched":9,"localOperationsMatched":0,"operationGroups":7,"sensitiveBindings":4,"resolvedSourceNodes":20,"adapterMillis":52.700,"provenanceMillis":276.863,"provenanceFlowQueries":12,"provenanceMultiSinkQueries":11,"lifecycleMillis":4.229,"contextAnalysisMillis":44.056,"materializationMillis":5.370,"runMillis":403.067},
+  "enrichmentOverheadPercent":19.268
+}

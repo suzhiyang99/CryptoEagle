@@ -1,0 +1,66 @@
+package org.apache.openejb.math.stat.descriptive.rank;
+
+import java.io.Serializable;
+import org.apache.openejb.math.stat.descriptive.AbstractStorelessUnivariateStatistic;
+
+public class Max extends AbstractStorelessUnivariateStatistic implements Serializable {
+   private static final long serialVersionUID = -1233383832225844641L;
+   private long n;
+   private double value;
+
+   public Max() {
+      this.n = 0L;
+      this.value = Double.NaN;
+   }
+
+   public Max(Max original) {
+      copy(original, this);
+   }
+
+   public void increment(double d) {
+      if (d > this.value || Double.isNaN(this.value)) {
+         this.value = d;
+      }
+
+      ++this.n;
+   }
+
+   public void clear() {
+      this.value = Double.NaN;
+      this.n = 0L;
+   }
+
+   public double getResult() {
+      return this.value;
+   }
+
+   public long getN() {
+      return this.n;
+   }
+
+   public double evaluate(double[] values, int begin, int length) {
+      double max = Double.NaN;
+      if (this.test(values, begin, length)) {
+         max = values[begin];
+
+         for(int i = begin; i < begin + length; ++i) {
+            if (!Double.isNaN(values[i])) {
+               max = max > values[i] ? max : values[i];
+            }
+         }
+      }
+
+      return max;
+   }
+
+   public Max copy() {
+      Max result = new Max();
+      copy(this, result);
+      return result;
+   }
+
+   public static void copy(Max source, Max dest) {
+      dest.n = source.n;
+      dest.value = source.value;
+   }
+}

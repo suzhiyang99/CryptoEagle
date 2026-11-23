@@ -1,0 +1,17 @@
+package org.apache.openejb.cdi.logging;
+
+import java.util.Locale;
+import java.util.ResourceBundle;
+import java.util.logging.Logger;
+import org.apache.openejb.log.logger.Log4jLogger;
+import org.apache.webbeans.logger.WebBeansLoggerFactory;
+
+public class Log4jLoggerFactory implements WebBeansLoggerFactory {
+   public Logger getLogger(Class<?> clazz, Locale desiredLocale) {
+      return new Log4jLogger(clazz.getName(), ResourceBundle.getBundle("openwebbeans/Messages", desiredLocale).toString());
+   }
+
+   public Logger getLogger(Class<?> clazz) {
+      return new Log4jLogger(clazz.getName(), "openwebbeans/Messages");
+   }
+}

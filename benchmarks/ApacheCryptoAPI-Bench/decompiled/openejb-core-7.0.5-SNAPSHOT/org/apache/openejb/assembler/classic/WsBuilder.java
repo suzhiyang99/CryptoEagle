@@ -1,0 +1,84 @@
+package org.apache.openejb.assembler.classic;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import javax.xml.namespace.QName;
+import org.apache.openejb.Injection;
+import org.apache.openejb.OpenEJBException;
+import org.apache.openejb.core.webservices.HandlerChainData;
+import org.apache.openejb.core.webservices.HandlerData;
+import org.apache.openejb.core.webservices.PortData;
+
+public class WsBuilder {
+   public static PortData toPortData(PortInfo port, Collection<Injection> injections, URL baseUrl, ClassLoader classLoader) throws OpenEJBException {
+      PortData portData = new PortData();
+      portData.setPortId(port.portId);
+      if (port.serviceName != null && port.serviceName.length() != 0) {
+         portData.setServiceName(QName.valueOf(port.serviceName));
+      }
+
+      if (port.portName != null && port.portName.length() != 0) {
+         portData.setPortName(QName.valueOf(port.portName));
+      }
+
+      portData.setWsdlUrl(getWsdlURL(port.wsdlFile, baseUrl, classLoader));
+      portData.getHandlerChains().addAll(toHandlerChainData(port.handlerChains, classLoader));
+      portData.getInjections().addAll(injections);
+      portData.setMtomEnabled(port.mtomEnabled);
+      portData.setBindingID(port.binding);
+      portData.setWsdlPort(port.wsdlPort);
+      portData.setWsdlService(port.wsdlService);
+      portData.setLocation(port.location);
+      portData.setSecure("WS-SECURITY".equals(port.authMethod));
+      portData.setProperties(port.properties);
+      return portData;
+   }
+
+   public static List<HandlerChainData> toHandlerChainData(List<HandlerChainInfo> chains, ClassLoader classLoader) throws OpenEJBException {
+      List<HandlerChainData> handlerChains = new ArrayList();
+
+      for(HandlerChainInfo handlerChain : chains) {
+         List<HandlerData> handlers = new ArrayList();
+
+         for(HandlerInfo handler : handlerChain.handlers) {
+            try {
+               Class<?> handlerClass = classLoader.loadClass(handler.handlerClass);
+               HandlerData handlerData = new HandlerData(handlerClass);
+               handlerData.getInitParams().putAll(handler.initParams);
+               handlerData.getSoapHeaders().addAll(handler.soapHeaders);
+               handlerData.getSoapRoles().addAll(handler.soapRoles);
+               handlers.add(handlerData);
+            } catch (ClassNotFoundException var10) {
+               throw new OpenEJBException("Could not load handler class " + handler.handlerClass);
+            }
+         }
+
+         HandlerChainData handlerChainData = new HandlerChainData(handlerChain.serviceNamePattern, handlerChain.portNamePattern, handlerChain.protocolBindings, handlers);
+         handlerChains.add(handlerChainData);
+      }
+
+      return handlerChains;
+   }
+
+   public static URL getWsdlURL(String wsdlFile, URL baseUrl, ClassLoader classLoader) {
+      URL wsdlURL = null;
+      if (wsdlFile != null && wsdlFile.length() > 0) {
+         try {
+            wsdlURL = new URL(wsdlFile);
+         } catch (MalformedURLException var7) {
+            wsdlURL = classLoader.getResource(wsdlFile);
+            if (wsdlURL == null && baseUrl != null) {
+               try {
+                  wsdlURL = new URL(baseUrl, wsdlFile);
+               } catch (MalformedURLException var6) {
+               }
+            }
+         }
+      }
+
+      return wsdlURL;
+   }
+}

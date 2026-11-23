@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"JAVA",
+  "input":"benchmarks/ApacheCryptoAPI-Bench/decompiled/taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT",
+  "source":{"files":45,"lines":10453,"bytes":443383},
+  "graph":{"standardNodes":67183,"standardEdges":444981,"cryptoAwareNodes":67191,"cryptoAwareEdges":445007,"addedNodes":8,"addedEdges":26,"serializedBytes":2157772},
+  "memory":{"peakHeapBytes":1303592440},
+  "findings":{"core":8,"extended":0,"byRule":{"C14":2,"C18":1,"C2":2,"C5":1,"C7":1,"C8":1}},
+  "operations":{"HASH_FUNCTION":1,"KEY_DERIVATION":4,"SYMMETRIC_ENCRYPTION":2,"TRANSPORT":1},
+  "selectionOperations":{"HASH_FUNCTION":1,"KEY_DERIVATION":4,"SYMMETRIC_ENCRYPTION":2,"TRANSPORT":1},
+  "selectionOperationResolutions":{"COMPLETE":6,"PARTIAL":2},
+  "timingsMillis":{"adapterConfigLoad":72.760,"cpgFrontend":3273.440,"overlays":407.571,"dataflow":600.428,"enrichmentWall":296.897,"coreRules":40.589,"extendedRules":0.000,"totalWall":5106.458},
+  "enrichment":{"callsScanned":15106,"callsMatched":10,"localOperationsMatched":0,"operationGroups":8,"sensitiveBindings":6,"resolvedSourceNodes":8,"adapterMillis":93.890,"provenanceMillis":58.445,"provenanceFlowQueries":0,"provenanceMultiSinkQueries":0,"lifecycleMillis":6.702,"contextAnalysisMillis":106.556,"materializationMillis":6.322,"runMillis":296.886},
+  "enrichmentOverheadPercent":6.935
+}

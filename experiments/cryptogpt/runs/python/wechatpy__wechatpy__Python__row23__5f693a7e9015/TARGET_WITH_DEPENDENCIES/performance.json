@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"PYTHON",
+  "input":"experiments/cryptogpt/runs/_inputs/python/wechatpy__wechatpy__Python__row23__5f693a7e9015/TARGET_WITH_DEPENDENCIES",
+  "source":{"files":3,"lines":250,"bytes":6930},
+  "graph":{"standardNodes":2565,"standardEdges":15791,"cryptoAwareNodes":2577,"cryptoAwareEdges":15829,"addedNodes":12,"addedEdges":38,"serializedBytes":208929},
+  "memory":{"peakHeapBytes":71411168},
+  "findings":{"core":4,"extended":0,"byRule":{"C1":1,"C3":1,"C5":1,"C9":1}},
+  "operations":{"HASH_FUNCTION":2,"RANDOMNESS":2,"SYMMETRIC_ENCRYPTION":8},
+  "selectionOperations":{"HASH_FUNCTION":2,"RANDOMNESS":1,"SYMMETRIC_ENCRYPTION":8},
+  "selectionOperationResolutions":{"COMPLETE":7,"PARTIAL":4},
+  "timingsMillis":{"adapterConfigLoad":62.505,"cpgFrontend":274.794,"overlays":83.932,"dataflow":64.499,"enrichmentWall":133.772,"coreRules":17.003,"extendedRules":0.000,"totalWall":1151.307},
+  "enrichment":{"callsScanned":420,"callsMatched":11,"localOperationsMatched":0,"operationGroups":12,"sensitiveBindings":6,"resolvedSourceNodes":13,"adapterMillis":37.743,"provenanceMillis":32.767,"provenanceFlowQueries":0,"provenanceMultiSinkQueries":0,"lifecycleMillis":4.512,"contextAnalysisMillis":37.312,"materializationMillis":5.879,"runMillis":133.763},
+  "enrichmentOverheadPercent":31.608
+}

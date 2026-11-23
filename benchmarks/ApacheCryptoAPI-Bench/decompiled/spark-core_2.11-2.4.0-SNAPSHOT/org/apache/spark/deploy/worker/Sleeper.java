@@ -1,0 +1,10 @@
+package org.apache.spark.deploy.worker;
+
+import scala.reflect.ScalaSignature;
+
+@ScalaSignature(
+   bytes = "\u0006\u0001}1\u0001\"\u0001\u0002\u0011\u0002G\u0005A\u0001\u0004\u0002\b'2,W\r]3s\u0015\t\u0019A!\u0001\u0004x_J\\WM\u001d\u0006\u0003\u000b\u0019\ta\u0001Z3qY>L(BA\u0004\t\u0003\u0015\u0019\b/\u0019:l\u0015\tI!\"\u0001\u0004ba\u0006\u001c\u0007.\u001a\u0006\u0002\u0017\u0005\u0019qN]4\u0014\u0005\u0001i\u0001C\u0001\b\u0012\u001b\u0005y!\"\u0001\t\u0002\u000bM\u001c\u0017\r\\1\n\u0005Iy!AB!osJ+g\rC\u0003\u0015\u0001\u0019\u0005a#A\u0003tY\u0016,\u0007o\u0001\u0001\u0015\u0005]Q\u0002C\u0001\b\u0019\u0013\tIrB\u0001\u0003V]&$\b\"B\u000e\u0014\u0001\u0004a\u0012aB:fG>tGm\u001d\t\u0003\u001duI!AH\b\u0003\u0007%sG\u000f"
+)
+public interface Sleeper {
+   void sleep(int var1);
+}

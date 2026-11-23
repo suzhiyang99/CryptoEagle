@@ -1,0 +1,38 @@
+{
+  "language": "python",
+  "id": "python/twisted__twisted__Python__row11__e673cb57698d/TARGET_WITH_DEPENDENCIES",
+  "repository": "twisted/twisted",
+  "commit": "e673cb57698db0ff127975414e9312e4763b382c",
+  "target_path": "src/twisted/conch/ssh/transport.py",
+  "report_target_row": "11",
+  "final": true,
+  "source_root": "benchmarks/cryptogpt-realworld-python-full/twisted__twisted/2023-09-13_e673cb57698d",
+  "scope": "TARGET_WITH_DEPENDENCIES",
+  "input": "experiments/cryptogpt/runs/_inputs/python/twisted__twisted__Python__row11__e673cb57698d/TARGET_WITH_DEPENDENCIES",
+  "source_files": [
+    "src/twisted/conch/ssh/transport.py",
+    "src/twisted/conch/ssh/_kex.py",
+    "src/twisted/conch/ssh/common.py"
+  ],
+  "status": "SUCCESS",
+  "seconds": 1.878,
+  "raw_findings": 2,
+  "rules": {
+    "C15": 2
+  },
+  "source_unchanged": true,
+  "report": "experiments/cryptogpt/runs/python/twisted__twisted__Python__row11__e673cb57698d/TARGET_WITH_DEPENDENCIES/findings.json",
+  "command": [
+    "java",
+    "-Xmx8g",
+    "-Xss128m",
+    "-cp",
+    "<tools/crypto-ext runtime classpath>",
+    "org.codeminers.standalone.EvaluationMain",
+    "python",
+    "experiments/cryptogpt/runs/_inputs/python/twisted__twisted__Python__row11__e673cb57698d/TARGET_WITH_DEPENDENCIES",
+    "--metrics-output=experiments/cryptogpt/runs/python/twisted__twisted__Python__row11__e673cb57698d/TARGET_WITH_DEPENDENCIES/performance.json",
+    "--report=json",
+    "--report-output=experiments/cryptogpt/runs/python/twisted__twisted__Python__row11__e673cb57698d/TARGET_WITH_DEPENDENCIES/findings.json"
+  ]
+}

@@ -1,0 +1,5 @@
+﻿file,line,rule,issue,crypto,evidence,fix,path
+"SunJceCrypt.java","38","C14","Weak symmetric cipher","PBEWITHMD5ANDDES (configure)","","Use an authenticated modern cipher such as AES-GCM.","org/apache/wicket/util/crypt"
+"SunJceCrypt.java","44","C14","Weak symmetric cipher","PBEWITHMD5ANDDES (configure)","","Use an authenticated modern cipher such as AES-GCM.","org/apache/wicket/util/crypt"
+"SunJceCrypt.java","58","C7","Insufficient PBKDF2 iterations","kdf parameters","new PBEParameterSpec(SALT, 17)","Use at least 10000 iterations and tune upward for the deployment environment.","org/apache/wicket/util/crypt"
+"SunJceCrypt.java","58","C8","Missing or insecure salt","kdf parameters","SALT = 21, 116, 93 … (+5)","Use a fresh CSPRNG-generated salt for every password.","org/apache/wicket/util/crypt"

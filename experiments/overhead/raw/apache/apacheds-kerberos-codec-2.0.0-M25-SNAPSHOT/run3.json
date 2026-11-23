@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"JAVA",
+  "input":"benchmarks/ApacheCryptoAPI-Bench/decompiled/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT",
+  "source":{"files":468,"lines":22842,"bytes":924227},
+  "graph":{"standardNodes":106075,"standardEdges":789045,"cryptoAwareNodes":106128,"cryptoAwareEdges":789307,"addedNodes":53,"addedEdges":262,"serializedBytes":3500495},
+  "memory":{"peakHeapBytes":743715048},
+  "findings":{"core":20,"extended":0,"byRule":{"C14":12,"C15":3,"C3":4,"C4":1}},
+  "operations":{"HASH_FUNCTION":2,"MAC_SIGNATURE":7,"RANDOMNESS":2,"SYMMETRIC_ENCRYPTION":42},
+  "selectionOperations":{"HASH_FUNCTION":2,"MAC_SIGNATURE":7,"SYMMETRIC_ENCRYPTION":42},
+  "selectionOperationResolutions":{"COMPLETE":49,"PARTIAL":2},
+  "timingsMillis":{"adapterConfigLoad":60.749,"cpgFrontend":3126.533,"overlays":572.391,"dataflow":835.129,"enrichmentWall":966.434,"coreRules":107.060,"extendedRules":0.000,"totalWall":6187.779},
+  "enrichment":{"callsScanned":26923,"callsMatched":55,"localOperationsMatched":0,"operationGroups":53,"sensitiveBindings":39,"resolvedSourceNodes":189,"adapterMillis":196.528,"provenanceMillis":637.537,"provenanceFlowQueries":19,"provenanceMultiSinkQueries":8,"lifecycleMillis":22.307,"contextAnalysisMillis":80.811,"materializationMillis":6.408,"runMillis":966.423},
+  "enrichmentOverheadPercent":21.315
+}

@@ -1,0 +1,28 @@
+package org.apache.spark.executor;
+
+import scala.reflect.ScalaSignature;
+
+@ScalaSignature(
+   bytes = "\u0006\u0001e:a!\u0001\u0002\t\u0002\u0011Q\u0011\u0001E#yK\u000e,Ho\u001c:Fq&$8i\u001c3f\u0015\t\u0019A!\u0001\u0005fq\u0016\u001cW\u000f^8s\u0015\t)a!A\u0003ta\u0006\u00148N\u0003\u0002\b\u0011\u00051\u0011\r]1dQ\u0016T\u0011!C\u0001\u0004_J<\u0007CA\u0006\r\u001b\u0005\u0011aAB\u0007\u0003\u0011\u0003!aB\u0001\tFq\u0016\u001cW\u000f^8s\u000bbLGoQ8eKN\u0011Ab\u0004\t\u0003!Mi\u0011!\u0005\u0006\u0002%\u0005)1oY1mC&\u0011A#\u0005\u0002\u0007\u0003:L(+\u001a4\t\u000bYaA\u0011\u0001\r\u0002\rqJg.\u001b;?\u0007\u0001!\u0012A\u0003\u0005\b51\u0011\r\u0011\"\u0001\u001c\u0003}!\u0015jU&`'R{%+R0G\u0003&cU\tR0U\u001f~\u001b%+R!U\u000b~#\u0015JU\u000b\u00029A\u0011\u0001#H\u0005\u0003=E\u00111!\u00138u\u0011\u0019\u0001C\u0002)A\u00059\u0005\u0001C)S*L?N#vJU#`\r\u0006KE*\u0012#`)>{6IU#B)\u0016{F)\u0013*!\u0011\u001d\u0011CB1A\u0005\u0002m\t\u0011&\u0012-U\u000bJs\u0015\tT0C\u0019>\u001b5jX*U\u001fJ+uLR!J\u0019\u0016#u\fV(`\u0013:KE+S!M\u0013j+\u0005B\u0002\u0013\rA\u0003%A$\u0001\u0016F1R+%KT!M?\ncujQ&`'R{%+R0G\u0003&cU\tR0U\u001f~Ke*\u0013+J\u00032K%,\u0012\u0011\t\u000f\u0019b!\u0019!C\u00017\u0005IS\t\u0017+F%:\u000bEj\u0018\"M\u001f\u000e[ul\u0015+P%\u0016{f)Q%M\u000b\u0012{FkT0D%\u0016\u000bE+R0E\u0013JCa\u0001\u000b\u0007!\u0002\u0013a\u0012AK#Y)\u0016\u0013f*\u0011'`\u00052{5iS0T)>\u0013Vi\u0018$B\u00132+Ei\u0018+P?\u000e\u0013V)\u0011+F?\u0012K%\u000b\t\u0005\bU1\u0011\r\u0011\"\u0001\u001c\u0003EAU)\u0011*U\u0005\u0016\u000bEk\u0018$B\u00132+&+\u0012\u0005\u0007Y1\u0001\u000b\u0011\u0002\u000f\u0002%!+\u0015I\u0015+C\u000b\u0006#vLR!J\u0019V\u0013V\t\t\u0005\u0006]1!\taL\u0001\u0010Kb\u0004H.Y5o\u000bbLGoQ8eKR\u0011\u0001g\u000e\t\u0003cQr!\u0001\u0005\u001a\n\u0005M\n\u0012A\u0002)sK\u0012,g-\u0003\u00026m\t11\u000b\u001e:j]\u001eT!aM\t\t\u000baj\u0003\u0019\u0001\u000f\u0002\u0011\u0015D\u0018\u000e^\"pI\u0016\u0004"
+)
+public final class ExecutorExitCode {
+   public static String explainExitCode(int var0) {
+      return ExecutorExitCode$.MODULE$.explainExitCode(var0);
+   }
+
+   public static int HEARTBEAT_FAILURE() {
+      return ExecutorExitCode$.MODULE$.HEARTBEAT_FAILURE();
+   }
+
+   public static int EXTERNAL_BLOCK_STORE_FAILED_TO_CREATE_DIR() {
+      return ExecutorExitCode$.MODULE$.EXTERNAL_BLOCK_STORE_FAILED_TO_CREATE_DIR();
+   }
+
+   public static int EXTERNAL_BLOCK_STORE_FAILED_TO_INITIALIZE() {
+      return ExecutorExitCode$.MODULE$.EXTERNAL_BLOCK_STORE_FAILED_TO_INITIALIZE();
+   }
+
+   public static int DISK_STORE_FAILED_TO_CREATE_DIR() {
+      return ExecutorExitCode$.MODULE$.DISK_STORE_FAILED_TO_CREATE_DIR();
+   }
+}

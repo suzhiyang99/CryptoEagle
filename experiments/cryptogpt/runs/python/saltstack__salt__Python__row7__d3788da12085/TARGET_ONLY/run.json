@@ -1,0 +1,36 @@
+{
+  "language": "python",
+  "id": "python/saltstack__salt__Python__row7__d3788da12085/TARGET_ONLY",
+  "repository": "saltstack/salt",
+  "commit": "d3788da12085c4f6b7daa5f10f9e7e8ab11348e0",
+  "target_path": "salt/runners/digicertapi.py",
+  "report_target_row": "7",
+  "final": true,
+  "source_root": "benchmarks/cryptogpt-realworld-python-full/saltstack__salt/2021-03-01_d3788da12085",
+  "scope": "TARGET_ONLY",
+  "input": "experiments/cryptogpt/runs/_inputs/python/saltstack__salt__Python__row7__d3788da12085/TARGET_ONLY",
+  "source_files": [
+    "salt/runners/digicertapi.py"
+  ],
+  "status": "SUCCESS",
+  "seconds": 1.436,
+  "raw_findings": 1,
+  "rules": {
+    "C14": 1
+  },
+  "source_unchanged": true,
+  "report": "experiments/cryptogpt/runs/python/saltstack__salt__Python__row7__d3788da12085/TARGET_ONLY/findings.json",
+  "command": [
+    "java",
+    "-Xmx8g",
+    "-Xss128m",
+    "-cp",
+    "<tools/crypto-ext runtime classpath>",
+    "org.codeminers.standalone.EvaluationMain",
+    "python",
+    "experiments/cryptogpt/runs/_inputs/python/saltstack__salt__Python__row7__d3788da12085/TARGET_ONLY",
+    "--metrics-output=experiments/cryptogpt/runs/python/saltstack__salt__Python__row7__d3788da12085/TARGET_ONLY/performance.json",
+    "--report=json",
+    "--report-output=experiments/cryptogpt/runs/python/saltstack__salt__Python__row7__d3788da12085/TARGET_ONLY/findings.json"
+  ]
+}

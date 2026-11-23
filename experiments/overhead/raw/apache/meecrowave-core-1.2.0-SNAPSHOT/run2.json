@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"JAVA",
+  "input":"benchmarks/ApacheCryptoAPI-Bench/decompiled/meecrowave-core-1.2.0-SNAPSHOT",
+  "source":{"files":40,"lines":6369,"bytes":235614},
+  "graph":{"standardNodes":39704,"standardEdges":232579,"cryptoAwareNodes":39708,"cryptoAwareEdges":232598,"addedNodes":4,"addedEdges":19,"serializedBytes":1243454},
+  "memory":{"peakHeapBytes":546658752},
+  "findings":{"core":3,"extended":0,"byRule":{"C14":2,"C2":1}},
+  "operations":{"SYMMETRIC_ENCRYPTION":4},
+  "selectionOperations":{"SYMMETRIC_ENCRYPTION":4},
+  "selectionOperationResolutions":{"COMPLETE":3,"PARTIAL":1},
+  "timingsMillis":{"adapterConfigLoad":63.733,"cpgFrontend":2049.278,"overlays":275.360,"dataflow":346.399,"enrichmentWall":190.994,"coreRules":23.633,"extendedRules":0.000,"totalWall":3388.776},
+  "enrichment":{"callsScanned":6512,"callsMatched":4,"localOperationsMatched":0,"operationGroups":4,"sensitiveBindings":2,"resolvedSourceNodes":9,"adapterMillis":60.058,"provenanceMillis":24.188,"provenanceFlowQueries":0,"provenanceMultiSinkQueries":0,"lifecycleMillis":5.999,"contextAnalysisMillis":70.499,"materializationMillis":5.864,"runMillis":190.984},
+  "enrichmentOverheadPercent":7.151
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"PYTHON",
+  "input":"experiments/cryptogpt/runs/_inputs/python/Tautulli__Tautulli__Python-reject__row4__842e36485a6b/TARGET_ONLY",
+  "source":{"files":1,"lines":1271,"bytes":43181},
+  "graph":{"standardNodes":6543,"standardEdges":50722,"cryptoAwareNodes":6548,"cryptoAwareEdges":50734,"addedNodes":5,"addedEdges":12,"serializedBytes":367609},
+  "memory":{"peakHeapBytes":195151648},
+  "findings":{"core":0,"extended":0,"byRule":{}},
+  "operations":{"HASH_FUNCTION":5},
+  "selectionOperations":{"HASH_FUNCTION":5},
+  "selectionOperationResolutions":{"COMPLETE":5},
+  "timingsMillis":{"adapterConfigLoad":63.925,"cpgFrontend":303.837,"overlays":130.423,"dataflow":189.040,"enrichmentWall":159.556,"coreRules":18.460,"extendedRules":0.000,"totalWall":1394.964},
+  "enrichment":{"callsScanned":1556,"callsMatched":5,"localOperationsMatched":0,"operationGroups":5,"sensitiveBindings":2,"resolvedSourceNodes":7,"adapterMillis":74.243,"provenanceMillis":20.669,"provenanceFlowQueries":0,"provenanceMultiSinkQueries":0,"lifecycleMillis":1.784,"contextAnalysisMillis":39.970,"materializationMillis":4.413,"runMillis":159.547},
+  "enrichmentOverheadPercent":25.599
+}

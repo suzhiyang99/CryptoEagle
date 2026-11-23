@@ -1,0 +1,93 @@
+{
+ "Java|2": {
+  "reason": "The deprecated initializer passes null at JdkSslServerContext.java:95, selecting the provider's default SecureRandom. Netty issue #14026 requested a configurable SecureRandom, which this snapshot passes through at lines 340–342. The Netty rescan emits no C9. The workbook's positive label remains the basis for strict scoring."
+ },
+ "Java|9": {
+  "reason": "The report asks for more than 10,000 iterations; the code uses exactly 10,000 and C7 reports only counts below 10,000."
+ },
+ "Java|10": {
+  "reason": "PBEWithSHA1AndDESede is only a SecretKeyFactory whose encoded output becomes an AES key; no data is encrypted with 3DES and the tool emits no C14 for this factory."
+ },
+ "Java|15": {
+  "reason": "No C3 alert at the decryption call: C3 is reported where the fixed IV is used for encryption (row 13)."
+ },
+ "Java|19": {
+  "anchor_lines": [
+   22
+  ],
+  "reason": "C2 reports the fixed ENCRYPT_SEED at Crypto.java:22. It reaches the session field's default, the getter and long-to-byte conversion, and the XOR key argument in the compatibility branch at HandlerGetPlayerTokenReq.java:140."
+ },
+ "Java|26": {
+  "anchor_lines": [
+   168
+  ],
+  "reason": "Detected after the C4 helper-mode fix: encryptInternal()'s doFinal (line 168) uses an AES/CTR cipher initialized through cipher(Cipher.ENCRYPT_MODE, ...), with no MAC."
+ },
+ "Java|30": {
+  "reason": "C4 reports the named decrypting stream at ModernDecryptingPartInputStream.java:63. The FileStorage reader consumes the corresponding inline header and ciphertext without an integrity check before returning plaintext. The alert links to the matching writer at ModernEncryptingPartOutputStream.java:52."
+ },
+ "Java|31": {
+  "anchor_lines": [
+   45
+  ],
+  "reason": "The tool reports C3 at Cipher.getInstance(\"AES/CTR/NoPadding\") (line 45), the reported constant IV. The alert itself is reviewed as FP because every file uses a fresh key."
+ },
+ "Python|3": {
+  "reason": "No C5 alert: SHA-1 is the HMAC PRF of PBKDF2 here, which the tool does not report as a weak hash."
+ },
+ "Python|9": {
+  "reason": "No C9 alert: secure_password() uses get_random_bytes and random.SystemRandom."
+ },
+ "Python|11": {
+  "anchor_lines": [
+   258,
+   279
+  ],
+  "reason": "The workbook names transport.py and MD5; the tool reports HMAC-MD5 (C15) at lines 258 and 279. The linked issue's example is ckeygen.py, so this matches the workbook row, not necessarily the issue's instance."
+ },
+ "Python|13": {
+  "reason": "No C1 alert in the final scan (target plus dependencies). Only the preliminary target-only scan reports C1 at aes_ecb_encrypt/aes_ecb_decrypt; that pass is not counted."
+ },
+ "Python|15": {
+  "reason": "Same as row 13 for the cryptography provider: no C1 alert in the final scan."
+ },
+ "Python|20": {
+  "reason": "No C2 alert: the rc4_wrap key (sni) is read from configuration; the report's claim that it is a public domain name is not shown."
+ },
+ "Python|25": {
+  "reason": "No C8 alert: the scrypt salt is the random os.urandom(16) IV."
+ },
+ "Python-reject|2": {
+  "reason": "No alert in the final scan. Only the preliminary target-only scan reports MD5 (C5/C6) in evp_bytestokey; that pass is not counted."
+ },
+ "Python-reject|3": {
+  "anchor_lines": [
+   187,
+   220
+  ],
+  "reason": "The tool reports C7 at both PBKDF2HMAC calls (lines 187, 220, iterations=1000), the instance the developers rejected."
+ },
+ "Java|4": {
+  "anchor_lines": [
+   197
+  ],
+  "reason": "The report names the TLSv1-only SSLConnectionSocketFactory in executeHttpRequest(); C18 reports it at line 197 (new String[] {\"TLSv1\"}). The same call also has ALLOW_ALL_HOSTNAME_VERIFIER and a trust-all TrustStrategy (C17, lines 196-197)."
+ },
+ "Java|7": {
+  "reason": "Issue elastic/elasticsearch#108057 concerns TLSv1.1 in the default protocol configuration. The workbook names XPackSettings.java:262. The closing PR #121731 removes TLSv1.1 from that list and from SslConfigurationLoader.DEFAULT_PROTOCOLS, which supplies the production SSLParameters calls in SSLService.java:339 and :787 in the evaluated snapshot. The audit records those two C18 locations as alternative anchors for one report."
+ },
+ "Java|25": {
+  "anchor_lines": [
+   76,
+   103
+  ],
+  "reason": "The report asks for OAEP instead of the PKCS#1 v1.5 default of Cipher.getInstance(\"RSA\"). C11 reports the encryption direction: publicEncrypt (76) and privateDecrypt (103). privateEncrypt/publicDecrypt (94, 85) use the key pair in the signature direction and are not reported."
+ },
+ "Python|27": {
+  "anchor_lines": [
+   62,
+   77
+  ],
+  "reason": "encrypt() appends mac.digest()[:10] and decrypt() checks the same 80-bit truncated HMAC-SHA256 tag; C15 reports both. The 10-byte tag is fixed by the WhatsApp media format."
+ }
+}

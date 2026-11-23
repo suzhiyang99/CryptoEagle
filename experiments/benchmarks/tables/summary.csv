@@ -1,0 +1,14 @@
+﻿dataset,rule,rule_name,TP,FP,FN,TN,Precision,Recall,F1
+cryptoapi-bench,C1,ECB mode,6,0,0,2,1.000,1.000,1.000
+cryptoapi-bench,C2,Hardcoded or predictable key,21,0,1,8,1.000,0.955,0.977
+cryptoapi-bench,C3,Static or predictable IV/nonce,7,0,1,2,1.000,0.875,0.933
+cryptoapi-bench,C5,Weak hash,24,0,0,5,1.000,1.000,1.000
+cryptoapi-bench,C7,Insufficient PBKDF2/PBE iterations,7,2,0,0,0.778,1.000,0.875
+cryptoapi-bench,C8,Missing or insecure salt,6,0,1,2,1.000,0.857,0.923
+cryptoapi-bench,C9,Insecure randomness for crypto,14,0,1,4,1.000,0.933,0.966
+cryptoapi-bench,C13,Insufficient asymmetric parameter strength,5,0,0,1,1.000,1.000,1.000
+cryptoapi-bench,C14,Weak symmetric cipher,30,0,0,6,1.000,1.000,1.000
+cryptoapi-bench,C15,Weak MAC algorithm,2,0,0,1,1.000,1.000,1.000
+cryptoapi-bench,C17,Verification disabled,5,0,0,1,1.000,1.000,1.000
+cryptoapi-bench,C18,Insecure transport,5,0,1,2,1.000,0.833,0.909
+cryptoapi-bench,ALL,all mapped rules,132,2,5,34,0.985,0.964,0.974

@@ -1,0 +1,1369 @@
+[
+  {
+    "sheet": "Java",
+    "row": 2,
+    "original_filename": "netty__netty__JdkSslServerContext.java",
+    "original_issue": "not specifying secure randomness",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/netty__netty/2024-12-16_a739efa31516/handler/src/main/java/io/netty/handler/ssl/JdkSslServerContext.java",
+    "repository": "netty/netty",
+    "commit": "a739efa3151625d72d08d2dd50dd5c7f860ea03f",
+    "snapshot": "netty__netty/2024-12-16_a739efa31516",
+    "source_relative": "handler/src/main/java/io/netty/handler/ssl/JdkSslServerContext.java",
+    "original_report_link": "https://github.com/netty/netty/issues/14026",
+    "effective_report_link": "https://github.com/netty/netty/issues/14026",
+    "worksheet_range": "A2:I2",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Java",
+    "row": 3,
+    "original_filename": "baomidou__mybatis-plus__AES.java",
+    "original_issue": "generate secret key using UUID",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/baomidou__mybatis-plus/2023-08-06_0f2300c85713/mybatis-plus-core/src/main/java/com/baomidou/mybatisplus/core/toolkit/AES.java",
+    "repository": "baomidou/mybatis-plus",
+    "commit": "0f2300c8571312e033fad4a569441ed46b411627",
+    "snapshot": "baomidou__mybatis-plus/2023-08-06_0f2300c85713",
+    "source_relative": "mybatis-plus-core/src/main/java/com/baomidou/mybatisplus/core/toolkit/AES.java",
+    "original_report_link": "https://github.com/baomidou/mybatis-plus/issues/6162#event-12804521910",
+    "effective_report_link": "https://github.com/baomidou/mybatis-plus/issues/6162#event-12804521910",
+    "worksheet_range": "A3:I3",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/baomidou__mybatis-plus/2023-08-06_0f2300c85713/mybatis-plus-core/src/main/java/com/baomidou/mybatisplus/core/toolkit/AES.java",
+        "line": 107,
+        "rule": "C9",
+        "algorithm": "UNKNOWN"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 4,
+    "original_filename": "alibaba__canal__AbstractRequest.java",
+    "original_issue": "TLSv1 insecure",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/alibaba__canal/2020-09-17_362974b1c29b/parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/request/AbstractRequest.java",
+    "repository": "alibaba/canal",
+    "commit": "362974b1c29b27639fe5bf06105180c9972ceb72",
+    "snapshot": "alibaba__canal/2020-09-17_362974b1c29b",
+    "source_relative": "parse/src/main/java/com/alibaba/otter/canal/parse/inbound/mysql/rds/request/AbstractRequest.java",
+    "original_report_link": "https://github.com/alibaba/canal/issues/5126",
+    "effective_report_link": "https://github.com/alibaba/canal/issues/5126",
+    "worksheet_range": "A4:I4",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Java",
+    "row": 5,
+    "original_filename": "dbeaver__dbeaver__SecuredPasswordEncrypter.java",
+    "original_issue": "DES used",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "repository": "dbeaver/dbeaver",
+    "commit": "d33308b4f164b3da1ad358817452f4df61572aef",
+    "snapshot": "dbeaver__dbeaver/2024-01-10_d33308b4f164",
+    "source_relative": "plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "original_report_link": "https://github.com/dbeaver/dbeaver/issues/29299",
+    "effective_report_link": "https://github.com/dbeaver/dbeaver/issues/29299",
+    "worksheet_range": "A5:I5",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+        "line": 66,
+        "rule": "C14",
+        "algorithm": "DES"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 6,
+    "original_filename": "dbeaver__dbeaver__SecuredPasswordEncrypter.java",
+    "original_issue": "Hardcoded key",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "repository": "dbeaver/dbeaver",
+    "commit": "d33308b4f164b3da1ad358817452f4df61572aef",
+    "snapshot": "dbeaver__dbeaver/2024-01-10_d33308b4f164",
+    "source_relative": "plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+    "original_report_link": null,
+    "effective_report_link": "https://github.com/dbeaver/dbeaver/issues/29299",
+    "worksheet_range": "A6:I6",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+        "line": 58,
+        "rule": "C2",
+        "algorithm": "3DES"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/runtime/encode/SecuredPasswordEncrypter.java",
+        "line": 60,
+        "rule": "C2",
+        "algorithm": "DES"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 7,
+    "original_filename": "elastic__elasticsearch__XPackSettings.java",
+    "original_issue": "TLSv1.1 insecure",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/XPackSettings.java",
+    "repository": "elastic/elasticsearch",
+    "commit": "df3075c188ae3c205e32606f0e6cd0a43a428170",
+    "snapshot": "elastic__elasticsearch/2023-12-22_df3075c188ae",
+    "source_relative": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/XPackSettings.java",
+    "original_report_link": "https://github.com/elastic/elasticsearch/issues/108057",
+    "effective_report_link": "https://github.com/elastic/elasticsearch/issues/108057",
+    "worksheet_range": "A7:I7",
+    "matched_current_apis": [],
+    "issue_location_audit": {
+      "upstream_fix": "https://github.com/elastic/elasticsearch/pull/121731/files",
+      "api_anchors": [
+        {
+          "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ssl/SSLService.java",
+          "line": 339,
+          "rule": "C18",
+          "algorithm": "TLSV1.1"
+        },
+        {
+          "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-12-22_df3075c188ae/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ssl/SSLService.java",
+          "line": 787,
+          "rule": "C18",
+          "algorithm": "TLSV1.1"
+        }
+      ]
+    }
+  },
+  {
+    "sheet": "Java",
+    "row": 8,
+    "original_filename": "elastic__elasticsearch__CryptUtils.java",
+    "original_issue": "Inadequate iteration count",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "repository": "elastic/elasticsearch",
+    "commit": "321f26c01f5e4b36b2c33a84dbaf2d747990c9f6",
+    "snapshot": "elastic__elasticsearch/2024-01-10_321f26c01f5e",
+    "source_relative": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "original_report_link": "https://github.com/elastic/elasticsearch/issues/108156",
+    "effective_report_link": "https://github.com/elastic/elasticsearch/issues/108156",
+    "worksheet_range": "A8:I8",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+        "line": 179,
+        "rule": "C7",
+        "algorithm": ""
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 9,
+    "original_filename": "elastic__elasticsearch__CryptUtils.java",
+    "original_issue": "Inadequate iteration count",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "repository": "elastic/elasticsearch",
+    "commit": "321f26c01f5e4b36b2c33a84dbaf2d747990c9f6",
+    "snapshot": "elastic__elasticsearch/2024-01-10_321f26c01f5e",
+    "source_relative": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "original_report_link": null,
+    "effective_report_link": "https://github.com/elastic/elasticsearch/issues/108156",
+    "worksheet_range": "A9:I9",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Java",
+    "row": 10,
+    "original_filename": "elastic__elasticsearch__CryptUtils.java",
+    "original_issue": "3DES used",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "repository": "elastic/elasticsearch",
+    "commit": "321f26c01f5e4b36b2c33a84dbaf2d747990c9f6",
+    "snapshot": "elastic__elasticsearch/2024-01-10_321f26c01f5e",
+    "source_relative": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "original_report_link": null,
+    "effective_report_link": "https://github.com/elastic/elasticsearch/issues/108156",
+    "worksheet_range": "A10:I10",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Java",
+    "row": 11,
+    "original_filename": "elastic__elasticsearch__CryptUtils.java",
+    "original_issue": "Hardcoded credentials",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "repository": "elastic/elasticsearch",
+    "commit": "321f26c01f5e4b36b2c33a84dbaf2d747990c9f6",
+    "snapshot": "elastic__elasticsearch/2024-01-10_321f26c01f5e",
+    "source_relative": "x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+    "original_report_link": null,
+    "effective_report_link": "https://github.com/elastic/elasticsearch/issues/108156",
+    "worksheet_range": "A11:I11",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+        "line": 194,
+        "rule": "C2",
+        "algorithm": "AES"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2024-01-10_321f26c01f5e/x-pack/plugin/core/src/main/java/org/elasticsearch/license/CryptUtils.java",
+        "line": 210,
+        "rule": "C2",
+        "algorithm": "AES"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 12,
+    "original_filename": "halo-dev__halo__DefaultTotpAuthService.java",
+    "original_issue": "Hardcoded key",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/halo-dev__halo/2024-01-15_3de60dd93879/application/src/main/java/run/halo/app/security/authentication/twofactor/totp/DefaultTotpAuthService.java",
+    "repository": "halo-dev/halo",
+    "commit": "3de60dd938792655c294fec17abe678af90fe2d2",
+    "snapshot": "halo-dev__halo/2024-01-15_3de60dd93879",
+    "source_relative": "application/src/main/java/run/halo/app/security/authentication/twofactor/totp/DefaultTotpAuthService.java",
+    "original_report_link": "https://github.com/halo-dev/halo/issues/5843",
+    "effective_report_link": "https://github.com/halo-dev/halo/issues/5843",
+    "worksheet_range": "A12:I12",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/halo-dev__halo/2024-01-15_3de60dd93879/application/src/main/java/run/halo/app/security/authentication/twofactor/totp/DefaultTotpAuthService.java",
+        "line": 52,
+        "rule": "C2",
+        "algorithm": ""
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/halo-dev__halo/2024-01-15_3de60dd93879/application/src/main/java/run/halo/app/security/authentication/twofactor/totp/DefaultTotpAuthService.java",
+        "line": 71,
+        "rule": "C2",
+        "algorithm": ""
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 13,
+    "original_filename": "jeecgboot__jeecg-boot__AesEncryptUtil.java",
+    "original_issue": "Constant IV",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "repository": "jeecgboot/jeecg-boot",
+    "commit": "515936f01843974dae7feab6c16d0bd8e736065d",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "source_relative": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "original_report_link": "https://github.com/jeecgboot/jeecg-boot/issues/6202",
+    "effective_report_link": "https://github.com/jeecgboot/jeecg-boot/issues/6202",
+    "worksheet_range": "A13:I13",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+        "line": 34,
+        "rule": "C3",
+        "algorithm": "AES"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 14,
+    "original_filename": "jeecgboot__jeecg-boot__AesEncryptUtil.java",
+    "original_issue": "Constant key",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "repository": "jeecgboot/jeecg-boot",
+    "commit": "515936f01843974dae7feab6c16d0bd8e736065d",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "source_relative": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "original_report_link": null,
+    "effective_report_link": "https://github.com/jeecgboot/jeecg-boot/issues/6202",
+    "worksheet_range": "A14:I14",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+        "line": 34,
+        "rule": "C2",
+        "algorithm": "AES"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+        "line": 46,
+        "rule": "C2",
+        "algorithm": "AES"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 15,
+    "original_filename": "jeecgboot__jeecg-boot__AesEncryptUtil.java",
+    "original_issue": "Constant IV",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "repository": "jeecgboot/jeecg-boot",
+    "commit": "515936f01843974dae7feab6c16d0bd8e736065d",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "source_relative": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/encryption/AesEncryptUtil.java",
+    "original_report_link": null,
+    "effective_report_link": "https://github.com/jeecgboot/jeecg-boot/issues/6202",
+    "worksheet_range": "A15:I15",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Java",
+    "row": 16,
+    "original_filename": "jeecgboot__jeecg-boot__PasswordUtil.java",
+    "original_issue": "PBEWithMD5AndDES insecure",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+    "repository": "jeecgboot/jeecg-boot",
+    "commit": "515936f01843974dae7feab6c16d0bd8e736065d",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "source_relative": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A16:I16",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+        "line": 99,
+        "rule": "C14",
+        "algorithm": "PBEWITHMD5ANDDES"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/PasswordUtil.java",
+        "line": 128,
+        "rule": "C14",
+        "algorithm": "PBEWITHMD5ANDDES"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 17,
+    "original_filename": "jeecgboot__jeecg-boot__SecurityTools.java",
+    "original_issue": "SHA1withRSA insecure",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+    "repository": "jeecgboot/jeecg-boot",
+    "commit": "515936f01843974dae7feab6c16d0bd8e736065d",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "source_relative": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A17:I17",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+        "line": 60,
+        "rule": "C16",
+        "algorithm": "SHA1"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 18,
+    "original_filename": "jeecgboot__jeecg-boot__SecurityTools.java",
+    "original_issue": "AES/ECB used",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+    "repository": "jeecgboot/jeecg-boot",
+    "commit": "515936f01843974dae7feab6c16d0bd8e736065d",
+    "snapshot": "jeecgboot__jeecg-boot/2022-08-12_515936f01843",
+    "source_relative": "jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A18:I18",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+        "line": 36,
+        "rule": "C1",
+        "algorithm": "AES"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/jeecgboot__jeecg-boot/2022-08-12_515936f01843/jeecg-boot-base-core/src/main/java/org/jeecg/common/util/security/SecurityTools.java",
+        "line": 53,
+        "rule": "C1",
+        "algorithm": "AES"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 19,
+    "original_filename": "Grasscutters__Grasscutter__Crypto.java",
+    "original_issue": "Hardcoded seed",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/utils/Crypto.java",
+    "repository": "Grasscutters/Grasscutter",
+    "commit": "047feaf4aae58286300d6da287f225a232866635",
+    "snapshot": "Grasscutters__Grasscutter/2023-09-17_047feaf4aae5",
+    "source_relative": "src/main/java/emu/grasscutter/utils/Crypto.java",
+    "original_report_link": "https://github.com/Grasscutters/Grasscutter/issues/2510",
+    "effective_report_link": "https://github.com/Grasscutters/Grasscutter/issues/2510",
+    "worksheet_range": "A19:I19",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/server/game/GameSession.java",
+        "line": 147,
+        "rule": "C2",
+        "algorithm": "XOR"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/Grasscutters__Grasscutter/2023-09-17_047feaf4aae5/src/main/java/emu/grasscutter/server/game/GameSession.java",
+        "line": 165,
+        "rule": "C2",
+        "algorithm": "XOR"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 20,
+    "original_filename": "jenkinsci__jenkins__Connection.java",
+    "original_issue": "SHA1 used",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/hudson/cli/Connection.java",
+    "repository": "jenkinsci/jenkins",
+    "commit": "7e8b5b37f76fe9e6d1a36eefbdc10e3d3c171477",
+    "snapshot": "jenkinsci__jenkins/2022-01-04_7e8b5b37f76f",
+    "source_relative": "core/src/main/java/hudson/cli/Connection.java",
+    "original_report_link": "This report is through a private channel (email). \nReport: A review of the Jenkins codebase identified several outdated cryptographic practices, including the continued presence of SHA1 usage, an insufficient Diffie-Hellman key size (512 bits instead of the recommended 1024+ bits), and AES key derivation from MAC addresses.\n\nResponse: We reviewed the reported issues and confirmed that they exist in a deprecated part of the Jenkins codebase that has already been replaced and is no longer in active use. This legacy code belongs to the old Jenkins CLI, which was officially removed as noted in our 2019 blog post “Remoting CLI Removed.” We plan to review and possibly remove the remaining outdated code to ensure the repository continues to meet current security and maintenance standards.",
+    "effective_report_link": "This report is through a private channel (email). \nReport: A review of the Jenkins codebase identified several outdated cryptographic practices, including the continued presence of SHA1 usage, an insufficient Diffie-Hellman key size (512 bits instead of the recommended 1024+ bits), and AES key derivation from MAC addresses.\n\nResponse: We reviewed the reported issues and confirmed that they exist in a deprecated part of the Jenkins codebase that has already been replaced and is no longer in active use. This legacy code belongs to the old Jenkins CLI, which was officially removed as noted in our 2019 blog post “Remoting CLI Removed.” We plan to review and possibly remove the remaining outdated code to ensure the repository continues to meet current security and maintenance standards.",
+    "worksheet_range": "A20:I20",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/hudson/cli/Connection.java",
+        "line": 248,
+        "rule": "C16",
+        "algorithm": "SHA1"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 21,
+    "original_filename": "jenkinsci__jenkins__Connection.java",
+    "original_issue": "512 key size not enough for Diffie-Hellman",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/hudson/cli/Connection.java",
+    "repository": "jenkinsci/jenkins",
+    "commit": "7e8b5b37f76fe9e6d1a36eefbdc10e3d3c171477",
+    "snapshot": "jenkinsci__jenkins/2022-01-04_7e8b5b37f76f",
+    "source_relative": "core/src/main/java/hudson/cli/Connection.java",
+    "original_report_link": null,
+    "effective_report_link": "This report is through a private channel (email). \nReport: A review of the Jenkins codebase identified several outdated cryptographic practices, including the continued presence of SHA1 usage, an insufficient Diffie-Hellman key size (512 bits instead of the recommended 1024+ bits), and AES key derivation from MAC addresses.\n\nResponse: We reviewed the reported issues and confirmed that they exist in a deprecated part of the Jenkins codebase that has already been replaced and is no longer in active use. This legacy code belongs to the old Jenkins CLI, which was officially removed as noted in our 2019 blog post “Remoting CLI Removed.” We plan to review and possibly remove the remaining outdated code to ensure the repository continues to meet current security and maintenance standards.",
+    "worksheet_range": "A21:I21",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/hudson/cli/Connection.java",
+        "line": 166,
+        "rule": "C13",
+        "algorithm": "DH"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 22,
+    "original_filename": "jenkinsci__jenkins__EncryptedSlaveAgentJnlpFile.java",
+    "original_issue": "derive key from MAC code",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/jenkinsci__jenkins/2022-01-04_7e8b5b37f76f/core/src/main/java/jenkins/slaves/EncryptedSlaveAgentJnlpFile.java",
+    "repository": "jenkinsci/jenkins",
+    "commit": "7e8b5b37f76fe9e6d1a36eefbdc10e3d3c171477",
+    "snapshot": "jenkinsci__jenkins/2022-01-04_7e8b5b37f76f",
+    "source_relative": "core/src/main/java/jenkins/slaves/EncryptedSlaveAgentJnlpFile.java",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A22:I22",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Java",
+    "row": 23,
+    "original_filename": "alibaba__druid__ConfigTools.java",
+    "original_issue": "Hardcoded key",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/alibaba__druid/2023-11-07_0a9425de5806/core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+    "repository": "alibaba/druid",
+    "commit": "0a9425de5806897414d5a53ec4f8a4cb75c7c46c",
+    "snapshot": "alibaba__druid/2023-11-07_0a9425de5806",
+    "source_relative": "core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+    "original_report_link": "https://github.com/alibaba/druid/issues/5875",
+    "effective_report_link": "https://github.com/alibaba/druid/issues/5875",
+    "worksheet_range": "A23:I23",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__druid/2023-11-07_0a9425de5806/core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+        "line": 156,
+        "rule": "C2",
+        "algorithm": "RSA"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 24,
+    "original_filename": "alibaba__druid__ConfigTools.java",
+    "original_issue": "Inadequate key size for RSA",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/alibaba__druid/2023-11-07_0a9425de5806/core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+    "repository": "alibaba/druid",
+    "commit": "0a9425de5806897414d5a53ec4f8a4cb75c7c46c",
+    "snapshot": "alibaba__druid/2023-11-07_0a9425de5806",
+    "source_relative": "core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+    "original_report_link": null,
+    "effective_report_link": "https://github.com/alibaba/druid/issues/5875",
+    "worksheet_range": "A24:I24",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__druid/2023-11-07_0a9425de5806/core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+        "line": 115,
+        "rule": "C13",
+        "algorithm": "RSA"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__druid/2023-11-07_0a9425de5806/core/src/main/java/com/alibaba/druid/filter/config/ConfigTools.java",
+        "line": 156,
+        "rule": "C13",
+        "algorithm": "RSA"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 25,
+    "original_filename": "apache__incubator-seata__ConfigTools.java",
+    "original_issue": "padding",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/apache__incubator-seata/2024-01-30_ee6f660d89f7/common/src/main/java/org/apache/seata/common/util/ConfigTools.java",
+    "repository": "apache/incubator-seata",
+    "commit": "ee6f660d89f7fc3fcf509387a6fee89249010c44",
+    "snapshot": "apache__incubator-seata/2024-01-30_ee6f660d89f7",
+    "source_relative": "common/src/main/java/org/apache/seata/common/util/ConfigTools.java",
+    "original_report_link": "replace PKCS1 padding mode with OAEP · Issue #4503 · apache/incubator-seata (github.com)",
+    "effective_report_link": "replace PKCS1 padding mode with OAEP · Issue #4503 · apache/incubator-seata (github.com)",
+    "worksheet_range": "A25:I25",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Java",
+    "row": 26,
+    "original_filename": "elastic__elasticsearch__CryptoService.java",
+    "original_issue": "AES in CTR mode",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2023-10-07_7fdff6d45614/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/watcher/crypto/CryptoService.java",
+    "repository": "elastic/elasticsearch",
+    "commit": "7fdff6d4561423aaf9b932a27d35ee3fb12cd10b",
+    "snapshot": "elastic__elasticsearch/2023-10-07_7fdff6d45614",
+    "source_relative": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/watcher/crypto/CryptoService.java",
+    "original_report_link": "https://github.com/elastic/elasticsearch/blob/main/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/watcher/crypto/CryptoService.java#L50",
+    "effective_report_link": "https://github.com/elastic/elasticsearch/blob/main/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/watcher/crypto/CryptoService.java#L50",
+    "worksheet_range": "A26:I26",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Java",
+    "row": 27,
+    "original_filename": "elastic__elasticsearch__PemUtils.java",
+    "original_issue": "DES used",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2022-03-22_06118bd6daa3/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "repository": "elastic/elasticsearch",
+    "commit": "06118bd6daa316e78d8b77f545a800834815d69d",
+    "snapshot": "elastic__elasticsearch/2022-03-22_06118bd6daa3",
+    "source_relative": "libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "original_report_link": "https://github.com/elastic/elasticsearch/blob/main/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java#L88",
+    "effective_report_link": "https://github.com/elastic/elasticsearch/blob/main/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java#L88",
+    "worksheet_range": "A27:I27",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2022-03-22_06118bd6daa3/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+        "line": 518,
+        "rule": "C14",
+        "algorithm": "DES"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 28,
+    "original_filename": "elastic__elasticsearch__PemUtils.java",
+    "original_issue": "3DES used",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2022-03-22_06118bd6daa3/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "repository": "elastic/elasticsearch",
+    "commit": "06118bd6daa316e78d8b77f545a800834815d69d",
+    "snapshot": "elastic__elasticsearch/2022-03-22_06118bd6daa3",
+    "source_relative": "libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+    "original_report_link": null,
+    "effective_report_link": "https://github.com/elastic/elasticsearch/blob/main/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java#L88",
+    "worksheet_range": "A28:I28",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/elastic__elasticsearch/2022-03-22_06118bd6daa3/libs/ssl-config/src/main/java/org/elasticsearch/common/ssl/PemUtils.java",
+        "line": 521,
+        "rule": "C14",
+        "algorithm": "3DES"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 29,
+    "original_filename": "dbeaver__dbeaver__DefaultValueEncryptor.java",
+    "original_issue": "No derivation function used",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/model/impl/app/DefaultValueEncryptor.java",
+    "repository": "dbeaver/dbeaver",
+    "commit": "d33308b4f164b3da1ad358817452f4df61572aef",
+    "snapshot": "dbeaver__dbeaver/2024-01-10_d33308b4f164",
+    "source_relative": "plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/model/impl/app/DefaultValueEncryptor.java",
+    "original_report_link": "https://github.com/dbeaver/dbeaver/issues/30792",
+    "effective_report_link": "https://github.com/dbeaver/dbeaver/issues/30792",
+    "worksheet_range": "A29:I29",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/dbeaver__dbeaver/2024-01-10_d33308b4f164/plugins/org.jkiss.dbeaver.model/src/org/jkiss/dbeaver/model/impl/app/DefaultValueEncryptor.java",
+        "line": 70,
+        "rule": "C12",
+        "algorithm": "AES"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 30,
+    "original_filename": "signalapp__Signal-Android__ModernDecryptingPartInputStream.java",
+    "original_issue": "AES in CTR mode",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2023-03-04_c30e3664b8d5/app/src/main/java/org/thoughtcrime/securesms/crypto/ModernDecryptingPartInputStream.java",
+    "repository": "signalapp/Signal-Android",
+    "commit": "c30e3664b8d55aee187ab146b35a01edec8ddec5",
+    "snapshot": "signalapp__Signal-Android/2023-03-04_c30e3664b8d5",
+    "source_relative": "app/src/main/java/org/thoughtcrime/securesms/crypto/ModernDecryptingPartInputStream.java",
+    "original_report_link": "https://github.com/signalapp/Signal-Android/issues/13543",
+    "effective_report_link": "https://github.com/signalapp/Signal-Android/issues/13543",
+    "worksheet_range": "A30:I30",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2023-03-04_c30e3664b8d5/app/src/main/java/org/thoughtcrime/securesms/crypto/ModernDecryptingPartInputStream.java",
+        "line": 63,
+        "rule": "C4",
+        "algorithm": "AES"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 31,
+    "original_filename": "signalapp__Signal-Android__ModernEncryptingPartOutputStream.java",
+    "original_issue": "AES/CTR with Constant IV",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/signalapp__Signal-Android/2020-12-06_2dcc7d284f84/app/src/main/java/org/thoughtcrime/securesms/crypto/ModernEncryptingPartOutputStream.java",
+    "repository": "signalapp/Signal-Android",
+    "commit": "2dcc7d284f8406117c03a48f64a3595e2534a60d",
+    "snapshot": "signalapp__Signal-Android/2020-12-06_2dcc7d284f84",
+    "source_relative": "app/src/main/java/org/thoughtcrime/securesms/crypto/ModernEncryptingPartOutputStream.java",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A31:I31",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Java",
+    "row": 32,
+    "original_filename": "alibaba__DataX__DESCipher.java",
+    "original_issue": "DES used",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "repository": "alibaba/DataX",
+    "commit": "f68c4134d6b2c9ed01355471579119dc180b08fd",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "source_relative": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "original_report_link": "https://github.com/alibaba/DataX/issues/2119",
+    "effective_report_link": "https://github.com/alibaba/DataX/issues/2119",
+    "worksheet_range": "A32:I32",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Java",
+    "row": 33,
+    "original_filename": "alibaba__DataX__DESCipher.java",
+    "original_issue": "Hardcoded key",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2022-01-09_f68c4134d6b2/odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "repository": "alibaba/DataX",
+    "commit": "f68c4134d6b2c9ed01355471579119dc180b08fd",
+    "snapshot": "alibaba__DataX/2022-01-09_f68c4134d6b2",
+    "source_relative": "odpswriter/src/main/java/com/alibaba/datax/plugin/writer/odpswriter/util/DESCipher.java",
+    "original_report_link": null,
+    "effective_report_link": "https://github.com/alibaba/DataX/issues/2119",
+    "worksheet_range": "A33:I33",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Java",
+    "row": 34,
+    "original_filename": "alibaba__DataX__SecretUtil.java",
+    "original_issue": "3DES used",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "repository": "alibaba/DataX",
+    "commit": "7ec3fb68e507f997acd13dee5a6fc416559ae1b6",
+    "snapshot": "alibaba__DataX/2018-01-31_7ec3fb68e507",
+    "source_relative": "core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A34:I34",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+        "line": 209,
+        "rule": "C14",
+        "algorithm": "3DES"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/alibaba__DataX/2018-01-31_7ec3fb68e507/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java",
+        "line": 233,
+        "rule": "C14",
+        "algorithm": "3DES"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 35,
+    "original_filename": "justauth__JustAuth__GlobalAuthUtils.java",
+    "original_issue": "java.util.Random insecure",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/justauth__JustAuth/2021-08-25_23b7bcf43d6f/src/main/java/me/zhyd/oauth/utils/GlobalAuthUtils.java",
+    "repository": "justauth/JustAuth",
+    "commit": "23b7bcf43d6f7840c9e1d8d51184339f75431baf",
+    "snapshot": "justauth__JustAuth/2021-08-25_23b7bcf43d6f",
+    "source_relative": "src/main/java/me/zhyd/oauth/utils/GlobalAuthUtils.java",
+    "original_report_link": "https://github.com/justauth/JustAuth/issues/205",
+    "effective_report_link": "https://github.com/justauth/JustAuth/issues/205",
+    "worksheet_range": "A35:I35",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/justauth__JustAuth/2021-08-25_23b7bcf43d6f/src/main/java/me/zhyd/oauth/utils/GlobalAuthUtils.java",
+        "line": 203,
+        "rule": "C9",
+        "algorithm": ""
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 36,
+    "original_filename": "keycloak__keycloak__BaseSAML2BindingBuilder.java",
+    "original_issue": "RSA/SHA1 insecure",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/keycloak__keycloak/2023-12-19_751cadc514ee/saml-core/src/main/java/org/keycloak/saml/BaseSAML2BindingBuilder.java",
+    "repository": "keycloak/keycloak",
+    "commit": "751cadc514ee83b036c57815cfbf3903887cbc71",
+    "snapshot": "keycloak__keycloak/2023-12-19_751cadc514ee",
+    "source_relative": "saml-core/src/main/java/org/keycloak/saml/BaseSAML2BindingBuilder.java",
+    "original_report_link": "https://github.com/keycloak/keycloak/issues/29504",
+    "effective_report_link": "https://github.com/keycloak/keycloak/issues/29504",
+    "worksheet_range": "A36:I36",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-java-full/keycloak__keycloak/2023-12-19_751cadc514ee/saml-core/src/main/java/org/keycloak/saml/BaseSAML2BindingBuilder.java",
+        "line": 69,
+        "rule": "C16",
+        "algorithm": "SHA1"
+      }
+    ]
+  },
+  {
+    "sheet": "Java",
+    "row": 37,
+    "original_filename": "yuliskov__SmartTube__AesCipherDataSource.java",
+    "original_issue": "generate nonce by using a hash of a key",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/yuliskov__SmartTube/2026-09-28_969ad621e275/exoplayer-amzn-2.10.6/library/core/src/main/java/com/google/android/exoplayer2/upstream/crypto/AesCipherDataSource.java",
+    "repository": "yuliskov/SmartTube",
+    "commit": "969ad621e2755e1acc6ee3ed57dbd76233f28429",
+    "snapshot": "yuliskov__SmartTube/2026-09-28_969ad621e275",
+    "source_relative": "exoplayer-amzn-2.10.6/library/core/src/main/java/com/google/android/exoplayer2/upstream/crypto/AesCipherDataSource.java",
+    "original_report_link": "https://github.com/yuliskov/SmartTube/issues/3501",
+    "effective_report_link": "https://github.com/yuliskov/SmartTube/issues/3501",
+    "worksheet_range": "A37:I37",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Java",
+    "row": 38,
+    "original_filename": "yuliskov__SmartTube__CachedContentIndex.java",
+    "original_issue": "Random() insecure",
+    "source_file": "benchmarks/cryptogpt-realworld-java-full/yuliskov__SmartTube/2026-09-28_969ad621e275/exoplayer-amzn-2.10.6/library/core/src/main/java/com/google/android/exoplayer2/upstream/cache/CachedContentIndex.java",
+    "repository": "yuliskov/SmartTube",
+    "commit": "969ad621e2755e1acc6ee3ed57dbd76233f28429",
+    "snapshot": "yuliskov__SmartTube/2026-09-28_969ad621e275",
+    "source_relative": "exoplayer-amzn-2.10.6/library/core/src/main/java/com/google/android/exoplayer2/upstream/cache/CachedContentIndex.java",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A38:I38",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Python",
+    "row": 2,
+    "original_filename": "Tautulli__Tautulli__notifiers.py",
+    "original_issue": "Interation less than 10000 for PBKDF2",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/Tautulli__Tautulli/2023-11-20_d0c1e467bd42/plexpy/notifiers.py",
+    "repository": "Tautulli/Tautulli",
+    "commit": "d0c1e467bd42bf3c38733b3bf324a7e6e81bcc39",
+    "snapshot": "Tautulli__Tautulli/2023-11-20_d0c1e467bd42",
+    "source_relative": "plexpy/notifiers.py",
+    "original_report_link": "This report is through a private channel (email). \nReport：It was discovered that the PBKDF2 password hashing implementation used insufficient iterations and a weaker hash algorithm (SHA1). This configuration did not meet current security standards and exposed user credentials to potential brute-force attacks if password hashes were compromised.\n\nResponse：Increase Remote app PBKDF2 iterations to 600,000 and SHA256 hash\nOWASP Cheat Sheet recommends 600,000 iterations for SHA256. https://github.com/Tautulli/Tautulli/commit/282810e9ca403a43e30d85148ad00301abc9fd3d",
+    "effective_report_link": "This report is through a private channel (email). \nReport：It was discovered that the PBKDF2 password hashing implementation used insufficient iterations and a weaker hash algorithm (SHA1). This configuration did not meet current security standards and exposed user credentials to potential brute-force attacks if password hashes were compromised.\n\nResponse：Increase Remote app PBKDF2 iterations to 600,000 and SHA256 hash\nOWASP Cheat Sheet recommends 600,000 iterations for SHA256. https://github.com/Tautulli/Tautulli/commit/282810e9ca403a43e30d85148ad00301abc9fd3d",
+    "worksheet_range": "A2:I2",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/Tautulli__Tautulli/2023-11-20_d0c1e467bd42/plexpy/notifiers.py",
+        "line": 3830,
+        "rule": "C7",
+        "algorithm": ""
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 3,
+    "original_filename": "Tautulli__Tautulli__notifiers.py",
+    "original_issue": "SHA1 used for key deriving",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/Tautulli__Tautulli/2023-11-20_d0c1e467bd42/plexpy/notifiers.py",
+    "repository": "Tautulli/Tautulli",
+    "commit": "d0c1e467bd42bf3c38733b3bf324a7e6e81bcc39",
+    "snapshot": "Tautulli__Tautulli/2023-11-20_d0c1e467bd42",
+    "source_relative": "plexpy/notifiers.py",
+    "original_report_link": null,
+    "effective_report_link": "This report is through a private channel (email). \nReport：It was discovered that the PBKDF2 password hashing implementation used insufficient iterations and a weaker hash algorithm (SHA1). This configuration did not meet current security standards and exposed user credentials to potential brute-force attacks if password hashes were compromised.\n\nResponse：Increase Remote app PBKDF2 iterations to 600,000 and SHA256 hash\nOWASP Cheat Sheet recommends 600,000 iterations for SHA256. https://github.com/Tautulli/Tautulli/commit/282810e9ca403a43e30d85148ad00301abc9fd3d",
+    "worksheet_range": "A3:I3",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Python",
+    "row": 4,
+    "original_filename": "crossbario__autobahn-python__auth.py",
+    "original_issue": "Inadequate Encryption Strength",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/crossbario__autobahn-python/2023-01-05_f77396401d52/autobahn/wamp/auth.py",
+    "repository": "crossbario/autobahn-python",
+    "commit": "f77396401d52a5284c3506171cf45eb64505804f",
+    "snapshot": "crossbario__autobahn-python/2023-01-05_f77396401d52",
+    "source_relative": "autobahn/wamp/auth.py",
+    "original_report_link": "Use secrets.choice and 600,000 iterations for WAMP-CRA keygen helper · Issue #1633 · crossbario/autobahn-python (github.com)",
+    "effective_report_link": "Use secrets.choice and 600,000 iterations for WAMP-CRA keygen helper · Issue #1633 · crossbario/autobahn-python (github.com)",
+    "worksheet_range": "A4:I4",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/crossbario__autobahn-python/2023-01-05_f77396401d52/autobahn/wamp/auth.py",
+        "line": 602,
+        "rule": "C9",
+        "algorithm": ""
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 5,
+    "original_filename": "crossbario__autobahn-python__auth.py",
+    "original_issue": "Interation less than 10000 for PBKDF2",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/crossbario__autobahn-python/2023-01-05_f77396401d52/autobahn/wamp/auth.py",
+    "repository": "crossbario/autobahn-python",
+    "commit": "f77396401d52a5284c3506171cf45eb64505804f",
+    "snapshot": "crossbario__autobahn-python/2023-01-05_f77396401d52",
+    "source_relative": "autobahn/wamp/auth.py",
+    "original_report_link": null,
+    "effective_report_link": "Use secrets.choice and 600,000 iterations for WAMP-CRA keygen helper · Issue #1633 · crossbario/autobahn-python (github.com)",
+    "worksheet_range": "A5:I5",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/crossbario__autobahn-python/2023-01-05_f77396401d52/autobahn/wamp/auth.py",
+        "line": 533,
+        "rule": "C7",
+        "algorithm": ""
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 6,
+    "original_filename": "twisted__twisted__ckeygen.py",
+    "original_issue": "1024 dsakey used",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/twisted__twisted/2023-09-13_e673cb57698d/src/twisted/conch/scripts/ckeygen.py",
+    "repository": "twisted/twisted",
+    "commit": "e673cb57698db0ff127975414e9312e4763b382c",
+    "snapshot": "twisted__twisted/2023-09-13_e673cb57698d",
+    "source_relative": "src/twisted/conch/scripts/ckeygen.py",
+    "original_report_link": "https://github.com/twisted/twisted/issues/12135",
+    "effective_report_link": "https://github.com/twisted/twisted/issues/12135",
+    "worksheet_range": "A6:I6",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/twisted__twisted/2023-09-13_e673cb57698d/src/twisted/conch/scripts/ckeygen.py",
+        "line": 158,
+        "rule": "C13",
+        "algorithm": "DSA"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 7,
+    "original_filename": "saltstack__salt__digicertapi.py",
+    "original_issue": "3DES used",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/saltstack__salt/2021-03-01_d3788da12085/salt/runners/digicertapi.py",
+    "repository": "saltstack/salt",
+    "commit": "d3788da12085c4f6b7daa5f10f9e7e8ab11348e0",
+    "snapshot": "saltstack__salt/2021-03-01_d3788da12085",
+    "source_relative": "salt/runners/digicertapi.py",
+    "original_report_link": "This report is through a private channel (email). \nReport: In the file salt/salt/runners/digicertapi.py, the 3DES algorithm appears to be used to generate the private key for RSA. However, 3DES is no longer considered secure because of its limited effective key size and known vulnerabilities to block collision attacks. It is recommended to replace 3DES with a modern symmetric encryption algorithm such as AES-256. In the file salt/salt/utils/pycrypto.py, the MD5 hash function is supported in the project. MD5 has long been deprecated for security-sensitive operations due to its susceptibility to collision attacks, which can compromise data integrity and authentication. A more secure alternative such as SHA-256 or SHA-3 should be used instead. The same file also indicates support for DES. Like 3DES, DES is outdated and easily broken by brute-force attacks due to its short 56-bit key length. It should be removed from the project and replaced with a secure algorithm such as AES.\nResponse: We are aware of the current state of our crypto algorithms. There is an on-going effort to update them in the next major release of salt 3008.0. In the meantime, you are able to mitigate any potential risk by using a transport that supports TLS.",
+    "effective_report_link": "This report is through a private channel (email). \nReport: In the file salt/salt/runners/digicertapi.py, the 3DES algorithm appears to be used to generate the private key for RSA. However, 3DES is no longer considered secure because of its limited effective key size and known vulnerabilities to block collision attacks. It is recommended to replace 3DES with a modern symmetric encryption algorithm such as AES-256. In the file salt/salt/utils/pycrypto.py, the MD5 hash function is supported in the project. MD5 has long been deprecated for security-sensitive operations due to its susceptibility to collision attacks, which can compromise data integrity and authentication. A more secure alternative such as SHA-256 or SHA-3 should be used instead. The same file also indicates support for DES. Like 3DES, DES is outdated and easily broken by brute-force attacks due to its short 56-bit key length. It should be removed from the project and replaced with a secure algorithm such as AES.\nResponse: We are aware of the current state of our crypto algorithms. There is an on-going effort to update them in the next major release of salt 3008.0. In the meantime, you are able to mitigate any potential risk by using a transport that supports TLS.",
+    "worksheet_range": "A7:I7",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/saltstack__salt/2021-03-01_d3788da12085/salt/runners/digicertapi.py",
+        "line": 538,
+        "rule": "C14",
+        "algorithm": "3DES"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 8,
+    "original_filename": "saltstack__salt__pycrypto.py",
+    "original_issue": "MD5 used",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/saltstack__salt/2024-02-29_e005c26fffa3/salt/utils/pycrypto.py",
+    "repository": "saltstack/salt",
+    "commit": "e005c26fffa3eddd43d9bb7771362e07458cc99e",
+    "snapshot": "saltstack__salt/2024-02-29_e005c26fffa3",
+    "source_relative": "salt/utils/pycrypto.py",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A8:I8",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/saltstack__salt/2024-02-29_e005c26fffa3/salt/utils/pycrypto.py",
+        "line": 130,
+        "rule": "C5",
+        "algorithm": "MD5_CRYPT"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 9,
+    "original_filename": "saltstack__salt__pycrypto.py",
+    "original_issue": "Inadequate Encryption Strength",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/saltstack__salt/2024-02-29_e005c26fffa3/salt/utils/pycrypto.py",
+    "repository": "saltstack/salt",
+    "commit": "e005c26fffa3eddd43d9bb7771362e07458cc99e",
+    "snapshot": "saltstack__salt/2024-02-29_e005c26fffa3",
+    "source_relative": "salt/utils/pycrypto.py",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A9:I9",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Python",
+    "row": 10,
+    "original_filename": "saltstack__salt__pycrypto.py",
+    "original_issue": "DES used",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/saltstack__salt/2024-02-29_e005c26fffa3/salt/utils/pycrypto.py",
+    "repository": "saltstack/salt",
+    "commit": "e005c26fffa3eddd43d9bb7771362e07458cc99e",
+    "snapshot": "saltstack__salt/2024-02-29_e005c26fffa3",
+    "source_relative": "salt/utils/pycrypto.py",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A10:I10",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/saltstack__salt/2024-02-29_e005c26fffa3/salt/utils/pycrypto.py",
+        "line": 130,
+        "rule": "C5",
+        "algorithm": "DES_CRYPT"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 11,
+    "original_filename": "twisted__twisted__transport.py",
+    "original_issue": "MD5 used",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/twisted__twisted/2023-09-13_e673cb57698d/src/twisted/conch/ssh/transport.py",
+    "repository": "twisted/twisted",
+    "commit": "e673cb57698db0ff127975414e9312e4763b382c",
+    "snapshot": "twisted__twisted/2023-09-13_e673cb57698d",
+    "source_relative": "src/twisted/conch/ssh/transport.py",
+    "original_report_link": "https://github.com/twisted/twisted/issues/12135",
+    "effective_report_link": "https://github.com/twisted/twisted/issues/12135",
+    "worksheet_range": "A11:I11",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Python",
+    "row": 12,
+    "original_filename": "mstamy2__PyPDF2--_pycryptodome.py",
+    "original_issue": "ARC4 used",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "snapshot": "mstamy2__PyPDF2/2023-10-07_0fbe963c4d21",
+    "source_relative": "pypdf/_crypt_providers/_pycryptodome.py",
+    "original_report_link": "This report is through a private channel (email). \nReport: During a code review of the PyPDF project, it was observed that certain insecure cryptographic algorithms and modes are still implemented within the codebase. Specifically, ARC4 (RC4) and AES in ECB mode are present, both of which are regarded as cryptographically unsafe by current security standards.\n\nResponse:pypdf is designed to follow the official PDF specification, which unfortunately still includes some older and insecure cryptographic methods. Because of that, we have to support certain algorithms like ARC4 or AES in ECB mode — otherwise, we’d lose compatibility with existing PDF files. Automatic tools may flag these as insecure, but they’re part of the standard and can’t simply be removed.",
+    "effective_report_link": "This report is through a private channel (email). \nReport: During a code review of the PyPDF project, it was observed that certain insecure cryptographic algorithms and modes are still implemented within the codebase. Specifically, ARC4 (RC4) and AES in ECB mode are present, both of which are regarded as cryptographically unsafe by current security standards.\n\nResponse:pypdf is designed to follow the official PDF specification, which unfortunately still includes some older and insecure cryptographic methods. Because of that, we have to support certain algorithms like ARC4 or AES in ECB mode — otherwise, we’d lose compatibility with existing PDF files. Automatic tools may flag these as insecure, but they’re part of the standard and can’t simply be removed.",
+    "worksheet_range": "A12:I12",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+        "line": 44,
+        "rule": "C14",
+        "algorithm": "RC4"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+        "line": 47,
+        "rule": "C14",
+        "algorithm": "RC4"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+        "line": 77,
+        "rule": "C14",
+        "algorithm": "RC4"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+        "line": 81,
+        "rule": "C14",
+        "algorithm": "RC4"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 13,
+    "original_filename": "mstamy2__PyPDF2--_pycryptodome.py",
+    "original_issue": "ECB used",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_pycryptodome.py",
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "snapshot": "mstamy2__PyPDF2/2023-10-07_0fbe963c4d21",
+    "source_relative": "pypdf/_crypt_providers/_pycryptodome.py",
+    "original_report_link": null,
+    "effective_report_link": "This report is through a private channel (email). \nReport: During a code review of the PyPDF project, it was observed that certain insecure cryptographic algorithms and modes are still implemented within the codebase. Specifically, ARC4 (RC4) and AES in ECB mode are present, both of which are regarded as cryptographically unsafe by current security standards.\n\nResponse:pypdf is designed to follow the official PDF specification, which unfortunately still includes some older and insecure cryptographic methods. Because of that, we have to support certain algorithms like ARC4 or AES in ECB mode — otherwise, we’d lose compatibility with existing PDF files. Automatic tools may flag these as insecure, but they’re part of the standard and can’t simply be removed.",
+    "worksheet_range": "A13:I13",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Python",
+    "row": 14,
+    "original_filename": "mstamy2__PyPDF2--_cryptography.py",
+    "original_issue": "ARC4 used",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_cryptography.py",
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "snapshot": "mstamy2__PyPDF2/2023-10-07_0fbe963c4d21",
+    "source_relative": "pypdf/_crypt_providers/_cryptography.py",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A14:I14",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_cryptography.py",
+        "line": 43,
+        "rule": "C14",
+        "algorithm": "RC4"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_cryptography.py",
+        "line": 86,
+        "rule": "C14",
+        "algorithm": "RC4"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_cryptography.py",
+        "line": 91,
+        "rule": "C14",
+        "algorithm": "RC4"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 15,
+    "original_filename": "mstamy2__PyPDF2--_cryptography.py",
+    "original_issue": "ECB used",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/mstamy2__PyPDF2/2023-10-07_0fbe963c4d21/pypdf/_crypt_providers/_cryptography.py",
+    "repository": "mstamy2/PyPDF2",
+    "commit": "0fbe963c4d219b0ef0a08602cf0808bdba840f5e",
+    "snapshot": "mstamy2__PyPDF2/2023-10-07_0fbe963c4d21",
+    "source_relative": "pypdf/_crypt_providers/_cryptography.py",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A15:I15",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Python",
+    "row": 16,
+    "original_filename": "cowrie__cowrie__keys.py",
+    "original_issue": "RSA key size 1024",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/cowrie__cowrie/2023-01-30_bf55a591bfad/src/cowrie/ssh/keys.py",
+    "repository": "cowrie/cowrie",
+    "commit": "bf55a591bfada6ce2ca43391c784a5e9c2b98ee3",
+    "snapshot": "cowrie__cowrie/2023-01-30_bf55a591bfad",
+    "source_relative": "src/cowrie/ssh/keys.py",
+    "original_report_link": "https://github.com/cowrie/cowrie/issues/2145",
+    "effective_report_link": "https://github.com/cowrie/cowrie/issues/2145",
+    "worksheet_range": "A16:I16",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/cowrie__cowrie/2023-01-30_bf55a591bfad/src/cowrie/ssh/keys.py",
+        "line": 53,
+        "rule": "C13",
+        "algorithm": "DSA"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 17,
+    "original_filename": "jrnl-org__jrnl__Jrnlv1Encryption.py",
+    "original_issue": "SHA-256 is not a key derivation function",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/jrnl-org__jrnl/2023-01-08_9547411390b3/jrnl/encryption/Jrnlv1Encryption.py",
+    "repository": "jrnl-org/jrnl",
+    "commit": "9547411390b36a7f2b66bef2acf6e5b8faf3742f",
+    "snapshot": "jrnl-org__jrnl/2023-01-08_9547411390b3",
+    "source_relative": "jrnl/encryption/Jrnlv1Encryption.py",
+    "original_report_link": "This report is through a private channel (email). \nReport: During a code review of the Jrnl project, a potential cryptographic design concern was identified in the file jrnl/encryption/Jrnlv1Encryption.py\n. The current implementation derives the decryption key using a direct SHA256 hash, which is not a secure or recommended method for key derivation.While SHA256 is a strong hashing algorithm, it is not suitable for key derivation because it does not include mechanisms such as salting or iteration count, both of which are essential to resist brute-force and dictionary attacks.Modern best practices recommend the use of a Key Derivation Function (KDF) such as PBKDF2, scrypt, or Argon2.\n\nResponse: Correct. The SHA256-based key derivation in Jrnl v1 exists only for backward compatibility with older journals. The current version, Jrnlv2Encryption, already uses PBKDF2HMAC from the cryptography library, which is a secure key derivation method.",
+    "effective_report_link": "This report is through a private channel (email). \nReport: During a code review of the Jrnl project, a potential cryptographic design concern was identified in the file jrnl/encryption/Jrnlv1Encryption.py\n. The current implementation derives the decryption key using a direct SHA256 hash, which is not a secure or recommended method for key derivation.While SHA256 is a strong hashing algorithm, it is not suitable for key derivation because it does not include mechanisms such as salting or iteration count, both of which are essential to resist brute-force and dictionary attacks.Modern best practices recommend the use of a Key Derivation Function (KDF) such as PBKDF2, scrypt, or Argon2.\n\nResponse: Correct. The SHA256-based key derivation in Jrnl v1 exists only for backward compatibility with older journals. The current version, Jrnlv2Encryption, already uses PBKDF2HMAC from the cryptography library, which is a secure key derivation method.",
+    "worksheet_range": "A17:I17",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/jrnl-org__jrnl/2023-01-08_9547411390b3/jrnl/encryption/Jrnlv1Encryption.py",
+        "line": 28,
+        "rule": "C6",
+        "algorithm": "SHA256"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 18,
+    "original_filename": "jrnl-org__jrnl__Jrnlv2Encryption.py",
+    "original_issue": "Hardcoded salt",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/jrnl-org__jrnl/2023-01-08_9547411390b3/jrnl/encryption/Jrnlv2Encryption.py",
+    "repository": "jrnl-org/jrnl",
+    "commit": "9547411390b36a7f2b66bef2acf6e5b8faf3742f",
+    "snapshot": "jrnl-org__jrnl/2023-01-08_9547411390b3",
+    "source_relative": "jrnl/encryption/Jrnlv2Encryption.py",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A18:I18",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/jrnl-org__jrnl/2023-01-08_9547411390b3/jrnl/encryption/Jrnlv2Encryption.py",
+        "line": 40,
+        "rule": "C8",
+        "algorithm": ""
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 19,
+    "original_filename": "XX-net__XX-Net__rc4_wrap.py",
+    "original_issue": "Constant IV",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2023-11-18_2e06365748b1/code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+    "repository": "XX-net/XX-Net",
+    "commit": "2e06365748b1a693eb55beba178f146628f58363",
+    "snapshot": "XX-net__XX-Net/2023-11-18_2e06365748b1",
+    "source_relative": "code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+    "original_report_link": "This report is through a private channel (email). \nReport: A review of the XX-Net project’s source code revealed potential cryptographic weaknesses in the implementation. Specifically, the initialization vector used in rc4_wrap.py is statically defined as all zeros, which violates best practices for AES encryption that require a securely generated random IV to maintain confidentiality across encryption operations. Additionally, the encryption key is derived directly from the sni variable, introducing a potential lack of entropy and predictability in key generation. These design flaws may compromise the overall security of the encryption process and should be addressed to ensure compliance with modern cryptographic standards.\n\nResponse:we appreciate the feedback, the primary focus of the project remains ensuring reliable circumvention of the GFW. Decryption is already challenging, as most network traffic today is HTTPS-based. The best approach for improving security and effectiveness is to apply an additional encryption layer to all traffic before it enters any tunnel. To achieve this, the current protocol should be redesigned and upgraded accordingly.",
+    "effective_report_link": "This report is through a private channel (email). \nReport: A review of the XX-Net project’s source code revealed potential cryptographic weaknesses in the implementation. Specifically, the initialization vector used in rc4_wrap.py is statically defined as all zeros, which violates best practices for AES encryption that require a securely generated random IV to maintain confidentiality across encryption operations. Additionally, the encryption key is derived directly from the sni variable, introducing a potential lack of entropy and predictability in key generation. These design flaws may compromise the overall security of the encryption process and should be addressed to ensure compliance with modern cryptographic standards.\n\nResponse:we appreciate the feedback, the primary focus of the project remains ensuring reliable circumvention of the GFW. Decryption is already challenging, as most network traffic today is HTTPS-based. The best approach for improving security and effectiveness is to apply an additional encryption layer to all traffic before it enters any tunnel. To achieve this, the current protocol should be redesigned and upgraded accordingly.",
+    "worksheet_range": "A19:I19",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2023-11-18_2e06365748b1/code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+        "line": 51,
+        "rule": "C3",
+        "algorithm": "AES"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2023-11-18_2e06365748b1/code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+        "line": 55,
+        "rule": "C3",
+        "algorithm": "AES"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 20,
+    "original_filename": "XX-net__XX-Net__rc4_wrap.py",
+    "original_issue": "Inadequate Encryption Strength",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2023-11-18_2e06365748b1/code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+    "repository": "XX-net/XX-Net",
+    "commit": "2e06365748b1a693eb55beba178f146628f58363",
+    "snapshot": "XX-net__XX-Net/2023-11-18_2e06365748b1",
+    "source_relative": "code/default/x_tunnel/local/seley_front/rc4_wrap.py",
+    "original_report_link": null,
+    "effective_report_link": "This report is through a private channel (email). \nReport: A review of the XX-Net project’s source code revealed potential cryptographic weaknesses in the implementation. Specifically, the initialization vector used in rc4_wrap.py is statically defined as all zeros, which violates best practices for AES encryption that require a securely generated random IV to maintain confidentiality across encryption operations. Additionally, the encryption key is derived directly from the sni variable, introducing a potential lack of entropy and predictability in key generation. These design flaws may compromise the overall security of the encryption process and should be addressed to ensure compliance with modern cryptographic standards.\n\nResponse:we appreciate the feedback, the primary focus of the project remains ensuring reliable circumvention of the GFW. Decryption is already challenging, as most network traffic today is HTTPS-based. The best approach for improving security and effectiveness is to apply an additional encryption layer to all traffic before it enters any tunnel. To achieve this, the current protocol should be redesigned and upgraded accordingly.",
+    "worksheet_range": "A20:I20",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Python",
+    "row": 21,
+    "original_filename": "XX-net__XX-Net__cryptomath.py",
+    "original_issue": "MD5 used",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2022-10-24_ca9026bfce5d/code/default/lib/noarch/tlslite/utils/cryptomath.py",
+    "repository": "XX-net/XX-Net",
+    "commit": "ca9026bfce5dea8ef1d00a9637b4473de5d69f85",
+    "snapshot": "XX-net__XX-Net/2022-10-24_ca9026bfce5d",
+    "source_relative": "code/default/lib/noarch/tlslite/utils/cryptomath.py",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A21:I21",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2022-10-24_ca9026bfce5d/code/default/lib/noarch/tlslite/utils/cryptomath.py",
+        "line": 116,
+        "rule": "C5",
+        "algorithm": "MD5"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 22,
+    "original_filename": "XX-net__XX-Net__openssl_rsakey.py",
+    "original_issue": "3DES used",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2022-10-24_ca9026bfce5d/code/default/lib/noarch/tlslite/utils/openssl_rsakey.py",
+    "repository": "XX-net/XX-Net",
+    "commit": "ca9026bfce5dea8ef1d00a9637b4473de5d69f85",
+    "snapshot": "XX-net__XX-Net/2022-10-24_ca9026bfce5d",
+    "source_relative": "code/default/lib/noarch/tlslite/utils/openssl_rsakey.py",
+    "original_report_link": null,
+    "effective_report_link": null,
+    "worksheet_range": "A22:I22",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/XX-net__XX-Net/2022-10-24_ca9026bfce5d/code/default/lib/noarch/tlslite/utils/openssl_rsakey.py",
+        "line": 102,
+        "rule": "C14",
+        "algorithm": "3DES"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 23,
+    "original_filename": "wechatpy__wechatpy__base.py",
+    "original_issue": "ECB used",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/wechatpy__wechatpy/2022-01-06_5f693a7e9015/wechatpy/crypto/base.py",
+    "repository": "wechatpy/wechatpy",
+    "commit": "5f693a7e90156786c2540ad3c941d12cdf6d88ef",
+    "snapshot": "wechatpy__wechatpy/2022-01-06_5f693a7e9015",
+    "source_relative": "wechatpy/crypto/base.py",
+    "original_report_link": "https://github.com/wechatpy/wechatpy/issues/775",
+    "effective_report_link": "https://github.com/wechatpy/wechatpy/issues/775",
+    "worksheet_range": "A23:I23",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/wechatpy__wechatpy/2022-01-06_5f693a7e9015/wechatpy/crypto/base.py",
+        "line": 34,
+        "rule": "C1",
+        "algorithm": "AES"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 24,
+    "original_filename": "wechatpy__wechatpy__base.py",
+    "original_issue": "Inadequate Encryption Strength",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/wechatpy__wechatpy/2022-01-06_5f693a7e9015/wechatpy/crypto/base.py",
+    "repository": "wechatpy/wechatpy",
+    "commit": "5f693a7e90156786c2540ad3c941d12cdf6d88ef",
+    "snapshot": "wechatpy__wechatpy/2022-01-06_5f693a7e9015",
+    "source_relative": "wechatpy/crypto/base.py",
+    "original_report_link": null,
+    "effective_report_link": "https://github.com/wechatpy/wechatpy/issues/775",
+    "worksheet_range": "A24:I24",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/wechatpy__wechatpy/2022-01-06_5f693a7e9015/wechatpy/crypto/base.py",
+        "line": 29,
+        "rule": "C3",
+        "algorithm": "AES"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 25,
+    "original_filename": "lbryio__lbry-sdk__crypt.py",
+    "original_issue": "Using the initialization vector as the salt for the scrypt key derivation function is insecure",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/lbryio__lbry-sdk/2023-05-06_eb5da9511e16/lbry/crypto/crypt.py",
+    "repository": "lbryio/lbry-sdk",
+    "commit": "eb5da9511e162ef1080cb34af2ee087383cfa94a",
+    "snapshot": "lbryio__lbry-sdk/2023-05-06_eb5da9511e16",
+    "source_relative": "lbry/crypto/crypt.py",
+    "original_report_link": "https://github.com/lbryio/lbry-sdk/issues/3737",
+    "effective_report_link": "https://github.com/lbryio/lbry-sdk/issues/3737",
+    "worksheet_range": "A25:I25",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Python",
+    "row": 26,
+    "original_filename": "lbryio__lbry-sdk__crypt.py",
+    "original_issue": "SHA-256 is not a key derivation function",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/lbryio__lbry-sdk/2023-05-06_eb5da9511e16/lbry/crypto/crypt.py",
+    "repository": "lbryio/lbry-sdk",
+    "commit": "eb5da9511e162ef1080cb34af2ee087383cfa94a",
+    "snapshot": "lbryio__lbry-sdk/2023-05-06_eb5da9511e16",
+    "source_relative": "lbry/crypto/crypt.py",
+    "original_report_link": null,
+    "effective_report_link": "https://github.com/lbryio/lbry-sdk/issues/3737",
+    "worksheet_range": "A26:I26",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/lbryio__lbry-sdk/2023-05-06_eb5da9511e16/lbry/crypto/crypt.py",
+        "line": 19,
+        "rule": "C6",
+        "algorithm": "SHA256"
+      },
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/lbryio__lbry-sdk/2023-05-06_eb5da9511e16/lbry/crypto/crypt.py",
+        "line": 30,
+        "rule": "C6",
+        "algorithm": "SHA256"
+      }
+    ]
+  },
+  {
+    "sheet": "Python",
+    "row": 27,
+    "original_filename": "tgalal__yowsup__mediacipher.py",
+    "original_issue": "Truncating the MAC",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/tgalal__yowsup/2019-05-04_a240637e0f0d/yowsup/layers/protocol_media/mediacipher.py",
+    "repository": "tgalal/yowsup",
+    "commit": "a240637e0f0d3a96fbf57e7a453c0ea4715e16bc",
+    "snapshot": "tgalal__yowsup/2019-05-04_a240637e0f0d",
+    "source_relative": "yowsup/layers/protocol_media/mediacipher.py",
+    "original_report_link": "https://github.com/tgalal/yowsup/issues/3260",
+    "effective_report_link": "https://github.com/tgalal/yowsup/issues/3260",
+    "worksheet_range": "A27:I27",
+    "matched_current_apis": []
+  },
+  {
+    "sheet": "Python",
+    "row": 28,
+    "original_filename": "paramiko__paramiko__dsskey.py",
+    "original_issue": "SHA1 used",
+    "source_file": "benchmarks/cryptogpt-realworld-python-full/paramiko__paramiko/2023-05-06_e22c5ea33081/paramiko/dsskey.py",
+    "repository": "paramiko/paramiko",
+    "commit": "e22c5ea330814801d8487dc3da347f987bafe5ec",
+    "snapshot": "paramiko__paramiko/2023-05-06_e22c5ea33081",
+    "source_relative": "paramiko/dsskey.py",
+    "original_report_link": "https://github.com/paramiko/paramiko/issues/2388",
+    "effective_report_link": "https://github.com/paramiko/paramiko/issues/2388",
+    "worksheet_range": "A28:I28",
+    "matched_current_apis": [
+      {
+        "source": "benchmarks/cryptogpt-realworld-python-full/paramiko__paramiko/2023-05-06_e22c5ea33081/paramiko/dsskey.py",
+        "line": 121,
+        "rule": "C16",
+        "algorithm": "SHA1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,363 @@
+﻿front_end,code_number,files,missing_files,label,category,source_status,slices,prediction,verdict
+CryptoLLM original front end,1.1.1,PredictableCryptographicKeyBBCase1.java,,misuse,Static/Contant Key,complete,1,1,TP
+CryptoLLM original front end,18.1.1,CredentialInStringBBCase1.java,,misuse,Credential in String,complete,2,1,TP
+CryptoLLM original front end,18.1.2,,CredentialInStringBBCase2.java,misuse,Credential in String,missing_source,0,0,FN
+CryptoLLM original front end,2.1.1,PredictablePBEPasswordBBCase1.java,,misuse,Static/Contant password,complete,0,0,FN
+CryptoLLM original front end,2.1.2,PredictablePBEPasswordBBCase2.java,,misuse,Static/Constant Password,complete,0,0,FN
+CryptoLLM original front end,3.1.1,PredictableKeyStorePasswordBBCase1.java,,misuse,Static/Constant Password,complete,1,1,TP
+CryptoLLM original front end,4.1.1,DummyHostNameVerifierCase1.java,,misuse,Dummy Verifier,complete,0,0,FN
+CryptoLLM original front end,5.1.1,DummyCertValidationCase1.java,,misuse,Dummy Certificate,complete,0,0,FN
+CryptoLLM original front end,5.1.2,DummyCertValidationCase2.java,,misuse,Dummy Certificate,complete,0,0,FN
+CryptoLLM original front end,5.1.3,DummyCertValidationCase3.java,,misuse,Dummy Certificate,complete,0,0,FN
+CryptoLLM original front end,6.1.1,ImproperSocketManualHostBBCase1.java,,misuse,Socket Hostname w/o verification,complete,0,0,FN
+CryptoLLM original front end,7.1.1,HttpProtocolBBCase1.java,,misuse,HTTP ,complete,0,0,FN
+CryptoLLM original front end,9.1.1,PredictableSeedsBBCase1.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,9.1.2,PredictableSeedsBBCase2.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,8.1.1,UntrustedPRNGCase1.java,,misuse,Usage of Random Method from Library,complete,0,0,FN
+CryptoLLM original front end,10.1.1,StaticSaltsBBCase1.java,,misuse,Static/Constant Salt,complete,0,0,FN
+CryptoLLM original front end,11.1.1,EcbInSymmCryptoBBCase1.java,,misuse,Usage of ECB ,complete,1,1,TP
+CryptoLLM original front end,12.1.1,StaticInitializationVectorBBCase1.java,,misuse,Static/Constant IV,complete,2,1,TP
+CryptoLLM original front end,13.1.1,LessThan1000IterationPBEBBCase1.java,,misuse,PBE iteration < 1000,complete,0,0,FN
+CryptoLLM original front end,14.1.1,BrokenCryptoBBCase1.java,,misuse,DES used,complete,1,1,TP
+CryptoLLM original front end,14.1.2,BrokenCryptoBBCase2.java,,misuse,Blowfish used,complete,1,0,FN
+CryptoLLM original front end,14.1.3,BrokenCryptoBBCase3.java,,misuse,RC4 used,complete,1,0,FN
+CryptoLLM original front end,14.1.4,BrokenCryptoBBCase4.java,,misuse,RC2 used,complete,1,0,FN
+CryptoLLM original front end,14.1.5,BrokenCryptoBBCase5.java,,misuse,IDEA used,complete,1,0,FN
+CryptoLLM original front end,15.1.1,InsecureAsymmetricCipherBBCase1.java,,misuse,RSA keysize 1024 bits,complete,3,0,FN
+CryptoLLM original front end,16.1.1,BrokenHashBBCase1.java,,misuse,SHA1 used,complete,0,0,FN
+CryptoLLM original front end,16.1.2,BrokenHashBBCase2.java,,misuse,MD5 used,complete,0,0,FN
+CryptoLLM original front end,16.1.3,BrokenHashBBCase3.java,,misuse,MD4 used,complete,0,0,FN
+CryptoLLM original front end,16.1.4,BrokenHashBBCase4.java,,misuse,MD2 used,complete,0,0,FN
+CryptoLLM original front end,17.1.1,BrokenMacBBCase1.java,,misuse,HmacMD5,complete,0,0,FN
+CryptoLLM original front end,17.1.2,BrokenMacBBCase2.java,,misuse,HmacSHA1,complete,0,0,FN
+CryptoLLM original front end,14.1.6,BrokenCryptoCorrected.java,,safe,---,complete,1,0,TN
+CryptoLLM original front end,16.1.5,BrokenHashCorrected.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,11.1.2,EcbInSymmCryptoCorrected.java,,safe,---,complete,1,0,TN
+CryptoLLM original front end,4.1.2,DummyHostNameVerifierCorrected.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,7.1.2,HttpProtocolCase1Corrected.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,13.1.2,LessThan1000IterationPBECorrected.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,1.1.2,PredictableCryptographicKeyCorrected.java,,safe,---,complete,2,0,TN
+CryptoLLM original front end,2.1.3,PredictableKeyStorePasswordCorrected.java,,safe,---,complete,1,0,TN
+CryptoLLM original front end,3.1.2,PredictablePBEPasswordCorrected.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,9.1.3,PredictableSeedsCorrected.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,12.1.2,StaticInitializationVectorCorrected.java,,safe,---,complete,2,0,TN
+CryptoLLM original front end,10.1.2,StaticSaltsCorrected.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,8.1.2,UntrustedPRNGCorrected.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,18.1.3,CredentialInStringCorrected.java,,safe,---,complete,2,0,TN
+CryptoLLM original front end,17.1.3,BrokenMacCorrected.java,,safe,HmacSHA256,complete,0,0,TN
+CryptoLLM original front end,1.2.1,PredictableCryptographicKeyABICase1.java,,misuse,Static/Contant Key,complete,1,1,TP
+CryptoLLM original front end,18.2.1,CredentialInStringABICase1.java,,misuse,Credential in String,complete,1,1,TP
+CryptoLLM original front end,2.2.1,PredictablePBEPasswordABICase1.java,,misuse,Static/Contant password,complete,0,0,FN
+CryptoLLM original front end,3.2.1,PredictableKeyStorePasswordABICase1.java,,misuse,Static/Constant Password,complete,1,1,TP
+CryptoLLM original front end,7.2.1,HttpProtocolABICase1.java,,misuse,HTTP ,complete,0,0,FN
+CryptoLLM original front end,9.2.1,PredictableSeedsABICase1.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,9.2.2,PredictableSeedsABICase2.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,10.2.1,StaticSaltsABICase1.java,,misuse,Static/Constant Salt,complete,0,0,FN
+CryptoLLM original front end,11.2.1,EcbInSymmCryptoABICase1.java,,misuse,Usage of ECB ,complete,1,1,TP
+CryptoLLM original front end,12.2.1,StaticInitializationVectorABICase1.java,,misuse,Static/Constant IV,complete,2,0,FN
+CryptoLLM original front end,13.2.1,LessThan1000IterationPBEABICase1.java,,misuse,PBE iteration < 1000,complete,0,0,FN
+CryptoLLM original front end,14.2.1,BrokenCryptoABICase1.java,,misuse,DES used,complete,1,1,TP
+CryptoLLM original front end,14.2.2,BrokenCryptoABICase2.java,,misuse,Blowfish used,complete,1,0,FN
+CryptoLLM original front end,14.2.3,BrokenCryptoABICase3.java,,misuse,RC4 used,complete,1,0,FN
+CryptoLLM original front end,14.2.4,BrokenCryptoABICase4.java,,misuse,RC2 used,complete,1,0,FN
+CryptoLLM original front end,14.2.5,BrokenCryptoABICase9.java,,misuse,IDEA used,complete,1,0,FN
+CryptoLLM original front end,15.2.1,InsecureAsymmetricCipherABICase1.java,,misuse,RSA keysize 1024 bits,complete,3,0,FN
+CryptoLLM original front end,16.2.1,BrokenHashABICase1.java,,misuse,SHA1 used,complete,0,0,FN
+CryptoLLM original front end,16.2.2,BrokenHashABICase2.java,,misuse,MD5 used,complete,0,0,FN
+CryptoLLM original front end,16.2.3,BrokenHashABICase3.java,,misuse,MD4 used,complete,0,0,FN
+CryptoLLM original front end,16.2.4,BrokenHashABICase4.java,,misuse,MD2 used,complete,0,0,FN
+CryptoLLM original front end,1.3.1,PredictableCryptographicKeyABICase3.java,,misuse,Static/Contant Key,complete,1,1,TP
+CryptoLLM original front end,18.3.1,CredentialInStringABICase3.java,,misuse,Credential in String,complete,1,1,TP
+CryptoLLM original front end,2.3.1,PredictablePBEPasswordABICase3.java,,misuse,Static/Contant password,complete,0,0,FN
+CryptoLLM original front end,3.3.1,PredictableKeyStorePasswordABICase3.java,,misuse,Static/Constant Password,complete,1,1,TP
+CryptoLLM original front end,7.3.1,HttpProtocolABICase3.java,,misuse,HTTP ,complete,0,0,FN
+CryptoLLM original front end,9.3.1,PredictableSeedsABICase5.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,9.3.2,PredictableSeedsABICase6.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,10.3.1,StaticSaltsABICase3.java,,misuse,Static/Constant Salt,complete,0,0,FN
+CryptoLLM original front end,11.3.1,EcbInSymmCryptoABICase3.java,,misuse,Usage of ECB ,complete,1,1,TP
+CryptoLLM original front end,12.3.1,StaticInitializationVectorABICase3.java,,misuse,Static/Constant IV,complete,2,1,TP
+CryptoLLM original front end,13.3.1,LessThan1000IterationPBEABICase3.java,,misuse,PBE iteration < 1000,complete,0,0,FN
+CryptoLLM original front end,14.3.1,BrokenCryptoABICase11.java,,misuse,DES used,complete,1,1,TP
+CryptoLLM original front end,14.3.2,BrokenCryptoABICase12.java,,misuse,Blowfish used,complete,1,0,FN
+CryptoLLM original front end,14.3.3,BrokenCryptoABICase13.java,,misuse,RC4 used,complete,1,0,FN
+CryptoLLM original front end,14.3.4,BrokenCryptoABICase14.java,,misuse,RC2 used,complete,1,0,FN
+CryptoLLM original front end,14.3.5,BrokenCryptoABICase15.java,,misuse,IDEA used,complete,1,0,FN
+CryptoLLM original front end,15.3.1,InsecureAsymmetricCipherABICase3.java,,misuse,RSA keysize 1024 bits,complete,3,1,TP
+CryptoLLM original front end,16.3.1,BrokenHashABICase9.java,,misuse,SHA1 used,complete,0,0,FN
+CryptoLLM original front end,16.3.2,BrokenHashABICase10.java,,misuse,MD5 used,complete,0,0,FN
+CryptoLLM original front end,16.3.3,BrokenHashABICase11.java,,misuse,MD4 used,complete,0,0,FN
+CryptoLLM original front end,16.3.4,BrokenHashABICase12.java,,misuse,MD2 used,complete,0,0,FN
+CryptoLLM original front end,1.4.1,PredictableCryptographicKeyABSCase1.java,,misuse,Static/Contant Key,complete,2,1,TP
+CryptoLLM original front end,2.4.1,PredictablePBEPasswordABSCase1.java,,misuse,Static/Contant password,complete,0,0,FN
+CryptoLLM original front end,3.4.1,PredictableKeyStorePasswordABSCase1.java,,misuse,Static/Constant Password,complete,1,1,TP
+CryptoLLM original front end,7.4.1,HttpProtocolABSCase1.java,,misuse,HTTP ,complete,0,0,FN
+CryptoLLM original front end,9.4.1,PredictableSeedsABSCase1.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,9.4.2,PredictableSeedsABSCase2.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,10.4.1,StaticSaltsABSCase1.java,,misuse,Static/Constant Salt,complete,0,0,FN
+CryptoLLM original front end,11.4.1,EcbInSymmCryptoABSCase1.java,,misuse,Usage of ECB ,complete,1,1,TP
+CryptoLLM original front end,12.4.1,StaticInitializationVectorABSCase1.java,,misuse,Static/Constant IV,complete,2,1,TP
+CryptoLLM original front end,13.4.1,LessThan1000IterationPBEABSCase1.java,,misuse,PBE iteration < 1000,complete,0,0,FN
+CryptoLLM original front end,14.4.1,BrokenCryptoABSCase1.java,,misuse,DES used,complete,1,1,TP
+CryptoLLM original front end,14.4.2,BrokenCryptoABSCase2.java,,misuse,Blowfish used,complete,1,0,FN
+CryptoLLM original front end,14.4.3,BrokenCryptoABSCase3.java,,misuse,RC4 used,complete,1,0,FN
+CryptoLLM original front end,14.4.4,BrokenCryptoABSCase4.java,,misuse,RC2 used,complete,1,0,FN
+CryptoLLM original front end,14.4.5,BrokenCryptoABSCase5.java,,misuse,IDEA used,complete,1,0,FN
+CryptoLLM original front end,16.4.1,BrokenHashABSCase1.java,,misuse,SHA1 used,complete,0,0,FN
+CryptoLLM original front end,16.4.2,BrokenHashABSCase2.java,,misuse,MD5 used,complete,0,0,FN
+CryptoLLM original front end,16.4.3,BrokenHashABSCase3.java,,misuse,MD4 used,complete,0,0,FN
+CryptoLLM original front end,16.4.4,BrokenHashABSCase4.java,,misuse,MD2 used,complete,0,0,FN
+CryptoLLM original front end,18.5.1,CredentialInStringABHCase1.java,,misuse,Credential in String,complete,1,1,TP
+CryptoLLM original front end,1.5.2,PredictableCryptographicKeyABHCase2.java,,misuse,Static/Contant Key,complete,1,1,TP
+CryptoLLM original front end,2.5.1,PredictablePBEPasswordABHCase1.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,2.5.2,PredictablePBEPasswordABHCase2.java,,misuse,Static/Contant password,complete,0,0,FN
+CryptoLLM original front end,3.5.1,PredictableKeyStorePasswordABHCase1.java,,safe,---,complete,1,0,TN
+CryptoLLM original front end,3.5.2,PredictableKeyStorePasswordABHCase2.java,,misuse,Static/Constant Password,complete,1,1,TP
+CryptoLLM original front end,9.5.1,PredictableSeedsABHCase2.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,9.5.2,PredictableSeedsABHCase4.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,10.5.2,StaticSaltsABHCase1.java,,misuse,Static/Constant Salt,complete,0,0,FN
+CryptoLLM original front end,12.5.1,StaticInitializationVectorABHCase1.java,,misuse,Static/Constant IV,complete,2,1,TP
+CryptoLLM original front end,12.5.2,StaticInitializationVectorABHCase2.java,,misuse,Static/Constant IV,complete,2,1,TP
+CryptoLLM original front end,13.5.1,LessThan1000IterationPBEABHCase1.java,,misuse,PBE iteration < 1000,complete,0,0,FN
+CryptoLLM original front end,1.6.1,PredictableCryptographicKeyABICase2.java,,misuse,Static/Contant Key,complete,1,1,TP
+CryptoLLM original front end,18.6.1,CredentialInStringABICase2.java,,misuse,Credential in String,complete,1,1,TP
+CryptoLLM original front end,2.6.1,PredictablePBEPasswordABICase2.java,,misuse,Static/Contant password,complete,0,0,FN
+CryptoLLM original front end,3.6.1,PredictableKeyStorePasswordABICase2.java,,misuse,Static/Constant Password,complete,1,1,TP
+CryptoLLM original front end,7.6.1,HttpProtocolABICase2.java,,misuse,HTTP ,complete,0,0,FN
+CryptoLLM original front end,9.6.1,PredictableSeedsABICase3.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,9.6.2,PredictableSeedsABICase4.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,10.6.1,StaticSaltsABICase2.java,,misuse,Static/Constant Salt,complete,0,0,FN
+CryptoLLM original front end,11.6.1,EcbInSymmCryptoABICase2.java,,misuse,Usage of ECB ,complete,1,1,TP
+CryptoLLM original front end,12.6.1,StaticInitializationVectorABICase2.java,,misuse,Static/Constant IV,complete,2,1,TP
+CryptoLLM original front end,13.6.1,LessThan1000IterationPBEABICase2.java,,misuse,PBE iteration < 1000,complete,0,0,FN
+CryptoLLM original front end,14.6.1,BrokenCryptoABICase5.java,,misuse,DES used,complete,1,1,TP
+CryptoLLM original front end,14.6.2,BrokenCryptoABICase6.java,,misuse,Blowfish used,complete,1,1,TP
+CryptoLLM original front end,14.6.3,BrokenCryptoABICase7.java,,misuse,RC4 used,complete,1,0,FN
+CryptoLLM original front end,14.6.4,BrokenCryptoABICase8.java,,misuse,RC2 used,complete,1,0,FN
+CryptoLLM original front end,14.6.5,BrokenCryptoABICase10.java,,misuse,IDEA used,complete,1,1,TP
+CryptoLLM original front end,15.6.1,InsecureAsymmetricCipherABICase2.java,,misuse,RSA keysize 1024 bits,complete,3,1,TP
+CryptoLLM original front end,16.6.1,BrokenHashABICase5.java,,misuse,SHA1 used,complete,0,0,FN
+CryptoLLM original front end,16.6.2,BrokenHashABICase6.java,,misuse,MD5 used,complete,0,0,FN
+CryptoLLM original front end,16.6.3,BrokenHashABICase7.java,,misuse,MD4 used,complete,0,0,FN
+CryptoLLM original front end,16.6.4,BrokenHashABICase8.java,,misuse,MD2 used,complete,0,0,FN
+CryptoLLM original front end,1.7.1,PredictableCryptographicKeyABPSCase1.java,,safe,---,complete,1,0,TN
+CryptoLLM original front end,2.7.1,PredictablePBEPasswordABPSCase1.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,3.7.1,PredictableKeyStorePasswordABPSCase1.java,,safe,---,complete,1,0,TN
+CryptoLLM original front end,7.7.1,HttpProtocolABPSCase1.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,9.7.1,PredictableSeedsABPSCase1.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,9.7.2,PredictableSeedsABPSCase2.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,10.7.1,StaticSaltsABPSCase1.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,11.7.1,EcbInSymmCryptoABPSCase1.java,,safe,---,complete,2,0,TN
+CryptoLLM original front end,12.7.1,StaticInitializationVectorABPSCase1.java,,safe,---,complete,2,0,TN
+CryptoLLM original front end,13.7.1,LessThan1000IterationPBEABPSCase1.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,14.7.1,BrokenCryptoABPSCase1.java,,safe,---,complete,2,0,TN
+CryptoLLM original front end,14.7.2,BrokenCryptoABPSCase2.java,,safe,---,complete,2,0,TN
+CryptoLLM original front end,14.7.3,BrokenCryptoABPSCase3.java,,safe,---,complete,2,0,TN
+CryptoLLM original front end,14.7.4,BrokenCryptoABPSCase4.java,,safe,---,complete,2,0,TN
+CryptoLLM original front end,14.7.5,BrokenCryptoABPSCase5.java,,safe,---,complete,2,0,TN
+CryptoLLM original front end,15.7.1,InsecureAsymmetricCipherABPSCase1.java,,safe,---,complete,2,0,TN
+CryptoLLM original front end,16.7.1,BrokenHashABPSCase1.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,16.7.2,BrokenHashABPSCase2.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,16.7.3,BrokenHashABPSCase3.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,16.7.4,BrokenHashABPSCase4.java,,safe,---,complete,0,0,TN
+CryptoLLM original front end,1.8.1,PredictableCryptographicKeyABMCCase1.java | PredictableCryptographicKeyABMC1.java,,misuse,Static/Contant Key,complete,1,1,TP
+CryptoLLM original front end,18.8.1,CredentialInStringABMCCase1.java | CredentialInStringABMC1.java,,misuse,Credential in String,complete,1,1,TP
+CryptoLLM original front end,2.8.1,PredictablePBEPasswordABMCCase1.java | PredictablePBEPasswordABMC1.java,,misuse,Static/Contant password,complete,0,0,FN
+CryptoLLM original front end,3.8.1,PredictableKeyStorePasswordABMCCase1.java | PredictableKeyStorePasswordABMC1.java,,misuse,Static/Constant Password,complete,1,1,TP
+CryptoLLM original front end,7.8.1,HttpProtocolABMCCase1.java | HttpProtocolABMC1.java,,misuse,HTTP ,complete,0,0,FN
+CryptoLLM original front end,9.8.1,PredictableSeedsABMCCase1.java | PredictableSeedsABMC1.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,9.8.2,PredictableSeedsABMCCase2.java | PredictableSeedsABMC2.java,,misuse,Constant Seed,complete,0,0,FN
+CryptoLLM original front end,10.8.1,StaticSaltsABMCCase1.java | StaticSaltsABMC1.java,,misuse,Static/Constant Salt,complete,0,0,FN
+CryptoLLM original front end,11.8.1,EcbInSymmCryptoABMCCase1.java | EcbInSymmCryptoABMC1.java,,misuse,Usage of ECB ,complete,1,0,FN
+CryptoLLM original front end,12.8.1,StaticInitializationVectorABMCCase1.java | StaticInitializationVectorABMC1.java,,misuse,Static/Constant IV,complete,2,0,FN
+CryptoLLM original front end,13.8.1,LessThan1000IterationPBEABMCCase1.java | LessThan1000IterationPBEABMC1.java,,misuse,PBE iteration < 1000,complete,0,0,FN
+CryptoLLM original front end,14.8.1,BrokenCryptoABMCCase1.java | BrokenCryptoABMC1.java,,misuse,DES used,complete,1,0,FN
+CryptoLLM original front end,14.8.2,BrokenCryptoABMCCase2.java | BrokenCryptoABMC2.java,,misuse,Blowfish used,complete,1,0,FN
+CryptoLLM original front end,14.8.3,BrokenCryptoABMCCase3.java | BrokenCryptoABMC3.java,,misuse,RC4 used,complete,1,0,FN
+CryptoLLM original front end,14.8.4,BrokenCryptoABMCCase4.java | BrokenCryptoABMC4.java,,misuse,RC2 used,complete,1,0,FN
+CryptoLLM original front end,14.8.5,BrokenCryptoABMCCase5.java | BrokenCryptoABMC5.java,,misuse,IDEA used,complete,1,0,FN
+CryptoLLM original front end,15.8.1,InsecureAsymmetricCipherABMCCase1.java | InsecureAsymmetricCipherABMC1.java,,misuse,RSA keysize 1024 bits,complete,3,0,FN
+CryptoLLM original front end,16.8.1,BrokenHashABMCCase1.java | BrokenHashABMC1.java,,misuse,SHA1 used,complete,0,0,FN
+CryptoLLM original front end,16.8.2,BrokenHashABMCCase2.java | BrokenHashABMC2.java,,misuse,MD5 used,complete,0,0,FN
+CryptoLLM original front end,16.8.3,BrokenHashABMCCase3.java | BrokenHashABMC3.java,,misuse,MD4 used,complete,0,0,FN
+CryptoLLM original front end,16.8.4,BrokenHashABMCCase4.java | BrokenHashABMC4.java,,misuse,MD2 used,complete,0,0,FN
+CA-CPG front end,1.1.1,PredictableCryptographicKeyBBCase1.java,,misuse,Static/Contant Key,complete,1,1,TP
+CA-CPG front end,18.1.1,CredentialInStringBBCase1.java,,misuse,Credential in String,complete,4,1,TP
+CA-CPG front end,18.1.2,,CredentialInStringBBCase2.java,misuse,Credential in String,missing_source,0,0,FN
+CA-CPG front end,2.1.1,PredictablePBEPasswordBBCase1.java,,misuse,Static/Contant password,complete,2,1,TP
+CA-CPG front end,2.1.2,PredictablePBEPasswordBBCase2.java,,misuse,Static/Constant Password,complete,2,0,FN
+CA-CPG front end,3.1.1,PredictableKeyStorePasswordBBCase1.java,,misuse,Static/Constant Password,complete,0,0,FN
+CA-CPG front end,4.1.1,DummyHostNameVerifierCase1.java,,misuse,Dummy Verifier,complete,1,0,FN
+CA-CPG front end,5.1.1,DummyCertValidationCase1.java,,misuse,Dummy Certificate,complete,2,1,TP
+CA-CPG front end,5.1.2,DummyCertValidationCase2.java,,misuse,Dummy Certificate,complete,2,0,FN
+CA-CPG front end,5.1.3,DummyCertValidationCase3.java,,misuse,Dummy Certificate,complete,2,0,FN
+CA-CPG front end,6.1.1,ImproperSocketManualHostBBCase1.java,,misuse,Socket Hostname w/o verification,complete,1,0,FN
+CA-CPG front end,7.1.1,HttpProtocolBBCase1.java,,misuse,HTTP ,complete,0,0,FN
+CA-CPG front end,9.1.1,PredictableSeedsBBCase1.java,,misuse,Constant Seed,complete,3,1,TP
+CA-CPG front end,9.1.2,PredictableSeedsBBCase2.java,,misuse,Constant Seed,complete,2,1,TP
+CA-CPG front end,8.1.1,UntrustedPRNGCase1.java,,misuse,Usage of Random Method from Library,complete,3,0,FN
+CA-CPG front end,10.1.1,StaticSaltsBBCase1.java,,misuse,Static/Constant Salt,complete,1,1,TP
+CA-CPG front end,11.1.1,EcbInSymmCryptoBBCase1.java,,misuse,Usage of ECB ,complete,2,1,TP
+CA-CPG front end,12.1.1,StaticInitializationVectorBBCase1.java,,misuse,Static/Constant IV,complete,3,1,TP
+CA-CPG front end,13.1.1,LessThan1000IterationPBEBBCase1.java,,misuse,PBE iteration < 1000,complete,2,0,FN
+CA-CPG front end,14.1.1,BrokenCryptoBBCase1.java,,misuse,DES used,complete,2,1,TP
+CA-CPG front end,14.1.2,BrokenCryptoBBCase2.java,,misuse,Blowfish used,complete,2,0,FN
+CA-CPG front end,14.1.3,BrokenCryptoBBCase3.java,,misuse,RC4 used,complete,2,0,FN
+CA-CPG front end,14.1.4,BrokenCryptoBBCase4.java,,misuse,RC2 used,complete,2,0,FN
+CA-CPG front end,14.1.5,BrokenCryptoBBCase5.java,,misuse,IDEA used,complete,2,0,FN
+CA-CPG front end,15.1.1,InsecureAsymmetricCipherBBCase1.java,,misuse,RSA keysize 1024 bits,complete,3,0,FN
+CA-CPG front end,16.1.1,BrokenHashBBCase1.java,,misuse,SHA1 used,complete,1,1,TP
+CA-CPG front end,16.1.2,BrokenHashBBCase2.java,,misuse,MD5 used,complete,1,1,TP
+CA-CPG front end,16.1.3,BrokenHashBBCase3.java,,misuse,MD4 used,complete,1,1,TP
+CA-CPG front end,16.1.4,BrokenHashBBCase4.java,,misuse,MD2 used,complete,1,1,TP
+CA-CPG front end,17.1.1,BrokenMacBBCase1.java,,misuse,HmacMD5,complete,3,0,FN
+CA-CPG front end,17.1.2,BrokenMacBBCase2.java,,misuse,HmacSHA1,complete,3,0,FN
+CA-CPG front end,14.1.6,BrokenCryptoCorrected.java,,safe,---,complete,2,0,TN
+CA-CPG front end,16.1.5,BrokenHashCorrected.java,,safe,---,complete,1,1,FP
+CA-CPG front end,11.1.2,EcbInSymmCryptoCorrected.java,,safe,---,complete,2,0,TN
+CA-CPG front end,4.1.2,DummyHostNameVerifierCorrected.java,,safe,---,complete,1,0,TN
+CA-CPG front end,7.1.2,HttpProtocolCase1Corrected.java,,safe,---,complete,0,0,TN
+CA-CPG front end,13.1.2,LessThan1000IterationPBECorrected.java,,safe,---,complete,2,0,TN
+CA-CPG front end,1.1.2,PredictableCryptographicKeyCorrected.java,,safe,---,complete,3,0,TN
+CA-CPG front end,2.1.3,PredictableKeyStorePasswordCorrected.java,,safe,---,complete,2,0,TN
+CA-CPG front end,3.1.2,PredictablePBEPasswordCorrected.java,,safe,---,complete,3,0,TN
+CA-CPG front end,9.1.3,PredictableSeedsCorrected.java,,safe,---,complete,4,0,TN
+CA-CPG front end,12.1.2,StaticInitializationVectorCorrected.java,,safe,---,complete,4,0,TN
+CA-CPG front end,10.1.2,StaticSaltsCorrected.java,,safe,---,complete,2,0,TN
+CA-CPG front end,8.1.2,UntrustedPRNGCorrected.java,,safe,---,complete,2,0,TN
+CA-CPG front end,18.1.3,CredentialInStringCorrected.java,,safe,---,complete,3,0,TN
+CA-CPG front end,17.1.3,BrokenMacCorrected.java,,safe,HmacSHA256,complete,3,0,TN
+CA-CPG front end,1.2.1,PredictableCryptographicKeyABICase1.java,,misuse,Static/Contant Key,complete,1,1,TP
+CA-CPG front end,18.2.1,CredentialInStringABICase1.java,,misuse,Credential in String,complete,3,1,TP
+CA-CPG front end,2.2.1,PredictablePBEPasswordABICase1.java,,misuse,Static/Contant password,complete,2,1,TP
+CA-CPG front end,3.2.1,PredictableKeyStorePasswordABICase1.java,,misuse,Static/Constant Password,complete,0,0,FN
+CA-CPG front end,7.2.1,HttpProtocolABICase1.java,,misuse,HTTP ,complete,0,0,FN
+CA-CPG front end,9.2.1,PredictableSeedsABICase1.java,,misuse,Constant Seed,complete,3,1,TP
+CA-CPG front end,9.2.2,PredictableSeedsABICase2.java,,misuse,Constant Seed,complete,2,1,TP
+CA-CPG front end,10.2.1,StaticSaltsABICase1.java,,misuse,Static/Constant Salt,complete,1,1,TP
+CA-CPG front end,11.2.1,EcbInSymmCryptoABICase1.java,,misuse,Usage of ECB ,complete,2,1,TP
+CA-CPG front end,12.2.1,StaticInitializationVectorABICase1.java,,misuse,Static/Constant IV,complete,3,1,TP
+CA-CPG front end,13.2.1,LessThan1000IterationPBEABICase1.java,,misuse,PBE iteration < 1000,complete,2,0,FN
+CA-CPG front end,14.2.1,BrokenCryptoABICase1.java,,misuse,DES used,complete,2,1,TP
+CA-CPG front end,14.2.2,BrokenCryptoABICase2.java,,misuse,Blowfish used,complete,2,1,TP
+CA-CPG front end,14.2.3,BrokenCryptoABICase3.java,,misuse,RC4 used,complete,2,0,FN
+CA-CPG front end,14.2.4,BrokenCryptoABICase4.java,,misuse,RC2 used,complete,2,0,FN
+CA-CPG front end,14.2.5,BrokenCryptoABICase9.java,,misuse,IDEA used,complete,2,0,FN
+CA-CPG front end,15.2.1,InsecureAsymmetricCipherABICase1.java,,misuse,RSA keysize 1024 bits,complete,3,1,TP
+CA-CPG front end,16.2.1,BrokenHashABICase1.java,,misuse,SHA1 used,complete,1,1,TP
+CA-CPG front end,16.2.2,BrokenHashABICase2.java,,misuse,MD5 used,complete,1,1,TP
+CA-CPG front end,16.2.3,BrokenHashABICase3.java,,misuse,MD4 used,complete,1,1,TP
+CA-CPG front end,16.2.4,BrokenHashABICase4.java,,misuse,MD2 used,complete,1,1,TP
+CA-CPG front end,1.3.1,PredictableCryptographicKeyABICase3.java,,misuse,Static/Contant Key,complete,1,1,TP
+CA-CPG front end,18.3.1,CredentialInStringABICase3.java,,misuse,Credential in String,complete,3,1,TP
+CA-CPG front end,2.3.1,PredictablePBEPasswordABICase3.java,,misuse,Static/Contant password,complete,2,1,TP
+CA-CPG front end,3.3.1,PredictableKeyStorePasswordABICase3.java,,misuse,Static/Constant Password,complete,0,0,FN
+CA-CPG front end,7.3.1,HttpProtocolABICase3.java,,misuse,HTTP ,complete,0,0,FN
+CA-CPG front end,9.3.1,PredictableSeedsABICase5.java,,misuse,Constant Seed,complete,3,1,TP
+CA-CPG front end,9.3.2,PredictableSeedsABICase6.java,,misuse,Constant Seed,complete,2,1,TP
+CA-CPG front end,10.3.1,StaticSaltsABICase3.java,,misuse,Static/Constant Salt,complete,1,1,TP
+CA-CPG front end,11.3.1,EcbInSymmCryptoABICase3.java,,misuse,Usage of ECB ,complete,2,1,TP
+CA-CPG front end,12.3.1,StaticInitializationVectorABICase3.java,,misuse,Static/Constant IV,complete,3,1,TP
+CA-CPG front end,13.3.1,LessThan1000IterationPBEABICase3.java,,misuse,PBE iteration < 1000,complete,2,0,FN
+CA-CPG front end,14.3.1,BrokenCryptoABICase11.java,,misuse,DES used,complete,2,1,TP
+CA-CPG front end,14.3.2,BrokenCryptoABICase12.java,,misuse,Blowfish used,complete,2,1,TP
+CA-CPG front end,14.3.3,BrokenCryptoABICase13.java,,misuse,RC4 used,complete,2,0,FN
+CA-CPG front end,14.3.4,BrokenCryptoABICase14.java,,misuse,RC2 used,complete,2,0,FN
+CA-CPG front end,14.3.5,BrokenCryptoABICase15.java,,misuse,IDEA used,complete,2,0,FN
+CA-CPG front end,15.3.1,InsecureAsymmetricCipherABICase3.java,,misuse,RSA keysize 1024 bits,complete,3,1,TP
+CA-CPG front end,16.3.1,BrokenHashABICase9.java,,misuse,SHA1 used,complete,1,1,TP
+CA-CPG front end,16.3.2,BrokenHashABICase10.java,,misuse,MD5 used,complete,1,1,TP
+CA-CPG front end,16.3.3,BrokenHashABICase11.java,,misuse,MD4 used,complete,1,1,TP
+CA-CPG front end,16.3.4,BrokenHashABICase12.java,,misuse,MD2 used,complete,1,1,TP
+CA-CPG front end,1.4.1,PredictableCryptographicKeyABSCase1.java,,misuse,Static/Contant Key,complete,4,1,TP
+CA-CPG front end,2.4.1,PredictablePBEPasswordABSCase1.java,,misuse,Static/Contant password,complete,2,1,TP
+CA-CPG front end,3.4.1,PredictableKeyStorePasswordABSCase1.java,,misuse,Static/Constant Password,complete,0,0,FN
+CA-CPG front end,7.4.1,HttpProtocolABSCase1.java,,misuse,HTTP ,complete,0,0,FN
+CA-CPG front end,9.4.1,PredictableSeedsABSCase1.java,,misuse,Constant Seed,complete,3,0,FN
+CA-CPG front end,9.4.2,PredictableSeedsABSCase2.java,,misuse,Constant Seed,complete,2,0,FN
+CA-CPG front end,10.4.1,StaticSaltsABSCase1.java,,misuse,Static/Constant Salt,complete,1,0,FN
+CA-CPG front end,11.4.1,EcbInSymmCryptoABSCase1.java,,misuse,Usage of ECB ,complete,2,1,TP
+CA-CPG front end,12.4.1,StaticInitializationVectorABSCase1.java,,misuse,Static/Constant IV,complete,3,1,TP
+CA-CPG front end,13.4.1,LessThan1000IterationPBEABSCase1.java,,misuse,PBE iteration < 1000,complete,2,1,TP
+CA-CPG front end,14.4.1,BrokenCryptoABSCase1.java,,misuse,DES used,complete,2,1,TP
+CA-CPG front end,14.4.2,BrokenCryptoABSCase2.java,,misuse,Blowfish used,complete,2,0,FN
+CA-CPG front end,14.4.3,BrokenCryptoABSCase3.java,,misuse,RC4 used,complete,2,0,FN
+CA-CPG front end,14.4.4,BrokenCryptoABSCase4.java,,misuse,RC2 used,complete,2,0,FN
+CA-CPG front end,14.4.5,BrokenCryptoABSCase5.java,,misuse,IDEA used,complete,2,0,FN
+CA-CPG front end,16.4.1,BrokenHashABSCase1.java,,misuse,SHA1 used,complete,1,0,FN
+CA-CPG front end,16.4.2,BrokenHashABSCase2.java,,misuse,MD5 used,complete,1,0,FN
+CA-CPG front end,16.4.3,BrokenHashABSCase3.java,,misuse,MD4 used,complete,1,0,FN
+CA-CPG front end,16.4.4,BrokenHashABSCase4.java,,misuse,MD2 used,complete,1,0,FN
+CA-CPG front end,18.5.1,CredentialInStringABHCase1.java,,misuse,Credential in String,complete,3,1,TP
+CA-CPG front end,1.5.2,PredictableCryptographicKeyABHCase2.java,,misuse,Static/Contant Key,complete,1,1,TP
+CA-CPG front end,2.5.1,PredictablePBEPasswordABHCase1.java,,safe,---,complete,4,0,TN
+CA-CPG front end,2.5.2,PredictablePBEPasswordABHCase2.java,,misuse,Static/Contant password,complete,2,1,TP
+CA-CPG front end,3.5.1,PredictableKeyStorePasswordABHCase1.java,,safe,---,complete,2,0,TN
+CA-CPG front end,3.5.2,PredictableKeyStorePasswordABHCase2.java,,misuse,Static/Constant Password,complete,0,0,FN
+CA-CPG front end,9.5.1,PredictableSeedsABHCase2.java,,misuse,Constant Seed,complete,3,1,TP
+CA-CPG front end,9.5.2,PredictableSeedsABHCase4.java,,misuse,Constant Seed,complete,4,1,TP
+CA-CPG front end,10.5.2,StaticSaltsABHCase1.java,,misuse,Static/Constant Salt,complete,1,1,TP
+CA-CPG front end,12.5.1,StaticInitializationVectorABHCase1.java,,misuse,Static/Constant IV,complete,3,1,TP
+CA-CPG front end,12.5.2,StaticInitializationVectorABHCase2.java,,misuse,Static/Constant IV,complete,3,1,TP
+CA-CPG front end,13.5.1,LessThan1000IterationPBEABHCase1.java,,misuse,PBE iteration < 1000,complete,2,1,TP
+CA-CPG front end,1.6.1,PredictableCryptographicKeyABICase2.java,,misuse,Static/Contant Key,complete,1,1,TP
+CA-CPG front end,18.6.1,CredentialInStringABICase2.java,,misuse,Credential in String,complete,1,1,TP
+CA-CPG front end,2.6.1,PredictablePBEPasswordABICase2.java,,misuse,Static/Contant password,complete,2,1,TP
+CA-CPG front end,3.6.1,PredictableKeyStorePasswordABICase2.java,,misuse,Static/Constant Password,complete,0,0,FN
+CA-CPG front end,7.6.1,HttpProtocolABICase2.java,,misuse,HTTP ,complete,0,0,FN
+CA-CPG front end,9.6.1,PredictableSeedsABICase3.java,,misuse,Constant Seed,complete,3,1,TP
+CA-CPG front end,9.6.2,PredictableSeedsABICase4.java,,misuse,Constant Seed,complete,2,0,FN
+CA-CPG front end,10.6.1,StaticSaltsABICase2.java,,misuse,Static/Constant Salt,complete,1,1,TP
+CA-CPG front end,11.6.1,EcbInSymmCryptoABICase2.java,,misuse,Usage of ECB ,complete,2,1,TP
+CA-CPG front end,12.6.1,StaticInitializationVectorABICase2.java,,misuse,Static/Constant IV,complete,3,1,TP
+CA-CPG front end,13.6.1,LessThan1000IterationPBEABICase2.java,,misuse,PBE iteration < 1000,complete,2,1,TP
+CA-CPG front end,14.6.1,BrokenCryptoABICase5.java,,misuse,DES used,complete,2,1,TP
+CA-CPG front end,14.6.2,BrokenCryptoABICase6.java,,misuse,Blowfish used,complete,2,1,TP
+CA-CPG front end,14.6.3,BrokenCryptoABICase7.java,,misuse,RC4 used,complete,2,1,TP
+CA-CPG front end,14.6.4,BrokenCryptoABICase8.java,,misuse,RC2 used,complete,2,1,TP
+CA-CPG front end,14.6.5,BrokenCryptoABICase10.java,,misuse,IDEA used,complete,2,1,TP
+CA-CPG front end,15.6.1,InsecureAsymmetricCipherABICase2.java,,misuse,RSA keysize 1024 bits,complete,3,1,TP
+CA-CPG front end,16.6.1,BrokenHashABICase5.java,,misuse,SHA1 used,complete,1,1,TP
+CA-CPG front end,16.6.2,BrokenHashABICase6.java,,misuse,MD5 used,complete,1,1,TP
+CA-CPG front end,16.6.3,BrokenHashABICase7.java,,misuse,MD4 used,complete,1,1,TP
+CA-CPG front end,16.6.4,BrokenHashABICase8.java,,misuse,MD2 used,complete,1,1,TP
+CA-CPG front end,1.7.1,PredictableCryptographicKeyABPSCase1.java,,safe,---,complete,2,0,TN
+CA-CPG front end,2.7.1,PredictablePBEPasswordABPSCase1.java,,safe,---,complete,4,0,TN
+CA-CPG front end,3.7.1,PredictableKeyStorePasswordABPSCase1.java,,safe,---,complete,2,0,TN
+CA-CPG front end,7.7.1,HttpProtocolABPSCase1.java,,safe,---,complete,0,0,TN
+CA-CPG front end,9.7.1,PredictableSeedsABPSCase1.java,,safe,---,complete,3,0,TN
+CA-CPG front end,9.7.2,PredictableSeedsABPSCase2.java,,safe,---,complete,3,0,TN
+CA-CPG front end,10.7.1,StaticSaltsABPSCase1.java,,safe,---,complete,2,0,TN
+CA-CPG front end,11.7.1,EcbInSymmCryptoABPSCase1.java,,safe,---,complete,2,0,TN
+CA-CPG front end,12.7.1,StaticInitializationVectorABPSCase1.java,,safe,---,complete,4,0,TN
+CA-CPG front end,13.7.1,LessThan1000IterationPBEABPSCase1.java,,safe,---,complete,2,1,FP
+CA-CPG front end,14.7.1,BrokenCryptoABPSCase1.java,,safe,---,complete,2,0,TN
+CA-CPG front end,14.7.2,BrokenCryptoABPSCase2.java,,safe,---,complete,2,0,TN
+CA-CPG front end,14.7.3,BrokenCryptoABPSCase3.java,,safe,---,complete,2,0,TN
+CA-CPG front end,14.7.4,BrokenCryptoABPSCase4.java,,safe,---,complete,2,0,TN
+CA-CPG front end,14.7.5,BrokenCryptoABPSCase5.java,,safe,---,complete,2,0,TN
+CA-CPG front end,15.7.1,InsecureAsymmetricCipherABPSCase1.java,,safe,---,complete,2,0,TN
+CA-CPG front end,16.7.1,BrokenHashABPSCase1.java,,safe,---,complete,1,1,FP
+CA-CPG front end,16.7.2,BrokenHashABPSCase2.java,,safe,---,complete,1,1,FP
+CA-CPG front end,16.7.3,BrokenHashABPSCase3.java,,safe,---,complete,1,1,FP
+CA-CPG front end,16.7.4,BrokenHashABPSCase4.java,,safe,---,complete,1,1,FP
+CA-CPG front end,1.8.1,PredictableCryptographicKeyABMCCase1.java | PredictableCryptographicKeyABMC1.java,,misuse,Static/Contant Key,complete,1,1,TP
+CA-CPG front end,18.8.1,CredentialInStringABMCCase1.java | CredentialInStringABMC1.java,,misuse,Credential in String,complete,3,1,TP
+CA-CPG front end,2.8.1,PredictablePBEPasswordABMCCase1.java | PredictablePBEPasswordABMC1.java,,misuse,Static/Contant password,complete,2,0,FN
+CA-CPG front end,3.8.1,PredictableKeyStorePasswordABMCCase1.java | PredictableKeyStorePasswordABMC1.java,,misuse,Static/Constant Password,complete,0,0,FN
+CA-CPG front end,7.8.1,HttpProtocolABMCCase1.java | HttpProtocolABMC1.java,,misuse,HTTP ,complete,0,0,FN
+CA-CPG front end,9.8.1,PredictableSeedsABMCCase1.java | PredictableSeedsABMC1.java,,misuse,Constant Seed,complete,3,1,TP
+CA-CPG front end,9.8.2,PredictableSeedsABMCCase2.java | PredictableSeedsABMC2.java,,misuse,Constant Seed,complete,2,0,FN
+CA-CPG front end,10.8.1,StaticSaltsABMCCase1.java | StaticSaltsABMC1.java,,misuse,Static/Constant Salt,complete,1,1,TP
+CA-CPG front end,11.8.1,EcbInSymmCryptoABMCCase1.java | EcbInSymmCryptoABMC1.java,,misuse,Usage of ECB ,complete,2,1,TP
+CA-CPG front end,12.8.1,StaticInitializationVectorABMCCase1.java | StaticInitializationVectorABMC1.java,,misuse,Static/Constant IV,complete,3,1,TP
+CA-CPG front end,13.8.1,LessThan1000IterationPBEABMCCase1.java | LessThan1000IterationPBEABMC1.java,,misuse,PBE iteration < 1000,complete,2,0,FN
+CA-CPG front end,14.8.1,BrokenCryptoABMCCase1.java | BrokenCryptoABMC1.java,,misuse,DES used,complete,2,1,TP
+CA-CPG front end,14.8.2,BrokenCryptoABMCCase2.java | BrokenCryptoABMC2.java,,misuse,Blowfish used,complete,2,1,TP
+CA-CPG front end,14.8.3,BrokenCryptoABMCCase3.java | BrokenCryptoABMC3.java,,misuse,RC4 used,complete,2,0,FN
+CA-CPG front end,14.8.4,BrokenCryptoABMCCase4.java | BrokenCryptoABMC4.java,,misuse,RC2 used,complete,2,0,FN
+CA-CPG front end,14.8.5,BrokenCryptoABMCCase5.java | BrokenCryptoABMC5.java,,misuse,IDEA used,complete,2,0,FN
+CA-CPG front end,15.8.1,InsecureAsymmetricCipherABMCCase1.java | InsecureAsymmetricCipherABMC1.java,,misuse,RSA keysize 1024 bits,complete,3,1,TP
+CA-CPG front end,16.8.1,BrokenHashABMCCase1.java | BrokenHashABMC1.java,,misuse,SHA1 used,complete,1,0,FN
+CA-CPG front end,16.8.2,BrokenHashABMCCase2.java | BrokenHashABMC2.java,,misuse,MD5 used,complete,1,0,FN
+CA-CPG front end,16.8.3,BrokenHashABMCCase3.java | BrokenHashABMC3.java,,misuse,MD4 used,complete,1,0,FN
+CA-CPG front end,16.8.4,BrokenHashABMCCase4.java | BrokenHashABMC4.java,,misuse,MD2 used,complete,1,0,FN

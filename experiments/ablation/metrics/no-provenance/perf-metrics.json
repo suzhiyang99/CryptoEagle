@@ -1,0 +1,15 @@
+{
+  "schemaVersion":1,
+  "language":"JAVA",
+  "input":"benchmarks/CryptoAPI-Bench",
+  "source":{"files":203,"lines":4759,"bytes":160945},
+  "graph":{"standardNodes":18725,"standardEdges":97385,"cryptoAwareNodes":19287,"cryptoAwareEdges":98588,"addedNodes":562,"addedEdges":1203,"serializedBytes":544930},
+  "memory":{"peakHeapBytes":190448464},
+  "findings":{"core":82,"extended":0,"byRule":{"C1":4,"C11":11,"C13":1,"C14":15,"C15":2,"C17":5,"C18":2,"C2":6,"C3":3,"C4":5,"C5":8,"C7":13,"C8":2,"C9":5}},
+  "operations":{"ASYMMETRIC_ENCRYPTION":17,"HASH_FUNCTION":37,"KEY_DERIVATION":31,"KEY_STORAGE":2,"MAC_SIGNATURE":6,"RANDOMNESS":133,"SYMMETRIC_ENCRYPTION":318,"TRANSPORT":13,"VERIFICATION":5},
+  "selectionOperations":{"ASYMMETRIC_ENCRYPTION":17,"HASH_FUNCTION":37,"KEY_DERIVATION":31,"KEY_STORAGE":2,"MAC_SIGNATURE":6,"RANDOMNESS":33,"SYMMETRIC_ENCRYPTION":318,"TRANSPORT":13,"VERIFICATION":5},
+  "selectionOperationResolutions":{"COMPLETE":392,"PARTIAL":70},
+  "timingsMillis":{"adapterConfigLoad":76.640,"cpgFrontend":1565.007,"overlays":336.682,"dataflow":186.422,"enrichmentWall":1344.136,"coreRules":171.241,"extendedRules":0.000,"totalWall":4009.132},
+  "enrichment":{"callsScanned":3226,"callsMatched":532,"localOperationsMatched":0,"operationGroups":562,"sensitiveBindings":198,"resolvedSourceNodes":260,"adapterMillis":629.763,"provenanceMillis":437.475,"provenanceFlowQueries":60,"provenanceMultiSinkQueries":11,"lifecycleMillis":80.484,"contextAnalysisMillis":117.197,"materializationMillis":44.942,"runMillis":1344.117},
+  "enrichmentOverheadPercent":64.371
+}

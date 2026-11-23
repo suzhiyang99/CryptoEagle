@@ -1,0 +1,4 @@
+﻿file,line,rule,issue,crypto,evidence,fix,path
+"DefaultCipherService.java","95","C1","ECB mode used","AES/ECB (configure)","Cipher.getInstance(""AES"") (+2 calls)","Use an authenticated mode such as GCM.","org/apache/deltaspike/core/impl/crypto"
+"DefaultCipherService.java","97","C4","Encryption without authentication","AES/ECB (encrypt)","Cipher.getInstance(""AES"") (+2 calls)","Use an AEAD mode or authenticate the ciphertext with a MAC.","org/apache/deltaspike/core/impl/crypto"
+"DefaultCipherService.java","106","C1","ECB mode used","AES/ECB (configure)","Cipher.getInstance(""AES"") (+2 calls)","Use an authenticated mode such as GCM.","org/apache/deltaspike/core/impl/crypto"

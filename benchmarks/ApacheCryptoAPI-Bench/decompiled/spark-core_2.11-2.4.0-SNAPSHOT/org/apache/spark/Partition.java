@@ -1,0 +1,18 @@
+package org.apache.spark;
+
+import scala.Serializable;
+import scala.reflect.ScalaSignature;
+
+@ScalaSignature(
+   bytes = "\u0006\u0001e2q!\u0001\u0002\u0011\u0002\u0007\u0005\u0011BA\u0005QCJ$\u0018\u000e^5p]*\u00111\u0001B\u0001\u0006gB\f'o\u001b\u0006\u0003\u000b\u0019\ta!\u00199bG\",'\"A\u0004\u0002\u0007=\u0014xm\u0001\u0001\u0014\u0007\u0001Q\u0001\u0003\u0005\u0002\f\u001d5\tABC\u0001\u000e\u0003\u0015\u00198-\u00197b\u0013\tyAB\u0001\u0004B]f\u0014VM\u001a\t\u0003\u0017EI!A\u0005\u0007\u0003\u0019M+'/[1mSj\f'\r\\3\t\u000bQ\u0001A\u0011A\u000b\u0002\r\u0011Jg.\u001b;%)\u00051\u0002CA\u0006\u0018\u0013\tABB\u0001\u0003V]&$\b\"\u0002\u000e\u0001\r\u0003Y\u0012!B5oI\u0016DX#\u0001\u000f\u0011\u0005-i\u0012B\u0001\u0010\r\u0005\rIe\u000e\u001e\u0005\u0006A\u0001!\t%I\u0001\tQ\u0006\u001c\bnQ8eKR\tA\u0004C\u0003$\u0001\u0011\u0005C%\u0001\u0004fcV\fGn\u001d\u000b\u0003K!\u0002\"a\u0003\u0014\n\u0005\u001db!a\u0002\"p_2,\u0017M\u001c\u0005\u0006S\t\u0002\rAK\u0001\u0006_RDWM\u001d\t\u0003\u0017-J!\u0001\f\u0007\u0003\u0007\u0005s\u0017\u0010C\u0006/\u0001A\u0005\u0019\u0011!A\u0005\n=\u0012\u0014\u0001D:va\u0016\u0014H%Z9vC2\u001cHCA\u00131\u0011\u001d\tT&!AA\u0002)\n1\u0001\u001f\u00132\u0013\t\u00193'\u0003\u00025k\t1qJ\u00196fGRT!AN\u001c\u0002\t1\fgn\u001a\u0006\u0002q\u0005!!.\u0019<b\u0001"
+)
+public interface Partition extends Serializable {
+   // $FF: synthetic method
+   boolean org$apache$spark$Partition$$super$equals(Object var1);
+
+   int index();
+
+   int hashCode();
+
+   boolean equals(Object var1);
+}

@@ -1,0 +1,18 @@
+package org.apache.spark.util.collection;
+
+import java.util.Comparator;
+import scala.Option;
+import scala.Tuple2;
+import scala.collection.Iterator;
+import scala.reflect.ScalaSignature;
+
+@ScalaSignature(
+   bytes = "\u0006\u0001Y4\u0001\"\u0001\u0002\u0011\u0002\u0007\u0005a\u0001\u0004\u0002\"/JLG/\u00192mKB\u000b'\u000f^5uS>tW\r\u001a)bSJ\u001cu\u000e\u001c7fGRLwN\u001c\u0006\u0003\u0007\u0011\t!bY8mY\u0016\u001cG/[8o\u0015\t)a!\u0001\u0003vi&d'BA\u0004\t\u0003\u0015\u0019\b/\u0019:l\u0015\tI!\"\u0001\u0004ba\u0006\u001c\u0007.\u001a\u0006\u0002\u0017\u0005\u0019qN]4\u0016\u0007593g\u0005\u0002\u0001\u001dA\u0011qBE\u0007\u0002!)\t\u0011#A\u0003tG\u0006d\u0017-\u0003\u0002\u0014!\t1\u0011I\\=SK\u001aDQ!\u0006\u0001\u0005\u0002]\ta\u0001J5oSR$3\u0001\u0001\u000b\u00021A\u0011q\"G\u0005\u00035A\u0011A!\u00168ji\")A\u0004\u0001D\u0001;\u00051\u0011N\\:feR$B\u0001\u0007\u0010$a!)qd\u0007a\u0001A\u0005I\u0001/\u0019:uSRLwN\u001c\t\u0003\u001f\u0005J!A\t\t\u0003\u0007%sG\u000fC\u0003%7\u0001\u0007Q%A\u0002lKf\u0004\"AJ\u0014\r\u0001\u0011)\u0001\u0006\u0001b\u0001S\t\t1*\u0005\u0002+[A\u0011qbK\u0005\u0003YA\u0011qAT8uQ&tw\r\u0005\u0002\u0010]%\u0011q\u0006\u0005\u0002\u0004\u0003:L\b\"B\u0019\u001c\u0001\u0004\u0011\u0014!\u0002<bYV,\u0007C\u0001\u00144\t\u0015!\u0004A1\u0001*\u0005\u00051\u0006\"\u0002\u001c\u0001\r\u00039\u0014\u0001\n9beRLG/[8oK\u0012$Um\u001d;sk\u000e$\u0018N^3T_J$X\rZ%uKJ\fGo\u001c:\u0015\u0005aB\u0005cA\u001dB\t:\u0011!h\u0010\b\u0003wyj\u0011\u0001\u0010\u0006\u0003{Y\ta\u0001\u0010:p_Rt\u0014\"A\t\n\u0005\u0001\u0003\u0012a\u00029bG.\fw-Z\u0005\u0003\u0005\u000e\u0013\u0001\"\u0013;fe\u0006$xN\u001d\u0006\u0003\u0001B\u0001BaD#He%\u0011a\t\u0005\u0002\u0007)V\u0004H.\u001a\u001a\u0011\t=)\u0005%\n\u0005\u0006\u0013V\u0002\rAS\u0001\u000eW\u0016L8i\\7qCJ\fGo\u001c:\u0011\u0007=YU*\u0003\u0002M!\t1q\n\u001d;j_:\u00042A\u0014*&\u001b\u0005y%BA\u0003Q\u0015\u0005\t\u0016\u0001\u00026bm\u0006L!aU(\u0003\u0015\r{W\u000e]1sCR|'\u000fC\u0003V\u0001\u0011\u0005a+\u0001\u0017eKN$(/^2uSZ,7k\u001c:uK\u0012<&/\u001b;bE2,\u0007+\u0019:uSRLwN\\3e\u0013R,'/\u0019;peR\u0011qk\u0017\t\u00031fk\u0011AA\u0005\u00035\n\u00111d\u0016:ji\u0006\u0014G.\u001a)beRLG/[8oK\u0012LE/\u001a:bi>\u0014\b\"B%U\u0001\u0004QuAB/\u0003\u0011\u00031a,A\u0011Xe&$\u0018M\u00197f!\u0006\u0014H/\u001b;j_:,G\rU1je\u000e{G\u000e\\3di&|g\u000e\u0005\u0002Y?\u001a1\u0011A\u0001E\u0001\r\u0001\u001c\"a\u0018\b\t\u000b\t|F\u0011A2\u0002\rqJg.\u001b;?)\u0005q\u0006\"B3`\t\u00031\u0017a\u00059beRLG/[8o\u0007>l\u0007/\u0019:bi>\u0014XCA4l+\u0005A\u0007c\u0001(SSB!q\"\u0012\u0011k!\t13\u000eB\u0003)I\n\u0007\u0011\u0006C\u0003n?\u0012\u0005a.\u0001\fqCJ$\u0018\u000e^5p].+\u0017pQ8na\u0006\u0014\u0018\r^8s+\ty7\u000f\u0006\u0002qiB\u0019aJU9\u0011\t=)\u0005E\u001d\t\u0003MM$Q\u0001\u000b7C\u0002%BQ!\u00137A\u0002U\u00042A\u0014*s\u0001"
+)
+public interface WritablePartitionedPairCollection<K, V> {
+   void insert(int var1, K var2, V var3);
+
+   Iterator<Tuple2<Tuple2<Object, K>, V>> partitionedDestructiveSortedIterator(Option<Comparator<K>> var1);
+
+   WritablePartitionedIterator destructiveSortedWritablePartitionedIterator(Option<Comparator<K>> var1);
+}

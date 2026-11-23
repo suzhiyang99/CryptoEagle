@@ -1,0 +1,43 @@
+{
+  "language": "python",
+  "id": "python/paramiko__paramiko__Python__row28__e22c5ea33081/TARGET_WITH_DEPENDENCIES",
+  "repository": "paramiko/paramiko",
+  "commit": "e22c5ea330814801d8487dc3da347f987bafe5ec",
+  "target_path": "paramiko/dsskey.py",
+  "report_target_row": "28",
+  "final": true,
+  "source_root": "benchmarks/cryptogpt-realworld-python-full/paramiko__paramiko/2023-05-06_e22c5ea33081",
+  "scope": "TARGET_WITH_DEPENDENCIES",
+  "input": "experiments/cryptogpt/runs/_inputs/python/paramiko__paramiko__Python__row28__e22c5ea33081/TARGET_WITH_DEPENDENCIES",
+  "source_files": [
+    "paramiko/dsskey.py",
+    "paramiko/pkey.py",
+    "paramiko/util.py",
+    "paramiko/message.py",
+    "paramiko/ber.py"
+  ],
+  "status": "SUCCESS",
+  "seconds": 1.702,
+  "raw_findings": 5,
+  "rules": {
+    "C16": 2,
+    "C13": 1,
+    "C5": 1,
+    "C6": 1
+  },
+  "source_unchanged": true,
+  "report": "experiments/cryptogpt/runs/python/paramiko__paramiko__Python__row28__e22c5ea33081/TARGET_WITH_DEPENDENCIES/findings.json",
+  "command": [
+    "java",
+    "-Xmx8g",
+    "-Xss128m",
+    "-cp",
+    "<tools/crypto-ext runtime classpath>",
+    "org.codeminers.standalone.EvaluationMain",
+    "python",
+    "experiments/cryptogpt/runs/_inputs/python/paramiko__paramiko__Python__row28__e22c5ea33081/TARGET_WITH_DEPENDENCIES",
+    "--metrics-output=experiments/cryptogpt/runs/python/paramiko__paramiko__Python__row28__e22c5ea33081/TARGET_WITH_DEPENDENCIES/performance.json",
+    "--report=json",
+    "--report-output=experiments/cryptogpt/runs/python/paramiko__paramiko__Python__row28__e22c5ea33081/TARGET_WITH_DEPENDENCIES/findings.json"
+  ]
+}

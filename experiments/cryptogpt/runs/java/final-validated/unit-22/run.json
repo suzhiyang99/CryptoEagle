@@ -1,0 +1,35 @@
+{
+  "language": "java",
+  "id": "java/final-validated/unit-22",
+  "snapshot": "yuliskov__SmartTube/2026-09-28_969ad621e275",
+  "scope": "exoplayer-amzn-2.10.6/library/core/src/main/java/com/google/android/exoplayer2/upstream/crypto",
+  "source_root": "benchmarks/cryptogpt-realworld-java-full/yuliskov__SmartTube/2026-09-28_969ad621e275",
+  "input": "benchmarks/cryptogpt-realworld-java-full/yuliskov__SmartTube/2026-09-28_969ad621e275/exoplayer-amzn-2.10.6/library/core/src/main/java/com/google/android/exoplayer2/upstream/crypto",
+  "java_files": 4,
+  "source_files": [
+    "exoplayer-amzn-2.10.6/library/core/src/main/java/com/google/android/exoplayer2/upstream/crypto/CryptoUtil.java",
+    "exoplayer-amzn-2.10.6/library/core/src/main/java/com/google/android/exoplayer2/upstream/crypto/AesCipherDataSink.java",
+    "exoplayer-amzn-2.10.6/library/core/src/main/java/com/google/android/exoplayer2/upstream/crypto/AesFlushingCipher.java",
+    "exoplayer-amzn-2.10.6/library/core/src/main/java/com/google/android/exoplayer2/upstream/crypto/AesCipherDataSource.java"
+  ],
+  "status": "SUCCESS",
+  "seconds": 1.533,
+  "raw_findings": 0,
+  "rules": {},
+  "source_unchanged": true,
+  "report": "experiments/cryptogpt/runs/java/final-validated/unit-22/findings.json",
+  "command": [
+    "java",
+    "-Xmx8g",
+    "-Xss128m",
+    "-cp",
+    "<tools/crypto-ext runtime classpath>",
+    "org.codeminers.standalone.JavaEnrichmentMain",
+    "benchmarks/cryptogpt-realworld-java-full/yuliskov__SmartTube/2026-09-28_969ad621e275/exoplayer-amzn-2.10.6/library/core/src/main/java/com/google/android/exoplayer2/upstream/crypto",
+    "--no-delombok",
+    "--max-flow-call-depth=2",
+    "--summary",
+    "--report=json",
+    "--report-output=experiments/cryptogpt/runs/java/final-validated/unit-22/findings.json"
+  ]
+}

@@ -1,0 +1,10 @@
+package org.apache.spark.scheduler.cluster;
+
+import scala.Serializable;
+import scala.reflect.ScalaSignature;
+
+@ScalaSignature(
+   bytes = "\u0006\u0001)3\u0001\"\u0001\u0002\u0011\u0002G\u0005b\u0001\u0004\u0002\u001c\u0007>\f'o]3He\u0006Lg.\u001a3DYV\u001cH/\u001a:NKN\u001c\u0018mZ3\u000b\u0005\r!\u0011aB2mkN$XM\u001d\u0006\u0003\u000b\u0019\t\u0011b]2iK\u0012,H.\u001a:\u000b\u0005\u001dA\u0011!B:qCJ\\'BA\u0005\u000b\u0003\u0019\t\u0007/Y2iK*\t1\"A\u0002pe\u001e\u001c2\u0001A\u0007\u0014!\tq\u0011#D\u0001\u0010\u0015\u0005\u0001\u0012!B:dC2\f\u0017B\u0001\n\u0010\u0005\u0019\te.\u001f*fMB\u0011a\u0002F\u0005\u0003+=\u0011AbU3sS\u0006d\u0017N_1cY\u0016\u001c\u0001!K\r\u00011qq\u0002E\t\u0013'Q)bc\u0006\r\u001a5maRDH\u0010!C\t\u001aC\u0015BA\r\u001b\u00059\tE\rZ,fEVKe)\u001b7uKJT!a\u0007\u0002\u00029\r{\u0017M]:f\u000fJ\f\u0017N\\3e\u00072,8\u000f^3s\u001b\u0016\u001c8/Y4fg&\u0011QD\u0007\u0002\u0016\u000f\u0016$X\t_3dkR|'\u000fT8tgJ+\u0017m]8o\u0013\ty\"DA\u0007LS2dW\t_3dkR|'o]\u0005\u0003Ci\u00111cS5mY\u0016CXmY;u_J\u001cxJ\u001c%pgRL!a\t\u000e\u0003\u0011-KG\u000e\u001c+bg.L!!\n\u000e\u0003\u00151\u000bWO\\2i)\u0006\u001c8.\u0003\u0002(5\t1\"+Z4jgR,'o\u00117vgR,'/T1oC\u001e,'/\u0003\u0002*5\t\u0001\"+Z4jgR,'/\u0012=fGV$xN]\u0005\u0003Wi\u0011aCU3hSN$XM]#yK\u000e,Ho\u001c:GC&dW\r\u001a\u0006\u0003[i\t!CU3hSN$XM]3e\u000bb,7-\u001e;pe&\u0011qF\u0007\u0002\u000f%\u0016lwN^3Fq\u0016\u001cW\u000f^8s\u0013\t\t$D\u0001\u0007SK6|g/Z,pe.,'/\u0003\u000245\t\u0001\"+Z9vKN$X\t_3dkR|'o\u001d\u0006\u0003ki\tqDU3ue&,g/\u001a'bgR\fE\u000e\\8dCR,G-\u0012=fGV$xN]%e\u0015\t9$$\u0001\fSKR\u0014\u0018.\u001a<f'B\f'o[!qa\u000e{gNZ5h\u0015\tI$$\u0001\u0007SKZLg/Z(gM\u0016\u00148/\u0003\u0002<5\tY1+\u001a;va\u0012\u0013\u0018N^3s\u0015\ti$$\u0001\u0005TQV$Hm\\<o\u0013\ty$D\u0001\bTa\u0006\u00148.\u00119q\u0007>tg-[4\n\u0005\u0005S\"\u0001D*uCR,8/\u00169eCR,'BA\"\u001b\u0003)\u0019Fo\u001c9Ee&4XM\u001d\u0006\u0003\u000bj\tAb\u0015;pa\u0016CXmY;u_JT!a\u0012\u000e\u0002\u001bM#x\u000e]#yK\u000e,Ho\u001c:t\u0013\tI%D\u0001\fVa\u0012\fG/\u001a#fY\u0016<\u0017\r^5p]R{7.\u001a8t\u0001"
+)
+public interface CoarseGrainedClusterMessage extends Serializable {
+}

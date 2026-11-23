@@ -1,0 +1,1837 @@
+﻿file,rule,label,Bandit,Dlint,Semgrep,Cryptolation,CryptoEagle
+Trap_Import_Crypto.Cipher_rule_9_safefile_10.py,9,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Cipher_rule_9_safefile_11.py,9,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Cipher_rule_9_safefile_12.py,9,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Cipher_rule_9_safefile_7.py,9,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Cipher_rule_9_safefile_8.py,9,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Cipher_rule_9_safefile_9.py,9,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Cipher_rule_9_trapfile_10.py,9,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Cipher_rule_9_trapfile_11.py,9,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Cipher_rule_9_trapfile_12.py,9,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Cipher_rule_9_trapfile_7.py,9,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Cipher_rule_9_trapfile_8.py,9,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Cipher_rule_9_trapfile_9.py,9,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Hash_rule_11_safefile_3.py,11,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Hash_rule_11_safefile_4.py,11,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Hash_rule_11_trapfile_3.py,11,no misuse,0,0,0,0,0
+Trap_Import_Crypto.Hash_rule_11_trapfile_4.py,11,no misuse,0,0,0,0,0
+Trap_Import_Crypto_rule_11_safefile_10.py,11,no misuse,0,0,0,0,0
+Trap_Import_Crypto_rule_11_trapfile_10.py,11,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_safefile_13.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_safefile_14.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_safefile_15.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_safefile_16.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_safefile_17.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_safefile_18.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_safefile_19.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_trapfile_13.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_trapfile_14.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_trapfile_15.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_trapfile_16.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_trapfile_17.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_trapfile_18.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Cipher_rule_9_trapfile_19.py,9,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Hash_rule_11_safefile_1.py,11,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Hash_rule_11_safefile_2.py,11,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Hash_rule_11_trapfile_1.py,11,no misuse,0,0,0,0,0
+Trap_Import_Cryptodome.Hash_rule_11_trapfile_2.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_safefile_10.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_safefile_11.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_safefile_12.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_safefile_7.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_safefile_8.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_safefile_9.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_10.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_11.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_12.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_7.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_8.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_9.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Hash_rule_11_safefile_3.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Hash_rule_11_safefile_4.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Hash_rule_11_trapfile_3.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto.Hash_rule_11_trapfile_4.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto_rule_11_safefile_10.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Crypto_rule_11_trapfile_10.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_safefile_13.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_safefile_14.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_safefile_15.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_safefile_16.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_safefile_17.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_safefile_18.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_safefile_19.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_13.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_14.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_15.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_16.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_17.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_18.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_19.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Hash_rule_11_safefile_1.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Hash_rule_11_safefile_2.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Hash_rule_11_trapfile_1.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_Cryptodome.Hash_rule_11_trapfile_2.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_M2Crypto.EVP_rule_01_safefile_7.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_M2Crypto.EVP_rule_01_safefile_8.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_M2Crypto.EVP_rule_01_trapfile_7.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_M2Crypto.EVP_rule_01_trapfile_8.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_OpenSSL.SSL_rule_13_safefile_2.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_OpenSSL.SSL_rule_13_safefile_3.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_OpenSSL.SSL_rule_13_safefile_4.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_OpenSSL.SSL_rule_13_safefile_5.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_OpenSSL.SSL_rule_13_trapfile_2.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_OpenSSL.SSL_rule_13_trapfile_3.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_OpenSSL.SSL_rule_13_trapfile_4.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_OpenSSL.SSL_rule_13_trapfile_5.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_PIL.Image.Image_rule_04_safefile_33.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_PIL.Image.Image_rule_04_trapfile_33.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_PIL.Image_rule_04_safefile_32.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_PIL.Image_rule_04_trapfile_32.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_aiohttp.client.ClientSession_rule_04_safefile_34.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_aiohttp.client.ClientSession_rule_04_safefile_35.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_aiohttp.client.ClientSession_rule_04_trapfile_34.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_aiohttp.client.ClientSession_rule_04_trapfile_35.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_aiohttp.web_request.BaseRequest_rule_04_safefile_28.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_aiohttp.web_request.BaseRequest_rule_04_trapfile_28.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_bcrypt_rule_06_safefile_2.py,6,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_bcrypt_rule_06_trapfile_2.py,6,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_crypt_rule_06_safefile_1.py,6,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_crypt_rule_06_trapfile_1.py,6,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.asymmetric.padding_rule_10_safefile_0.py,10,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.asymmetric.padding_rule_10_trapfile_0.py,10,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_1.py,10,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_2.py,10,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_3.py,10,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_1.py,10,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_2.py,10,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_3.py,10,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_0.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_1.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_2.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_3.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_4.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_0.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_1.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_2.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_3.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_4.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_safefile_0.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_trapfile_0.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.modes_rule_07_safefile_0.py,7,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.modes_rule_07_trapfile_0.py,7,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.hashes_rule_11_safefile_5.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.hashes_rule_11_safefile_6.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.hashes_rule_11_trapfile_5.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.hashes_rule_11_trapfile_6.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_safefile_0.py,6,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_trapfile_0.py,6,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_safefile_0.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_trapfile_0.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ftplib_rule_14_safefile_1.py,14,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ftplib_rule_14_trapfile_1.py,14,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_furl.furl_rule_04_safefile_31.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_furl.furl_rule_04_trapfile_31.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_genshi_rule_15_safefile_5.py,15,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_genshi_rule_15_trapfile_5.py,15,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_hashlib_rule_08_safefile_0.py,8,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_hashlib_rule_08_trapfile_0.py,8,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_hashlib_rule_11_safefile_7.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_hashlib_rule_11_safefile_8.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_hashlib_rule_11_trapfile_7.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_hashlib_rule_11_trapfile_8.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_http.client_rule_04_safefile_39.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_http.client_rule_04_safefile_40.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_http.client_rule_04_trapfile_39.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_http.client_rule_04_trapfile_40.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_http_rule_04_safefile_2.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_http_rule_04_trapfile_2.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_httplib_rule_04_safefile_0.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_httplib_rule_04_trapfile_0.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_httproxy_rule_04_safefile_27.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_httproxy_rule_04_trapfile_27.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_jwt_rule_12_safefile_0.py,12,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_jwt_rule_12_safefile_1.py,12,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_jwt_rule_12_safefile_2.py,12,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_jwt_rule_12_safefile_3.py,12,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_jwt_rule_12_safefile_4.py,12,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_jwt_rule_12_trapfile_0.py,12,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_jwt_rule_12_trapfile_1.py,12,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_jwt_rule_12_trapfile_2.py,12,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_jwt_rule_12_trapfile_3.py,12,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_jwt_rule_12_trapfile_4.py,12,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ldap_rule_14_safefile_2.py,14,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ldap_rule_14_safefile_3.py,14,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ldap_rule_14_safefile_4.py,14,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ldap_rule_14_safefile_5.py,14,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ldap_rule_14_trapfile_2.py,14,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ldap_rule_14_trapfile_3.py,14,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ldap_rule_14_trapfile_4.py,14,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ldap_rule_14_trapfile_5.py,14,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_lxml_rule_15_safefile_4.py,15,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_lxml_rule_15_trapfile_4.py,15,no misuse,0,1,0,0,0
+Trap_Import_Field-Sensitive_md5_rule_11_safefile_9.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_md5_rule_11_trapfile_9.py,11,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_nacl_rule_01_safefile_6.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_nacl_rule_01_trapfile_6.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_nacl_rule_06_safefile_3.py,6,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_nacl_rule_06_trapfile_3.py,6,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_pandas.io_rule_04_safefile_30.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_pandas.io_rule_04_trapfile_30.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_paramiko.client_rule_04_safefile_46.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_paramiko.client_rule_04_trapfile_46.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_pickle_rule_17_safefile_0.py,17,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_pickle_rule_17_trapfile_0.py,17,no misuse,1,0,0,0,0
+Trap_Import_Field-Sensitive_pyDes_rule_09_safefile_5.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_pyDes_rule_09_safefile_6.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_pyDes_rule_09_trapfile_5.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_pyDes_rule_09_trapfile_6.py,9,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_pyOpenSSL.SSL_rule_13_safefile_6.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_pyOpenSSL.SSL_rule_13_trapfile_6.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_pycurl_rule_04_safefile_1.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_pycurl_rule_04_trapfile_1.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_random_rule_05_safefile_0.py,5,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_random_rule_05_trapfile_0.py,5,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_re_rule_18_safefile_0.py,18,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_re_rule_18_trapfile_0.py,18,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests.Session_rule_04_safefile_26.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests.Session_rule_04_trapfile_26.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests.api_rule_04_safefile_23.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests.api_rule_04_trapfile_23.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests.models.PreparedRequest_rule_04_safefile_43.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests.models.PreparedRequest_rule_04_safefile_44.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests.models.PreparedRequest_rule_04_safefile_45.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests.models.PreparedRequest_rule_04_trapfile_43.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests.models.PreparedRequest_rule_04_trapfile_44.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests.models.PreparedRequest_rule_04_trapfile_45.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests.sessions.Session_rule_04_safefile_24.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests.sessions.Session_rule_04_trapfile_24.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests_rule_01_safefile_1.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests_rule_01_trapfile_1.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests_rule_02_safefile_0.py,2,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests_rule_02_safefile_1.py,2,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests_rule_02_safefile_2.py,2,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests_rule_02_trapfile_0.py,2,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests_rule_02_trapfile_1.py,2,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests_rule_02_trapfile_2.py,2,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests_rule_04_safefile_22.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_requests_rule_04_trapfile_22.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ruamel.yaml_rule_16_safefile_1.py,16,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ruamel.yaml_rule_16_trapfile_1.py,16,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_six.moves.urllib.request_rule_04_safefile_4.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_six.moves.urllib.request_rule_04_safefile_5.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_six.moves.urllib.request_rule_04_safefile_6.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_six.moves.urllib.request_rule_04_safefile_7.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_six.moves.urllib.request_rule_04_trapfile_4.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_six.moves.urllib.request_rule_04_trapfile_5.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_six.moves.urllib.request_rule_04_trapfile_6.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_six.moves.urllib.request_rule_04_trapfile_7.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_six_rule_04_safefile_3.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_six_rule_04_trapfile_3.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_smtplib_rule_04_safefile_41.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_smtplib_rule_04_trapfile_41.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_socket.socket_rule_04_safefile_36.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_socket.socket_rule_04_safefile_37.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_socket.socket_rule_04_trapfile_36.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_socket.socket_rule_04_trapfile_37.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_socket_rule_04_safefile_38.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_socket_rule_04_trapfile_38.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_01_safefile_2.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_01_safefile_3.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_01_safefile_4.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_01_safefile_5.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_01_trapfile_2.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_01_trapfile_3.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_01_trapfile_4.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_01_trapfile_5.py,1,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_03_safefile_0.py,3,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_03_safefile_1.py,3,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_03_trapfile_0.py,3,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_03_trapfile_1.py,3,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_13_safefile_0.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_13_safefile_1.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_13_trapfile_0.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ssl_rule_13_trapfile_1.py,13,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_telnet_rule_14_safefile_0.py,14,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_telnet_rule_14_trapfile_0.py,14,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_tornado.web.RequestHandler_rule_04_safefile_29.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_tornado.web.RequestHandler_rule_04_trapfile_29.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ucryptolib_rule_07_safefile_1.py,7,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ucryptolib_rule_07_trapfile_1.py,7,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ucryptolib_rule_10_safefile_4.py,10,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ucryptolib_rule_10_safefile_5.py,10,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ucryptolib_rule_10_trapfile_4.py,10,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_ucryptolib_rule_10_trapfile_5.py,10,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request.URLopener_rule_04_safefile_12.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request.URLopener_rule_04_safefile_13.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request.URLopener_rule_04_safefile_14.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request.URLopener_rule_04_trapfile_12.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request.URLopener_rule_04_trapfile_13.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request.URLopener_rule_04_trapfile_14.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request_rule_04_safefile_17.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request_rule_04_safefile_18.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request_rule_04_safefile_19.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request_rule_04_safefile_20.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request_rule_04_safefile_21.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request_rule_04_trapfile_17.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request_rule_04_trapfile_18.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request_rule_04_trapfile_19.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request_rule_04_trapfile_20.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib.request_rule_04_trapfile_21.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib2_rule_04_safefile_15.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib2_rule_04_safefile_16.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib2_rule_04_trapfile_15.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib2_rule_04_trapfile_16.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib_rule_04_safefile_10.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib_rule_04_safefile_11.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib_rule_04_safefile_8.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib_rule_04_safefile_9.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib_rule_04_trapfile_10.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib_rule_04_trapfile_11.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib_rule_04_trapfile_8.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_urllib_rule_04_trapfile_9.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_webbrowser_rule_04_safefile_25.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_webbrowser_rule_04_trapfile_25.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_werkzeug_rule_04_safefile_42.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_werkzeug_rule_04_trapfile_42.py,4,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_xml.dom_rule_15_safefile_2.py,15,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_xml.dom_rule_15_trapfile_2.py,15,no misuse,0,1,1,0,0
+Trap_Import_Field-Sensitive_xml.etree_rule_15_safefile_1.py,15,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_xml.etree_rule_15_trapfile_1.py,15,no misuse,0,1,1,0,0
+Trap_Import_Field-Sensitive_xml.sax_rule_15_safefile_0.py,15,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_xml.sax_rule_15_trapfile_0.py,15,no misuse,1,1,1,0,0
+Trap_Import_Field-Sensitive_xmlrpc_rule_15_safefile_3.py,15,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_xmlrpc_rule_15_trapfile_3.py,15,no misuse,1,0,1,0,0
+Trap_Import_Field-Sensitive_yaml_rule_16_safefile_0.py,16,no misuse,0,0,0,0,0
+Trap_Import_Field-Sensitive_yaml_rule_16_trapfile_0.py,16,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Cipher_rule_09_safefile_10.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Cipher_rule_09_safefile_11.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Cipher_rule_09_safefile_12.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Cipher_rule_09_safefile_7.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Cipher_rule_09_safefile_8.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Cipher_rule_09_safefile_9.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_10.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_11.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_12.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_7.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_8.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_9.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Hash_rule_11_safefile_3.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Hash_rule_11_safefile_4.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Hash_rule_11_trapfile_3.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto.Hash_rule_11_trapfile_4.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto_rule_11_safefile_10.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_Crypto_rule_11_trapfile_10.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_safefile_13.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_safefile_14.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_safefile_15.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_safefile_16.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_safefile_17.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_safefile_18.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_safefile_19.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_13.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_14.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_15.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_16.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_17.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_18.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_19.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Hash_rule_11_safefile_1.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Hash_rule_11_safefile_2.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Hash_rule_11_trapfile_1.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_Cryptodome.Hash_rule_11_trapfile_2.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_M2Crypto.EVP_rule_01_safefile_7.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_M2Crypto.EVP_rule_01_safefile_8.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_M2Crypto.EVP_rule_01_trapfile_7.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_M2Crypto.EVP_rule_01_trapfile_8.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_OpenSSL.SSL_rule_13_safefile_2.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_OpenSSL.SSL_rule_13_safefile_3.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_OpenSSL.SSL_rule_13_safefile_4.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_OpenSSL.SSL_rule_13_safefile_5.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_OpenSSL.SSL_rule_13_trapfile_2.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_OpenSSL.SSL_rule_13_trapfile_3.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_OpenSSL.SSL_rule_13_trapfile_4.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_OpenSSL.SSL_rule_13_trapfile_5.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_PIL.Image.Image_rule_04_safefile_33.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_PIL.Image.Image_rule_04_trapfile_33.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_PIL.Image_rule_04_safefile_32.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_PIL.Image_rule_04_trapfile_32.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_aiohttp.client.ClientSession_rule_04_safefile_34.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_aiohttp.client.ClientSession_rule_04_safefile_35.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_aiohttp.client.ClientSession_rule_04_trapfile_34.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_aiohttp.client.ClientSession_rule_04_trapfile_35.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_aiohttp.web_request.BaseRequest_rule_04_safefile_28.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_aiohttp.web_request.BaseRequest_rule_04_trapfile_28.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_bcrypt_rule_06_safefile_2.py,6,no misuse,0,0,0,0,0
+Trap_Import_Global_bcrypt_rule_06_trapfile_2.py,6,no misuse,0,0,0,0,0
+Trap_Import_Global_crypt_rule_06_safefile_1.py,6,no misuse,0,0,0,0,0
+Trap_Import_Global_crypt_rule_06_trapfile_1.py,6,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.asymmetric.padding_rule_10_safefile_0.py,10,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.asymmetric.padding_rule_10_trapfile_0.py,10,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_1.py,10,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_2.py,10,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_3.py,10,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_1.py,10,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_2.py,10,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_3.py,10,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_0.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_1.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_2.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_3.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_4.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_0.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_1.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_2.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_3.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_4.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_safefile_0.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_trapfile_0.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.modes_rule_07_safefile_0.py,7,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.ciphers.modes_rule_07_trapfile_0.py,7,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.hashes_rule_11_safefile_5.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.hashes_rule_11_safefile_6.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.hashes_rule_11_trapfile_5.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.hashes_rule_11_trapfile_6.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_safefile_0.py,6,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_trapfile_0.py,6,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_safefile_0.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_trapfile_0.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_ftplib_rule_14_safefile_1.py,14,no misuse,0,0,0,0,0
+Trap_Import_Global_ftplib_rule_14_trapfile_1.py,14,no misuse,0,0,0,0,0
+Trap_Import_Global_furl.furl_rule_04_safefile_31.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_furl.furl_rule_04_trapfile_31.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_genshi_rule_15_safefile_5.py,15,no misuse,0,0,0,0,0
+Trap_Import_Global_genshi_rule_15_trapfile_5.py,15,no misuse,0,0,0,0,0
+Trap_Import_Global_hashlib_rule_08_safefile_0.py,8,no misuse,0,0,0,0,0
+Trap_Import_Global_hashlib_rule_08_trapfile_0.py,8,no misuse,0,0,0,0,0
+Trap_Import_Global_hashlib_rule_11_safefile_7.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_hashlib_rule_11_safefile_8.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_hashlib_rule_11_trapfile_7.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_hashlib_rule_11_trapfile_8.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_http.client_rule_04_safefile_39.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_http.client_rule_04_safefile_40.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_http.client_rule_04_trapfile_39.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_http.client_rule_04_trapfile_40.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_http_rule_04_safefile_2.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_http_rule_04_trapfile_2.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_httplib_rule_04_safefile_0.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_httplib_rule_04_trapfile_0.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_httproxy_rule_04_safefile_27.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_httproxy_rule_04_trapfile_27.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_jwt_rule_12_safefile_0.py,12,no misuse,0,0,0,0,0
+Trap_Import_Global_jwt_rule_12_safefile_1.py,12,no misuse,0,0,0,0,0
+Trap_Import_Global_jwt_rule_12_safefile_2.py,12,no misuse,0,0,0,0,0
+Trap_Import_Global_jwt_rule_12_safefile_3.py,12,no misuse,0,0,0,0,0
+Trap_Import_Global_jwt_rule_12_safefile_4.py,12,no misuse,0,0,0,0,0
+Trap_Import_Global_jwt_rule_12_trapfile_0.py,12,no misuse,0,0,0,0,0
+Trap_Import_Global_jwt_rule_12_trapfile_1.py,12,no misuse,0,0,0,0,0
+Trap_Import_Global_jwt_rule_12_trapfile_2.py,12,no misuse,0,0,0,0,0
+Trap_Import_Global_jwt_rule_12_trapfile_3.py,12,no misuse,0,0,0,0,0
+Trap_Import_Global_jwt_rule_12_trapfile_4.py,12,no misuse,0,0,0,0,0
+Trap_Import_Global_ldap_rule_14_safefile_2.py,14,no misuse,0,0,0,0,0
+Trap_Import_Global_ldap_rule_14_safefile_3.py,14,no misuse,0,0,0,0,0
+Trap_Import_Global_ldap_rule_14_safefile_4.py,14,no misuse,0,0,0,0,0
+Trap_Import_Global_ldap_rule_14_safefile_5.py,14,no misuse,0,0,0,0,0
+Trap_Import_Global_ldap_rule_14_trapfile_2.py,14,no misuse,0,0,0,0,0
+Trap_Import_Global_ldap_rule_14_trapfile_3.py,14,no misuse,0,0,0,0,0
+Trap_Import_Global_ldap_rule_14_trapfile_4.py,14,no misuse,0,0,0,0,0
+Trap_Import_Global_ldap_rule_14_trapfile_5.py,14,no misuse,0,0,0,0,0
+Trap_Import_Global_lxml_rule_15_safefile_4.py,15,no misuse,0,0,0,0,0
+Trap_Import_Global_lxml_rule_15_trapfile_4.py,15,no misuse,0,1,0,0,0
+Trap_Import_Global_md5_rule_11_safefile_9.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_md5_rule_11_trapfile_9.py,11,no misuse,0,0,0,0,0
+Trap_Import_Global_nacl_rule_01_safefile_6.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_nacl_rule_01_trapfile_6.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_nacl_rule_06_safefile_3.py,6,no misuse,0,0,0,0,0
+Trap_Import_Global_nacl_rule_06_trapfile_3.py,6,no misuse,0,0,0,0,0
+Trap_Import_Global_pandas.io_rule_04_safefile_30.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_pandas.io_rule_04_trapfile_30.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_paramiko.client_rule_04_safefile_46.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_paramiko.client_rule_04_trapfile_46.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_pickle_rule_17_safefile_0.py,17,no misuse,0,0,0,0,0
+Trap_Import_Global_pickle_rule_17_trapfile_0.py,17,no misuse,1,0,0,0,0
+Trap_Import_Global_pyDes_rule_09_safefile_5.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_pyDes_rule_09_safefile_6.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_pyDes_rule_09_trapfile_5.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_pyDes_rule_09_trapfile_6.py,9,no misuse,0,0,0,0,0
+Trap_Import_Global_pyOpenSSL.SSL_rule_13_safefile_6.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_pyOpenSSL.SSL_rule_13_trapfile_6.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_pycurl_rule_04_safefile_1.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_pycurl_rule_04_trapfile_1.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_random_rule_05_safefile_0.py,5,no misuse,0,0,0,0,0
+Trap_Import_Global_random_rule_05_trapfile_0.py,5,no misuse,0,0,0,0,0
+Trap_Import_Global_re_rule_18_safefile_0.py,18,no misuse,0,0,0,0,0
+Trap_Import_Global_re_rule_18_trapfile_0.py,18,no misuse,0,0,0,0,0
+Trap_Import_Global_requests.Session_rule_04_safefile_26.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_requests.Session_rule_04_trapfile_26.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_requests.api_rule_04_safefile_23.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_requests.api_rule_04_trapfile_23.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_requests.models.PreparedRequest_rule_04_safefile_43.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_requests.models.PreparedRequest_rule_04_safefile_44.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_requests.models.PreparedRequest_rule_04_safefile_45.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_requests.models.PreparedRequest_rule_04_trapfile_43.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_requests.models.PreparedRequest_rule_04_trapfile_44.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_requests.models.PreparedRequest_rule_04_trapfile_45.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_requests.sessions.Session_rule_04_safefile_24.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_requests.sessions.Session_rule_04_trapfile_24.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_requests_rule_01_safefile_1.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_requests_rule_01_trapfile_1.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_requests_rule_02_safefile_0.py,2,no misuse,0,0,0,0,0
+Trap_Import_Global_requests_rule_02_safefile_1.py,2,no misuse,0,0,0,0,0
+Trap_Import_Global_requests_rule_02_safefile_2.py,2,no misuse,0,0,0,0,0
+Trap_Import_Global_requests_rule_02_trapfile_0.py,2,no misuse,0,0,0,0,0
+Trap_Import_Global_requests_rule_02_trapfile_1.py,2,no misuse,0,0,0,0,0
+Trap_Import_Global_requests_rule_02_trapfile_2.py,2,no misuse,0,0,0,0,0
+Trap_Import_Global_requests_rule_04_safefile_22.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_requests_rule_04_trapfile_22.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_ruamel.yaml_rule_16_safefile_1.py,16,no misuse,0,0,0,0,0
+Trap_Import_Global_ruamel.yaml_rule_16_trapfile_1.py,16,no misuse,0,0,0,0,0
+Trap_Import_Global_six.moves.urllib.request_rule_04_safefile_4.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_six.moves.urllib.request_rule_04_safefile_5.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_six.moves.urllib.request_rule_04_safefile_6.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_six.moves.urllib.request_rule_04_safefile_7.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_six.moves.urllib.request_rule_04_trapfile_4.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_six.moves.urllib.request_rule_04_trapfile_5.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_six.moves.urllib.request_rule_04_trapfile_6.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_six.moves.urllib.request_rule_04_trapfile_7.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_six_rule_04_safefile_3.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_six_rule_04_trapfile_3.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_smtplib_rule_04_safefile_41.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_smtplib_rule_04_trapfile_41.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_socket.socket_rule_04_safefile_36.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_socket.socket_rule_04_safefile_37.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_socket.socket_rule_04_trapfile_36.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_socket.socket_rule_04_trapfile_37.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_socket_rule_04_safefile_38.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_socket_rule_04_trapfile_38.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_01_safefile_2.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_01_safefile_3.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_01_safefile_4.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_01_safefile_5.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_01_trapfile_2.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_01_trapfile_3.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_01_trapfile_4.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_01_trapfile_5.py,1,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_03_safefile_0.py,3,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_03_safefile_1.py,3,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_03_trapfile_0.py,3,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_03_trapfile_1.py,3,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_13_safefile_0.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_13_safefile_1.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_13_trapfile_0.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_ssl_rule_13_trapfile_1.py,13,no misuse,0,0,0,0,0
+Trap_Import_Global_telnet_rule_14_safefile_0.py,14,no misuse,0,0,0,0,0
+Trap_Import_Global_telnet_rule_14_trapfile_0.py,14,no misuse,0,0,0,0,0
+Trap_Import_Global_tornado.web.RequestHandler_rule_04_safefile_29.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_tornado.web.RequestHandler_rule_04_trapfile_29.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_ucryptolib_rule_07_safefile_1.py,7,no misuse,0,0,0,0,0
+Trap_Import_Global_ucryptolib_rule_07_trapfile_1.py,7,no misuse,0,0,0,0,0
+Trap_Import_Global_ucryptolib_rule_10_safefile_4.py,10,no misuse,0,0,0,0,0
+Trap_Import_Global_ucryptolib_rule_10_safefile_5.py,10,no misuse,0,0,0,0,0
+Trap_Import_Global_ucryptolib_rule_10_trapfile_4.py,10,no misuse,0,0,0,0,0
+Trap_Import_Global_ucryptolib_rule_10_trapfile_5.py,10,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request.URLopener_rule_04_safefile_12.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request.URLopener_rule_04_safefile_13.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request.URLopener_rule_04_safefile_14.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request.URLopener_rule_04_trapfile_12.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request.URLopener_rule_04_trapfile_13.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request.URLopener_rule_04_trapfile_14.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request_rule_04_safefile_17.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request_rule_04_safefile_18.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request_rule_04_safefile_19.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request_rule_04_safefile_20.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request_rule_04_safefile_21.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request_rule_04_trapfile_17.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request_rule_04_trapfile_18.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request_rule_04_trapfile_19.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request_rule_04_trapfile_20.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib.request_rule_04_trapfile_21.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib2_rule_04_safefile_15.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib2_rule_04_safefile_16.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib2_rule_04_trapfile_15.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib2_rule_04_trapfile_16.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib_rule_04_safefile_10.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib_rule_04_safefile_11.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib_rule_04_safefile_8.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib_rule_04_safefile_9.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib_rule_04_trapfile_10.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib_rule_04_trapfile_11.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib_rule_04_trapfile_8.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_urllib_rule_04_trapfile_9.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_webbrowser_rule_04_safefile_25.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_webbrowser_rule_04_trapfile_25.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_werkzeug_rule_04_safefile_42.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_werkzeug_rule_04_trapfile_42.py,4,no misuse,0,0,0,0,0
+Trap_Import_Global_xml.dom_rule_15_safefile_2.py,15,no misuse,0,0,0,0,0
+Trap_Import_Global_xml.dom_rule_15_trapfile_2.py,15,no misuse,0,1,1,0,0
+Trap_Import_Global_xml.etree_rule_15_safefile_1.py,15,no misuse,0,0,0,0,0
+Trap_Import_Global_xml.etree_rule_15_trapfile_1.py,15,no misuse,0,1,1,0,0
+Trap_Import_Global_xml.sax_rule_15_safefile_0.py,15,no misuse,0,0,0,0,0
+Trap_Import_Global_xml.sax_rule_15_trapfile_0.py,15,no misuse,1,1,1,0,0
+Trap_Import_Global_xmlrpc_rule_15_safefile_3.py,15,no misuse,0,0,0,0,0
+Trap_Import_Global_xmlrpc_rule_15_trapfile_3.py,15,no misuse,1,0,1,0,0
+Trap_Import_Global_yaml_rule_16_safefile_0.py,16,no misuse,0,0,0,0,0
+Trap_Import_Global_yaml_rule_16_trapfile_0.py,16,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_safefile_10.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_safefile_11.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_safefile_12.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_safefile_7.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_safefile_8.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_safefile_9.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_10.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_11.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_12.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_7.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_8.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_9.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Hash_rule_11_safefile_3.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Hash_rule_11_safefile_4.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Hash_rule_11_trapfile_3.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto.Hash_rule_11_trapfile_4.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto_rule_11_safefile_10.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Crypto_rule_11_trapfile_10.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_safefile_13.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_safefile_14.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_safefile_15.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_safefile_16.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_safefile_17.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_safefile_18.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_safefile_19.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_13.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_14.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_15.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_16.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_17.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_18.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_19.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Hash_rule_11_safefile_1.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Hash_rule_11_safefile_2.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Hash_rule_11_trapfile_1.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_Cryptodome.Hash_rule_11_trapfile_2.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_M2Crypto.EVP_rule_01_safefile_7.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_M2Crypto.EVP_rule_01_safefile_8.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_M2Crypto.EVP_rule_01_trapfile_7.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_M2Crypto.EVP_rule_01_trapfile_8.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_OpenSSL.SSL_rule_13_safefile_2.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_OpenSSL.SSL_rule_13_safefile_3.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_OpenSSL.SSL_rule_13_safefile_4.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_OpenSSL.SSL_rule_13_safefile_5.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_OpenSSL.SSL_rule_13_trapfile_2.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_OpenSSL.SSL_rule_13_trapfile_3.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_OpenSSL.SSL_rule_13_trapfile_4.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_OpenSSL.SSL_rule_13_trapfile_5.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_PIL.Image.Image_rule_04_safefile_33.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_PIL.Image.Image_rule_04_trapfile_33.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_PIL.Image_rule_04_safefile_32.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_PIL.Image_rule_04_trapfile_32.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_aiohttp.client.ClientSession_rule_04_safefile_34.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_aiohttp.client.ClientSession_rule_04_safefile_35.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_aiohttp.client.ClientSession_rule_04_trapfile_34.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_aiohttp.client.ClientSession_rule_04_trapfile_35.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_aiohttp.web_request.BaseRequest_rule_04_safefile_28.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_aiohttp.web_request.BaseRequest_rule_04_trapfile_28.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_bcrypt_rule_06_safefile_2.py,6,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_bcrypt_rule_06_trapfile_2.py,6,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_crypt_rule_06_safefile_1.py,6,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_crypt_rule_06_trapfile_1.py,6,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.asymmetric.padding_rule_10_safefile_0.py,10,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.asymmetric.padding_rule_10_trapfile_0.py,10,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_1.py,10,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_2.py,10,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_3.py,10,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_1.py,10,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_2.py,10,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_3.py,10,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_0.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_1.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_2.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_3.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_4.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_0.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_1.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_2.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_3.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_4.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_safefile_0.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_trapfile_0.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.modes_rule_07_safefile_0.py,7,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.modes_rule_07_trapfile_0.py,7,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.hashes_rule_11_safefile_5.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.hashes_rule_11_safefile_6.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.hashes_rule_11_trapfile_5.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.hashes_rule_11_trapfile_6.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_safefile_0.py,6,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_trapfile_0.py,6,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_safefile_0.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_trapfile_0.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ftplib_rule_14_safefile_1.py,14,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ftplib_rule_14_trapfile_1.py,14,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_furl.furl_rule_04_safefile_31.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_furl.furl_rule_04_trapfile_31.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_genshi_rule_15_safefile_5.py,15,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_genshi_rule_15_trapfile_5.py,15,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_hashlib_rule_08_safefile_0.py,8,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_hashlib_rule_08_trapfile_0.py,8,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_hashlib_rule_11_safefile_7.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_hashlib_rule_11_safefile_8.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_hashlib_rule_11_trapfile_7.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_hashlib_rule_11_trapfile_8.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_http.client_rule_04_safefile_39.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_http.client_rule_04_safefile_40.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_http.client_rule_04_trapfile_39.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_http.client_rule_04_trapfile_40.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_http_rule_04_safefile_2.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_http_rule_04_trapfile_2.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_httplib_rule_04_safefile_0.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_httplib_rule_04_trapfile_0.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_httproxy_rule_04_safefile_27.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_httproxy_rule_04_trapfile_27.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_jwt_rule_12_safefile_0.py,12,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_jwt_rule_12_safefile_1.py,12,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_jwt_rule_12_safefile_2.py,12,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_jwt_rule_12_safefile_3.py,12,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_jwt_rule_12_safefile_4.py,12,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_jwt_rule_12_trapfile_0.py,12,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_jwt_rule_12_trapfile_1.py,12,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_jwt_rule_12_trapfile_2.py,12,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_jwt_rule_12_trapfile_3.py,12,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_jwt_rule_12_trapfile_4.py,12,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ldap_rule_14_safefile_2.py,14,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ldap_rule_14_safefile_3.py,14,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ldap_rule_14_safefile_4.py,14,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ldap_rule_14_safefile_5.py,14,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ldap_rule_14_trapfile_2.py,14,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ldap_rule_14_trapfile_3.py,14,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ldap_rule_14_trapfile_4.py,14,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ldap_rule_14_trapfile_5.py,14,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_lxml_rule_15_safefile_4.py,15,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_lxml_rule_15_trapfile_4.py,15,no misuse,0,1,0,0,0
+Trap_Import_InterproceduralViaReturn_md5_rule_11_safefile_9.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_md5_rule_11_trapfile_9.py,11,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_nacl_rule_01_safefile_6.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_nacl_rule_01_trapfile_6.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_nacl_rule_06_safefile_3.py,6,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_nacl_rule_06_trapfile_3.py,6,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_pandas.io_rule_04_safefile_30.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_pandas.io_rule_04_trapfile_30.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_paramiko.client_rule_04_safefile_46.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_paramiko.client_rule_04_trapfile_46.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_pickle_rule_17_safefile_0.py,17,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_pickle_rule_17_trapfile_0.py,17,no misuse,1,0,0,0,0
+Trap_Import_InterproceduralViaReturn_pyDes_rule_09_safefile_5.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_pyDes_rule_09_safefile_6.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_pyDes_rule_09_trapfile_5.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_pyDes_rule_09_trapfile_6.py,9,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_pyOpenSSL.SSL_rule_13_safefile_6.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_pyOpenSSL.SSL_rule_13_trapfile_6.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_pycurl_rule_04_safefile_1.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_pycurl_rule_04_trapfile_1.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_random_rule_05_safefile_0.py,5,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_random_rule_05_trapfile_0.py,5,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_re_rule_18_safefile_0.py,18,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_re_rule_18_trapfile_0.py,18,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests.Session_rule_04_safefile_26.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests.Session_rule_04_trapfile_26.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests.api_rule_04_safefile_23.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests.api_rule_04_trapfile_23.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests.models.PreparedRequest_rule_04_safefile_43.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests.models.PreparedRequest_rule_04_safefile_44.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests.models.PreparedRequest_rule_04_safefile_45.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests.models.PreparedRequest_rule_04_trapfile_43.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests.models.PreparedRequest_rule_04_trapfile_44.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests.models.PreparedRequest_rule_04_trapfile_45.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests.sessions.Session_rule_04_safefile_24.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests.sessions.Session_rule_04_trapfile_24.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests_rule_01_safefile_1.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests_rule_01_trapfile_1.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests_rule_02_safefile_0.py,2,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests_rule_02_safefile_1.py,2,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests_rule_02_safefile_2.py,2,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests_rule_02_trapfile_0.py,2,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests_rule_02_trapfile_1.py,2,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests_rule_02_trapfile_2.py,2,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests_rule_04_safefile_22.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_requests_rule_04_trapfile_22.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ruamel.yaml_rule_16_safefile_1.py,16,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ruamel.yaml_rule_16_trapfile_1.py,16,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_six.moves.urllib.request_rule_04_safefile_4.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_six.moves.urllib.request_rule_04_safefile_5.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_six.moves.urllib.request_rule_04_safefile_6.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_six.moves.urllib.request_rule_04_safefile_7.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_six.moves.urllib.request_rule_04_trapfile_4.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_six.moves.urllib.request_rule_04_trapfile_5.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_six.moves.urllib.request_rule_04_trapfile_6.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_six.moves.urllib.request_rule_04_trapfile_7.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_six_rule_04_safefile_3.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_six_rule_04_trapfile_3.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_smtplib_rule_04_safefile_41.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_smtplib_rule_04_trapfile_41.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_socket.socket_rule_04_safefile_36.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_socket.socket_rule_04_safefile_37.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_socket.socket_rule_04_trapfile_36.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_socket.socket_rule_04_trapfile_37.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_socket_rule_04_safefile_38.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_socket_rule_04_trapfile_38.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_01_safefile_2.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_01_safefile_3.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_01_safefile_4.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_01_safefile_5.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_01_trapfile_2.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_01_trapfile_3.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_01_trapfile_4.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_01_trapfile_5.py,1,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_03_safefile_0.py,3,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_03_safefile_1.py,3,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_03_trapfile_0.py,3,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_03_trapfile_1.py,3,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_13_safefile_0.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_13_safefile_1.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_13_trapfile_0.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ssl_rule_13_trapfile_1.py,13,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_telnet_rule_14_safefile_0.py,14,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_telnet_rule_14_trapfile_0.py,14,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_tornado.web.RequestHandler_rule_04_safefile_29.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_tornado.web.RequestHandler_rule_04_trapfile_29.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ucryptolib_rule_07_safefile_1.py,7,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ucryptolib_rule_07_trapfile_1.py,7,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ucryptolib_rule_10_safefile_4.py,10,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ucryptolib_rule_10_safefile_5.py,10,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ucryptolib_rule_10_trapfile_4.py,10,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_ucryptolib_rule_10_trapfile_5.py,10,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request.URLopener_rule_04_safefile_12.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request.URLopener_rule_04_safefile_13.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request.URLopener_rule_04_safefile_14.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request.URLopener_rule_04_trapfile_12.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request.URLopener_rule_04_trapfile_13.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request.URLopener_rule_04_trapfile_14.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request_rule_04_safefile_17.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request_rule_04_safefile_18.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request_rule_04_safefile_19.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request_rule_04_safefile_20.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request_rule_04_safefile_21.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request_rule_04_trapfile_17.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request_rule_04_trapfile_18.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request_rule_04_trapfile_19.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request_rule_04_trapfile_20.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib.request_rule_04_trapfile_21.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib2_rule_04_safefile_15.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib2_rule_04_safefile_16.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib2_rule_04_trapfile_15.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib2_rule_04_trapfile_16.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib_rule_04_safefile_10.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib_rule_04_safefile_11.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib_rule_04_safefile_8.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib_rule_04_safefile_9.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib_rule_04_trapfile_10.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib_rule_04_trapfile_11.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib_rule_04_trapfile_8.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_urllib_rule_04_trapfile_9.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_webbrowser_rule_04_safefile_25.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_webbrowser_rule_04_trapfile_25.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_werkzeug_rule_04_safefile_42.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_werkzeug_rule_04_trapfile_42.py,4,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_xml.dom_rule_15_safefile_2.py,15,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_xml.dom_rule_15_trapfile_2.py,15,no misuse,0,1,1,0,0
+Trap_Import_InterproceduralViaReturn_xml.etree_rule_15_safefile_1.py,15,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_xml.etree_rule_15_trapfile_1.py,15,no misuse,0,1,1,0,0
+Trap_Import_InterproceduralViaReturn_xml.sax_rule_15_safefile_0.py,15,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_xml.sax_rule_15_trapfile_0.py,15,no misuse,1,1,1,0,0
+Trap_Import_InterproceduralViaReturn_xmlrpc_rule_15_safefile_3.py,15,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_xmlrpc_rule_15_trapfile_3.py,15,no misuse,1,0,1,0,0
+Trap_Import_InterproceduralViaReturn_yaml_rule_16_safefile_0.py,16,no misuse,0,0,0,0,0
+Trap_Import_InterproceduralViaReturn_yaml_rule_16_trapfile_0.py,16,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Cipher_rule_09_safefile_10.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Cipher_rule_09_safefile_11.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Cipher_rule_09_safefile_12.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Cipher_rule_09_safefile_7.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Cipher_rule_09_safefile_8.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Cipher_rule_09_safefile_9.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_10.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_11.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_12.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_7.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_8.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_9.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Hash_rule_11_safefile_3.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Hash_rule_11_safefile_4.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Hash_rule_11_trapfile_3.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto.Hash_rule_11_trapfile_4.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto_rule_11_safefile_10.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Crypto_rule_11_trapfile_10.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_safefile_13.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_safefile_14.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_safefile_15.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_safefile_16.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_safefile_17.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_safefile_18.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_safefile_19.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_13.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_14.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_15.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_16.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_17.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_18.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_19.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Hash_rule_11_safefile_1.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Hash_rule_11_safefile_2.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Hash_rule_11_trapfile_1.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_Cryptodome.Hash_rule_11_trapfile_2.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_M2Crypto.EVP_rule_01_safefile_7.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_M2Crypto.EVP_rule_01_safefile_8.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_M2Crypto.EVP_rule_01_trapfile_7.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_M2Crypto.EVP_rule_01_trapfile_8.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_OpenSSL.SSL_rule_13_safefile_2.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_OpenSSL.SSL_rule_13_safefile_3.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_OpenSSL.SSL_rule_13_safefile_4.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_OpenSSL.SSL_rule_13_safefile_5.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_OpenSSL.SSL_rule_13_trapfile_2.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_OpenSSL.SSL_rule_13_trapfile_3.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_OpenSSL.SSL_rule_13_trapfile_4.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_OpenSSL.SSL_rule_13_trapfile_5.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_PIL.Image.Image_rule_04_safefile_33.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_PIL.Image.Image_rule_04_trapfile_33.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_PIL.Image_rule_04_safefile_32.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_PIL.Image_rule_04_trapfile_32.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_aiohttp.client.ClientSession_rule_04_safefile_34.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_aiohttp.client.ClientSession_rule_04_safefile_35.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_aiohttp.client.ClientSession_rule_04_trapfile_34.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_aiohttp.client.ClientSession_rule_04_trapfile_35.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_aiohttp.web_request.BaseRequest_rule_04_safefile_28.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_aiohttp.web_request.BaseRequest_rule_04_trapfile_28.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_bcrypt_rule_06_safefile_2.py,6,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_bcrypt_rule_06_trapfile_2.py,6,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_crypt_rule_06_safefile_1.py,6,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_crypt_rule_06_trapfile_1.py,6,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.asymmetric.padding_rule_10_safefile_0.py,10,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.asymmetric.padding_rule_10_trapfile_0.py,10,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_1.py,10,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_2.py,10,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_3.py,10,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_1.py,10,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_2.py,10,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_3.py,10,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_0.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_1.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_2.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_3.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_4.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_0.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_1.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_2.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_3.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_4.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_safefile_0.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_trapfile_0.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.modes_rule_07_safefile_0.py,7,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.modes_rule_07_trapfile_0.py,7,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.hashes_rule_11_safefile_5.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.hashes_rule_11_safefile_6.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.hashes_rule_11_trapfile_5.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.hashes_rule_11_trapfile_6.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_safefile_0.py,6,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_trapfile_0.py,6,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_safefile_0.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_trapfile_0.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ftplib_rule_14_safefile_1.py,14,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ftplib_rule_14_trapfile_1.py,14,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_furl.furl_rule_04_safefile_31.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_furl.furl_rule_04_trapfile_31.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_genshi_rule_15_safefile_5.py,15,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_genshi_rule_15_trapfile_5.py,15,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_hashlib_rule_08_safefile_0.py,8,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_hashlib_rule_08_trapfile_0.py,8,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_hashlib_rule_11_safefile_7.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_hashlib_rule_11_safefile_8.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_hashlib_rule_11_trapfile_7.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_hashlib_rule_11_trapfile_8.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_http.client_rule_04_safefile_39.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_http.client_rule_04_safefile_40.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_http.client_rule_04_trapfile_39.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_http.client_rule_04_trapfile_40.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_http_rule_04_safefile_2.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_http_rule_04_trapfile_2.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_httplib_rule_04_safefile_0.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_httplib_rule_04_trapfile_0.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_httproxy_rule_04_safefile_27.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_httproxy_rule_04_trapfile_27.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_jwt_rule_12_safefile_0.py,12,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_jwt_rule_12_safefile_1.py,12,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_jwt_rule_12_safefile_2.py,12,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_jwt_rule_12_safefile_3.py,12,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_jwt_rule_12_safefile_4.py,12,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_jwt_rule_12_trapfile_0.py,12,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_jwt_rule_12_trapfile_1.py,12,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_jwt_rule_12_trapfile_2.py,12,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_jwt_rule_12_trapfile_3.py,12,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_jwt_rule_12_trapfile_4.py,12,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ldap_rule_14_safefile_2.py,14,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ldap_rule_14_safefile_3.py,14,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ldap_rule_14_safefile_4.py,14,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ldap_rule_14_safefile_5.py,14,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ldap_rule_14_trapfile_2.py,14,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ldap_rule_14_trapfile_3.py,14,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ldap_rule_14_trapfile_4.py,14,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ldap_rule_14_trapfile_5.py,14,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_lxml_rule_15_safefile_4.py,15,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_lxml_rule_15_trapfile_4.py,15,no misuse,0,1,0,0,0
+Trap_Import_Interprocedural_md5_rule_11_safefile_9.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_md5_rule_11_trapfile_9.py,11,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_nacl_rule_01_safefile_6.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_nacl_rule_01_trapfile_6.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_nacl_rule_06_safefile_3.py,6,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_nacl_rule_06_trapfile_3.py,6,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_pandas.io_rule_04_safefile_30.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_pandas.io_rule_04_trapfile_30.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_paramiko.client_rule_04_safefile_46.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_paramiko.client_rule_04_trapfile_46.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_pickle_rule_17_safefile_0.py,17,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_pickle_rule_17_trapfile_0.py,17,no misuse,1,0,0,0,0
+Trap_Import_Interprocedural_pyDes_rule_09_safefile_5.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_pyDes_rule_09_safefile_6.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_pyDes_rule_09_trapfile_5.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_pyDes_rule_09_trapfile_6.py,9,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_pyOpenSSL.SSL_rule_13_safefile_6.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_pyOpenSSL.SSL_rule_13_trapfile_6.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_pycurl_rule_04_safefile_1.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_pycurl_rule_04_trapfile_1.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_random_rule_05_safefile_0.py,5,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_random_rule_05_trapfile_0.py,5,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_re_rule_18_safefile_0.py,18,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_re_rule_18_trapfile_0.py,18,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests.Session_rule_04_safefile_26.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests.Session_rule_04_trapfile_26.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests.api_rule_04_safefile_23.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests.api_rule_04_trapfile_23.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests.models.PreparedRequest_rule_04_safefile_43.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests.models.PreparedRequest_rule_04_safefile_44.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests.models.PreparedRequest_rule_04_safefile_45.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests.models.PreparedRequest_rule_04_trapfile_43.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests.models.PreparedRequest_rule_04_trapfile_44.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests.models.PreparedRequest_rule_04_trapfile_45.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests.sessions.Session_rule_04_safefile_24.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests.sessions.Session_rule_04_trapfile_24.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests_rule_01_safefile_1.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests_rule_01_trapfile_1.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests_rule_02_safefile_0.py,2,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests_rule_02_safefile_1.py,2,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests_rule_02_safefile_2.py,2,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests_rule_02_trapfile_0.py,2,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests_rule_02_trapfile_1.py,2,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests_rule_02_trapfile_2.py,2,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests_rule_04_safefile_22.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_requests_rule_04_trapfile_22.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ruamel.yaml_rule_16_safefile_1.py,16,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ruamel.yaml_rule_16_trapfile_1.py,16,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_six.moves.urllib.request_rule_04_safefile_4.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_six.moves.urllib.request_rule_04_safefile_5.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_six.moves.urllib.request_rule_04_safefile_6.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_six.moves.urllib.request_rule_04_safefile_7.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_six.moves.urllib.request_rule_04_trapfile_4.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_six.moves.urllib.request_rule_04_trapfile_5.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_six.moves.urllib.request_rule_04_trapfile_6.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_six.moves.urllib.request_rule_04_trapfile_7.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_six_rule_04_safefile_3.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_six_rule_04_trapfile_3.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_smtplib_rule_04_safefile_41.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_smtplib_rule_04_trapfile_41.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_socket.socket_rule_04_safefile_36.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_socket.socket_rule_04_safefile_37.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_socket.socket_rule_04_trapfile_36.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_socket.socket_rule_04_trapfile_37.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_socket_rule_04_safefile_38.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_socket_rule_04_trapfile_38.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_01_safefile_2.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_01_safefile_3.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_01_safefile_4.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_01_safefile_5.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_01_trapfile_2.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_01_trapfile_3.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_01_trapfile_4.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_01_trapfile_5.py,1,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_03_safefile_0.py,3,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_03_safefile_1.py,3,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_03_trapfile_0.py,3,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_03_trapfile_1.py,3,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_13_safefile_0.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_13_safefile_1.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_13_trapfile_0.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ssl_rule_13_trapfile_1.py,13,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_telnet_rule_14_safefile_0.py,14,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_telnet_rule_14_trapfile_0.py,14,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_tornado.web.RequestHandler_rule_04_safefile_29.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_tornado.web.RequestHandler_rule_04_trapfile_29.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ucryptolib_rule_07_safefile_1.py,7,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ucryptolib_rule_07_trapfile_1.py,7,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ucryptolib_rule_10_safefile_4.py,10,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ucryptolib_rule_10_safefile_5.py,10,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ucryptolib_rule_10_trapfile_4.py,10,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_ucryptolib_rule_10_trapfile_5.py,10,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request.URLopener_rule_04_safefile_12.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request.URLopener_rule_04_safefile_13.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request.URLopener_rule_04_safefile_14.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request.URLopener_rule_04_trapfile_12.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request.URLopener_rule_04_trapfile_13.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request.URLopener_rule_04_trapfile_14.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request_rule_04_safefile_17.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request_rule_04_safefile_18.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request_rule_04_safefile_19.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request_rule_04_safefile_20.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request_rule_04_safefile_21.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request_rule_04_trapfile_17.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request_rule_04_trapfile_18.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request_rule_04_trapfile_19.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request_rule_04_trapfile_20.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib.request_rule_04_trapfile_21.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib2_rule_04_safefile_15.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib2_rule_04_safefile_16.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib2_rule_04_trapfile_15.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib2_rule_04_trapfile_16.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib_rule_04_safefile_10.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib_rule_04_safefile_11.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib_rule_04_safefile_8.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib_rule_04_safefile_9.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib_rule_04_trapfile_10.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib_rule_04_trapfile_11.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib_rule_04_trapfile_8.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_urllib_rule_04_trapfile_9.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_webbrowser_rule_04_safefile_25.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_webbrowser_rule_04_trapfile_25.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_werkzeug_rule_04_safefile_42.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_werkzeug_rule_04_trapfile_42.py,4,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_xml.dom_rule_15_safefile_2.py,15,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_xml.dom_rule_15_trapfile_2.py,15,no misuse,0,1,1,0,0
+Trap_Import_Interprocedural_xml.etree_rule_15_safefile_1.py,15,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_xml.etree_rule_15_trapfile_1.py,15,no misuse,0,1,1,0,0
+Trap_Import_Interprocedural_xml.sax_rule_15_safefile_0.py,15,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_xml.sax_rule_15_trapfile_0.py,15,no misuse,1,1,1,0,0
+Trap_Import_Interprocedural_xmlrpc_rule_15_safefile_3.py,15,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_xmlrpc_rule_15_trapfile_3.py,15,no misuse,1,0,1,0,0
+Trap_Import_Interprocedural_yaml_rule_16_safefile_0.py,16,no misuse,0,0,0,0,0
+Trap_Import_Interprocedural_yaml_rule_16_trapfile_0.py,16,no misuse,0,0,0,0,0
+Trap_Import_M2Crypto.EVP_rule_1_safefile_7.py,1,no misuse,0,0,0,0,0
+Trap_Import_M2Crypto.EVP_rule_1_safefile_8.py,1,no misuse,0,0,0,0,0
+Trap_Import_M2Crypto.EVP_rule_1_trapfile_7.py,1,no misuse,0,0,0,0,0
+Trap_Import_M2Crypto.EVP_rule_1_trapfile_8.py,1,no misuse,0,0,0,0,0
+Trap_Import_OpenSSL.SSL_rule_13_safefile_2.py,13,no misuse,0,0,0,0,0
+Trap_Import_OpenSSL.SSL_rule_13_safefile_3.py,13,no misuse,0,0,0,0,0
+Trap_Import_OpenSSL.SSL_rule_13_safefile_4.py,13,no misuse,0,0,0,0,0
+Trap_Import_OpenSSL.SSL_rule_13_safefile_5.py,13,no misuse,0,0,0,0,0
+Trap_Import_OpenSSL.SSL_rule_13_trapfile_2.py,13,no misuse,0,0,0,0,0
+Trap_Import_OpenSSL.SSL_rule_13_trapfile_3.py,13,no misuse,0,0,0,0,0
+Trap_Import_OpenSSL.SSL_rule_13_trapfile_4.py,13,no misuse,0,0,0,0,0
+Trap_Import_OpenSSL.SSL_rule_13_trapfile_5.py,13,no misuse,0,0,0,0,0
+Trap_Import_PIL.Image.Image_rule_4_safefile_33.py,4,no misuse,0,0,0,0,0
+Trap_Import_PIL.Image.Image_rule_4_trapfile_33.py,4,no misuse,0,0,0,0,0
+Trap_Import_PIL.Image_rule_4_safefile_32.py,4,no misuse,0,0,0,0,0
+Trap_Import_PIL.Image_rule_4_trapfile_32.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_safefile_10.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_safefile_11.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_safefile_12.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_safefile_7.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_safefile_8.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_safefile_9.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_10.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_11.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_12.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_7.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_8.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_9.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Hash_rule_11_safefile_3.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Hash_rule_11_safefile_4.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Hash_rule_11_trapfile_3.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto.Hash_rule_11_trapfile_4.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto_rule_11_safefile_10.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Crypto_rule_11_trapfile_10.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_safefile_13.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_safefile_14.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_safefile_15.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_safefile_16.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_safefile_17.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_safefile_18.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_safefile_19.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_13.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_14.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_15.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_16.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_17.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_18.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_19.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Hash_rule_11_safefile_1.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Hash_rule_11_safefile_2.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Hash_rule_11_trapfile_1.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_Cryptodome.Hash_rule_11_trapfile_2.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_M2Crypto.EVP_rule_01_safefile_7.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_M2Crypto.EVP_rule_01_safefile_8.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_M2Crypto.EVP_rule_01_trapfile_7.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_M2Crypto.EVP_rule_01_trapfile_8.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_OpenSSL.SSL_rule_13_safefile_2.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_OpenSSL.SSL_rule_13_safefile_3.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_OpenSSL.SSL_rule_13_safefile_4.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_OpenSSL.SSL_rule_13_safefile_5.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_OpenSSL.SSL_rule_13_trapfile_2.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_OpenSSL.SSL_rule_13_trapfile_3.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_OpenSSL.SSL_rule_13_trapfile_4.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_OpenSSL.SSL_rule_13_trapfile_5.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_PIL.Image.Image_rule_04_safefile_33.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_PIL.Image.Image_rule_04_trapfile_33.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_PIL.Image_rule_04_safefile_32.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_PIL.Image_rule_04_trapfile_32.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_aiohttp.client.ClientSession_rule_04_safefile_34.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_aiohttp.client.ClientSession_rule_04_safefile_35.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_aiohttp.client.ClientSession_rule_04_trapfile_34.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_aiohttp.client.ClientSession_rule_04_trapfile_35.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_aiohttp.web_request.BaseRequest_rule_04_safefile_28.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_aiohttp.web_request.BaseRequest_rule_04_trapfile_28.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_bcrypt_rule_06_safefile_2.py,6,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_bcrypt_rule_06_trapfile_2.py,6,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_crypt_rule_06_safefile_1.py,6,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_crypt_rule_06_trapfile_1.py,6,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.asymmetric.padding_rule_10_safefile_0.py,10,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.asymmetric.padding_rule_10_trapfile_0.py,10,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_1.py,10,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_2.py,10,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_3.py,10,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_1.py,10,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_2.py,10,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_3.py,10,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_0.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_1.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_2.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_3.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_safefile_4.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_0.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_1.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_2.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_3.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_4.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_safefile_0.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_trapfile_0.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.modes_rule_07_safefile_0.py,7,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.modes_rule_07_trapfile_0.py,7,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.hashes_rule_11_safefile_5.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.hashes_rule_11_safefile_6.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.hashes_rule_11_trapfile_5.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.hashes_rule_11_trapfile_6.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_safefile_0.py,6,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_trapfile_0.py,6,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_safefile_0.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_trapfile_0.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ftplib_rule_14_safefile_1.py,14,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ftplib_rule_14_trapfile_1.py,14,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_furl.furl_rule_04_safefile_31.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_furl.furl_rule_04_trapfile_31.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_genshi_rule_15_safefile_5.py,15,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_genshi_rule_15_trapfile_5.py,15,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_hashlib_rule_08_safefile_0.py,8,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_hashlib_rule_08_trapfile_0.py,8,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_hashlib_rule_11_safefile_7.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_hashlib_rule_11_safefile_8.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_hashlib_rule_11_trapfile_7.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_hashlib_rule_11_trapfile_8.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_http.client_rule_04_safefile_39.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_http.client_rule_04_safefile_40.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_http.client_rule_04_trapfile_39.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_http.client_rule_04_trapfile_40.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_http_rule_04_safefile_2.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_http_rule_04_trapfile_2.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_httplib_rule_04_safefile_0.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_httplib_rule_04_trapfile_0.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_httproxy_rule_04_safefile_27.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_httproxy_rule_04_trapfile_27.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_jwt_rule_12_safefile_0.py,12,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_jwt_rule_12_safefile_1.py,12,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_jwt_rule_12_safefile_2.py,12,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_jwt_rule_12_safefile_3.py,12,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_jwt_rule_12_safefile_4.py,12,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_jwt_rule_12_trapfile_0.py,12,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_jwt_rule_12_trapfile_1.py,12,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_jwt_rule_12_trapfile_2.py,12,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_jwt_rule_12_trapfile_3.py,12,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_jwt_rule_12_trapfile_4.py,12,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ldap_rule_14_safefile_2.py,14,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ldap_rule_14_safefile_3.py,14,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ldap_rule_14_safefile_4.py,14,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ldap_rule_14_safefile_5.py,14,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ldap_rule_14_trapfile_2.py,14,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ldap_rule_14_trapfile_3.py,14,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ldap_rule_14_trapfile_4.py,14,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ldap_rule_14_trapfile_5.py,14,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_lxml_rule_15_safefile_4.py,15,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_lxml_rule_15_trapfile_4.py,15,no misuse,0,1,0,0,0
+Trap_Import_Path-Sensitive_md5_rule_11_safefile_9.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_md5_rule_11_trapfile_9.py,11,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_nacl_rule_01_safefile_6.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_nacl_rule_01_trapfile_6.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_nacl_rule_06_safefile_3.py,6,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_nacl_rule_06_trapfile_3.py,6,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_pandas.io_rule_04_safefile_30.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_pandas.io_rule_04_trapfile_30.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_paramiko.client_rule_04_safefile_46.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_paramiko.client_rule_04_trapfile_46.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_pickle_rule_17_safefile_0.py,17,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_pickle_rule_17_trapfile_0.py,17,no misuse,1,0,0,0,0
+Trap_Import_Path-Sensitive_pyDes_rule_09_safefile_5.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_pyDes_rule_09_safefile_6.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_pyDes_rule_09_trapfile_5.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_pyDes_rule_09_trapfile_6.py,9,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_pyOpenSSL.SSL_rule_13_safefile_6.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_pyOpenSSL.SSL_rule_13_trapfile_6.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_pycurl_rule_04_safefile_1.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_pycurl_rule_04_trapfile_1.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_random_rule_05_safefile_0.py,5,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_random_rule_05_trapfile_0.py,5,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_re_rule_18_safefile_0.py,18,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_re_rule_18_trapfile_0.py,18,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests.Session_rule_04_safefile_26.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests.Session_rule_04_trapfile_26.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests.api_rule_04_safefile_23.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests.api_rule_04_trapfile_23.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests.models.PreparedRequest_rule_04_safefile_43.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests.models.PreparedRequest_rule_04_safefile_44.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests.models.PreparedRequest_rule_04_safefile_45.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests.models.PreparedRequest_rule_04_trapfile_43.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests.models.PreparedRequest_rule_04_trapfile_44.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests.models.PreparedRequest_rule_04_trapfile_45.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests.sessions.Session_rule_04_safefile_24.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests.sessions.Session_rule_04_trapfile_24.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests_rule_01_safefile_1.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests_rule_01_trapfile_1.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests_rule_02_safefile_0.py,2,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests_rule_02_safefile_1.py,2,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests_rule_02_safefile_2.py,2,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests_rule_02_trapfile_0.py,2,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests_rule_02_trapfile_1.py,2,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests_rule_02_trapfile_2.py,2,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests_rule_04_safefile_22.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_requests_rule_04_trapfile_22.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ruamel.yaml_rule_16_safefile_1.py,16,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ruamel.yaml_rule_16_trapfile_1.py,16,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_six.moves.urllib.request_rule_04_safefile_4.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_six.moves.urllib.request_rule_04_safefile_5.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_six.moves.urllib.request_rule_04_safefile_6.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_six.moves.urllib.request_rule_04_safefile_7.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_six.moves.urllib.request_rule_04_trapfile_4.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_six.moves.urllib.request_rule_04_trapfile_5.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_six.moves.urllib.request_rule_04_trapfile_6.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_six.moves.urllib.request_rule_04_trapfile_7.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_six_rule_04_safefile_3.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_six_rule_04_trapfile_3.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_smtplib_rule_04_safefile_41.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_smtplib_rule_04_trapfile_41.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_socket.socket_rule_04_safefile_36.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_socket.socket_rule_04_safefile_37.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_socket.socket_rule_04_trapfile_36.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_socket.socket_rule_04_trapfile_37.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_socket_rule_04_safefile_38.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_socket_rule_04_trapfile_38.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_01_safefile_2.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_01_safefile_3.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_01_safefile_4.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_01_safefile_5.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_01_trapfile_2.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_01_trapfile_3.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_01_trapfile_4.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_01_trapfile_5.py,1,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_03_safefile_0.py,3,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_03_safefile_1.py,3,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_03_trapfile_0.py,3,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_03_trapfile_1.py,3,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_13_safefile_0.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_13_safefile_1.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_13_trapfile_0.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ssl_rule_13_trapfile_1.py,13,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_telnet_rule_14_safefile_0.py,14,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_telnet_rule_14_trapfile_0.py,14,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_tornado.web.RequestHandler_rule_04_safefile_29.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_tornado.web.RequestHandler_rule_04_trapfile_29.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ucryptolib_rule_07_safefile_1.py,7,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ucryptolib_rule_07_trapfile_1.py,7,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ucryptolib_rule_10_safefile_4.py,10,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ucryptolib_rule_10_safefile_5.py,10,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ucryptolib_rule_10_trapfile_4.py,10,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_ucryptolib_rule_10_trapfile_5.py,10,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request.URLopener_rule_04_safefile_12.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request.URLopener_rule_04_safefile_13.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request.URLopener_rule_04_safefile_14.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request.URLopener_rule_04_trapfile_12.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request.URLopener_rule_04_trapfile_13.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request.URLopener_rule_04_trapfile_14.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request_rule_04_safefile_17.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request_rule_04_safefile_18.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request_rule_04_safefile_19.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request_rule_04_safefile_20.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request_rule_04_safefile_21.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request_rule_04_trapfile_17.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request_rule_04_trapfile_18.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request_rule_04_trapfile_19.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request_rule_04_trapfile_20.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib.request_rule_04_trapfile_21.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib2_rule_04_safefile_15.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib2_rule_04_safefile_16.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib2_rule_04_trapfile_15.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib2_rule_04_trapfile_16.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib_rule_04_safefile_10.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib_rule_04_safefile_11.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib_rule_04_safefile_8.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib_rule_04_safefile_9.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib_rule_04_trapfile_10.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib_rule_04_trapfile_11.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib_rule_04_trapfile_8.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_urllib_rule_04_trapfile_9.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_webbrowser_rule_04_safefile_25.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_webbrowser_rule_04_trapfile_25.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_werkzeug_rule_04_safefile_42.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_werkzeug_rule_04_trapfile_42.py,4,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_xml.dom_rule_15_safefile_2.py,15,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_xml.dom_rule_15_trapfile_2.py,15,no misuse,0,1,1,0,0
+Trap_Import_Path-Sensitive_xml.etree_rule_15_safefile_1.py,15,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_xml.etree_rule_15_trapfile_1.py,15,no misuse,0,1,1,0,0
+Trap_Import_Path-Sensitive_xml.sax_rule_15_safefile_0.py,15,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_xml.sax_rule_15_trapfile_0.py,15,no misuse,1,1,1,0,0
+Trap_Import_Path-Sensitive_xmlrpc_rule_15_safefile_3.py,15,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_xmlrpc_rule_15_trapfile_3.py,15,no misuse,1,0,1,0,0
+Trap_Import_Path-Sensitive_yaml_rule_16_safefile_0.py,16,no misuse,0,0,0,0,0
+Trap_Import_Path-Sensitive_yaml_rule_16_trapfile_0.py,16,no misuse,0,0,0,0,0
+Trap_Import_aiohttp.client.ClientSession_rule_4_safefile_34.py,4,no misuse,0,0,0,0,0
+Trap_Import_aiohttp.client.ClientSession_rule_4_safefile_35.py,4,no misuse,0,0,0,0,0
+Trap_Import_aiohttp.client.ClientSession_rule_4_trapfile_34.py,4,no misuse,0,0,0,0,0
+Trap_Import_aiohttp.client.ClientSession_rule_4_trapfile_35.py,4,no misuse,0,0,0,0,0
+Trap_Import_aiohttp.web_request.BaseRequest_rule_4_safefile_28.py,4,no misuse,0,0,0,0,0
+Trap_Import_aiohttp.web_request.BaseRequest_rule_4_trapfile_28.py,4,no misuse,0,0,0,0,0
+Trap_Import_bcrypt_rule_6_safefile_2.py,6,no misuse,0,0,0,0,0
+Trap_Import_bcrypt_rule_6_trapfile_2.py,6,no misuse,0,0,0,0,0
+Trap_Import_crypt_rule_6_safefile_1.py,6,no misuse,0,0,0,0,0
+Trap_Import_crypt_rule_6_trapfile_1.py,6,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.asymmetric.padding_rule_10_safefile_0.py,10,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.asymmetric.padding_rule_10_trapfile_0.py,10,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_1.py,10,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_2.py,10,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.asymmetric_rule_10_safefile_3.py,10,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_1.py,10,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_2.py,10,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_3.py,10,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_safefile_0.py,11,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_trapfile_0.py,11,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_safefile_0.py,9,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_safefile_1.py,9,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_safefile_2.py,9,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_safefile_3.py,9,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_safefile_4.py,9,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_trapfile_0.py,9,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_trapfile_1.py,9,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_trapfile_2.py,9,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_trapfile_3.py,9,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_trapfile_4.py,9,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.modes_rule_7_safefile_0.py,7,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.ciphers.modes_rule_7_trapfile_0.py,7,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.hashes_rule_11_safefile_5.py,11,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.hashes_rule_11_safefile_6.py,11,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.hashes_rule_11_trapfile_5.py,11,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.hashes_rule_11_trapfile_6.py,11,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.kdf.pbkdf2_rule_6_safefile_0.py,6,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.kdf.pbkdf2_rule_6_trapfile_0.py,6,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.serialization.pkcs12_rule_1_safefile_0.py,1,no misuse,0,0,0,0,0
+Trap_Import_cryptography.hazmat.primitives.serialization.pkcs12_rule_1_trapfile_0.py,1,no misuse,0,0,0,0,0
+Trap_Import_ftplib_rule_14_safefile_1.py,14,no misuse,0,0,0,0,0
+Trap_Import_ftplib_rule_14_trapfile_1.py,14,no misuse,0,0,0,0,0
+Trap_Import_furl.furl_rule_4_safefile_31.py,4,no misuse,0,0,0,0,0
+Trap_Import_furl.furl_rule_4_trapfile_31.py,4,no misuse,0,0,0,0,0
+Trap_Import_genshi_rule_15_safefile_5.py,15,no misuse,0,0,0,0,0
+Trap_Import_genshi_rule_15_trapfile_5.py,15,no misuse,0,0,0,0,0
+Trap_Import_hashlib_rule_11_safefile_7.py,11,no misuse,0,0,0,0,0
+Trap_Import_hashlib_rule_11_safefile_8.py,11,no misuse,0,0,0,0,0
+Trap_Import_hashlib_rule_11_trapfile_7.py,11,no misuse,0,0,0,0,0
+Trap_Import_hashlib_rule_11_trapfile_8.py,11,no misuse,0,0,0,0,0
+Trap_Import_hashlib_rule_8_safefile_0.py,8,no misuse,0,0,0,0,0
+Trap_Import_hashlib_rule_8_trapfile_0.py,8,no misuse,0,0,0,0,0
+Trap_Import_http.client_rule_4_safefile_39.py,4,no misuse,0,0,0,0,0
+Trap_Import_http.client_rule_4_safefile_40.py,4,no misuse,0,0,0,0,0
+Trap_Import_http.client_rule_4_trapfile_39.py,4,no misuse,0,0,0,0,0
+Trap_Import_http.client_rule_4_trapfile_40.py,4,no misuse,0,0,0,0,0
+Trap_Import_http_rule_4_safefile_2.py,4,no misuse,0,0,0,0,0
+Trap_Import_http_rule_4_trapfile_2.py,4,no misuse,0,0,0,0,0
+Trap_Import_httplib_rule_4_safefile_0.py,4,no misuse,0,0,0,0,0
+Trap_Import_httplib_rule_4_trapfile_0.py,4,no misuse,0,0,0,0,0
+Trap_Import_httproxy_rule_4_safefile_27.py,4,no misuse,0,0,0,0,0
+Trap_Import_httproxy_rule_4_trapfile_27.py,4,no misuse,0,0,0,0,0
+Trap_Import_jwt_rule_12_safefile_0.py,12,no misuse,0,0,0,0,0
+Trap_Import_jwt_rule_12_safefile_1.py,12,no misuse,0,0,0,0,0
+Trap_Import_jwt_rule_12_safefile_2.py,12,no misuse,0,0,0,0,0
+Trap_Import_jwt_rule_12_safefile_3.py,12,no misuse,0,0,0,0,0
+Trap_Import_jwt_rule_12_safefile_4.py,12,no misuse,0,0,0,0,0
+Trap_Import_jwt_rule_12_trapfile_0.py,12,no misuse,0,0,0,0,0
+Trap_Import_jwt_rule_12_trapfile_1.py,12,no misuse,0,0,0,0,0
+Trap_Import_jwt_rule_12_trapfile_2.py,12,no misuse,0,0,0,0,0
+Trap_Import_jwt_rule_12_trapfile_3.py,12,no misuse,0,0,0,0,0
+Trap_Import_jwt_rule_12_trapfile_4.py,12,no misuse,0,0,0,0,0
+Trap_Import_ldap_rule_14_safefile_2.py,14,no misuse,0,0,0,0,0
+Trap_Import_ldap_rule_14_safefile_3.py,14,no misuse,0,0,0,0,0
+Trap_Import_ldap_rule_14_safefile_4.py,14,no misuse,0,0,0,0,0
+Trap_Import_ldap_rule_14_safefile_5.py,14,no misuse,0,0,0,0,0
+Trap_Import_ldap_rule_14_trapfile_2.py,14,no misuse,0,0,0,0,0
+Trap_Import_ldap_rule_14_trapfile_3.py,14,no misuse,0,0,0,0,0
+Trap_Import_ldap_rule_14_trapfile_4.py,14,no misuse,0,0,0,0,0
+Trap_Import_ldap_rule_14_trapfile_5.py,14,no misuse,0,0,0,0,0
+Trap_Import_lxml_rule_15_safefile_4.py,15,no misuse,0,0,0,0,0
+Trap_Import_lxml_rule_15_trapfile_4.py,15,no misuse,0,1,0,0,0
+Trap_Import_md5_rule_11_safefile_9.py,11,no misuse,0,0,0,0,0
+Trap_Import_md5_rule_11_trapfile_9.py,11,no misuse,0,0,0,0,0
+Trap_Import_nacl_rule_1_safefile_6.py,1,no misuse,0,0,0,0,0
+Trap_Import_nacl_rule_1_trapfile_6.py,1,no misuse,0,0,0,0,0
+Trap_Import_nacl_rule_6_safefile_3.py,6,no misuse,0,0,0,0,0
+Trap_Import_nacl_rule_6_trapfile_3.py,6,no misuse,0,0,0,0,0
+Trap_Import_pandas.io_rule_4_safefile_30.py,4,no misuse,0,0,0,0,0
+Trap_Import_pandas.io_rule_4_trapfile_30.py,4,no misuse,0,0,0,0,0
+Trap_Import_paramiko.client_rule_4_safefile_46.py,4,no misuse,0,0,0,0,0
+Trap_Import_paramiko.client_rule_4_trapfile_46.py,4,no misuse,0,0,0,0,0
+Trap_Import_pickle_rule_17_safefile_0.py,17,no misuse,0,0,0,0,0
+Trap_Import_pickle_rule_17_trapfile_0.py,17,no misuse,1,0,0,0,0
+Trap_Import_pyDes_rule_9_safefile_5.py,9,no misuse,0,0,0,0,0
+Trap_Import_pyDes_rule_9_safefile_6.py,9,no misuse,0,0,0,0,0
+Trap_Import_pyDes_rule_9_trapfile_5.py,9,no misuse,0,0,0,0,0
+Trap_Import_pyDes_rule_9_trapfile_6.py,9,no misuse,0,0,0,0,0
+Trap_Import_pyOpenSSL.SSL_rule_13_safefile_6.py,13,no misuse,0,0,0,0,0
+Trap_Import_pyOpenSSL.SSL_rule_13_trapfile_6.py,13,no misuse,0,0,0,0,0
+Trap_Import_pycurl_rule_4_safefile_1.py,4,no misuse,0,0,0,0,0
+Trap_Import_pycurl_rule_4_trapfile_1.py,4,no misuse,0,0,0,0,0
+Trap_Import_random_rule_5_safefile_0.py,5,no misuse,0,0,0,0,0
+Trap_Import_random_rule_5_trapfile_0.py,5,no misuse,0,0,0,0,0
+Trap_Import_re_rule_18_safefile_0.py,18,no misuse,0,0,0,0,0
+Trap_Import_re_rule_18_trapfile_0.py,18,no misuse,0,0,0,0,0
+Trap_Import_requests.Session_rule_4_safefile_26.py,4,no misuse,0,0,0,0,0
+Trap_Import_requests.Session_rule_4_trapfile_26.py,4,no misuse,0,0,0,0,0
+Trap_Import_requests.api_rule_4_safefile_23.py,4,no misuse,0,0,0,0,0
+Trap_Import_requests.api_rule_4_trapfile_23.py,4,no misuse,0,0,0,0,0
+Trap_Import_requests.models.PreparedRequest_rule_4_safefile_43.py,4,no misuse,0,0,0,0,0
+Trap_Import_requests.models.PreparedRequest_rule_4_safefile_44.py,4,no misuse,0,0,0,0,0
+Trap_Import_requests.models.PreparedRequest_rule_4_safefile_45.py,4,no misuse,0,0,0,0,0
+Trap_Import_requests.models.PreparedRequest_rule_4_trapfile_43.py,4,no misuse,0,0,0,0,0
+Trap_Import_requests.models.PreparedRequest_rule_4_trapfile_44.py,4,no misuse,0,0,0,0,0
+Trap_Import_requests.models.PreparedRequest_rule_4_trapfile_45.py,4,no misuse,0,0,0,0,0
+Trap_Import_requests.sessions.Session_rule_4_safefile_24.py,4,no misuse,0,0,0,0,0
+Trap_Import_requests.sessions.Session_rule_4_trapfile_24.py,4,no misuse,0,0,0,0,0
+Trap_Import_requests_rule_1_safefile_1.py,1,no misuse,0,0,0,0,0
+Trap_Import_requests_rule_1_trapfile_1.py,1,no misuse,0,0,0,0,0
+Trap_Import_requests_rule_2_safefile_0.py,2,no misuse,0,0,0,0,0
+Trap_Import_requests_rule_2_safefile_1.py,2,no misuse,0,0,0,0,0
+Trap_Import_requests_rule_2_safefile_2.py,2,no misuse,0,0,0,0,0
+Trap_Import_requests_rule_2_trapfile_0.py,2,no misuse,0,0,0,0,0
+Trap_Import_requests_rule_2_trapfile_1.py,2,no misuse,0,0,0,0,0
+Trap_Import_requests_rule_2_trapfile_2.py,2,no misuse,0,0,0,0,0
+Trap_Import_requests_rule_4_safefile_22.py,4,no misuse,0,0,0,0,0
+Trap_Import_requests_rule_4_trapfile_22.py,4,no misuse,0,0,0,0,0
+Trap_Import_ruamel.yaml_rule_16_safefile_1.py,16,no misuse,0,0,0,0,0
+Trap_Import_ruamel.yaml_rule_16_trapfile_1.py,16,no misuse,0,0,0,0,0
+Trap_Import_six.moves.urllib.request_rule_4_safefile_4.py,4,no misuse,0,0,0,0,0
+Trap_Import_six.moves.urllib.request_rule_4_safefile_5.py,4,no misuse,0,0,0,0,0
+Trap_Import_six.moves.urllib.request_rule_4_safefile_6.py,4,no misuse,0,0,0,0,0
+Trap_Import_six.moves.urllib.request_rule_4_safefile_7.py,4,no misuse,0,0,0,0,0
+Trap_Import_six.moves.urllib.request_rule_4_trapfile_4.py,4,no misuse,0,0,0,0,0
+Trap_Import_six.moves.urllib.request_rule_4_trapfile_5.py,4,no misuse,0,0,0,0,0
+Trap_Import_six.moves.urllib.request_rule_4_trapfile_6.py,4,no misuse,0,0,0,0,0
+Trap_Import_six.moves.urllib.request_rule_4_trapfile_7.py,4,no misuse,0,0,0,0,0
+Trap_Import_six_rule_4_safefile_3.py,4,no misuse,0,0,0,0,0
+Trap_Import_six_rule_4_trapfile_3.py,4,no misuse,0,0,0,0,0
+Trap_Import_smtplib_rule_4_safefile_41.py,4,no misuse,0,0,0,0,0
+Trap_Import_smtplib_rule_4_trapfile_41.py,4,no misuse,0,0,0,0,0
+Trap_Import_socket.socket_rule_4_safefile_36.py,4,no misuse,0,0,0,0,0
+Trap_Import_socket.socket_rule_4_safefile_37.py,4,no misuse,0,0,0,0,0
+Trap_Import_socket.socket_rule_4_trapfile_36.py,4,no misuse,0,0,0,0,0
+Trap_Import_socket.socket_rule_4_trapfile_37.py,4,no misuse,0,0,0,0,0
+Trap_Import_socket_rule_4_safefile_38.py,4,no misuse,0,0,0,0,0
+Trap_Import_socket_rule_4_trapfile_38.py,4,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_13_safefile_0.py,13,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_13_safefile_1.py,13,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_13_trapfile_0.py,13,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_13_trapfile_1.py,13,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_1_safefile_2.py,1,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_1_safefile_3.py,1,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_1_safefile_4.py,1,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_1_safefile_5.py,1,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_1_trapfile_2.py,1,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_1_trapfile_3.py,1,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_1_trapfile_4.py,1,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_1_trapfile_5.py,1,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_3_safefile_0.py,3,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_3_safefile_1.py,3,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_3_trapfile_0.py,3,no misuse,0,0,0,0,0
+Trap_Import_ssl_rule_3_trapfile_1.py,3,no misuse,0,0,0,0,0
+Trap_Import_telnet_rule_14_safefile_0.py,14,no misuse,0,0,0,0,0
+Trap_Import_telnet_rule_14_trapfile_0.py,14,no misuse,0,0,0,0,0
+Trap_Import_tornado.web.RequestHandler_rule_4_safefile_29.py,4,no misuse,0,0,0,0,0
+Trap_Import_tornado.web.RequestHandler_rule_4_trapfile_29.py,4,no misuse,0,0,0,0,0
+Trap_Import_ucryptolib_rule_10_safefile_4.py,10,no misuse,0,0,0,0,0
+Trap_Import_ucryptolib_rule_10_safefile_5.py,10,no misuse,0,0,0,0,0
+Trap_Import_ucryptolib_rule_10_trapfile_4.py,10,no misuse,0,0,0,0,0
+Trap_Import_ucryptolib_rule_10_trapfile_5.py,10,no misuse,0,0,0,0,0
+Trap_Import_ucryptolib_rule_7_safefile_1.py,7,no misuse,0,0,0,0,0
+Trap_Import_ucryptolib_rule_7_trapfile_1.py,7,no misuse,0,0,0,0,0
+Trap_Import_urllib.request.URLopener_rule_4_safefile_12.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request.URLopener_rule_4_safefile_13.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request.URLopener_rule_4_safefile_14.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request.URLopener_rule_4_trapfile_12.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request.URLopener_rule_4_trapfile_13.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request.URLopener_rule_4_trapfile_14.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request_rule_4_safefile_17.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request_rule_4_safefile_18.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request_rule_4_safefile_19.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request_rule_4_safefile_20.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request_rule_4_safefile_21.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request_rule_4_trapfile_17.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request_rule_4_trapfile_18.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request_rule_4_trapfile_19.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request_rule_4_trapfile_20.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib.request_rule_4_trapfile_21.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib2_rule_4_safefile_15.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib2_rule_4_safefile_16.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib2_rule_4_trapfile_15.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib2_rule_4_trapfile_16.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib_rule_4_safefile_10.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib_rule_4_safefile_11.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib_rule_4_safefile_8.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib_rule_4_safefile_9.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib_rule_4_trapfile_10.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib_rule_4_trapfile_11.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib_rule_4_trapfile_8.py,4,no misuse,0,0,0,0,0
+Trap_Import_urllib_rule_4_trapfile_9.py,4,no misuse,0,0,0,0,0
+Trap_Import_webbrowser_rule_4_safefile_25.py,4,no misuse,0,0,0,0,0
+Trap_Import_webbrowser_rule_4_trapfile_25.py,4,no misuse,0,0,0,0,0
+Trap_Import_werkzeug_rule_4_safefile_42.py,4,no misuse,0,0,0,0,0
+Trap_Import_werkzeug_rule_4_trapfile_42.py,4,no misuse,0,0,0,0,0
+Trap_Import_xml.dom_rule_15_safefile_2.py,15,no misuse,0,0,0,0,0
+Trap_Import_xml.dom_rule_15_trapfile_2.py,15,no misuse,0,1,1,0,0
+Trap_Import_xml.etree_rule_15_safefile_1.py,15,no misuse,0,0,0,0,0
+Trap_Import_xml.etree_rule_15_trapfile_1.py,15,no misuse,0,1,1,0,0
+Trap_Import_xml.sax_rule_15_safefile_0.py,15,no misuse,0,0,0,0,0
+Trap_Import_xml.sax_rule_15_trapfile_0.py,15,no misuse,1,1,1,0,0
+Trap_Import_xmlrpc_rule_15_safefile_3.py,15,no misuse,0,0,0,0,0
+Trap_Import_xmlrpc_rule_15_trapfile_3.py,15,no misuse,1,0,1,0,0
+Trap_Import_yaml_rule_16_safefile_0.py,16,no misuse,0,0,0,0,0
+Trap_Import_yaml_rule_16_trapfile_0.py,16,no misuse,0,0,0,0,0
+rule_00_Field-Sensitive_0.py,0,misuse,0,1,0,0,0
+rule_00_Field-Sensitive_1.py,0,misuse,1,1,0,1,0
+rule_00_Global_0.py,0,misuse,0,1,0,0,0
+rule_00_Global_1.py,0,misuse,0,0,0,0,0
+rule_00_InterproceduralViaReturn_0.py,0,misuse,1,1,0,1,0
+rule_00_InterproceduralViaReturn_1.py,0,misuse,1,1,0,1,0
+rule_00_Interprocedural_0.py,0,misuse,0,1,0,0,0
+rule_00_Interprocedural_1.py,0,misuse,0,0,0,0,0
+rule_00_Path-Sensitive_0.py,0,misuse,1,1,0,1,0
+rule_00_Path-Sensitive_1.py,0,misuse,1,1,0,1,0
+rule_00_insecure_0.py,0,misuse,1,1,0,1,0
+rule_00_insecure_1.py,0,misuse,0,1,0,1,0
+rule_01_Field-Sensitive_0.py,1,misuse,0,0,0,0,1
+rule_01_Field-Sensitive_1.py,1,misuse,0,1,1,1,1
+rule_01_Global_0.py,1,misuse,0,0,1,0,1
+rule_01_Global_1.py,1,misuse,0,0,0,0,1
+rule_01_InterproceduralViaReturn_0.py,1,misuse,0,1,1,0,1
+rule_01_InterproceduralViaReturn_1.py,1,misuse,0,1,1,0,1
+rule_01_Interprocedural_0.py,1,misuse,0,0,0,0,1
+rule_01_Interprocedural_1.py,1,misuse,0,0,0,0,1
+rule_01_Path-Sensitive_0.py,1,misuse,0,1,1,1,1
+rule_01_Path-Sensitive_1.py,1,misuse,0,1,1,1,1
+rule_01_insecure_0.py,1,misuse,0,1,1,1,1
+rule_01_insecure_1.py,1,misuse,1,1,1,1,1
+rule_02_Field-Sensitive_0.py,2,misuse,0,0,0,0,1
+rule_02_Field-Sensitive_1.py,2,misuse,0,0,0,0,1
+rule_02_Global_0.py,2,misuse,0,0,0,0,1
+rule_02_Global_1.py,2,misuse,0,0,0,0,1
+rule_02_InterproceduralViaReturn_0.py,2,misuse,0,0,0,0,1
+rule_02_InterproceduralViaReturn_1.py,2,misuse,0,0,0,0,1
+rule_02_Interprocedural_0.py,2,misuse,0,0,0,0,1
+rule_02_Interprocedural_1.py,2,misuse,0,0,0,0,1
+rule_02_Path-Sensitive_0.py,2,misuse,0,0,0,0,1
+rule_02_Path-Sensitive_1.py,2,misuse,0,0,0,0,1
+rule_02_insecure_0.py,2,misuse,0,0,0,0,1
+rule_02_insecure_1.py,2,misuse,0,0,0,0,1
+rule_03_Field-Sensitive_0.py,3,misuse,1,1,1,1,1
+rule_03_Field-Sensitive_1.py,3,misuse,1,1,1,1,1
+rule_03_Global_0.py,3,misuse,1,1,1,1,1
+rule_03_Global_1.py,3,misuse,0,0,0,0,1
+rule_03_InterproceduralViaReturn_0.py,3,misuse,1,1,1,0,1
+rule_03_InterproceduralViaReturn_1.py,3,misuse,1,1,1,1,1
+rule_03_Interprocedural_0.py,3,misuse,0,1,0,0,1
+rule_03_Interprocedural_1.py,3,misuse,1,1,1,0,1
+rule_03_Path-Sensitive_0.py,3,misuse,1,1,1,1,1
+rule_03_Path-Sensitive_1.py,3,misuse,1,1,1,1,1
+rule_03_insecure_0.py,3,misuse,1,1,1,1,1
+rule_03_insecure_1.py,3,misuse,0,1,1,1,1
+rule_04_Field-Sensitive_0.py,4,misuse,0,0,0,0,1
+rule_04_Field-Sensitive_1.py,4,misuse,0,0,0,0,1
+rule_04_Global_0.py,4,misuse,0,0,0,0,1
+rule_04_Global_1.py,4,misuse,0,0,0,0,1
+rule_04_InterproceduralViaReturn_0.py,4,misuse,0,0,0,0,1
+rule_04_InterproceduralViaReturn_1.py,4,misuse,0,0,0,0,1
+rule_04_Interprocedural_0.py,4,misuse,0,0,0,0,0
+rule_04_Interprocedural_1.py,4,misuse,0,0,0,0,1
+rule_04_Path-Sensitive_0.py,4,misuse,0,0,0,1,1
+rule_04_Path-Sensitive_1.py,4,misuse,0,0,0,1,1
+rule_04_insecure_0.py,4,misuse,0,0,0,1,1
+rule_04_insecure_1.py,4,misuse,0,0,0,1,0
+rule_05_Field-Sensitive_0.py,5,misuse,1,1,0,1,0
+rule_05_Field-Sensitive_1.py,5,misuse,1,1,0,1,0
+rule_05_Global_0.py,5,misuse,0,0,0,0,0
+rule_05_Global_1.py,5,misuse,0,1,0,0,0
+rule_05_InterproceduralViaReturn_0.py,5,misuse,1,1,0,1,0
+rule_05_InterproceduralViaReturn_1.py,5,misuse,1,1,0,1,0
+rule_05_Interprocedural_0.py,5,misuse,0,0,0,0,0
+rule_05_Interprocedural_1.py,5,misuse,0,1,0,0,0
+rule_05_Path-Sensitive_0.py,5,misuse,1,1,0,1,0
+rule_05_Path-Sensitive_1.py,5,misuse,1,1,0,1,0
+rule_05_insecure_0.py,5,misuse,1,1,0,1,0
+rule_05_insecure_1.py,5,misuse,1,1,0,1,0
+rule_06_Field-Sensitive_0.py,6,misuse,0,0,0,1,1
+rule_06_Field-Sensitive_1.py,6,misuse,0,0,0,1,1
+rule_06_Global_0.py,6,misuse,0,0,0,0,1
+rule_06_Global_1.py,6,misuse,0,0,0,0,1
+rule_06_InterproceduralViaReturn_0.py,6,misuse,0,0,0,0,1
+rule_06_InterproceduralViaReturn_1.py,6,misuse,0,0,0,0,1
+rule_06_Interprocedural_0.py,6,misuse,0,0,0,0,1
+rule_06_Interprocedural_1.py,6,misuse,0,0,0,0,0
+rule_06_Path-Sensitive_0.py,6,misuse,0,0,0,1,1
+rule_06_Path-Sensitive_1.py,6,misuse,0,0,0,1,1
+rule_06_insecure_0.py,6,misuse,0,0,0,1,1
+rule_06_insecure_1.py,6,misuse,0,0,0,1,1
+rule_07_Field-Sensitive_0.py,7,misuse,1,1,0,1,1
+rule_07_Field-Sensitive_1.py,7,misuse,0,1,0,0,1
+rule_07_Global_0.py,7,misuse,1,1,0,1,1
+rule_07_Global_1.py,7,misuse,0,0,0,0,1
+rule_07_InterproceduralViaReturn_0.py,7,misuse,1,1,0,1,1
+rule_07_InterproceduralViaReturn_1.py,7,misuse,1,1,0,1,1
+rule_07_Interprocedural_0.py,7,misuse,0,0,0,0,1
+rule_07_Interprocedural_1.py,7,misuse,0,1,0,0,1
+rule_07_Path-Sensitive_0.py,7,misuse,1,1,0,1,1
+rule_07_Path-Sensitive_1.py,7,misuse,1,1,0,1,1
+rule_07_insecure_0.py,7,misuse,1,1,0,1,1
+rule_07_insecure_1.py,7,misuse,1,1,0,1,1
+rule_08_Field-Sensitive_0.py,8,misuse,0,0,0,0,1
+rule_08_Field-Sensitive_1.py,8,misuse,0,0,0,0,1
+rule_08_Global_0.py,8,misuse,0,0,0,0,1
+rule_08_Global_1.py,8,misuse,0,0,0,0,1
+rule_08_InterproceduralViaReturn_0.py,8,misuse,0,0,0,0,1
+rule_08_InterproceduralViaReturn_1.py,8,misuse,0,0,0,0,1
+rule_08_Interprocedural_0.py,8,misuse,0,0,0,0,1
+rule_08_Interprocedural_1.py,8,misuse,0,0,0,0,1
+rule_08_Path-Sensitive_0.py,8,misuse,0,0,0,1,1
+rule_08_Path-Sensitive_1.py,8,misuse,0,0,0,1,1
+rule_08_insecure_0.py,8,misuse,0,0,0,1,1
+rule_08_insecure_1.py,8,misuse,0,0,0,1,0
+rule_09_Field-Sensitive_0.py,9,misuse,0,0,0,1,1
+rule_09_Field-Sensitive_1.py,9,misuse,0,0,0,1,1
+rule_09_Global_0.py,9,misuse,0,0,0,1,1
+rule_09_Global_1.py,9,misuse,0,0,0,1,1
+rule_09_InterproceduralViaReturn_0.py,9,misuse,0,0,0,1,0
+rule_09_InterproceduralViaReturn_1.py,9,misuse,0,0,0,1,1
+rule_09_Interprocedural_0.py,9,misuse,0,0,0,1,1
+rule_09_Interprocedural_1.py,9,misuse,0,0,0,1,1
+rule_09_Path-Sensitive_0.py,9,misuse,0,0,0,1,1
+rule_09_Path-Sensitive_1.py,9,misuse,0,0,0,1,1
+rule_09_insecure_0.py,9,misuse,0,0,0,1,1
+rule_09_insecure_1.py,9,misuse,1,0,1,1,1
+rule_10_Field-Sensitive_0.py,10,misuse,0,0,0,0,1
+rule_10_Field-Sensitive_1.py,10,misuse,0,0,0,0,1
+rule_10_Global_0.py,10,misuse,0,0,0,0,1
+rule_10_Global_1.py,10,misuse,0,0,0,0,1
+rule_10_InterproceduralViaReturn_0.py,10,misuse,1,0,1,1,1
+rule_10_InterproceduralViaReturn_1.py,10,misuse,1,0,1,1,1
+rule_10_Interprocedural_0.py,10,misuse,0,0,0,0,1
+rule_10_Interprocedural_1.py,10,misuse,0,0,0,0,1
+rule_10_Path-Sensitive_0.py,10,misuse,1,0,1,1,1
+rule_10_Path-Sensitive_1.py,10,misuse,1,0,1,1,1
+rule_10_insecure_0.py,10,misuse,1,0,1,1,1
+rule_10_insecure_1.py,10,misuse,1,0,1,1,1
+rule_11_Field-Sensitive_0.py,11,misuse,0,0,0,0,1
+rule_11_Field-Sensitive_1.py,11,misuse,0,0,0,0,1
+rule_11_Global_0.py,11,misuse,0,0,1,0,1
+rule_11_Global_1.py,11,misuse,0,0,1,0,1
+rule_11_InterproceduralViaReturn_0.py,11,misuse,0,0,0,0,1
+rule_11_InterproceduralViaReturn_1.py,11,misuse,1,0,1,1,1
+rule_11_Interprocedural_0.py,11,misuse,0,0,0,0,1
+rule_11_Interprocedural_1.py,11,misuse,0,0,0,0,1
+rule_11_Path-Sensitive_0.py,11,misuse,1,0,1,1,1
+rule_11_Path-Sensitive_1.py,11,misuse,1,0,1,1,1
+rule_11_insecure_0.py,11,misuse,1,0,1,1,1
+rule_11_insecure_1.py,11,misuse,1,0,1,1,1
+rule_12_Field-Sensitive_0.py,12,misuse,0,0,0,0,1
+rule_12_Field-Sensitive_1.py,12,misuse,0,0,1,1,1
+rule_12_Global_0.py,12,misuse,0,0,1,0,0
+rule_12_Global_1.py,12,misuse,0,0,1,0,1
+rule_12_InterproceduralViaReturn_0.py,12,misuse,0,0,1,0,1
+rule_12_InterproceduralViaReturn_1.py,12,misuse,0,0,1,0,1
+rule_12_Interprocedural_0.py,12,misuse,0,0,0,0,0
+rule_12_Interprocedural_1.py,12,misuse,0,0,1,0,1
+rule_12_Path-Sensitive_0.py,12,misuse,0,0,1,1,1
+rule_12_Path-Sensitive_1.py,12,misuse,0,0,1,1,1
+rule_12_insecure_0.py,12,misuse,0,0,0,1,1
+rule_12_insecure_1.py,12,misuse,0,0,1,1,1
+rule_13_Field-Sensitive_0.py,13,misuse,1,1,1,1,0
+rule_13_Field-Sensitive_1.py,13,misuse,1,0,1,1,1
+rule_13_Global_0.py,13,misuse,1,0,1,0,1
+rule_13_Global_1.py,13,misuse,1,1,1,0,0
+rule_13_InterproceduralViaReturn_0.py,13,misuse,1,1,1,0,0
+rule_13_InterproceduralViaReturn_1.py,13,misuse,1,1,1,0,1
+rule_13_Interprocedural_0.py,13,misuse,1,1,1,0,0
+rule_13_Interprocedural_1.py,13,misuse,1,0,1,0,1
+rule_13_Path-Sensitive_0.py,13,misuse,1,1,1,1,1
+rule_13_Path-Sensitive_1.py,13,misuse,1,1,1,1,1
+rule_13_insecure_0.py,13,misuse,1,1,1,1,1
+rule_13_insecure_1.py,13,misuse,1,0,1,1,1
+rule_14_Field-Sensitive_0.py,14,misuse,0,0,0,0,0
+rule_14_Field-Sensitive_1.py,14,misuse,0,0,0,0,0
+rule_14_Global_0.py,14,misuse,0,0,0,0,0
+rule_14_Global_1.py,14,misuse,0,0,0,0,0
+rule_14_InterproceduralViaReturn_0.py,14,misuse,0,0,0,0,0
+rule_14_InterproceduralViaReturn_1.py,14,misuse,0,0,0,0,0
+rule_14_Interprocedural_0.py,14,misuse,0,0,0,0,0
+rule_14_Interprocedural_1.py,14,misuse,0,0,0,0,0
+rule_14_Path-Sensitive_0.py,14,misuse,0,0,0,0,0
+rule_14_Path-Sensitive_1.py,14,misuse,0,0,0,0,0
+rule_14_insecure_0.py,14,misuse,0,0,0,0,0
+rule_14_insecure_1.py,14,misuse,0,0,0,0,0
+rule_15_Field-Sensitive_0.py,15,misuse,1,1,1,0,0
+rule_15_Field-Sensitive_1.py,15,misuse,1,1,1,0,0
+rule_15_Global_0.py,15,misuse,1,1,1,0,0
+rule_15_Global_1.py,15,misuse,1,1,1,0,0
+rule_15_InterproceduralViaReturn_0.py,15,misuse,1,1,1,1,0
+rule_15_InterproceduralViaReturn_1.py,15,misuse,1,1,1,1,0
+rule_15_Interprocedural_0.py,15,misuse,1,1,1,0,0
+rule_15_Interprocedural_1.py,15,misuse,1,1,1,0,0
+rule_15_Path-Sensitive_0.py,15,misuse,1,1,1,1,0
+rule_15_Path-Sensitive_1.py,15,misuse,1,1,1,1,0
+rule_15_insecure_0.py,15,misuse,1,1,1,1,0
+rule_15_insecure_1.py,15,misuse,1,1,1,1,0
+rule_16_Field-Sensitive_0.py,16,misuse,0,1,0,0,0
+rule_16_Field-Sensitive_1.py,16,misuse,0,1,0,0,0
+rule_16_Global_0.py,16,misuse,0,1,0,0,0
+rule_16_Global_1.py,16,misuse,0,1,0,0,0
+rule_16_InterproceduralViaReturn_0.py,16,misuse,0,1,0,0,0
+rule_16_InterproceduralViaReturn_1.py,16,misuse,0,1,0,0,0
+rule_16_Interprocedural_0.py,16,misuse,0,1,0,0,0
+rule_16_Interprocedural_1.py,16,misuse,0,1,0,0,0
+rule_16_Path-Sensitive_0.py,16,misuse,0,1,0,0,0
+rule_16_Path-Sensitive_1.py,16,misuse,0,1,0,0,0
+rule_16_insecure_0.py,16,misuse,0,1,0,0,0
+rule_16_insecure_1.py,16,misuse,0,1,0,0,0
+rule_17_Field-Sensitive_0.py,17,misuse,1,1,1,1,0
+rule_17_Field-Sensitive_1.py,17,misuse,1,1,1,1,0
+rule_17_Global_0.py,17,misuse,1,1,1,1,0
+rule_17_Global_1.py,17,misuse,1,1,1,1,0
+rule_17_InterproceduralViaReturn_0.py,17,misuse,1,1,1,1,0
+rule_17_InterproceduralViaReturn_1.py,17,misuse,1,1,1,1,0
+rule_17_Interprocedural_0.py,17,misuse,1,1,1,1,0
+rule_17_Interprocedural_1.py,17,misuse,1,1,1,1,0
+rule_17_Path-Sensitive_0.py,17,misuse,1,1,1,1,0
+rule_17_Path-Sensitive_1.py,17,misuse,1,1,1,1,0
+rule_17_insecure_0.py,17,misuse,1,1,1,1,0
+rule_17_insecure_1.py,17,misuse,1,1,1,1,0
+rule_18_Field-Sensitive_0.py,18,misuse,0,0,0,0,0
+rule_18_Field-Sensitive_1.py,18,misuse,0,0,0,0,0
+rule_18_Global_0.py,18,misuse,0,0,0,0,0
+rule_18_Global_1.py,18,misuse,0,0,0,0,0
+rule_18_InterproceduralViaReturn_0.py,18,misuse,0,0,0,0,0
+rule_18_InterproceduralViaReturn_1.py,18,misuse,0,0,0,0,0
+rule_18_Interprocedural_0.py,18,misuse,0,0,0,0,0
+rule_18_Interprocedural_1.py,18,misuse,0,0,0,0,0
+rule_18_Path-Sensitive_0.py,18,misuse,0,0,0,0,0
+rule_18_Path-Sensitive_1.py,18,misuse,0,0,0,0,0
+rule_18_insecure_0.py,18,misuse,0,0,0,0,0
+rule_18_insecure_1.py,18,misuse,0,0,0,0,0

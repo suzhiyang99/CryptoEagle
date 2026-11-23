@@ -1,0 +1,37 @@
+{
+  "language": "python",
+  "id": "python/paramiko__paramiko__Python__row28__e22c5ea33081/TARGET_ONLY",
+  "repository": "paramiko/paramiko",
+  "commit": "e22c5ea330814801d8487dc3da347f987bafe5ec",
+  "target_path": "paramiko/dsskey.py",
+  "report_target_row": "28",
+  "final": false,
+  "source_root": "benchmarks/cryptogpt-realworld-python-full/paramiko__paramiko/2023-05-06_e22c5ea33081",
+  "scope": "TARGET_ONLY",
+  "input": "experiments/cryptogpt/runs/_inputs/python/paramiko__paramiko__Python__row28__e22c5ea33081/TARGET_ONLY",
+  "source_files": [
+    "paramiko/dsskey.py"
+  ],
+  "status": "SUCCESS",
+  "seconds": 1.218,
+  "raw_findings": 3,
+  "rules": {
+    "C16": 2,
+    "C13": 1
+  },
+  "source_unchanged": true,
+  "report": "experiments/cryptogpt/runs/python/paramiko__paramiko__Python__row28__e22c5ea33081/TARGET_ONLY/findings.json",
+  "command": [
+    "java",
+    "-Xmx8g",
+    "-Xss128m",
+    "-cp",
+    "<tools/crypto-ext runtime classpath>",
+    "org.codeminers.standalone.EvaluationMain",
+    "python",
+    "experiments/cryptogpt/runs/_inputs/python/paramiko__paramiko__Python__row28__e22c5ea33081/TARGET_ONLY",
+    "--metrics-output=experiments/cryptogpt/runs/python/paramiko__paramiko__Python__row28__e22c5ea33081/TARGET_ONLY/performance.json",
+    "--report=json",
+    "--report-output=experiments/cryptogpt/runs/python/paramiko__paramiko__Python__row28__e22c5ea33081/TARGET_ONLY/findings.json"
+  ]
+}

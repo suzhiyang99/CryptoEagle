@@ -1,0 +1,101 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Meecrowave :: Core
+
+
+From: 'an unknown organization'
+  - tomcat-api (http://tomcat.apache.org/) org.apache.tomcat:tomcat-api:jar:9.0.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - tomcat-catalina (http://tomcat.apache.org/) org.apache.tomcat:tomcat-catalina:jar:9.0.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - tomcat-coyote (http://tomcat.apache.org/) org.apache.tomcat:tomcat-coyote:jar:9.0.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - tomcat-jaspic-api (http://tomcat.apache.org/) org.apache.tomcat:tomcat-jaspic-api:jar:9.0.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - tomcat-jni (http://tomcat.apache.org/) org.apache.tomcat:tomcat-jni:jar:9.0.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - tomcat-juli (http://tomcat.apache.org/) org.apache.tomcat:tomcat-juli:jar:9.0.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - tomcat-servlet-api (http://tomcat.apache.org/) org.apache.tomcat:tomcat-servlet-api:jar:9.0.1
+    License: Apache License, Version 2.0 and
+        Common Development And Distribution License (CDDL) Version 1.0  (http://www.apache.org/licenses/LICENSE-2.0.txt and
+        http://www.opensource.org/licenses/cddl1.txt)
+  - tomcat-util (http://tomcat.apache.org/) org.apache.tomcat:tomcat-util:jar:9.0.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - tomcat-util-scan (http://tomcat.apache.org/) org.apache.tomcat:tomcat-util-scan:jar:9.0.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Oracle Corporation' (http://www.oracle.com/)
+  - javax.ws.rs-api (http://jax-rs-spec.java.net) javax.ws.rs:javax.ws.rs-api:bundle:2.1
+    License: CDDL 1.1  (https://oss.oracle.com/licenses/CDDL+GPL-1.1)    License: GPL2 w/ CPE  (https://oss.oracle.com/licenses/CDDL+GPL-1.1)
+
+From: 'The Apache Software Foundation' (http://apache.org)
+  - EL 2.2 plugin (openwebbeans.apache.org/openwebbeans-el22) org.apache.openwebbeans:openwebbeans-el22:jar:2.0.2
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - OpenWebBeans Core (openwebbeans.apache.org/openwebbeans-impl) org.apache.openwebbeans:openwebbeans-impl:jar:2.0.2
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache OpenWebBeans CDI Java SE Implementation (openwebbeans.apache.org/openwebbeans-se) org.apache.openwebbeans:openwebbeans-se:jar:2.0.2
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - SPI definition (openwebbeans.apache.org/openwebbeans-spi) org.apache.openwebbeans:openwebbeans-spi:jar:2.0.2
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Web plugin (openwebbeans.apache.org/openwebbeans-web) org.apache.openwebbeans:openwebbeans-web:jar:2.0.2
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org)
+  - Apache Geronimo Annotation Spec 1.3 (http://geronimo.apache.org/maven/specs/geronimo-annotation_1.3_spec/1.0) org.apache.geronimo.specs:geronimo-annotation_1.3_spec:bundle:1.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Geronimo JSR-330 Spec API (http://geronimo.apache.org/maven/genesis/1.0) org.apache.geronimo.specs:geronimo-atinject_1.0_spec:bundle:1.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Geronimo Interceptor Spec 1.2 (http://geronimo.apache.org/maven/specs/geronimo-interceptor_1.2_spec/1.0) org.apache.geronimo.specs:geronimo-interceptor_1.2_spec:bundle:1.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Geronimo JCDI Spec 2.0 (http://geronimo.apache.org/maven/specs/geronimo-jcdi_2.0_spec/1.0.1) org.apache.geronimo.specs:geronimo-jcdi_2.0_spec:bundle:1.0.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Geronimo JSON Spec 1.1 (http://geronimo.apache.org/maven/specs/geronimo-json_1.1_spec/1.0) org.apache.geronimo.specs:geronimo-json_1.1_spec:bundle:1.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Geronimo JSON Binding Spec 1.0 (http://geronimo.apache.org/maven/specs/geronimo-jsonb_1.0_spec/1.0) org.apache.geronimo.specs:geronimo-jsonb_1.0_spec:bundle:1.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache XBean :: ASM 5 shaded (repackaged) (http://geronimo.apache.org/maven/xbean/4.5/xbean-asm5-shaded) org.apache.xbean:xbean-asm5-shaded:bundle:4.5
+    License: $license.name  (http://asm.ow2.org/license.html)    License: $license.name  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache XBean :: Finder shaded (repackaged) (http://geronimo.apache.org/maven/xbean/4.5/xbean-finder-shaded) org.apache.xbean:xbean-finder-shaded:jar:4.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache XBean :: Reflect (http://geronimo.apache.org/maven/xbean/4.5/xbean-reflect) org.apache.xbean:xbean-reflect:bundle:4.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache CXF Core (http://cxf.apache.org) org.apache.cxf:cxf-core:bundle:3.2.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF CDI Integration (http://cxf.apache.org) org.apache.cxf:cxf-integration-cdi:bundle:3.2.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime JAX-RS Frontend (http://cxf.apache.org) org.apache.cxf:cxf-rt-frontend-jaxrs:bundle:3.2.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF JAX-RS Client (http://cxf.apache.org) org.apache.cxf:cxf-rt-rs-client:bundle:3.2.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF Runtime HTTP Transport (http://cxf.apache.org) org.apache.cxf:cxf-rt-transports-http:bundle:3.2.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Johnzon :: Core (http://johnzon.apache.org/johnzon-core) org.apache.johnzon:johnzon-core:bundle:1.1.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Johnzon :: JAX-RS (http://johnzon.apache.org/johnzon-jaxrs) org.apache.johnzon:johnzon-jaxrs:bundle:1.1.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Johnzon :: JSON-B Implementation (http://johnzon.apache.org/johnzon-jsonb) org.apache.johnzon:johnzon-jsonb:bundle:1.1.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Johnzon :: Mapper (http://johnzon.apache.org/johnzon-mapper) org.apache.johnzon:johnzon-mapper:bundle:1.1.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Commons CLI (http://commons.apache.org/proper/commons-cli/) commons-cli:commons-cli:jar:1.4
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Lang (http://commons.apache.org/proper/commons-lang/) org.apache.commons:commons-lang3:jar:3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Log4j API (https://logging.apache.org/log4j/2.x/log4j-api/) org.apache.logging.log4j:log4j-api:jar:2.9.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Log4j Core (https://logging.apache.org/log4j/2.x/log4j-core/) org.apache.logging.log4j:log4j-core:jar:2.9.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Log4j JUL Adapter (https://logging.apache.org/log4j/2.x/log4j-jul/) org.apache.logging.log4j:log4j-jul:jar:2.9.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

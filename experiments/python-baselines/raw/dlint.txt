@@ -1,0 +1,587 @@
+benchmarks/PyCryptoBench/source/regular/rule_00_Field-Sensitive_0.py|7|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_00_Field-Sensitive_1.py|8|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_00_Global_0.py|3|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_00_InterproceduralViaReturn_0.py|7|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_00_InterproceduralViaReturn_1.py|7|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_00_Interprocedural_0.py|9|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_00_Path-Sensitive_0.py|4|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_00_Path-Sensitive_1.py|4|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_00_insecure_0.py|3|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_00_insecure_1.py|3|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_01_Field-Sensitive_1.py|11|DUO123|use of "verify=False" is insecure in "requests" module
+benchmarks/PyCryptoBench/source/regular/rule_01_InterproceduralViaReturn_0.py|7|DUO123|use of "verify=False" is insecure in "requests" module
+benchmarks/PyCryptoBench/source/regular/rule_01_InterproceduralViaReturn_1.py|7|DUO123|use of "verify=False" is insecure in "requests" module
+benchmarks/PyCryptoBench/source/regular/rule_01_Path-Sensitive_0.py|4|DUO123|use of "verify=False" is insecure in "requests" module
+benchmarks/PyCryptoBench/source/regular/rule_01_Path-Sensitive_1.py|4|DUO123|use of "verify=False" is insecure in "requests" module
+benchmarks/PyCryptoBench/source/regular/rule_01_insecure_0.py|3|DUO123|use of "verify=False" is insecure in "requests" module
+benchmarks/PyCryptoBench/source/regular/rule_01_insecure_1.py|3|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_03_Field-Sensitive_0.py|11|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_03_Field-Sensitive_1.py|11|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_03_Global_0.py|4|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_03_InterproceduralViaReturn_0.py|9|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_03_InterproceduralViaReturn_1.py|8|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_03_Interprocedural_0.py|11|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_03_Interprocedural_1.py|11|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_03_Path-Sensitive_0.py|5|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_03_Path-Sensitive_1.py|5|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_03_insecure_0.py|3|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_03_insecure_1.py|3|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_05_Field-Sensitive_0.py|11|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_05_Field-Sensitive_1.py|11|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_05_Global_1.py|3|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_05_InterproceduralViaReturn_0.py|7|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_05_InterproceduralViaReturn_1.py|7|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_05_Interprocedural_1.py|9|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_05_Path-Sensitive_0.py|4|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_05_Path-Sensitive_1.py|4|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_05_insecure_0.py|3|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_05_insecure_1.py|3|DUO102|insecure use of "random" module, prefer "random.SystemRandom"
+benchmarks/PyCryptoBench/source/regular/rule_07_Field-Sensitive_0.py|10|DUO134|insecure "cryptography" attribute use
+benchmarks/PyCryptoBench/source/regular/rule_07_Field-Sensitive_1.py|10|DUO134|insecure "cryptography" attribute use
+benchmarks/PyCryptoBench/source/regular/rule_07_Global_0.py|3|DUO134|insecure "cryptography" attribute use
+benchmarks/PyCryptoBench/source/regular/rule_07_InterproceduralViaReturn_0.py|7|DUO134|insecure "cryptography" attribute use
+benchmarks/PyCryptoBench/source/regular/rule_07_InterproceduralViaReturn_1.py|7|DUO134|insecure "cryptography" attribute use
+benchmarks/PyCryptoBench/source/regular/rule_07_Interprocedural_1.py|9|DUO134|insecure "cryptography" attribute use
+benchmarks/PyCryptoBench/source/regular/rule_07_Path-Sensitive_0.py|4|DUO134|insecure "cryptography" attribute use
+benchmarks/PyCryptoBench/source/regular/rule_07_Path-Sensitive_1.py|4|DUO134|insecure "cryptography" attribute use
+benchmarks/PyCryptoBench/source/regular/rule_07_insecure_0.py|3|DUO134|insecure "cryptography" attribute use
+benchmarks/PyCryptoBench/source/regular/rule_07_insecure_1.py|3|DUO134|insecure "cryptography" attribute use
+benchmarks/PyCryptoBench/source/regular/rule_09_Field-Sensitive_0.py|2|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Field-Sensitive_0.py|3|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Field-Sensitive_0.py|5|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Field-Sensitive_0.py|6|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Field-Sensitive_1.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Field-Sensitive_1.py|2|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Global_0.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Global_0.py|2|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Global_1.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Global_1.py|2|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_InterproceduralViaReturn_0.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_InterproceduralViaReturn_0.py|2|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_InterproceduralViaReturn_1.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_InterproceduralViaReturn_1.py|2|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Interprocedural_0.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Interprocedural_0.py|2|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Interprocedural_1.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Interprocedural_1.py|2|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Path-Sensitive_0.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Path-Sensitive_0.py|2|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Path-Sensitive_1.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_Path-Sensitive_1.py|2|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_insecure_0.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_insecure_0.py|2|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_09_insecure_1.py|2|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_11_Field-Sensitive_0.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_11_Field-Sensitive_1.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_11_Global_0.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_11_Global_1.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_11_InterproceduralViaReturn_0.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_11_InterproceduralViaReturn_1.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_11_Interprocedural_0.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_11_Interprocedural_1.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_11_Path-Sensitive_0.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_11_Path-Sensitive_1.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_11_insecure_0.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_11_insecure_1.py|1|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/regular/rule_12_Field-Sensitive_0.py|5|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_12_Field-Sensitive_1.py|5|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_12_Global_0.py|5|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_12_InterproceduralViaReturn_0.py|5|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_12_InterproceduralViaReturn_1.py|5|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_12_Interprocedural_0.py|5|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_12_Interprocedural_1.py|5|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_12_Path-Sensitive_0.py|5|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_12_Path-Sensitive_1.py|5|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_13_Field-Sensitive_0.py|10|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_13_Global_1.py|3|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_13_InterproceduralViaReturn_0.py|13|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_13_InterproceduralViaReturn_1.py|7|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_13_Interprocedural_0.py|10|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_13_Path-Sensitive_0.py|4|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_13_Path-Sensitive_1.py|4|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_13_insecure_0.py|3|DUO122|insecure "ssl" module attribute use
+benchmarks/PyCryptoBench/source/regular/rule_15_Field-Sensitive_0.py|1|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_15_Field-Sensitive_1.py|1|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_15_Field-Sensitive_1.py|2|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_15_Global_0.py|1|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_15_Global_1.py|1|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_15_InterproceduralViaReturn_0.py|1|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_15_InterproceduralViaReturn_1.py|1|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_15_Interprocedural_0.py|1|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_15_Interprocedural_1.py|1|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_15_Path-Sensitive_0.py|1|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_15_Path-Sensitive_1.py|1|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_15_insecure_0.py|1|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_15_insecure_1.py|1|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_15_insecure_1.py|2|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/regular/rule_16_Field-Sensitive_0.py|12|DUO109|insecure use of "yaml" parsing function, prefer "safe_*" equivalent
+benchmarks/PyCryptoBench/source/regular/rule_16_Field-Sensitive_1.py|13|DUO109|insecure use of "yaml" parsing function, prefer "safe_*" equivalent
+benchmarks/PyCryptoBench/source/regular/rule_16_Global_0.py|5|DUO109|insecure use of "yaml" parsing function, prefer "safe_*" equivalent
+benchmarks/PyCryptoBench/source/regular/rule_16_Global_1.py|6|DUO109|insecure use of "yaml" parsing function, prefer "safe_*" equivalent
+benchmarks/PyCryptoBench/source/regular/rule_16_InterproceduralViaReturn_0.py|17|DUO109|insecure use of "yaml" parsing function, prefer "safe_*" equivalent
+benchmarks/PyCryptoBench/source/regular/rule_16_InterproceduralViaReturn_1.py|12|DUO109|insecure use of "yaml" parsing function, prefer "safe_*" equivalent
+benchmarks/PyCryptoBench/source/regular/rule_16_Interprocedural_0.py|12|DUO109|insecure use of "yaml" parsing function, prefer "safe_*" equivalent
+benchmarks/PyCryptoBench/source/regular/rule_16_Interprocedural_1.py|11|DUO109|insecure use of "yaml" parsing function, prefer "safe_*" equivalent
+benchmarks/PyCryptoBench/source/regular/rule_16_Path-Sensitive_0.py|8|DUO109|insecure use of "yaml" parsing function, prefer "safe_*" equivalent
+benchmarks/PyCryptoBench/source/regular/rule_16_Path-Sensitive_1.py|9|DUO109|insecure use of "yaml" parsing function, prefer "safe_*" equivalent
+benchmarks/PyCryptoBench/source/regular/rule_16_insecure_0.py|7|DUO109|insecure use of "yaml" parsing function, prefer "safe_*" equivalent
+benchmarks/PyCryptoBench/source/regular/rule_16_insecure_1.py|7|DUO109|insecure use of "yaml" parsing function, prefer "safe_*" equivalent
+benchmarks/PyCryptoBench/source/regular/rule_17_Field-Sensitive_0.py|14|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_17_Field-Sensitive_0.py|15|DUO103|insecure use of "pickle" or "cPickle"
+benchmarks/PyCryptoBench/source/regular/rule_17_Field-Sensitive_1.py|15|DUO103|insecure use of "pickle" or "cPickle"
+benchmarks/PyCryptoBench/source/regular/rule_17_Global_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_17_Global_0.py|15|DUO103|insecure use of "pickle" or "cPickle"
+benchmarks/PyCryptoBench/source/regular/rule_17_Global_1.py|15|DUO103|insecure use of "pickle" or "cPickle"
+benchmarks/PyCryptoBench/source/regular/rule_17_InterproceduralViaReturn_0.py|8|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_17_InterproceduralViaReturn_0.py|19|DUO103|insecure use of "pickle" or "cPickle"
+benchmarks/PyCryptoBench/source/regular/rule_17_InterproceduralViaReturn_1.py|8|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_17_InterproceduralViaReturn_1.py|20|DUO103|insecure use of "pickle" or "cPickle"
+benchmarks/PyCryptoBench/source/regular/rule_17_Interprocedural_0.py|16|DUO103|insecure use of "pickle" or "cPickle"
+benchmarks/PyCryptoBench/source/regular/rule_17_Interprocedural_1.py|15|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_17_Interprocedural_1.py|16|DUO103|insecure use of "pickle" or "cPickle"
+benchmarks/PyCryptoBench/source/regular/rule_17_Path-Sensitive_0.py|9|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_17_Path-Sensitive_0.py|12|DUO103|insecure use of "pickle" or "cPickle"
+benchmarks/PyCryptoBench/source/regular/rule_17_Path-Sensitive_1.py|9|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_17_Path-Sensitive_1.py|12|DUO103|insecure use of "pickle" or "cPickle"
+benchmarks/PyCryptoBench/source/regular/rule_17_insecure_0.py|8|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_17_insecure_0.py|12|DUO103|insecure use of "pickle" or "cPickle"
+benchmarks/PyCryptoBench/source/regular/rule_17_insecure_1.py|8|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/regular/rule_17_insecure_1.py|12|DUO103|insecure use of "pickle" or "cPickle"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Cipher_rule_9_trapfile_10.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Cipher_rule_9_trapfile_10.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Cipher_rule_9_trapfile_11.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Cipher_rule_9_trapfile_11.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Cipher_rule_9_trapfile_12.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Cipher_rule_9_trapfile_12.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Cipher_rule_9_trapfile_7.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Cipher_rule_9_trapfile_7.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Cipher_rule_9_trapfile_8.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Cipher_rule_9_trapfile_8.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Cipher_rule_9_trapfile_9.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Cipher_rule_9_trapfile_9.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Hash_rule_11_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Hash_rule_11_trapfile_3.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Hash_rule_11_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto.Hash_rule_11_trapfile_4.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto_rule_11_trapfile_10.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Crypto_rule_11_trapfile_10.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Cryptodome.Cipher_rule_9_trapfile_13.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Cryptodome.Cipher_rule_9_trapfile_14.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Cryptodome.Cipher_rule_9_trapfile_15.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Cryptodome.Cipher_rule_9_trapfile_16.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Cryptodome.Cipher_rule_9_trapfile_17.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Cryptodome.Cipher_rule_9_trapfile_18.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Cryptodome.Cipher_rule_9_trapfile_19.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Cryptodome.Hash_rule_11_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Cryptodome.Hash_rule_11_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_10.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_10.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_11.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_11.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_12.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_12.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_7.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_7.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_8.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_8.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_9.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Cipher_rule_09_trapfile_9.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Hash_rule_11_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Hash_rule_11_trapfile_3.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Hash_rule_11_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto.Hash_rule_11_trapfile_4.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto_rule_11_trapfile_10.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Crypto_rule_11_trapfile_10.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_13.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_14.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_15.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_16.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_17.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_18.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Cryptodome.Cipher_rule_09_trapfile_19.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Cryptodome.Hash_rule_11_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_Cryptodome.Hash_rule_11_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_M2Crypto.EVP_rule_01_trapfile_7.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_M2Crypto.EVP_rule_01_trapfile_8.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_OpenSSL.SSL_rule_13_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_OpenSSL.SSL_rule_13_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_OpenSSL.SSL_rule_13_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_OpenSSL.SSL_rule_13_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_aiohttp.client.ClientSession_rule_04_trapfile_34.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_aiohttp.client.ClientSession_rule_04_trapfile_35.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_aiohttp.web_request.BaseRequest_rule_04_trapfile_28.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_bcrypt_rule_06_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.asymmetric.padding_rule_10_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.ciphers.modes_rule_07_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.hashes_rule_11_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.hashes_rule_11_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_furl.furl_rule_04_trapfile_31.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_genshi_rule_15_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_ldap_rule_14_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_ldap_rule_14_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_ldap_rule_14_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_ldap_rule_14_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_lxml_rule_15_trapfile_4.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_paramiko.client_rule_04_trapfile_46.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_pyDes_rule_09_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_pyDes_rule_09_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_pyOpenSSL.SSL_rule_13_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_pycurl_rule_04_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_ruamel.yaml_rule_16_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_telnet_rule_14_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_tornado.web.RequestHandler_rule_04_trapfile_29.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_ucryptolib_rule_07_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_ucryptolib_rule_10_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_ucryptolib_rule_10_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_xml.dom_rule_15_trapfile_2.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_xml.etree_rule_15_trapfile_1.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Field-Sensitive_xml.sax_rule_15_trapfile_0.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_10.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_10.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_11.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_11.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_12.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_12.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_7.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_7.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_8.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_8.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_9.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Cipher_rule_09_trapfile_9.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Hash_rule_11_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Hash_rule_11_trapfile_3.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Hash_rule_11_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto.Hash_rule_11_trapfile_4.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto_rule_11_trapfile_10.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Crypto_rule_11_trapfile_10.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_13.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_14.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_15.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_16.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_17.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_18.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Cryptodome.Cipher_rule_09_trapfile_19.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Cryptodome.Hash_rule_11_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_Cryptodome.Hash_rule_11_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_M2Crypto.EVP_rule_01_trapfile_7.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_M2Crypto.EVP_rule_01_trapfile_8.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_OpenSSL.SSL_rule_13_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_OpenSSL.SSL_rule_13_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_OpenSSL.SSL_rule_13_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_OpenSSL.SSL_rule_13_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_aiohttp.client.ClientSession_rule_04_trapfile_34.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_aiohttp.client.ClientSession_rule_04_trapfile_35.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_aiohttp.web_request.BaseRequest_rule_04_trapfile_28.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_bcrypt_rule_06_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.asymmetric.padding_rule_10_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.ciphers.modes_rule_07_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.hashes_rule_11_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.hashes_rule_11_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_furl.furl_rule_04_trapfile_31.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_genshi_rule_15_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_ldap_rule_14_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_ldap_rule_14_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_ldap_rule_14_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_ldap_rule_14_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_lxml_rule_15_trapfile_4.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_paramiko.client_rule_04_trapfile_46.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_pyDes_rule_09_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_pyDes_rule_09_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_pyOpenSSL.SSL_rule_13_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_pycurl_rule_04_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_ruamel.yaml_rule_16_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_telnet_rule_14_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_tornado.web.RequestHandler_rule_04_trapfile_29.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_ucryptolib_rule_07_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_ucryptolib_rule_10_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_ucryptolib_rule_10_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_xml.dom_rule_15_trapfile_2.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_xml.etree_rule_15_trapfile_1.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Global_xml.sax_rule_15_trapfile_0.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_10.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_10.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_11.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_11.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_12.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_12.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_7.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_7.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_8.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_8.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_9.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Cipher_rule_09_trapfile_9.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Hash_rule_11_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Hash_rule_11_trapfile_3.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Hash_rule_11_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto.Hash_rule_11_trapfile_4.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto_rule_11_trapfile_10.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Crypto_rule_11_trapfile_10.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_13.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_14.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_15.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_16.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_17.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_18.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Cryptodome.Cipher_rule_09_trapfile_19.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Cryptodome.Hash_rule_11_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_Cryptodome.Hash_rule_11_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_M2Crypto.EVP_rule_01_trapfile_7.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_M2Crypto.EVP_rule_01_trapfile_8.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_OpenSSL.SSL_rule_13_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_OpenSSL.SSL_rule_13_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_OpenSSL.SSL_rule_13_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_OpenSSL.SSL_rule_13_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_aiohttp.client.ClientSession_rule_04_trapfile_34.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_aiohttp.client.ClientSession_rule_04_trapfile_35.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_aiohttp.web_request.BaseRequest_rule_04_trapfile_28.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_bcrypt_rule_06_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.asymmetric.padding_rule_10_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.ciphers.modes_rule_07_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.hashes_rule_11_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.hashes_rule_11_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_furl.furl_rule_04_trapfile_31.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_genshi_rule_15_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_ldap_rule_14_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_ldap_rule_14_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_ldap_rule_14_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_ldap_rule_14_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_lxml_rule_15_trapfile_4.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_paramiko.client_rule_04_trapfile_46.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_pyDes_rule_09_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_pyDes_rule_09_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_pyOpenSSL.SSL_rule_13_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_pycurl_rule_04_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_ruamel.yaml_rule_16_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_telnet_rule_14_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_tornado.web.RequestHandler_rule_04_trapfile_29.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_ucryptolib_rule_07_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_ucryptolib_rule_10_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_ucryptolib_rule_10_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_xml.dom_rule_15_trapfile_2.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_xml.etree_rule_15_trapfile_1.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_InterproceduralViaReturn_xml.sax_rule_15_trapfile_0.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_10.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_10.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_11.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_11.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_12.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_12.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_7.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_7.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_8.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_8.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_9.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Cipher_rule_09_trapfile_9.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Hash_rule_11_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Hash_rule_11_trapfile_3.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Hash_rule_11_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto.Hash_rule_11_trapfile_4.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto_rule_11_trapfile_10.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Crypto_rule_11_trapfile_10.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_13.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_14.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_15.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_16.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_17.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_18.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Cryptodome.Cipher_rule_09_trapfile_19.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Cryptodome.Hash_rule_11_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_Cryptodome.Hash_rule_11_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_M2Crypto.EVP_rule_01_trapfile_7.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_M2Crypto.EVP_rule_01_trapfile_8.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_OpenSSL.SSL_rule_13_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_OpenSSL.SSL_rule_13_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_OpenSSL.SSL_rule_13_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_OpenSSL.SSL_rule_13_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_aiohttp.client.ClientSession_rule_04_trapfile_34.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_aiohttp.client.ClientSession_rule_04_trapfile_35.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_aiohttp.web_request.BaseRequest_rule_04_trapfile_28.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_bcrypt_rule_06_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.asymmetric.padding_rule_10_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.ciphers.modes_rule_07_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.hashes_rule_11_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.hashes_rule_11_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_furl.furl_rule_04_trapfile_31.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_genshi_rule_15_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_ldap_rule_14_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_ldap_rule_14_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_ldap_rule_14_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_ldap_rule_14_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_lxml_rule_15_trapfile_4.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_paramiko.client_rule_04_trapfile_46.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_pyDes_rule_09_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_pyDes_rule_09_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_pyOpenSSL.SSL_rule_13_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_pycurl_rule_04_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_ruamel.yaml_rule_16_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_telnet_rule_14_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_tornado.web.RequestHandler_rule_04_trapfile_29.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_ucryptolib_rule_07_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_ucryptolib_rule_10_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_ucryptolib_rule_10_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_xml.dom_rule_15_trapfile_2.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_xml.etree_rule_15_trapfile_1.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Interprocedural_xml.sax_rule_15_trapfile_0.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_M2Crypto.EVP_rule_1_trapfile_7.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_M2Crypto.EVP_rule_1_trapfile_8.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_OpenSSL.SSL_rule_13_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_OpenSSL.SSL_rule_13_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_OpenSSL.SSL_rule_13_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_OpenSSL.SSL_rule_13_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_10.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_10.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_11.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_11.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_12.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_12.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_7.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_7.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_8.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_8.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_9.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Cipher_rule_09_trapfile_9.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Hash_rule_11_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Hash_rule_11_trapfile_3.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Hash_rule_11_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto.Hash_rule_11_trapfile_4.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto_rule_11_trapfile_10.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Crypto_rule_11_trapfile_10.py|12|DUO133|use of "Crypto" module is insecure
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_13.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_14.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_15.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_16.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_17.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_18.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Cryptodome.Cipher_rule_09_trapfile_19.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Cryptodome.Hash_rule_11_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_Cryptodome.Hash_rule_11_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_M2Crypto.EVP_rule_01_trapfile_7.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_M2Crypto.EVP_rule_01_trapfile_8.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_OpenSSL.SSL_rule_13_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_OpenSSL.SSL_rule_13_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_OpenSSL.SSL_rule_13_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_OpenSSL.SSL_rule_13_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_aiohttp.client.ClientSession_rule_04_trapfile_34.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_aiohttp.client.ClientSession_rule_04_trapfile_35.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_aiohttp.web_request.BaseRequest_rule_04_trapfile_28.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_bcrypt_rule_06_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.asymmetric.padding_rule_10_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_09_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.ciphers.modes_rule_07_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.hashes_rule_11_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.hashes_rule_11_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.kdf.pbkdf2_rule_06_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_cryptography.hazmat.primitives.serialization.pkcs12_rule_01_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_furl.furl_rule_04_trapfile_31.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_genshi_rule_15_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_ldap_rule_14_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_ldap_rule_14_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_ldap_rule_14_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_ldap_rule_14_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_lxml_rule_15_trapfile_4.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_paramiko.client_rule_04_trapfile_46.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_pyDes_rule_09_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_pyDes_rule_09_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_pyOpenSSL.SSL_rule_13_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_pycurl_rule_04_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_ruamel.yaml_rule_16_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_telnet_rule_14_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_tornado.web.RequestHandler_rule_04_trapfile_29.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_ucryptolib_rule_07_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_ucryptolib_rule_10_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_ucryptolib_rule_10_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_xml.dom_rule_15_trapfile_2.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_xml.etree_rule_15_trapfile_1.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_Path-Sensitive_xml.sax_rule_15_trapfile_0.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_aiohttp.client.ClientSession_rule_4_trapfile_34.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_aiohttp.client.ClientSession_rule_4_trapfile_35.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_aiohttp.web_request.BaseRequest_rule_4_trapfile_28.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_bcrypt_rule_6_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.asymmetric.padding_rule_10_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.asymmetric_rule_10_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_11_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.ciphers.algorithms_rule_9_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.ciphers.modes_rule_7_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.hashes_rule_11_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.hashes_rule_11_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.kdf.pbkdf2_rule_6_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_cryptography.hazmat.primitives.serialization.pkcs12_rule_1_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_furl.furl_rule_4_trapfile_31.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_genshi_rule_15_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_ldap_rule_14_trapfile_2.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_ldap_rule_14_trapfile_3.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_ldap_rule_14_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_ldap_rule_14_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_lxml_rule_15_trapfile_4.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_paramiko.client_rule_4_trapfile_46.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_pyDes_rule_9_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_pyDes_rule_9_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_pyOpenSSL.SSL_rule_13_trapfile_6.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_pycurl_rule_4_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_ruamel.yaml_rule_16_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_telnet_rule_14_trapfile_0.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_tornado.web.RequestHandler_rule_4_trapfile_29.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_ucryptolib_rule_10_trapfile_4.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_ucryptolib_rule_10_trapfile_5.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_ucryptolib_rule_7_trapfile_1.py|4|DUO106|insecure use of "os" module
+benchmarks/PyCryptoBench/source/trap/Trap_Import_xml.dom_rule_15_trapfile_2.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_xml.etree_rule_15_trapfile_1.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"
+benchmarks/PyCryptoBench/source/trap/Trap_Import_xml.sax_rule_15_trapfile_0.py|3|DUO107|insecure use of XML modules, prefer "defusedxml"

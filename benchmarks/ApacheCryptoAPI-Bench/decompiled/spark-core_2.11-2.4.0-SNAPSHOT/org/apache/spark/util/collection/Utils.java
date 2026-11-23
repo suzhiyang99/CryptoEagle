@@ -1,0 +1,14 @@
+package org.apache.spark.util.collection;
+
+import scala.collection.Iterator;
+import scala.math.Ordering;
+import scala.reflect.ScalaSignature;
+
+@ScalaSignature(
+   bytes = "\u0006\u0001\r;a!\u0001\u0002\t\u0002\u0019a\u0011!B+uS2\u001c(BA\u0002\u0005\u0003)\u0019w\u000e\u001c7fGRLwN\u001c\u0006\u0003\u000b\u0019\tA!\u001e;jY*\u0011q\u0001C\u0001\u0006gB\f'o\u001b\u0006\u0003\u0013)\ta!\u00199bG\",'\"A\u0006\u0002\u0007=\u0014x\r\u0005\u0002\u000e\u001d5\t!A\u0002\u0004\u0010\u0005!\u0005a\u0001\u0005\u0002\u0006+RLGn]\n\u0003\u001dE\u0001\"AE\u000b\u000e\u0003MQ\u0011\u0001F\u0001\u0006g\u000e\fG.Y\u0005\u0003-M\u0011a!\u00118z%\u00164\u0007\"\u0002\r\u000f\t\u0003Q\u0012A\u0002\u001fj]&$hh\u0001\u0001\u0015\u00031AQ\u0001\b\b\u0005\u0002u\t1\u0002^1lK>\u0013H-\u001a:fIV\u0011aD\f\u000b\u0004?qrDC\u0001\u00118!\r\t\u0013\u0006\f\b\u0003E\u001dr!a\t\u0014\u000e\u0003\u0011R!!J\r\u0002\rq\u0012xn\u001c;?\u0013\u0005!\u0012B\u0001\u0015\u0014\u0003\u001d\u0001\u0018mY6bO\u0016L!AK\u0016\u0003\u0011%#XM]1u_JT!\u0001K\n\u0011\u00055rC\u0002\u0001\u0003\u0006_m\u0011\r\u0001\r\u0002\u0002)F\u0011\u0011\u0007\u000e\t\u0003%IJ!aM\n\u0003\u000f9{G\u000f[5oOB\u0011!#N\u0005\u0003mM\u00111!\u00118z\u0011\u0015A4\u0004q\u0001:\u0003\ry'\u000f\u001a\t\u0004Cib\u0013BA\u001e,\u0005!y%\u000fZ3sS:<\u0007\"B\u001f\u001c\u0001\u0004\u0001\u0013!B5oaV$\b\"B \u001c\u0001\u0004\u0001\u0015a\u00018v[B\u0011!#Q\u0005\u0003\u0005N\u00111!\u00138u\u0001"
+)
+public final class Utils {
+   public static <T> Iterator<T> takeOrdered(Iterator<T> var0, int var1, Ordering<T> var2) {
+      return Utils$.MODULE$.<T>takeOrdered(var0, var1, var2);
+   }
+}
